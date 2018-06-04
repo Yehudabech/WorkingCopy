@@ -1,0 +1,1199 @@
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccJl1LD.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"iprintf.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.iputc,"ax",%progbits
+  20              		.align	2
+  21              		.code	16
+  22              		.thumb_func
+  23              		.type	iputc, %function
+  24              	iputc:
+  25              	.LFB35:
+  26              		.file 1 "iprintf.c"
+   1:iprintf.c     **** /******************************************************************************
+   2:iprintf.c     **** *This file is for iprintf()
+   3:iprintf.c     **** *The iprintf() is a simple printf() and only can print string with %s,%d,%c,%x.
+   4:iprintf.c     **** *******************************************************************************/
+   5:iprintf.c     **** #include "iprintf.h"
+   6:iprintf.c     **** 
+   7:iprintf.c     **** static void iputc(char8 ch)
+   8:iprintf.c     **** {
+  27              		.loc 1 8 0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 8
+  30              		@ frame_needed = 1, uses_anonymous_args = 0
+  31 0000 80B5     		push	{r7, lr}
+  32              		.cfi_def_cfa_offset 8
+  33              		.cfi_offset 7, -8
+  34              		.cfi_offset 14, -4
+  35 0002 82B0     		sub	sp, sp, #8
+  36              		.cfi_def_cfa_offset 16
+  37 0004 00AF     		add	r7, sp, #0
+  38              		.cfi_def_cfa_register 7
+  39 0006 0200     		movs	r2, r0
+  40 0008 FB1D     		adds	r3, r7, #7
+  41 000a 1A70     		strb	r2, [r3]
+   9:iprintf.c     **** 	/*This function has to be replaced by user*/	
+  10:iprintf.c     **** 	SCB_1_UartPutChar(ch);
+  42              		.loc 1 10 0
+  43 000c FB1D     		adds	r3, r7, #7
+  44 000e 1B78     		ldrb	r3, [r3]
+  45 0010 1800     		movs	r0, r3
+  46 0012 FFF7FEFF 		bl	SCB_1_SpiUartWriteTxData
+  11:iprintf.c     **** }
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccJl1LD.s 			page 2
+
+
+  47              		.loc 1 11 0
+  48 0016 C046     		nop
+  49 0018 BD46     		mov	sp, r7
+  50 001a 02B0     		add	sp, sp, #8
+  51              		@ sp needed
+  52 001c 80BD     		pop	{r7, pc}
+  53              		.cfi_endproc
+  54              	.LFE35:
+  55              		.size	iputc, .-iputc
+  56 001e C046     		.section	.rodata
+  57              		.align	2
+  58              	.LC0:
+  59 0000 30313233 		.ascii	"0123456789abcdef\000"
+  59      34353637 
+  59      38396162 
+  59      63646566 
+  59      00
+  60              		.section	.text.change,"ax",%progbits
+  61              		.align	2
+  62              		.code	16
+  63              		.thumb_func
+  64              		.type	change, %function
+  65              	change:
+  66              	.LFB36:
+  12:iprintf.c     **** 
+  13:iprintf.c     **** static uint8* change(uint32 Index)
+  14:iprintf.c     **** {
+  67              		.loc 1 14 0
+  68              		.cfi_startproc
+  69              		@ args = 0, pretend = 0, frame = 8
+  70              		@ frame_needed = 1, uses_anonymous_args = 0
+  71 0000 80B5     		push	{r7, lr}
+  72              		.cfi_def_cfa_offset 8
+  73              		.cfi_offset 7, -8
+  74              		.cfi_offset 14, -4
+  75 0002 82B0     		sub	sp, sp, #8
+  76              		.cfi_def_cfa_offset 16
+  77 0004 00AF     		add	r7, sp, #0
+  78              		.cfi_def_cfa_register 7
+  79 0006 7860     		str	r0, [r7, #4]
+  15:iprintf.c     ****     return (uint8*)("0123456789abcdef"+Index);
+  80              		.loc 1 15 0
+  81 0008 7A68     		ldr	r2, [r7, #4]
+  82 000a 034B     		ldr	r3, .L4
+  83 000c D318     		adds	r3, r2, r3
+  16:iprintf.c     **** }
+  84              		.loc 1 16 0
+  85 000e 1800     		movs	r0, r3
+  86 0010 BD46     		mov	sp, r7
+  87 0012 02B0     		add	sp, sp, #8
+  88              		@ sp needed
+  89 0014 80BD     		pop	{r7, pc}
+  90              	.L5:
+  91 0016 C046     		.align	2
+  92              	.L4:
+  93 0018 00000000 		.word	.LC0
+  94              		.cfi_endproc
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccJl1LD.s 			page 3
+
+
+  95              	.LFE36:
+  96              		.size	change, .-change
+  97              		.global	__aeabi_uidivmod
+  98              		.global	__aeabi_uidiv
+  99              		.section	.text.iprintf,"ax",%progbits
+ 100              		.align	2
+ 101              		.global	iprintf
+ 102              		.code	16
+ 103              		.thumb_func
+ 104              		.type	iprintf, %function
+ 105              	iprintf:
+ 106              	.LFB37:
+  17:iprintf.c     **** 
+  18:iprintf.c     **** 
+  19:iprintf.c     **** void iprintf(char8 *pszFmt,...)
+  20:iprintf.c     **** {
+ 107              		.loc 1 20 0
+ 108              		.cfi_startproc
+ 109              		@ args = 4, pretend = 16, frame = 80
+ 110              		@ frame_needed = 1, uses_anonymous_args = 1
+ 111 0000 0FB4     		push	{r0, r1, r2, r3}
+ 112              		.cfi_def_cfa_offset 16
+ 113 0002 90B5     		push	{r4, r7, lr}
+ 114              		.cfi_def_cfa_offset 28
+ 115              		.cfi_offset 4, -28
+ 116              		.cfi_offset 7, -24
+ 117              		.cfi_offset 14, -20
+ 118 0004 95B0     		sub	sp, sp, #84
+ 119              		.cfi_def_cfa_offset 112
+ 120 0006 00AF     		add	r7, sp, #0
+ 121              		.cfi_def_cfa_register 7
+  21:iprintf.c     ****     uint8 *pszVal;
+  22:iprintf.c     ****     uint32 iVal, xVal, i = 0, buffer[12], index = 1;
+ 122              		.loc 1 22 0
+ 123 0008 0023     		movs	r3, #0
+ 124 000a 3B64     		str	r3, [r7, #64]
+ 125 000c 0123     		movs	r3, #1
+ 126 000e FB63     		str	r3, [r7, #60]
+  23:iprintf.c     ****     uint8 cVal;
+  24:iprintf.c     ****     uint32 *pArg;
+  25:iprintf.c     ****     pArg =(uint32 *)&pszFmt;
+ 127              		.loc 1 25 0
+ 128 0010 6023     		movs	r3, #96
+ 129 0012 FB18     		adds	r3, r7, r3
+ 130 0014 BB63     		str	r3, [r7, #56]
+  26:iprintf.c     **** 
+  27:iprintf.c     ****     while(*pszFmt)
+ 131              		.loc 1 27 0
+ 132 0016 CCE0     		b	.L7
+ 133              	.L24:
+  28:iprintf.c     ****     {
+  29:iprintf.c     ****         if('%' != *pszFmt)
+ 134              		.loc 1 29 0
+ 135 0018 3B6E     		ldr	r3, [r7, #96]
+ 136 001a 1B78     		ldrb	r3, [r3]
+ 137 001c 252B     		cmp	r3, #37
+ 138 001e 08D0     		beq	.L8
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccJl1LD.s 			page 4
+
+
+  30:iprintf.c     ****         {
+  31:iprintf.c     ****             iputc(*pszFmt);
+ 139              		.loc 1 31 0
+ 140 0020 3B6E     		ldr	r3, [r7, #96]
+ 141 0022 1B78     		ldrb	r3, [r3]
+ 142 0024 1800     		movs	r0, r3
+ 143 0026 FFF7FEFF 		bl	iputc
+  32:iprintf.c     ****             pszFmt++;
+ 144              		.loc 1 32 0
+ 145 002a 3B6E     		ldr	r3, [r7, #96]
+ 146 002c 0133     		adds	r3, r3, #1
+ 147 002e 3B66     		str	r3, [r7, #96]
+  33:iprintf.c     ****             continue;
+ 148              		.loc 1 33 0
+ 149 0030 BFE0     		b	.L7
+ 150              	.L8:
+  34:iprintf.c     ****         }
+  35:iprintf.c     ****         pszFmt++;
+ 151              		.loc 1 35 0
+ 152 0032 3B6E     		ldr	r3, [r7, #96]
+ 153 0034 0133     		adds	r3, r3, #1
+ 154 0036 3B66     		str	r3, [r7, #96]
+  36:iprintf.c     **** 
+  37:iprintf.c     ****         if(*pszFmt == 's')
+ 155              		.loc 1 37 0
+ 156 0038 3B6E     		ldr	r3, [r7, #96]
+ 157 003a 1B78     		ldrb	r3, [r3]
+ 158 003c 732B     		cmp	r3, #115
+ 159 003e 18D1     		bne	.L9
+  38:iprintf.c     ****         {
+  39:iprintf.c     ****             pszVal = (uint8*)pArg[index++];
+ 160              		.loc 1 39 0
+ 161 0040 FB6B     		ldr	r3, [r7, #60]
+ 162 0042 5A1C     		adds	r2, r3, #1
+ 163 0044 FA63     		str	r2, [r7, #60]
+ 164 0046 9B00     		lsls	r3, r3, #2
+ 165 0048 BA6B     		ldr	r2, [r7, #56]
+ 166 004a D318     		adds	r3, r2, r3
+ 167 004c 1B68     		ldr	r3, [r3]
+ 168 004e FB64     		str	r3, [r7, #76]
+  40:iprintf.c     ****             for(; *pszVal != '\0'; pszVal++)
+ 169              		.loc 1 40 0
+ 170 0050 07E0     		b	.L10
+ 171              	.L11:
+  41:iprintf.c     ****                 iputc(*pszVal);
+ 172              		.loc 1 41 0 discriminator 2
+ 173 0052 FB6C     		ldr	r3, [r7, #76]
+ 174 0054 1B78     		ldrb	r3, [r3]
+ 175 0056 1800     		movs	r0, r3
+ 176 0058 FFF7FEFF 		bl	iputc
+  40:iprintf.c     ****             for(; *pszVal != '\0'; pszVal++)
+ 177              		.loc 1 40 0 discriminator 2
+ 178 005c FB6C     		ldr	r3, [r7, #76]
+ 179 005e 0133     		adds	r3, r3, #1
+ 180 0060 FB64     		str	r3, [r7, #76]
+ 181              	.L10:
+  40:iprintf.c     ****             for(; *pszVal != '\0'; pszVal++)
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccJl1LD.s 			page 5
+
+
+ 182              		.loc 1 40 0 is_stmt 0 discriminator 1
+ 183 0062 FB6C     		ldr	r3, [r7, #76]
+ 184 0064 1B78     		ldrb	r3, [r3]
+ 185 0066 002B     		cmp	r3, #0
+ 186 0068 F3D1     		bne	.L11
+  42:iprintf.c     ****             pszFmt++;
+ 187              		.loc 1 42 0 is_stmt 1
+ 188 006a 3B6E     		ldr	r3, [r7, #96]
+ 189 006c 0133     		adds	r3, r3, #1
+ 190 006e 3B66     		str	r3, [r7, #96]
+  43:iprintf.c     ****             continue;
+ 191              		.loc 1 43 0
+ 192 0070 9FE0     		b	.L7
+ 193              	.L9:
+  44:iprintf.c     ****         }
+  45:iprintf.c     ****         if(*pszFmt == 'd')
+ 194              		.loc 1 45 0
+ 195 0072 3B6E     		ldr	r3, [r7, #96]
+ 196 0074 1B78     		ldrb	r3, [r3]
+ 197 0076 642B     		cmp	r3, #100
+ 198 0078 37D1     		bne	.L12
+  46:iprintf.c     ****         {
+  47:iprintf.c     ****             iVal = pArg[index++];
+ 199              		.loc 1 47 0
+ 200 007a FB6B     		ldr	r3, [r7, #60]
+ 201 007c 5A1C     		adds	r2, r3, #1
+ 202 007e FA63     		str	r2, [r7, #60]
+ 203 0080 9B00     		lsls	r3, r3, #2
+ 204 0082 BA6B     		ldr	r2, [r7, #56]
+ 205 0084 D318     		adds	r3, r2, r3
+ 206 0086 1B68     		ldr	r3, [r3]
+ 207 0088 BB64     		str	r3, [r7, #72]
+  48:iprintf.c     ****             i = 0;
+ 208              		.loc 1 48 0
+ 209 008a 0023     		movs	r3, #0
+ 210 008c 3B64     		str	r3, [r7, #64]
+ 211              	.L13:
+  49:iprintf.c     ****             do{
+  50:iprintf.c     ****                 buffer[i++] = iVal % 10;
+ 212              		.loc 1 50 0 discriminator 1
+ 213 008e 3C6C     		ldr	r4, [r7, #64]
+ 214 0090 631C     		adds	r3, r4, #1
+ 215 0092 3B64     		str	r3, [r7, #64]
+ 216 0094 BB6C     		ldr	r3, [r7, #72]
+ 217 0096 0A21     		movs	r1, #10
+ 218 0098 1800     		movs	r0, r3
+ 219 009a FFF7FEFF 		bl	__aeabi_uidivmod
+ 220 009e 0B00     		movs	r3, r1
+ 221 00a0 1900     		movs	r1, r3
+ 222 00a2 3B1D     		adds	r3, r7, #4
+ 223 00a4 A200     		lsls	r2, r4, #2
+ 224 00a6 D150     		str	r1, [r2, r3]
+  51:iprintf.c     ****                 iVal /= 10;
+ 225              		.loc 1 51 0 discriminator 1
+ 226 00a8 BB6C     		ldr	r3, [r7, #72]
+ 227 00aa 0A21     		movs	r1, #10
+ 228 00ac 1800     		movs	r0, r3
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccJl1LD.s 			page 6
+
+
+ 229 00ae FFF7FEFF 		bl	__aeabi_uidiv
+ 230 00b2 0300     		movs	r3, r0
+ 231 00b4 BB64     		str	r3, [r7, #72]
+  52:iprintf.c     ****             }while(iVal);
+ 232              		.loc 1 52 0 discriminator 1
+ 233 00b6 BB6C     		ldr	r3, [r7, #72]
+ 234 00b8 002B     		cmp	r3, #0
+ 235 00ba E8D1     		bne	.L13
+  53:iprintf.c     ****             while(i > 0)
+ 236              		.loc 1 53 0
+ 237 00bc 0EE0     		b	.L14
+ 238              	.L15:
+  54:iprintf.c     ****             {
+  55:iprintf.c     ****                 i--;
+ 239              		.loc 1 55 0
+ 240 00be 3B6C     		ldr	r3, [r7, #64]
+ 241 00c0 013B     		subs	r3, r3, #1
+ 242 00c2 3B64     		str	r3, [r7, #64]
+  56:iprintf.c     ****                 iputc(*change(buffer[i]));
+ 243              		.loc 1 56 0
+ 244 00c4 3B1D     		adds	r3, r7, #4
+ 245 00c6 3A6C     		ldr	r2, [r7, #64]
+ 246 00c8 9200     		lsls	r2, r2, #2
+ 247 00ca D358     		ldr	r3, [r2, r3]
+ 248 00cc 1800     		movs	r0, r3
+ 249 00ce FFF7FEFF 		bl	change
+ 250 00d2 0300     		movs	r3, r0
+ 251 00d4 1B78     		ldrb	r3, [r3]
+ 252 00d6 1800     		movs	r0, r3
+ 253 00d8 FFF7FEFF 		bl	iputc
+ 254              	.L14:
+  53:iprintf.c     ****             while(i > 0)
+ 255              		.loc 1 53 0
+ 256 00dc 3B6C     		ldr	r3, [r7, #64]
+ 257 00de 002B     		cmp	r3, #0
+ 258 00e0 EDD1     		bne	.L15
+  57:iprintf.c     ****             }
+  58:iprintf.c     ****             pszFmt++;
+ 259              		.loc 1 58 0
+ 260 00e2 3B6E     		ldr	r3, [r7, #96]
+ 261 00e4 0133     		adds	r3, r3, #1
+ 262 00e6 3B66     		str	r3, [r7, #96]
+  59:iprintf.c     ****             continue;
+ 263              		.loc 1 59 0
+ 264 00e8 63E0     		b	.L7
+ 265              	.L12:
+  60:iprintf.c     ****         }
+  61:iprintf.c     ****         if(*pszFmt == 'c')
+ 266              		.loc 1 61 0
+ 267 00ea 3B6E     		ldr	r3, [r7, #96]
+ 268 00ec 1B78     		ldrb	r3, [r3]
+ 269 00ee 632B     		cmp	r3, #99
+ 270 00f0 13D1     		bne	.L16
+  62:iprintf.c     ****         {
+  63:iprintf.c     ****             cVal = (uint8)pArg[index++];
+ 271              		.loc 1 63 0
+ 272 00f2 FB6B     		ldr	r3, [r7, #60]
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccJl1LD.s 			page 7
+
+
+ 273 00f4 5A1C     		adds	r2, r3, #1
+ 274 00f6 FA63     		str	r2, [r7, #60]
+ 275 00f8 9B00     		lsls	r3, r3, #2
+ 276 00fa BA6B     		ldr	r2, [r7, #56]
+ 277 00fc D318     		adds	r3, r2, r3
+ 278 00fe 1A68     		ldr	r2, [r3]
+ 279 0100 3723     		movs	r3, #55
+ 280 0102 FB18     		adds	r3, r7, r3
+ 281 0104 1A70     		strb	r2, [r3]
+  64:iprintf.c     ****             iputc(cVal);
+ 282              		.loc 1 64 0
+ 283 0106 3723     		movs	r3, #55
+ 284 0108 FB18     		adds	r3, r7, r3
+ 285 010a 1B78     		ldrb	r3, [r3]
+ 286 010c 1800     		movs	r0, r3
+ 287 010e FFF7FEFF 		bl	iputc
+  65:iprintf.c     ****             pszFmt++;
+ 288              		.loc 1 65 0
+ 289 0112 3B6E     		ldr	r3, [r7, #96]
+ 290 0114 0133     		adds	r3, r3, #1
+ 291 0116 3B66     		str	r3, [r7, #96]
+  66:iprintf.c     ****             continue;
+ 292              		.loc 1 66 0
+ 293 0118 4BE0     		b	.L7
+ 294              	.L16:
+  67:iprintf.c     ****         }
+  68:iprintf.c     ****         if(*pszFmt == 'x')
+ 295              		.loc 1 68 0
+ 296 011a 3B6E     		ldr	r3, [r7, #96]
+ 297 011c 1B78     		ldrb	r3, [r3]
+ 298 011e 782B     		cmp	r3, #120
+ 299 0120 44D1     		bne	.L17
+  69:iprintf.c     ****         {
+  70:iprintf.c     ****             xVal = pArg[index++];
+ 300              		.loc 1 70 0
+ 301 0122 FB6B     		ldr	r3, [r7, #60]
+ 302 0124 5A1C     		adds	r2, r3, #1
+ 303 0126 FA63     		str	r2, [r7, #60]
+ 304 0128 9B00     		lsls	r3, r3, #2
+ 305 012a BA6B     		ldr	r2, [r7, #56]
+ 306 012c D318     		adds	r3, r2, r3
+ 307 012e 1B68     		ldr	r3, [r3]
+ 308 0130 7B64     		str	r3, [r7, #68]
+  71:iprintf.c     ****             i = 0;
+ 309              		.loc 1 71 0
+ 310 0132 0023     		movs	r3, #0
+ 311 0134 3B64     		str	r3, [r7, #64]
+ 312              	.L18:
+  72:iprintf.c     ****             do{
+  73:iprintf.c     ****                 buffer[i++] = xVal % 16;
+ 313              		.loc 1 73 0 discriminator 1
+ 314 0136 3B6C     		ldr	r3, [r7, #64]
+ 315 0138 5A1C     		adds	r2, r3, #1
+ 316 013a 3A64     		str	r2, [r7, #64]
+ 317 013c 7A6C     		ldr	r2, [r7, #68]
+ 318 013e 0F21     		movs	r1, #15
+ 319 0140 1140     		ands	r1, r2
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccJl1LD.s 			page 8
+
+
+ 320 0142 3A1D     		adds	r2, r7, #4
+ 321 0144 9B00     		lsls	r3, r3, #2
+ 322 0146 9950     		str	r1, [r3, r2]
+  74:iprintf.c     ****                 xVal /= 16;
+ 323              		.loc 1 74 0 discriminator 1
+ 324 0148 7B6C     		ldr	r3, [r7, #68]
+ 325 014a 1B09     		lsrs	r3, r3, #4
+ 326 014c 7B64     		str	r3, [r7, #68]
+  75:iprintf.c     ****             }while(xVal);
+ 327              		.loc 1 75 0 discriminator 1
+ 328 014e 7B6C     		ldr	r3, [r7, #68]
+ 329 0150 002B     		cmp	r3, #0
+ 330 0152 F0D1     		bne	.L18
+  76:iprintf.c     ****             if(i%2!=0)
+ 331              		.loc 1 76 0
+ 332 0154 3B6C     		ldr	r3, [r7, #64]
+ 333 0156 0122     		movs	r2, #1
+ 334 0158 1340     		ands	r3, r2
+ 335 015a 06D0     		beq	.L19
+  77:iprintf.c     ****                 buffer[i++]=0;
+ 336              		.loc 1 77 0
+ 337 015c 3B6C     		ldr	r3, [r7, #64]
+ 338 015e 5A1C     		adds	r2, r3, #1
+ 339 0160 3A64     		str	r2, [r7, #64]
+ 340 0162 3A1D     		adds	r2, r7, #4
+ 341 0164 9B00     		lsls	r3, r3, #2
+ 342 0166 0021     		movs	r1, #0
+ 343 0168 9950     		str	r1, [r3, r2]
+ 344              	.L19:
+  78:iprintf.c     ****             if(i<2)
+ 345              		.loc 1 78 0
+ 346 016a 3B6C     		ldr	r3, [r7, #64]
+ 347 016c 012B     		cmp	r3, #1
+ 348 016e 16D8     		bhi	.L21
+  79:iprintf.c     ****                 buffer[i++]=0;
+ 349              		.loc 1 79 0
+ 350 0170 3B6C     		ldr	r3, [r7, #64]
+ 351 0172 5A1C     		adds	r2, r3, #1
+ 352 0174 3A64     		str	r2, [r7, #64]
+ 353 0176 3A1D     		adds	r2, r7, #4
+ 354 0178 9B00     		lsls	r3, r3, #2
+ 355 017a 0021     		movs	r1, #0
+ 356 017c 9950     		str	r1, [r3, r2]
+  80:iprintf.c     **** 
+  81:iprintf.c     ****             while(i > 0)
+ 357              		.loc 1 81 0
+ 358 017e 0EE0     		b	.L21
+ 359              	.L22:
+  82:iprintf.c     ****             {
+  83:iprintf.c     ****                 i--;
+ 360              		.loc 1 83 0
+ 361 0180 3B6C     		ldr	r3, [r7, #64]
+ 362 0182 013B     		subs	r3, r3, #1
+ 363 0184 3B64     		str	r3, [r7, #64]
+  84:iprintf.c     ****                 iputc(*change(buffer[i]));
+ 364              		.loc 1 84 0
+ 365 0186 3B1D     		adds	r3, r7, #4
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccJl1LD.s 			page 9
+
+
+ 366 0188 3A6C     		ldr	r2, [r7, #64]
+ 367 018a 9200     		lsls	r2, r2, #2
+ 368 018c D358     		ldr	r3, [r2, r3]
+ 369 018e 1800     		movs	r0, r3
+ 370 0190 FFF7FEFF 		bl	change
+ 371 0194 0300     		movs	r3, r0
+ 372 0196 1B78     		ldrb	r3, [r3]
+ 373 0198 1800     		movs	r0, r3
+ 374 019a FFF7FEFF 		bl	iputc
+ 375              	.L21:
+  81:iprintf.c     ****             {
+ 376              		.loc 1 81 0
+ 377 019e 3B6C     		ldr	r3, [r7, #64]
+ 378 01a0 002B     		cmp	r3, #0
+ 379 01a2 EDD1     		bne	.L22
+  85:iprintf.c     ****             }
+  86:iprintf.c     ****             pszFmt++;
+ 380              		.loc 1 86 0
+ 381 01a4 3B6E     		ldr	r3, [r7, #96]
+ 382 01a6 0133     		adds	r3, r3, #1
+ 383 01a8 3B66     		str	r3, [r7, #96]
+  87:iprintf.c     ****             continue;
+ 384              		.loc 1 87 0
+ 385 01aa 02E0     		b	.L7
+ 386              	.L17:
+  88:iprintf.c     ****         }
+  89:iprintf.c     ****         if(pszFmt == '\0')
+ 387              		.loc 1 89 0
+ 388 01ac 3B6E     		ldr	r3, [r7, #96]
+ 389 01ae 002B     		cmp	r3, #0
+ 390 01b0 05D0     		beq	.L25
+ 391              	.L7:
+  27:iprintf.c     ****     {
+ 392              		.loc 1 27 0
+ 393 01b2 3B6E     		ldr	r3, [r7, #96]
+ 394 01b4 1B78     		ldrb	r3, [r3]
+ 395 01b6 002B     		cmp	r3, #0
+ 396 01b8 00D0     		beq	.LCB326
+ 397 01ba 2DE7     		b	.L24	@long jump
+ 398              	.LCB326:
+  90:iprintf.c     ****         {
+  91:iprintf.c     ****             break;
+  92:iprintf.c     ****         }
+  93:iprintf.c     **** 
+  94:iprintf.c     ****     }
+  95:iprintf.c     **** }/* ========================================
+ 399              		.loc 1 95 0
+ 400 01bc 00E0     		b	.L23
+ 401              	.L25:
+  91:iprintf.c     ****         }
+ 402              		.loc 1 91 0
+ 403 01be C046     		nop
+ 404              	.L23:
+ 405              		.loc 1 95 0 discriminator 1
+ 406 01c0 C046     		nop
+ 407 01c2 BD46     		mov	sp, r7
+ 408 01c4 15B0     		add	sp, sp, #84
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccJl1LD.s 			page 10
+
+
+ 409              		@ sp needed
+ 410 01c6 90BC     		pop	{r4, r7}
+ 411 01c8 08BC     		pop	{r3}
+ 412 01ca 04B0     		add	sp, sp, #16
+ 413 01cc 1847     		bx	r3
+ 414              		.cfi_endproc
+ 415              	.LFE37:
+ 416              		.size	iprintf, .-iprintf
+ 417 01ce C046     		.text
+ 418              	.Letext0:
+ 419              		.file 2 "Generated_Source\\PSoC4/cytypes.h"
+ 420              		.section	.debug_info,"",%progbits
+ 421              	.Ldebug_info0:
+ 422 0000 B0010000 		.4byte	0x1b0
+ 423 0004 0400     		.2byte	0x4
+ 424 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 425 000a 04       		.byte	0x4
+ 426 000b 01       		.uleb128 0x1
+ 427 000c 88000000 		.4byte	.LASF26
+ 428 0010 0C       		.byte	0xc
+ 429 0011 78000000 		.4byte	.LASF27
+ 430 0015 3B010000 		.4byte	.LASF28
+ 431 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 432 001d 00000000 		.4byte	0
+ 433 0021 00000000 		.4byte	.Ldebug_line0
+ 434 0025 02       		.uleb128 0x2
+ 435 0026 01       		.byte	0x1
+ 436 0027 06       		.byte	0x6
+ 437 0028 B3010000 		.4byte	.LASF0
+ 438 002c 02       		.uleb128 0x2
+ 439 002d 01       		.byte	0x1
+ 440 002e 08       		.byte	0x8
+ 441 002f 46000000 		.4byte	.LASF1
+ 442 0033 02       		.uleb128 0x2
+ 443 0034 02       		.byte	0x2
+ 444 0035 05       		.byte	0x5
+ 445 0036 8E010000 		.4byte	.LASF2
+ 446 003a 02       		.uleb128 0x2
+ 447 003b 02       		.byte	0x2
+ 448 003c 07       		.byte	0x7
+ 449 003d 0F000000 		.4byte	.LASF3
+ 450 0041 02       		.uleb128 0x2
+ 451 0042 04       		.byte	0x4
+ 452 0043 05       		.byte	0x5
+ 453 0044 9E010000 		.4byte	.LASF4
+ 454 0048 02       		.uleb128 0x2
+ 455 0049 04       		.byte	0x4
+ 456 004a 07       		.byte	0x7
+ 457 004b 66000000 		.4byte	.LASF5
+ 458 004f 02       		.uleb128 0x2
+ 459 0050 08       		.byte	0x8
+ 460 0051 05       		.byte	0x5
+ 461 0052 75010000 		.4byte	.LASF6
+ 462 0056 02       		.uleb128 0x2
+ 463 0057 08       		.byte	0x8
+ 464 0058 07       		.byte	0x7
+ 465 0059 2F000000 		.4byte	.LASF7
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccJl1LD.s 			page 11
+
+
+ 466 005d 03       		.uleb128 0x3
+ 467 005e 04       		.byte	0x4
+ 468 005f 05       		.byte	0x5
+ 469 0060 696E7400 		.ascii	"int\000"
+ 470 0064 02       		.uleb128 0x2
+ 471 0065 04       		.byte	0x4
+ 472 0066 07       		.byte	0x7
+ 473 0067 24010000 		.4byte	.LASF8
+ 474 006b 04       		.uleb128 0x4
+ 475 006c 82000000 		.4byte	.LASF9
+ 476 0070 02       		.byte	0x2
+ 477 0071 E401     		.2byte	0x1e4
+ 478 0073 2C000000 		.4byte	0x2c
+ 479 0077 04       		.uleb128 0x4
+ 480 0078 1D010000 		.4byte	.LASF10
+ 481 007c 02       		.byte	0x2
+ 482 007d E601     		.2byte	0x1e6
+ 483 007f 48000000 		.4byte	0x48
+ 484 0083 02       		.uleb128 0x2
+ 485 0084 04       		.byte	0x4
+ 486 0085 04       		.byte	0x4
+ 487 0086 29000000 		.4byte	.LASF11
+ 488 008a 02       		.uleb128 0x2
+ 489 008b 08       		.byte	0x8
+ 490 008c 04       		.byte	0x4
+ 491 008d 16010000 		.4byte	.LASF12
+ 492 0091 04       		.uleb128 0x4
+ 493 0092 59000000 		.4byte	.LASF13
+ 494 0096 02       		.byte	0x2
+ 495 0097 F501     		.2byte	0x1f5
+ 496 0099 9D000000 		.4byte	0x9d
+ 497 009d 02       		.uleb128 0x2
+ 498 009e 01       		.byte	0x1
+ 499 009f 08       		.byte	0x8
+ 500 00a0 36010000 		.4byte	.LASF14
+ 501 00a4 02       		.uleb128 0x2
+ 502 00a5 08       		.byte	0x8
+ 503 00a6 04       		.byte	0x4
+ 504 00a7 A7010000 		.4byte	.LASF15
+ 505 00ab 02       		.uleb128 0x2
+ 506 00ac 04       		.byte	0x4
+ 507 00ad 07       		.byte	0x7
+ 508 00ae 6C010000 		.4byte	.LASF16
+ 509 00b2 05       		.uleb128 0x5
+ 510 00b3 04       		.byte	0x4
+ 511 00b4 6B000000 		.4byte	0x6b
+ 512 00b8 06       		.uleb128 0x6
+ 513 00b9 98010000 		.4byte	.LASF29
+ 514 00bd 01       		.byte	0x1
+ 515 00be 07       		.byte	0x7
+ 516 00bf 00000000 		.4byte	.LFB35
+ 517 00c3 1E000000 		.4byte	.LFE35-.LFB35
+ 518 00c7 01       		.uleb128 0x1
+ 519 00c8 9C       		.byte	0x9c
+ 520 00c9 DB000000 		.4byte	0xdb
+ 521 00cd 07       		.uleb128 0x7
+ 522 00ce 636800   		.ascii	"ch\000"
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccJl1LD.s 			page 12
+
+
+ 523 00d1 01       		.byte	0x1
+ 524 00d2 07       		.byte	0x7
+ 525 00d3 91000000 		.4byte	0x91
+ 526 00d7 02       		.uleb128 0x2
+ 527 00d8 91       		.byte	0x91
+ 528 00d9 77       		.sleb128 -9
+ 529 00da 00       		.byte	0
+ 530 00db 08       		.uleb128 0x8
+ 531 00dc 65010000 		.4byte	.LASF30
+ 532 00e0 01       		.byte	0x1
+ 533 00e1 0D       		.byte	0xd
+ 534 00e2 B2000000 		.4byte	0xb2
+ 535 00e6 00000000 		.4byte	.LFB36
+ 536 00ea 1C000000 		.4byte	.LFE36-.LFB36
+ 537 00ee 01       		.uleb128 0x1
+ 538 00ef 9C       		.byte	0x9c
+ 539 00f0 03010000 		.4byte	0x103
+ 540 00f4 09       		.uleb128 0x9
+ 541 00f5 BF010000 		.4byte	.LASF17
+ 542 00f9 01       		.byte	0x1
+ 543 00fa 0D       		.byte	0xd
+ 544 00fb 77000000 		.4byte	0x77
+ 545 00ff 02       		.uleb128 0x2
+ 546 0100 91       		.byte	0x91
+ 547 0101 74       		.sleb128 -12
+ 548 0102 00       		.byte	0
+ 549 0103 0A       		.uleb128 0xa
+ 550 0104 00000000 		.4byte	.LASF31
+ 551 0108 01       		.byte	0x1
+ 552 0109 13       		.byte	0x13
+ 553 010a 00000000 		.4byte	.LFB37
+ 554 010e CE010000 		.4byte	.LFE37-.LFB37
+ 555 0112 01       		.uleb128 0x1
+ 556 0113 9C       		.byte	0x9c
+ 557 0114 97010000 		.4byte	0x197
+ 558 0118 09       		.uleb128 0x9
+ 559 0119 22000000 		.4byte	.LASF18
+ 560 011d 01       		.byte	0x1
+ 561 011e 13       		.byte	0x13
+ 562 011f 97010000 		.4byte	0x197
+ 563 0123 02       		.uleb128 0x2
+ 564 0124 91       		.byte	0x91
+ 565 0125 70       		.sleb128 -16
+ 566 0126 0B       		.uleb128 0xb
+ 567 0127 0C       		.uleb128 0xc
+ 568 0128 5F000000 		.4byte	.LASF19
+ 569 012c 01       		.byte	0x1
+ 570 012d 15       		.byte	0x15
+ 571 012e B2000000 		.4byte	0xb2
+ 572 0132 02       		.uleb128 0x2
+ 573 0133 91       		.byte	0x91
+ 574 0134 5C       		.sleb128 -36
+ 575 0135 0C       		.uleb128 0xc
+ 576 0136 31010000 		.4byte	.LASF20
+ 577 013a 01       		.byte	0x1
+ 578 013b 16       		.byte	0x16
+ 579 013c 77000000 		.4byte	0x77
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccJl1LD.s 			page 13
+
+
+ 580 0140 02       		.uleb128 0x2
+ 581 0141 91       		.byte	0x91
+ 582 0142 58       		.sleb128 -40
+ 583 0143 0C       		.uleb128 0xc
+ 584 0144 60010000 		.4byte	.LASF21
+ 585 0148 01       		.byte	0x1
+ 586 0149 16       		.byte	0x16
+ 587 014a 77000000 		.4byte	0x77
+ 588 014e 02       		.uleb128 0x2
+ 589 014f 91       		.byte	0x91
+ 590 0150 54       		.sleb128 -44
+ 591 0151 0D       		.uleb128 0xd
+ 592 0152 6900     		.ascii	"i\000"
+ 593 0154 01       		.byte	0x1
+ 594 0155 16       		.byte	0x16
+ 595 0156 77000000 		.4byte	0x77
+ 596 015a 02       		.uleb128 0x2
+ 597 015b 91       		.byte	0x91
+ 598 015c 50       		.sleb128 -48
+ 599 015d 0C       		.uleb128 0xc
+ 600 015e 08000000 		.4byte	.LASF22
+ 601 0162 01       		.byte	0x1
+ 602 0163 16       		.byte	0x16
+ 603 0164 9D010000 		.4byte	0x19d
+ 604 0168 03       		.uleb128 0x3
+ 605 0169 91       		.byte	0x91
+ 606 016a 947F     		.sleb128 -108
+ 607 016c 0C       		.uleb128 0xc
+ 608 016d 88010000 		.4byte	.LASF23
+ 609 0171 01       		.byte	0x1
+ 610 0172 16       		.byte	0x16
+ 611 0173 77000000 		.4byte	0x77
+ 612 0177 02       		.uleb128 0x2
+ 613 0178 91       		.byte	0x91
+ 614 0179 4C       		.sleb128 -52
+ 615 017a 0C       		.uleb128 0xc
+ 616 017b 54000000 		.4byte	.LASF24
+ 617 017f 01       		.byte	0x1
+ 618 0180 17       		.byte	0x17
+ 619 0181 6B000000 		.4byte	0x6b
+ 620 0185 02       		.uleb128 0x2
+ 621 0186 91       		.byte	0x91
+ 622 0187 47       		.sleb128 -57
+ 623 0188 0C       		.uleb128 0xc
+ 624 0189 83010000 		.4byte	.LASF25
+ 625 018d 01       		.byte	0x1
+ 626 018e 18       		.byte	0x18
+ 627 018f AD010000 		.4byte	0x1ad
+ 628 0193 02       		.uleb128 0x2
+ 629 0194 91       		.byte	0x91
+ 630 0195 48       		.sleb128 -56
+ 631 0196 00       		.byte	0
+ 632 0197 05       		.uleb128 0x5
+ 633 0198 04       		.byte	0x4
+ 634 0199 91000000 		.4byte	0x91
+ 635 019d 0E       		.uleb128 0xe
+ 636 019e 77000000 		.4byte	0x77
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccJl1LD.s 			page 14
+
+
+ 637 01a2 AD010000 		.4byte	0x1ad
+ 638 01a6 0F       		.uleb128 0xf
+ 639 01a7 AB000000 		.4byte	0xab
+ 640 01ab 0B       		.byte	0xb
+ 641 01ac 00       		.byte	0
+ 642 01ad 05       		.uleb128 0x5
+ 643 01ae 04       		.byte	0x4
+ 644 01af 77000000 		.4byte	0x77
+ 645 01b3 00       		.byte	0
+ 646              		.section	.debug_abbrev,"",%progbits
+ 647              	.Ldebug_abbrev0:
+ 648 0000 01       		.uleb128 0x1
+ 649 0001 11       		.uleb128 0x11
+ 650 0002 01       		.byte	0x1
+ 651 0003 25       		.uleb128 0x25
+ 652 0004 0E       		.uleb128 0xe
+ 653 0005 13       		.uleb128 0x13
+ 654 0006 0B       		.uleb128 0xb
+ 655 0007 03       		.uleb128 0x3
+ 656 0008 0E       		.uleb128 0xe
+ 657 0009 1B       		.uleb128 0x1b
+ 658 000a 0E       		.uleb128 0xe
+ 659 000b 55       		.uleb128 0x55
+ 660 000c 17       		.uleb128 0x17
+ 661 000d 11       		.uleb128 0x11
+ 662 000e 01       		.uleb128 0x1
+ 663 000f 10       		.uleb128 0x10
+ 664 0010 17       		.uleb128 0x17
+ 665 0011 00       		.byte	0
+ 666 0012 00       		.byte	0
+ 667 0013 02       		.uleb128 0x2
+ 668 0014 24       		.uleb128 0x24
+ 669 0015 00       		.byte	0
+ 670 0016 0B       		.uleb128 0xb
+ 671 0017 0B       		.uleb128 0xb
+ 672 0018 3E       		.uleb128 0x3e
+ 673 0019 0B       		.uleb128 0xb
+ 674 001a 03       		.uleb128 0x3
+ 675 001b 0E       		.uleb128 0xe
+ 676 001c 00       		.byte	0
+ 677 001d 00       		.byte	0
+ 678 001e 03       		.uleb128 0x3
+ 679 001f 24       		.uleb128 0x24
+ 680 0020 00       		.byte	0
+ 681 0021 0B       		.uleb128 0xb
+ 682 0022 0B       		.uleb128 0xb
+ 683 0023 3E       		.uleb128 0x3e
+ 684 0024 0B       		.uleb128 0xb
+ 685 0025 03       		.uleb128 0x3
+ 686 0026 08       		.uleb128 0x8
+ 687 0027 00       		.byte	0
+ 688 0028 00       		.byte	0
+ 689 0029 04       		.uleb128 0x4
+ 690 002a 16       		.uleb128 0x16
+ 691 002b 00       		.byte	0
+ 692 002c 03       		.uleb128 0x3
+ 693 002d 0E       		.uleb128 0xe
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccJl1LD.s 			page 15
+
+
+ 694 002e 3A       		.uleb128 0x3a
+ 695 002f 0B       		.uleb128 0xb
+ 696 0030 3B       		.uleb128 0x3b
+ 697 0031 05       		.uleb128 0x5
+ 698 0032 49       		.uleb128 0x49
+ 699 0033 13       		.uleb128 0x13
+ 700 0034 00       		.byte	0
+ 701 0035 00       		.byte	0
+ 702 0036 05       		.uleb128 0x5
+ 703 0037 0F       		.uleb128 0xf
+ 704 0038 00       		.byte	0
+ 705 0039 0B       		.uleb128 0xb
+ 706 003a 0B       		.uleb128 0xb
+ 707 003b 49       		.uleb128 0x49
+ 708 003c 13       		.uleb128 0x13
+ 709 003d 00       		.byte	0
+ 710 003e 00       		.byte	0
+ 711 003f 06       		.uleb128 0x6
+ 712 0040 2E       		.uleb128 0x2e
+ 713 0041 01       		.byte	0x1
+ 714 0042 03       		.uleb128 0x3
+ 715 0043 0E       		.uleb128 0xe
+ 716 0044 3A       		.uleb128 0x3a
+ 717 0045 0B       		.uleb128 0xb
+ 718 0046 3B       		.uleb128 0x3b
+ 719 0047 0B       		.uleb128 0xb
+ 720 0048 27       		.uleb128 0x27
+ 721 0049 19       		.uleb128 0x19
+ 722 004a 11       		.uleb128 0x11
+ 723 004b 01       		.uleb128 0x1
+ 724 004c 12       		.uleb128 0x12
+ 725 004d 06       		.uleb128 0x6
+ 726 004e 40       		.uleb128 0x40
+ 727 004f 18       		.uleb128 0x18
+ 728 0050 9642     		.uleb128 0x2116
+ 729 0052 19       		.uleb128 0x19
+ 730 0053 01       		.uleb128 0x1
+ 731 0054 13       		.uleb128 0x13
+ 732 0055 00       		.byte	0
+ 733 0056 00       		.byte	0
+ 734 0057 07       		.uleb128 0x7
+ 735 0058 05       		.uleb128 0x5
+ 736 0059 00       		.byte	0
+ 737 005a 03       		.uleb128 0x3
+ 738 005b 08       		.uleb128 0x8
+ 739 005c 3A       		.uleb128 0x3a
+ 740 005d 0B       		.uleb128 0xb
+ 741 005e 3B       		.uleb128 0x3b
+ 742 005f 0B       		.uleb128 0xb
+ 743 0060 49       		.uleb128 0x49
+ 744 0061 13       		.uleb128 0x13
+ 745 0062 02       		.uleb128 0x2
+ 746 0063 18       		.uleb128 0x18
+ 747 0064 00       		.byte	0
+ 748 0065 00       		.byte	0
+ 749 0066 08       		.uleb128 0x8
+ 750 0067 2E       		.uleb128 0x2e
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccJl1LD.s 			page 16
+
+
+ 751 0068 01       		.byte	0x1
+ 752 0069 03       		.uleb128 0x3
+ 753 006a 0E       		.uleb128 0xe
+ 754 006b 3A       		.uleb128 0x3a
+ 755 006c 0B       		.uleb128 0xb
+ 756 006d 3B       		.uleb128 0x3b
+ 757 006e 0B       		.uleb128 0xb
+ 758 006f 27       		.uleb128 0x27
+ 759 0070 19       		.uleb128 0x19
+ 760 0071 49       		.uleb128 0x49
+ 761 0072 13       		.uleb128 0x13
+ 762 0073 11       		.uleb128 0x11
+ 763 0074 01       		.uleb128 0x1
+ 764 0075 12       		.uleb128 0x12
+ 765 0076 06       		.uleb128 0x6
+ 766 0077 40       		.uleb128 0x40
+ 767 0078 18       		.uleb128 0x18
+ 768 0079 9742     		.uleb128 0x2117
+ 769 007b 19       		.uleb128 0x19
+ 770 007c 01       		.uleb128 0x1
+ 771 007d 13       		.uleb128 0x13
+ 772 007e 00       		.byte	0
+ 773 007f 00       		.byte	0
+ 774 0080 09       		.uleb128 0x9
+ 775 0081 05       		.uleb128 0x5
+ 776 0082 00       		.byte	0
+ 777 0083 03       		.uleb128 0x3
+ 778 0084 0E       		.uleb128 0xe
+ 779 0085 3A       		.uleb128 0x3a
+ 780 0086 0B       		.uleb128 0xb
+ 781 0087 3B       		.uleb128 0x3b
+ 782 0088 0B       		.uleb128 0xb
+ 783 0089 49       		.uleb128 0x49
+ 784 008a 13       		.uleb128 0x13
+ 785 008b 02       		.uleb128 0x2
+ 786 008c 18       		.uleb128 0x18
+ 787 008d 00       		.byte	0
+ 788 008e 00       		.byte	0
+ 789 008f 0A       		.uleb128 0xa
+ 790 0090 2E       		.uleb128 0x2e
+ 791 0091 01       		.byte	0x1
+ 792 0092 3F       		.uleb128 0x3f
+ 793 0093 19       		.uleb128 0x19
+ 794 0094 03       		.uleb128 0x3
+ 795 0095 0E       		.uleb128 0xe
+ 796 0096 3A       		.uleb128 0x3a
+ 797 0097 0B       		.uleb128 0xb
+ 798 0098 3B       		.uleb128 0x3b
+ 799 0099 0B       		.uleb128 0xb
+ 800 009a 27       		.uleb128 0x27
+ 801 009b 19       		.uleb128 0x19
+ 802 009c 11       		.uleb128 0x11
+ 803 009d 01       		.uleb128 0x1
+ 804 009e 12       		.uleb128 0x12
+ 805 009f 06       		.uleb128 0x6
+ 806 00a0 40       		.uleb128 0x40
+ 807 00a1 18       		.uleb128 0x18
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccJl1LD.s 			page 17
+
+
+ 808 00a2 9642     		.uleb128 0x2116
+ 809 00a4 19       		.uleb128 0x19
+ 810 00a5 01       		.uleb128 0x1
+ 811 00a6 13       		.uleb128 0x13
+ 812 00a7 00       		.byte	0
+ 813 00a8 00       		.byte	0
+ 814 00a9 0B       		.uleb128 0xb
+ 815 00aa 18       		.uleb128 0x18
+ 816 00ab 00       		.byte	0
+ 817 00ac 00       		.byte	0
+ 818 00ad 00       		.byte	0
+ 819 00ae 0C       		.uleb128 0xc
+ 820 00af 34       		.uleb128 0x34
+ 821 00b0 00       		.byte	0
+ 822 00b1 03       		.uleb128 0x3
+ 823 00b2 0E       		.uleb128 0xe
+ 824 00b3 3A       		.uleb128 0x3a
+ 825 00b4 0B       		.uleb128 0xb
+ 826 00b5 3B       		.uleb128 0x3b
+ 827 00b6 0B       		.uleb128 0xb
+ 828 00b7 49       		.uleb128 0x49
+ 829 00b8 13       		.uleb128 0x13
+ 830 00b9 02       		.uleb128 0x2
+ 831 00ba 18       		.uleb128 0x18
+ 832 00bb 00       		.byte	0
+ 833 00bc 00       		.byte	0
+ 834 00bd 0D       		.uleb128 0xd
+ 835 00be 34       		.uleb128 0x34
+ 836 00bf 00       		.byte	0
+ 837 00c0 03       		.uleb128 0x3
+ 838 00c1 08       		.uleb128 0x8
+ 839 00c2 3A       		.uleb128 0x3a
+ 840 00c3 0B       		.uleb128 0xb
+ 841 00c4 3B       		.uleb128 0x3b
+ 842 00c5 0B       		.uleb128 0xb
+ 843 00c6 49       		.uleb128 0x49
+ 844 00c7 13       		.uleb128 0x13
+ 845 00c8 02       		.uleb128 0x2
+ 846 00c9 18       		.uleb128 0x18
+ 847 00ca 00       		.byte	0
+ 848 00cb 00       		.byte	0
+ 849 00cc 0E       		.uleb128 0xe
+ 850 00cd 01       		.uleb128 0x1
+ 851 00ce 01       		.byte	0x1
+ 852 00cf 49       		.uleb128 0x49
+ 853 00d0 13       		.uleb128 0x13
+ 854 00d1 01       		.uleb128 0x1
+ 855 00d2 13       		.uleb128 0x13
+ 856 00d3 00       		.byte	0
+ 857 00d4 00       		.byte	0
+ 858 00d5 0F       		.uleb128 0xf
+ 859 00d6 21       		.uleb128 0x21
+ 860 00d7 00       		.byte	0
+ 861 00d8 49       		.uleb128 0x49
+ 862 00d9 13       		.uleb128 0x13
+ 863 00da 2F       		.uleb128 0x2f
+ 864 00db 0B       		.uleb128 0xb
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccJl1LD.s 			page 18
+
+
+ 865 00dc 00       		.byte	0
+ 866 00dd 00       		.byte	0
+ 867 00de 00       		.byte	0
+ 868              		.section	.debug_aranges,"",%progbits
+ 869 0000 2C000000 		.4byte	0x2c
+ 870 0004 0200     		.2byte	0x2
+ 871 0006 00000000 		.4byte	.Ldebug_info0
+ 872 000a 04       		.byte	0x4
+ 873 000b 00       		.byte	0
+ 874 000c 0000     		.2byte	0
+ 875 000e 0000     		.2byte	0
+ 876 0010 00000000 		.4byte	.LFB35
+ 877 0014 1E000000 		.4byte	.LFE35-.LFB35
+ 878 0018 00000000 		.4byte	.LFB36
+ 879 001c 1C000000 		.4byte	.LFE36-.LFB36
+ 880 0020 00000000 		.4byte	.LFB37
+ 881 0024 CE010000 		.4byte	.LFE37-.LFB37
+ 882 0028 00000000 		.4byte	0
+ 883 002c 00000000 		.4byte	0
+ 884              		.section	.debug_ranges,"",%progbits
+ 885              	.Ldebug_ranges0:
+ 886 0000 00000000 		.4byte	.LFB35
+ 887 0004 1E000000 		.4byte	.LFE35
+ 888 0008 00000000 		.4byte	.LFB36
+ 889 000c 1C000000 		.4byte	.LFE36
+ 890 0010 00000000 		.4byte	.LFB37
+ 891 0014 CE010000 		.4byte	.LFE37
+ 892 0018 00000000 		.4byte	0
+ 893 001c 00000000 		.4byte	0
+ 894              		.section	.debug_line,"",%progbits
+ 895              	.Ldebug_line0:
+ 896 0000 DE000000 		.section	.debug_str,"MS",%progbits,1
+ 896      02004400 
+ 896      00000201 
+ 896      FB0E0D00 
+ 896      01010101 
+ 897              	.LASF31:
+ 898 0000 69707269 		.ascii	"iprintf\000"
+ 898      6E746600 
+ 899              	.LASF22:
+ 900 0008 62756666 		.ascii	"buffer\000"
+ 900      657200
+ 901              	.LASF3:
+ 902 000f 73686F72 		.ascii	"short unsigned int\000"
+ 902      7420756E 
+ 902      7369676E 
+ 902      65642069 
+ 902      6E7400
+ 903              	.LASF18:
+ 904 0022 70737A46 		.ascii	"pszFmt\000"
+ 904      6D7400
+ 905              	.LASF11:
+ 906 0029 666C6F61 		.ascii	"float\000"
+ 906      7400
+ 907              	.LASF7:
+ 908 002f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 908      206C6F6E 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccJl1LD.s 			page 19
+
+
+ 908      6720756E 
+ 908      7369676E 
+ 908      65642069 
+ 909              	.LASF1:
+ 910 0046 756E7369 		.ascii	"unsigned char\000"
+ 910      676E6564 
+ 910      20636861 
+ 910      7200
+ 911              	.LASF24:
+ 912 0054 6356616C 		.ascii	"cVal\000"
+ 912      00
+ 913              	.LASF13:
+ 914 0059 63686172 		.ascii	"char8\000"
+ 914      3800
+ 915              	.LASF19:
+ 916 005f 70737A56 		.ascii	"pszVal\000"
+ 916      616C00
+ 917              	.LASF5:
+ 918 0066 6C6F6E67 		.ascii	"long unsigned int\000"
+ 918      20756E73 
+ 918      69676E65 
+ 918      6420696E 
+ 918      7400
+ 919              	.LASF27:
+ 920 0078 69707269 		.ascii	"iprintf.c\000"
+ 920      6E74662E 
+ 920      6300
+ 921              	.LASF9:
+ 922 0082 75696E74 		.ascii	"uint8\000"
+ 922      3800
+ 923              	.LASF26:
+ 924 0088 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 924      43313120 
+ 924      352E342E 
+ 924      31203230 
+ 924      31363036 
+ 925 00bb 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 925      20726576 
+ 925      6973696F 
+ 925      6E203233 
+ 925      37373135 
+ 926 00ee 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 926      66756E63 
+ 926      74696F6E 
+ 926      2D736563 
+ 926      74696F6E 
+ 927              	.LASF12:
+ 928 0116 646F7562 		.ascii	"double\000"
+ 928      6C6500
+ 929              	.LASF10:
+ 930 011d 75696E74 		.ascii	"uint32\000"
+ 930      333200
+ 931              	.LASF8:
+ 932 0124 756E7369 		.ascii	"unsigned int\000"
+ 932      676E6564 
+ 932      20696E74 
+ 932      00
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccJl1LD.s 			page 20
+
+
+ 933              	.LASF20:
+ 934 0131 6956616C 		.ascii	"iVal\000"
+ 934      00
+ 935              	.LASF14:
+ 936 0136 63686172 		.ascii	"char\000"
+ 936      00
+ 937              	.LASF28:
+ 938 013b 453A5C4D 		.ascii	"E:\\MyProjects\\WWV1_0_0\\WW_V1_1.cydsn\000"
+ 938      7950726F 
+ 938      6A656374 
+ 938      735C5757 
+ 938      56315F30 
+ 939              	.LASF21:
+ 940 0160 7856616C 		.ascii	"xVal\000"
+ 940      00
+ 941              	.LASF30:
+ 942 0165 6368616E 		.ascii	"change\000"
+ 942      676500
+ 943              	.LASF16:
+ 944 016c 73697A65 		.ascii	"sizetype\000"
+ 944      74797065 
+ 944      00
+ 945              	.LASF6:
+ 946 0175 6C6F6E67 		.ascii	"long long int\000"
+ 946      206C6F6E 
+ 946      6720696E 
+ 946      7400
+ 947              	.LASF25:
+ 948 0183 70417267 		.ascii	"pArg\000"
+ 948      00
+ 949              	.LASF23:
+ 950 0188 696E6465 		.ascii	"index\000"
+ 950      7800
+ 951              	.LASF2:
+ 952 018e 73686F72 		.ascii	"short int\000"
+ 952      7420696E 
+ 952      7400
+ 953              	.LASF29:
+ 954 0198 69707574 		.ascii	"iputc\000"
+ 954      6300
+ 955              	.LASF4:
+ 956 019e 6C6F6E67 		.ascii	"long int\000"
+ 956      20696E74 
+ 956      00
+ 957              	.LASF15:
+ 958 01a7 6C6F6E67 		.ascii	"long double\000"
+ 958      20646F75 
+ 958      626C6500 
+ 959              	.LASF0:
+ 960 01b3 7369676E 		.ascii	"signed char\000"
+ 960      65642063 
+ 960      68617200 
+ 961              	.LASF17:
+ 962 01bf 496E6465 		.ascii	"Index\000"
+ 962      7800
+ 963              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

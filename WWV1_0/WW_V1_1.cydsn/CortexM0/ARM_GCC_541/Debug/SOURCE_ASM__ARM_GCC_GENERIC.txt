@@ -1,0 +1,1 @@
+'E:\MyProjects\WWV1_0_0\WW_V1_1.cydsn\Generated_Source\PSoC4\CyBootAsmGnu.s' -o .o -T SOURCE_ASM__ARM_GCC_GENERIC -I 'E:\MyProjects\WWV1_0_0\WW_V1_1.cydsn' -I 'E:\MyProjects\WWV1_0_0\WW_V1_1.cydsn\Generated_Source\PSoC4' -f 'E:\MyProjects\WWV1_0_0\WW_V1_1.cydsn\CortexM0\ARM_GCC_541\Debug\.deps\SOURCE_ASM__ARM_GCC_GENERIC.d'
