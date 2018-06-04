@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 1
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccgwPaT0.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 1
   41 0006 5B78     		ldrb	r3, [r3, #1]
   42 0008 552B     		cmp	r3, #85
   43 000a 03D1     		bne	.L2
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 2
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccgwPaT0.s 			page 2
 
 
   15:Control.c     ****     {
@@ -103,53 +103,53 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 1
   76 0006 00000000 		.4byte	.Ldebug_abbrev0
   77 000a 04       		.byte	0x4
   78 000b 01       		.uleb128 0x1
-  79 000c BB030000 		.4byte	.LASF88
+  79 000c 15040000 		.4byte	.LASF88
   80 0010 0C       		.byte	0xc
-  81 0011 8B030000 		.4byte	.LASF89
-  82 0015 9A070000 		.4byte	.LASF90
+  81 0011 E5030000 		.4byte	.LASF89
+  82 0015 24000000 		.4byte	.LASF90
   83 0019 00000000 		.4byte	.Ldebug_ranges0+0
   84 001d 00000000 		.4byte	0
   85 0021 00000000 		.4byte	.Ldebug_line0
   86 0025 02       		.uleb128 0x2
   87 0026 01       		.byte	0x1
   88 0027 06       		.byte	0x6
-  89 0028 27050000 		.4byte	.LASF0
+  89 0028 81050000 		.4byte	.LASF0
   90 002c 03       		.uleb128 0x3
-  91 002d 60030000 		.4byte	.LASF9
+  91 002d BA030000 		.4byte	.LASF9
   92 0031 02       		.byte	0x2
   93 0032 1D       		.byte	0x1d
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 3
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccgwPaT0.s 			page 3
 
 
   94 0033 37000000 		.4byte	0x37
   95 0037 02       		.uleb128 0x2
   96 0038 01       		.byte	0x1
   97 0039 08       		.byte	0x8
-  98 003a BD040000 		.4byte	.LASF1
+  98 003a 17050000 		.4byte	.LASF1
   99 003e 02       		.uleb128 0x2
  100 003f 02       		.byte	0x2
  101 0040 05       		.byte	0x5
- 102 0041 95000000 		.4byte	.LASF2
+ 102 0041 D5000000 		.4byte	.LASF2
  103 0045 02       		.uleb128 0x2
  104 0046 02       		.byte	0x2
  105 0047 07       		.byte	0x7
- 106 0048 5A060000 		.4byte	.LASF3
+ 106 0048 B4060000 		.4byte	.LASF3
  107 004c 02       		.uleb128 0x2
  108 004d 04       		.byte	0x4
  109 004e 05       		.byte	0x5
- 110 004f 17030000 		.4byte	.LASF4
+ 110 004f 71030000 		.4byte	.LASF4
  111 0053 02       		.uleb128 0x2
  112 0054 04       		.byte	0x4
  113 0055 07       		.byte	0x7
- 114 0056 B8050000 		.4byte	.LASF5
+ 114 0056 12060000 		.4byte	.LASF5
  115 005a 02       		.uleb128 0x2
  116 005b 08       		.byte	0x8
  117 005c 05       		.byte	0x5
- 118 005d 01010000 		.4byte	.LASF6
+ 118 005d 56010000 		.4byte	.LASF6
  119 0061 02       		.uleb128 0x2
  120 0062 08       		.byte	0x8
  121 0063 07       		.byte	0x7
- 122 0064 DF020000 		.4byte	.LASF7
+ 122 0064 39030000 		.4byte	.LASF7
  123 0068 04       		.uleb128 0x4
  124 0069 04       		.byte	0x4
  125 006a 05       		.byte	0x5
@@ -157,35 +157,35 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 1
  127 006f 02       		.uleb128 0x2
  128 0070 04       		.byte	0x4
  129 0071 07       		.byte	0x7
- 130 0072 90050000 		.4byte	.LASF8
+ 130 0072 EA050000 		.4byte	.LASF8
  131 0076 03       		.uleb128 0x3
- 132 0077 B4010000 		.4byte	.LASF10
+ 132 0077 0E020000 		.4byte	.LASF10
  133 007b 03       		.byte	0x3
  134 007c 18       		.byte	0x18
  135 007d 2C000000 		.4byte	0x2c
  136 0081 02       		.uleb128 0x2
  137 0082 04       		.byte	0x4
  138 0083 04       		.byte	0x4
- 139 0084 76020000 		.4byte	.LASF11
+ 139 0084 D0020000 		.4byte	.LASF11
  140 0088 02       		.uleb128 0x2
  141 0089 08       		.byte	0x8
  142 008a 04       		.byte	0x4
- 143 008b 93070000 		.4byte	.LASF12
+ 143 008b ED070000 		.4byte	.LASF12
  144 008f 02       		.uleb128 0x2
  145 0090 01       		.byte	0x1
  146 0091 08       		.byte	0x8
- 147 0092 D5060000 		.4byte	.LASF13
+ 147 0092 2F070000 		.4byte	.LASF13
  148 0096 02       		.uleb128 0x2
  149 0097 08       		.byte	0x8
  150 0098 04       		.byte	0x4
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 4
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccgwPaT0.s 			page 4
 
 
- 151 0099 8B040000 		.4byte	.LASF14
+ 151 0099 E5040000 		.4byte	.LASF14
  152 009d 02       		.uleb128 0x2
  153 009e 04       		.byte	0x4
  154 009f 07       		.byte	0x7
- 155 00a0 D7000000 		.4byte	.LASF15
+ 155 00a0 17010000 		.4byte	.LASF15
  156 00a4 05       		.uleb128 0x5
  157 00a5 01       		.byte	0x1
  158 00a6 37000000 		.4byte	0x37
@@ -193,236 +193,236 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 1
  160 00ab 3501     		.2byte	0x135
  161 00ad 62020000 		.4byte	0x262
  162 00b1 06       		.uleb128 0x6
- 163 00b2 20020000 		.4byte	.LASF16
+ 163 00b2 7A020000 		.4byte	.LASF16
  164 00b6 00       		.byte	0
  165 00b7 06       		.uleb128 0x6
- 166 00b8 4E010000 		.4byte	.LASF17
+ 166 00b8 A8010000 		.4byte	.LASF17
  167 00bc 01       		.byte	0x1
  168 00bd 06       		.uleb128 0x6
- 169 00be 4C090000 		.4byte	.LASF18
+ 169 00be 81090000 		.4byte	.LASF18
  170 00c2 02       		.byte	0x2
  171 00c3 06       		.uleb128 0x6
- 172 00c4 43080000 		.4byte	.LASF19
+ 172 00c4 78080000 		.4byte	.LASF19
  173 00c8 03       		.byte	0x3
  174 00c9 06       		.uleb128 0x6
- 175 00ca 18010000 		.4byte	.LASF20
+ 175 00ca 41010000 		.4byte	.LASF20
  176 00ce 04       		.byte	0x4
  177 00cf 06       		.uleb128 0x6
- 178 00d0 FF070000 		.4byte	.LASF21
+ 178 00d0 34080000 		.4byte	.LASF21
  179 00d4 05       		.byte	0x5
  180 00d5 06       		.uleb128 0x6
- 181 00d6 3E000000 		.4byte	.LASF22
+ 181 00d6 7E000000 		.4byte	.LASF22
  182 00da 06       		.byte	0x6
  183 00db 06       		.uleb128 0x6
- 184 00dc A1080000 		.4byte	.LASF23
+ 184 00dc D6080000 		.4byte	.LASF23
  185 00e0 20       		.byte	0x20
  186 00e1 06       		.uleb128 0x6
- 187 00e2 CA050000 		.4byte	.LASF24
+ 187 00e2 24060000 		.4byte	.LASF24
  188 00e6 21       		.byte	0x21
  189 00e7 06       		.uleb128 0x6
  190 00e8 00000000 		.4byte	.LASF25
  191 00ec 22       		.byte	0x22
  192 00ed 06       		.uleb128 0x6
- 193 00ee 95030000 		.4byte	.LASF26
+ 193 00ee EF030000 		.4byte	.LASF26
  194 00f2 23       		.byte	0x23
  195 00f3 06       		.uleb128 0x6
- 196 00f4 74050000 		.4byte	.LASF27
+ 196 00f4 CE050000 		.4byte	.LASF27
  197 00f8 24       		.byte	0x24
  198 00f9 06       		.uleb128 0x6
- 199 00fa 9F000000 		.4byte	.LASF28
+ 199 00fa DF000000 		.4byte	.LASF28
  200 00fe 25       		.byte	0x25
  201 00ff 06       		.uleb128 0x6
- 202 0100 1B080000 		.4byte	.LASF29
+ 202 0100 50080000 		.4byte	.LASF29
  203 0104 26       		.byte	0x26
  204 0105 06       		.uleb128 0x6
- 205 0106 41030000 		.4byte	.LASF30
+ 205 0106 9B030000 		.4byte	.LASF30
  206 010a 27       		.byte	0x27
  207 010b 06       		.uleb128 0x6
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 5
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccgwPaT0.s 			page 5
 
 
- 208 010c D6090000 		.4byte	.LASF31
+ 208 010c 0B0A0000 		.4byte	.LASF31
  209 0110 28       		.byte	0x28
  210 0111 06       		.uleb128 0x6
- 211 0112 02060000 		.4byte	.LASF32
+ 211 0112 5C060000 		.4byte	.LASF32
  212 0116 29       		.byte	0x29
  213 0117 06       		.uleb128 0x6
- 214 0118 85060000 		.4byte	.LASF33
+ 214 0118 DF060000 		.4byte	.LASF33
  215 011c 2A       		.byte	0x2a
  216 011d 06       		.uleb128 0x6
- 217 011e 33070000 		.4byte	.LASF34
+ 217 011e 8D070000 		.4byte	.LASF34
  218 0122 2B       		.byte	0x2b
  219 0123 06       		.uleb128 0x6
- 220 0124 BC010000 		.4byte	.LASF35
+ 220 0124 16020000 		.4byte	.LASF35
  221 0128 2C       		.byte	0x2c
  222 0129 06       		.uleb128 0x6
- 223 012a 95020000 		.4byte	.LASF36
+ 223 012a EF020000 		.4byte	.LASF36
  224 012e 2D       		.byte	0x2d
  225 012f 06       		.uleb128 0x6
- 226 0130 71000000 		.4byte	.LASF37
+ 226 0130 B1000000 		.4byte	.LASF37
  227 0134 2E       		.byte	0x2e
  228 0135 06       		.uleb128 0x6
- 229 0136 410A0000 		.4byte	.LASF38
+ 229 0136 760A0000 		.4byte	.LASF38
  230 013a 2F       		.byte	0x2f
  231 013b 06       		.uleb128 0x6
- 232 013c E0000000 		.4byte	.LASF39
+ 232 013c 20010000 		.4byte	.LASF39
  233 0140 30       		.byte	0x30
  234 0141 06       		.uleb128 0x6
- 235 0142 67040000 		.4byte	.LASF40
+ 235 0142 C1040000 		.4byte	.LASF40
  236 0146 31       		.byte	0x31
  237 0147 06       		.uleb128 0x6
- 238 0148 BE020000 		.4byte	.LASF41
+ 238 0148 18030000 		.4byte	.LASF41
  239 014c 32       		.byte	0x32
  240 014d 06       		.uleb128 0x6
- 241 014e AE060000 		.4byte	.LASF42
+ 241 014e 08070000 		.4byte	.LASF42
  242 0152 33       		.byte	0x33
  243 0153 06       		.uleb128 0x6
- 244 0154 1F060000 		.4byte	.LASF43
+ 244 0154 79060000 		.4byte	.LASF43
  245 0158 34       		.byte	0x34
  246 0159 06       		.uleb128 0x6
- 247 015a E2070000 		.4byte	.LASF44
+ 247 015a 17080000 		.4byte	.LASF44
  248 015e 35       		.byte	0x35
  249 015f 06       		.uleb128 0x6
- 250 0160 F6020000 		.4byte	.LASF45
+ 250 0160 50030000 		.4byte	.LASF45
  251 0164 36       		.byte	0x36
  252 0165 06       		.uleb128 0x6
- 253 0166 61010000 		.4byte	.LASF46
+ 253 0166 BB010000 		.4byte	.LASF46
  254 016a 37       		.byte	0x37
  255 016b 06       		.uleb128 0x6
- 256 016c 57000000 		.4byte	.LASF47
+ 256 016c 97000000 		.4byte	.LASF47
  257 0170 40       		.byte	0x40
  258 0171 06       		.uleb128 0x6
- 259 0172 9D050000 		.4byte	.LASF48
+ 259 0172 F7050000 		.4byte	.LASF48
  260 0176 41       		.byte	0x41
  261 0177 06       		.uleb128 0x6
- 262 0178 B9000000 		.4byte	.LASF49
+ 262 0178 F9000000 		.4byte	.LASF49
  263 017c 42       		.byte	0x42
  264 017d 06       		.uleb128 0x6
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 6
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccgwPaT0.s 			page 6
 
 
- 265 017e 96010000 		.4byte	.LASF50
+ 265 017e F0010000 		.4byte	.LASF50
  266 0182 43       		.byte	0x43
  267 0183 06       		.uleb128 0x6
- 268 0184 0A090000 		.4byte	.LASF51
+ 268 0184 3F090000 		.4byte	.LASF51
  269 0188 44       		.byte	0x44
  270 0189 06       		.uleb128 0x6
- 271 018a C5080000 		.4byte	.LASF52
+ 271 018a FA080000 		.4byte	.LASF52
  272 018e 45       		.byte	0x45
  273 018f 06       		.uleb128 0x6
- 274 0190 2D010000 		.4byte	.LASF53
+ 274 0190 87010000 		.4byte	.LASF53
  275 0194 46       		.byte	0x46
  276 0195 06       		.uleb128 0x6
- 277 0196 09050000 		.4byte	.LASF54
+ 277 0196 63050000 		.4byte	.LASF54
  278 019a 47       		.byte	0x47
  279 019b 06       		.uleb128 0x6
- 280 019c 4D050000 		.4byte	.LASF55
+ 280 019c A7050000 		.4byte	.LASF55
  281 01a0 48       		.byte	0x48
  282 01a1 06       		.uleb128 0x6
- 283 01a2 7C020000 		.4byte	.LASF56
+ 283 01a2 D6020000 		.4byte	.LASF56
  284 01a6 49       		.byte	0x49
  285 01a7 06       		.uleb128 0x6
- 286 01a8 F6060000 		.4byte	.LASF57
+ 286 01a8 50070000 		.4byte	.LASF57
  287 01ac 4A       		.byte	0x4a
  288 01ad 06       		.uleb128 0x6
- 289 01ae E0010000 		.4byte	.LASF58
+ 289 01ae 3A020000 		.4byte	.LASF58
  290 01b2 4B       		.byte	0x4b
  291 01b3 06       		.uleb128 0x6
- 292 01b4 33050000 		.4byte	.LASF59
+ 292 01b4 8D050000 		.4byte	.LASF59
  293 01b8 4C       		.byte	0x4c
  294 01b9 06       		.uleb128 0x6
- 295 01ba 24000000 		.4byte	.LASF60
+ 295 01ba 6D010000 		.4byte	.LASF60
  296 01be 4D       		.byte	0x4d
  297 01bf 06       		.uleb128 0x6
- 298 01c0 EC080000 		.4byte	.LASF61
+ 298 01c0 21090000 		.4byte	.LASF61
  299 01c4 4E       		.byte	0x4e
  300 01c5 06       		.uleb128 0x6
- 301 01c6 CB040000 		.4byte	.LASF62
+ 301 01c6 25050000 		.4byte	.LASF62
  302 01ca 4F       		.byte	0x4f
  303 01cb 06       		.uleb128 0x6
- 304 01cc B7090000 		.4byte	.LASF63
+ 304 01cc EC090000 		.4byte	.LASF63
  305 01d0 50       		.byte	0x50
  306 01d1 06       		.uleb128 0x6
- 307 01d2 14070000 		.4byte	.LASF64
+ 307 01d2 6E070000 		.4byte	.LASF64
  308 01d6 51       		.byte	0x51
  309 01d7 06       		.uleb128 0x6
- 310 01d8 6A030000 		.4byte	.LASF65
+ 310 01d8 C4030000 		.4byte	.LASF65
  311 01dc 52       		.byte	0x52
  312 01dd 06       		.uleb128 0x6
- 313 01de 20030000 		.4byte	.LASF66
+ 313 01de 7A030000 		.4byte	.LASF66
  314 01e2 53       		.byte	0x53
  315 01e3 06       		.uleb128 0x6
- 316 01e4 FF010000 		.4byte	.LASF67
+ 316 01e4 59020000 		.4byte	.LASF67
  317 01e8 54       		.byte	0x54
  318 01e9 06       		.uleb128 0x6
- 319 01ea F8090000 		.4byte	.LASF68
+ 319 01ea 2D0A0000 		.4byte	.LASF68
  320 01ee 55       		.byte	0x55
  321 01ef 06       		.uleb128 0x6
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 7
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccgwPaT0.s 			page 7
 
 
- 322 01f0 95090000 		.4byte	.LASF69
+ 322 01f0 CA090000 		.4byte	.LASF69
  323 01f4 56       		.byte	0x56
  324 01f5 06       		.uleb128 0x6
- 325 01f6 6C090000 		.4byte	.LASF70
+ 325 01f6 A1090000 		.4byte	.LASF70
  326 01fa 57       		.byte	0x57
  327 01fb 06       		.uleb128 0x6
- 328 01fc 37060000 		.4byte	.LASF71
+ 328 01fc 91060000 		.4byte	.LASF71
  329 0200 58       		.byte	0x58
  330 0201 06       		.uleb128 0x6
- 331 0202 97040000 		.4byte	.LASF72
+ 331 0202 F1040000 		.4byte	.LASF72
  332 0206 70       		.byte	0x70
  333 0207 06       		.uleb128 0x6
- 334 0208 7B080000 		.4byte	.LASF73
+ 334 0208 B0080000 		.4byte	.LASF73
  335 020c 71       		.byte	0x71
  336 020d 06       		.uleb128 0x6
- 337 020e DA060000 		.4byte	.LASF74
+ 337 020e 34070000 		.4byte	.LASF74
  338 0212 72       		.byte	0x72
  339 0213 06       		.uleb128 0x6
- 340 0214 37020000 		.4byte	.LASF75
+ 340 0214 91020000 		.4byte	.LASF75
  341 0218 73       		.byte	0x73
  342 0219 06       		.uleb128 0x6
- 343 021a 49040000 		.4byte	.LASF76
+ 343 021a A3040000 		.4byte	.LASF76
  344 021e 74       		.byte	0x74
  345 021f 06       		.uleb128 0x6
- 346 0220 E1050000 		.4byte	.LASF77
+ 346 0220 3B060000 		.4byte	.LASF77
  347 0224 75       		.byte	0x75
  348 0225 06       		.uleb128 0x6
- 349 0226 55020000 		.4byte	.LASF78
+ 349 0226 AF020000 		.4byte	.LASF78
  350 022a 76       		.byte	0x76
  351 022b 06       		.uleb128 0x6
- 352 022c 5C080000 		.4byte	.LASF79
+ 352 022c 91080000 		.4byte	.LASF79
  353 0230 77       		.byte	0x77
  354 0231 06       		.uleb128 0x6
- 355 0232 70070000 		.4byte	.LASF80
+ 355 0232 CA070000 		.4byte	.LASF80
  356 0236 78       		.byte	0x78
  357 0237 06       		.uleb128 0x6
- 358 0238 BF070000 		.4byte	.LASF81
+ 358 0238 F4070000 		.4byte	.LASF81
  359 023c 79       		.byte	0x79
  360 023d 06       		.uleb128 0x6
- 361 023e 28090000 		.4byte	.LASF82
+ 361 023e 5D090000 		.4byte	.LASF82
  362 0242 7A       		.byte	0x7a
  363 0243 06       		.uleb128 0x6
- 364 0244 52070000 		.4byte	.LASF83
+ 364 0244 AC070000 		.4byte	.LASF83
  365 0248 FA       		.byte	0xfa
  366 0249 06       		.uleb128 0x6
- 367 024a EA040000 		.4byte	.LASF84
+ 367 024a 44050000 		.4byte	.LASF84
  368 024e FB       		.byte	0xfb
  369 024f 06       		.uleb128 0x6
- 370 0250 1C0A0000 		.4byte	.LASF85
+ 370 0250 510A0000 		.4byte	.LASF85
  371 0254 FC       		.byte	0xfc
  372 0255 06       		.uleb128 0x6
- 373 0256 6D060000 		.4byte	.LASF86
+ 373 0256 C7060000 		.4byte	.LASF86
  374 025a FD       		.byte	0xfd
  375 025b 06       		.uleb128 0x6
- 376 025c 5E090000 		.4byte	.LASF87
+ 376 025c 93090000 		.4byte	.LASF87
  377 0260 FF       		.byte	0xff
  378 0261 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 8
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccgwPaT0.s 			page 8
 
 
  379 0262 07       		.uleb128 0x7
- 380 0263 2E0A0000 		.4byte	.LASF91
+ 380 0263 630A0000 		.4byte	.LASF91
  381 0267 01       		.byte	0x1
  382 0268 0C       		.byte	0xc
  383 0269 00000000 		.4byte	.LFB35
@@ -437,7 +437,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 1
  392 0281 07       		.byte	0x7
  393 0282 00       		.byte	0
  394 0283 0A       		.uleb128 0xa
- 395 0284 0F010000 		.4byte	.LASF92
+ 395 0284 64010000 		.4byte	.LASF92
  396 0288 05       		.byte	0x5
  397 0289 22       		.byte	0x22
  398 028a 73020000 		.4byte	0x273
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 1
  433 001c 00       		.byte	0
  434 001d 00       		.byte	0
  435 001e 03       		.uleb128 0x3
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 9
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccgwPaT0.s 			page 9
 
 
  436 001f 16       		.uleb128 0x16
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 1
  490 0055 3A       		.uleb128 0x3a
  491 0056 0B       		.uleb128 0xb
  492 0057 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 10
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccgwPaT0.s 			page 10
 
 
  493 0058 0B       		.uleb128 0xb
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 1
  547 000b 00       		.byte	0
  548 000c 0000     		.2byte	0
  549 000e 0000     		.2byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 11
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccgwPaT0.s 			page 11
 
 
  550 0010 00000000 		.4byte	.LFB35
@@ -624,562 +624,567 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 1
  564      545F4741 
  564      505F5041 
  564      53534B45 
- 565              	.LASF60:
- 566 0024 4359424C 		.ascii	"CYBLE_EVT_GATTC_WRITE_RSP\000"
- 566      455F4556 
- 566      545F4741 
- 566      5454435F 
- 566      57524954 
- 567              	.LASF22:
- 568 003e 4359424C 		.ascii	"CYBLE_EVT_MEMORY_REQUEST\000"
- 568      455F4556 
- 568      545F4D45 
- 568      4D4F5259 
- 568      5F524551 
- 569              	.LASF47:
- 570 0057 4359424C 		.ascii	"CYBLE_EVT_GATTC_ERROR_RSP\000"
- 570      455F4556 
- 570      545F4741 
- 570      5454435F 
- 570      4552524F 
- 571              	.LASF37:
- 572 0071 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYPRESS_NOTIFICATION\000"
- 572      455F4556 
- 572      545F4741 
- 572      505F4B45 
- 572      59505245 
- 573              	.LASF2:
- 574 0095 73686F72 		.ascii	"short int\000"
- 574      7420696E 
- 574      7400
- 575              	.LASF28:
- 576 009f 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_FAILED\000"
- 576      455F4556 
- 576      545F4741 
- 576      505F4155 
- 576      54485F46 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 12
+ 565              	.LASF90:
+ 566 0024 433A5C55 		.ascii	"C:\\Users\\Yehuda Ben Chaim\\Google Drive\\My Proje"
+ 566      73657273 
+ 566      5C596568 
+ 566      75646120 
+ 566      42656E20 
+ 567 0053 6374735C 		.ascii	"cts\\WW\\FW\\WorkingCopy\\WWV1_0\\WW_V1_1.cydsn\000"
+ 567      57575C46 
+ 567      575C576F 
+ 567      726B696E 
+ 567      67436F70 
+ 568              	.LASF22:
+ 569 007e 4359424C 		.ascii	"CYBLE_EVT_MEMORY_REQUEST\000"
+ 569      455F4556 
+ 569      545F4D45 
+ 569      4D4F5259 
+ 569      5F524551 
+ 570              	.LASF47:
+ 571 0097 4359424C 		.ascii	"CYBLE_EVT_GATTC_ERROR_RSP\000"
+ 571      455F4556 
+ 571      545F4741 
+ 571      5454435F 
+ 571      4552524F 
+ 572              	.LASF37:
+ 573 00b1 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYPRESS_NOTIFICATION\000"
+ 573      455F4556 
+ 573      545F4741 
+ 573      505F4B45 
+ 573      59505245 
+ 574              	.LASF2:
+ 575 00d5 73686F72 		.ascii	"short int\000"
+ 575      7420696E 
+ 575      7400
+ 576              	.LASF28:
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccgwPaT0.s 			page 12
 
 
- 577              	.LASF49:
- 578 00b9 4359424C 		.ascii	"CYBLE_EVT_GATT_DISCONNECT_IND\000"
- 578      455F4556 
- 578      545F4741 
- 578      54545F44 
- 578      4953434F 
- 579              	.LASF15:
- 580 00d7 73697A65 		.ascii	"sizetype\000"
- 580      74797065 
- 580      00
- 581              	.LASF39:
- 582 00e0 4359424C 		.ascii	"CYBLE_EVT_GAP_DATA_LENGTH_CHANGE\000"
- 582      455F4556 
- 582      545F4741 
- 582      505F4441 
- 582      54415F4C 
- 583              	.LASF6:
- 584 0101 6C6F6E67 		.ascii	"long long int\000"
- 584      206C6F6E 
- 584      6720696E 
- 584      7400
- 585              	.LASF92:
- 586 010f 70617373 		.ascii	"password\000"
- 586      776F7264 
- 586      00
- 587              	.LASF20:
- 588 0118 4359424C 		.ascii	"CYBLE_EVT_HCI_STATUS\000"
- 588      455F4556 
- 588      545F4843 
- 588      495F5354 
- 588      41545553 
- 589              	.LASF53:
- 590 012d 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_TYPE_RSP\000"
- 590      455F4556 
- 590      545F4741 
- 590      5454435F 
- 590      52454144 
- 591              	.LASF17:
- 592 014e 4359424C 		.ascii	"CYBLE_EVT_STACK_ON\000"
- 592      455F4556 
- 592      545F5354 
- 592      41434B5F 
- 592      4F4E00
- 593              	.LASF46:
- 594 0161 4359424C 		.ascii	"CYBLE_EVT_GAP_SMP_LOC_P256_KEYS_GEN_AND_SET_COMPLET"
- 594      455F4556 
- 594      545F4741 
- 594      505F534D 
- 594      505F4C4F 
- 595 0194 4500     		.ascii	"E\000"
- 596              	.LASF50:
- 597 0196 4359424C 		.ascii	"CYBLE_EVT_GATTS_XCNHG_MTU_REQ\000"
+ 577 00df 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_FAILED\000"
+ 577      455F4556 
+ 577      545F4741 
+ 577      505F4155 
+ 577      54485F46 
+ 578              	.LASF49:
+ 579 00f9 4359424C 		.ascii	"CYBLE_EVT_GATT_DISCONNECT_IND\000"
+ 579      455F4556 
+ 579      545F4741 
+ 579      54545F44 
+ 579      4953434F 
+ 580              	.LASF15:
+ 581 0117 73697A65 		.ascii	"sizetype\000"
+ 581      74797065 
+ 581      00
+ 582              	.LASF39:
+ 583 0120 4359424C 		.ascii	"CYBLE_EVT_GAP_DATA_LENGTH_CHANGE\000"
+ 583      455F4556 
+ 583      545F4741 
+ 583      505F4441 
+ 583      54415F4C 
+ 584              	.LASF20:
+ 585 0141 4359424C 		.ascii	"CYBLE_EVT_HCI_STATUS\000"
+ 585      455F4556 
+ 585      545F4843 
+ 585      495F5354 
+ 585      41545553 
+ 586              	.LASF6:
+ 587 0156 6C6F6E67 		.ascii	"long long int\000"
+ 587      206C6F6E 
+ 587      6720696E 
+ 587      7400
+ 588              	.LASF92:
+ 589 0164 70617373 		.ascii	"password\000"
+ 589      776F7264 
+ 589      00
+ 590              	.LASF60:
+ 591 016d 4359424C 		.ascii	"CYBLE_EVT_GATTC_WRITE_RSP\000"
+ 591      455F4556 
+ 591      545F4741 
+ 591      5454435F 
+ 591      57524954 
+ 592              	.LASF53:
+ 593 0187 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_TYPE_RSP\000"
+ 593      455F4556 
+ 593      545F4741 
+ 593      5454435F 
+ 593      52454144 
+ 594              	.LASF17:
+ 595 01a8 4359424C 		.ascii	"CYBLE_EVT_STACK_ON\000"
+ 595      455F4556 
+ 595      545F5354 
+ 595      41434B5F 
+ 595      4F4E00
+ 596              	.LASF46:
+ 597 01bb 4359424C 		.ascii	"CYBLE_EVT_GAP_SMP_LOC_P256_KEYS_GEN_AND_SET_COMPLET"
  597      455F4556 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccgwPaT0.s 			page 13
+
+
  597      545F4741 
- 597      5454535F 
- 597      58434E48 
- 598              	.LASF10:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 13
+ 597      505F534D 
+ 597      505F4C4F 
+ 598 01ee 4500     		.ascii	"E\000"
+ 599              	.LASF50:
+ 600 01f0 4359424C 		.ascii	"CYBLE_EVT_GATTS_XCNHG_MTU_REQ\000"
+ 600      455F4556 
+ 600      545F4741 
+ 600      5454535F 
+ 600      58434E48 
+ 601              	.LASF10:
+ 602 020e 75696E74 		.ascii	"uint8_t\000"
+ 602      385F7400 
+ 603              	.LASF35:
+ 604 0216 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYINFO_EXCHNGE_CMPLT\000"
+ 604      455F4556 
+ 604      545F4741 
+ 604      505F4B45 
+ 604      59494E46 
+ 605              	.LASF58:
+ 606 023a 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_MULTI_RSP\000"
+ 606      455F4556 
+ 606      545F4741 
+ 606      5454435F 
+ 606      52454144 
+ 607              	.LASF67:
+ 608 0259 4359424C 		.ascii	"CYBLE_EVT_GATTS_HANDLE_VALUE_CNF\000"
+ 608      455F4556 
+ 608      545F4741 
+ 608      5454535F 
+ 608      48414E44 
+ 609              	.LASF16:
+ 610 027a 4359424C 		.ascii	"CYBLE_EVT_HOST_INVALID\000"
+ 610      455F4556 
+ 610      545F484F 
+ 610      53545F49 
+ 610      4E56414C 
+ 611              	.LASF75:
+ 612 0291 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_IND\000"
+ 612      455F4556 
+ 612      545F4C32 
+ 612      4341505F 
+ 612      43424643 
+ 613              	.LASF78:
+ 614 02af 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_CNF\000"
+ 614      455F4556 
+ 614      545F4C32 
+ 614      4341505F 
+ 614      43424643 
+ 615              	.LASF11:
+ 616 02d0 666C6F61 		.ascii	"float\000"
+ 616      7400
+ 617              	.LASF56:
+ 618 02d6 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_RSP\000"
+ 618      455F4556 
+ 618      545F4741 
+ 618      5454435F 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccgwPaT0.s 			page 14
 
 
- 599 01b4 75696E74 		.ascii	"uint8_t\000"
- 599      385F7400 
- 600              	.LASF35:
- 601 01bc 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYINFO_EXCHNGE_CMPLT\000"
- 601      455F4556 
- 601      545F4741 
- 601      505F4B45 
- 601      59494E46 
- 602              	.LASF58:
- 603 01e0 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_MULTI_RSP\000"
- 603      455F4556 
- 603      545F4741 
- 603      5454435F 
- 603      52454144 
- 604              	.LASF67:
- 605 01ff 4359424C 		.ascii	"CYBLE_EVT_GATTS_HANDLE_VALUE_CNF\000"
- 605      455F4556 
- 605      545F4741 
- 605      5454535F 
- 605      48414E44 
- 606              	.LASF16:
- 607 0220 4359424C 		.ascii	"CYBLE_EVT_HOST_INVALID\000"
- 607      455F4556 
- 607      545F484F 
- 607      53545F49 
- 607      4E56414C 
- 608              	.LASF75:
- 609 0237 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_IND\000"
- 609      455F4556 
- 609      545F4C32 
- 609      4341505F 
- 609      43424643 
- 610              	.LASF78:
- 611 0255 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_CNF\000"
- 611      455F4556 
- 611      545F4C32 
- 611      4341505F 
- 611      43424643 
- 612              	.LASF11:
- 613 0276 666C6F61 		.ascii	"float\000"
- 613      7400
- 614              	.LASF56:
- 615 027c 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_RSP\000"
- 615      455F4556 
- 615      545F4741 
- 615      5454435F 
- 615      52454144 
- 616              	.LASF36:
- 617 0295 4359424C 		.ascii	"CYBLE_EVT_GAP_NUMERIC_COMPARISON_REQUEST\000"
- 617      455F4556 
- 617      545F4741 
- 617      505F4E55 
- 617      4D455249 
- 618              	.LASF41:
- 619 02be 4359424C 		.ascii	"CYBLE_EVT_GAPC_DIRECT_ADV_REPORT\000"
- 619      455F4556 
- 619      545F4741 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 14
+ 618      52454144 
+ 619              	.LASF36:
+ 620 02ef 4359424C 		.ascii	"CYBLE_EVT_GAP_NUMERIC_COMPARISON_REQUEST\000"
+ 620      455F4556 
+ 620      545F4741 
+ 620      505F4E55 
+ 620      4D455249 
+ 621              	.LASF41:
+ 622 0318 4359424C 		.ascii	"CYBLE_EVT_GAPC_DIRECT_ADV_REPORT\000"
+ 622      455F4556 
+ 622      545F4741 
+ 622      50435F44 
+ 622      49524543 
+ 623              	.LASF7:
+ 624 0339 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 624      206C6F6E 
+ 624      6720756E 
+ 624      7369676E 
+ 624      65642069 
+ 625              	.LASF45:
+ 626 0350 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_REQ_REPLY_ERR\000"
+ 626      455F4556 
+ 626      545F4741 
+ 626      505F4155 
+ 626      54485F52 
+ 627              	.LASF4:
+ 628 0371 6C6F6E67 		.ascii	"long int\000"
+ 628      20696E74 
+ 628      00
+ 629              	.LASF66:
+ 630 037a 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_IND\000"
+ 630      455F4556 
+ 630      545F4741 
+ 630      5454435F 
+ 630      48414E44 
+ 631              	.LASF30:
+ 632 039b 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_CONNECTED\000"
+ 632      455F4556 
+ 632      545F4741 
+ 632      505F4445 
+ 632      56494345 
+ 633              	.LASF9:
+ 634 03ba 5F5F7569 		.ascii	"__uint8_t\000"
+ 634      6E74385F 
+ 634      7400
+ 635              	.LASF65:
+ 636 03c4 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_NTF\000"
+ 636      455F4556 
+ 636      545F4741 
+ 636      5454435F 
+ 636      48414E44 
+ 637              	.LASF89:
+ 638 03e5 436F6E74 		.ascii	"Control.c\000"
+ 638      726F6C2E 
+ 638      6300
+ 639              	.LASF26:
+ 640 03ef 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_DISPLAY_REQUEST\000"
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccgwPaT0.s 			page 15
 
 
- 619      50435F44 
- 619      49524543 
- 620              	.LASF7:
- 621 02df 6C6F6E67 		.ascii	"long long unsigned int\000"
- 621      206C6F6E 
- 621      6720756E 
- 621      7369676E 
- 621      65642069 
- 622              	.LASF45:
- 623 02f6 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_REQ_REPLY_ERR\000"
- 623      455F4556 
- 623      545F4741 
- 623      505F4155 
- 623      54485F52 
- 624              	.LASF4:
- 625 0317 6C6F6E67 		.ascii	"long int\000"
- 625      20696E74 
- 625      00
- 626              	.LASF66:
- 627 0320 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_IND\000"
- 627      455F4556 
- 627      545F4741 
- 627      5454435F 
- 627      48414E44 
- 628              	.LASF30:
- 629 0341 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_CONNECTED\000"
- 629      455F4556 
- 629      545F4741 
- 629      505F4445 
- 629      56494345 
- 630              	.LASF9:
- 631 0360 5F5F7569 		.ascii	"__uint8_t\000"
- 631      6E74385F 
- 631      7400
- 632              	.LASF65:
- 633 036a 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_NTF\000"
- 633      455F4556 
- 633      545F4741 
- 633      5454435F 
- 633      48414E44 
- 634              	.LASF89:
- 635 038b 436F6E74 		.ascii	"Control.c\000"
- 635      726F6C2E 
- 635      6300
- 636              	.LASF26:
- 637 0395 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_DISPLAY_REQUEST\000"
- 637      455F4556 
- 637      545F4741 
- 637      505F5041 
- 637      53534B45 
- 638              	.LASF88:
- 639 03bb 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 639      43313120 
- 639      352E342E 
- 639      31203230 
- 639      31363036 
- 640 03ee 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 15
+ 640      455F4556 
+ 640      545F4741 
+ 640      505F5041 
+ 640      53534B45 
+ 641              	.LASF88:
+ 642 0415 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 642      43313120 
+ 642      352E342E 
+ 642      31203230 
+ 642      31363036 
+ 643 0448 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 643      20726576 
+ 643      6973696F 
+ 643      6E203233 
+ 643      37373135 
+ 644 047b 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 644      66756E63 
+ 644      74696F6E 
+ 644      2D736563 
+ 644      74696F6E 
+ 645              	.LASF76:
+ 646 04a3 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_CNF\000"
+ 646      455F4556 
+ 646      545F4C32 
+ 646      4341505F 
+ 646      43424643 
+ 647              	.LASF40:
+ 648 04c1 4359424C 		.ascii	"CYBLE_EVT_GAP_ENHANCE_CONN_COMPLETE\000"
+ 648      455F4556 
+ 648      545F4741 
+ 648      505F454E 
+ 648      48414E43 
+ 649              	.LASF14:
+ 650 04e5 6C6F6E67 		.ascii	"long double\000"
+ 650      20646F75 
+ 650      626C6500 
+ 651              	.LASF72:
+ 652 04f1 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_REQ\000"
+ 652      455F4556 
+ 652      545F4C32 
+ 652      4341505F 
+ 652      434F4E4E 
+ 653              	.LASF1:
+ 654 0517 756E7369 		.ascii	"unsigned char\000"
+ 654      676E6564 
+ 654      20636861 
+ 654      7200
+ 655              	.LASF62:
+ 656 0525 4359424C 		.ascii	"CYBLE_EVT_GATTS_PREP_WRITE_REQ\000"
+ 656      455F4556 
+ 656      545F4741 
+ 656      5454535F 
+ 656      50524550 
+ 657              	.LASF84:
+ 658 0544 4359424C 		.ascii	"CYBLE_EVT_LE_PING_AUTH_TIMEOUT\000"
+ 658      455F4556 
+ 658      545F4C45 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccgwPaT0.s 			page 16
 
 
- 640      20726576 
- 640      6973696F 
- 640      6E203233 
- 640      37373135 
- 641 0421 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 641      66756E63 
- 641      74696F6E 
- 641      2D736563 
- 641      74696F6E 
- 642              	.LASF76:
- 643 0449 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_CNF\000"
- 643      455F4556 
- 643      545F4C32 
- 643      4341505F 
- 643      43424643 
- 644              	.LASF40:
- 645 0467 4359424C 		.ascii	"CYBLE_EVT_GAP_ENHANCE_CONN_COMPLETE\000"
- 645      455F4556 
- 645      545F4741 
- 645      505F454E 
- 645      48414E43 
- 646              	.LASF14:
- 647 048b 6C6F6E67 		.ascii	"long double\000"
- 647      20646F75 
- 647      626C6500 
- 648              	.LASF72:
- 649 0497 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_REQ\000"
- 649      455F4556 
- 649      545F4C32 
- 649      4341505F 
- 649      434F4E4E 
- 650              	.LASF1:
- 651 04bd 756E7369 		.ascii	"unsigned char\000"
- 651      676E6564 
- 651      20636861 
- 651      7200
- 652              	.LASF62:
- 653 04cb 4359424C 		.ascii	"CYBLE_EVT_GATTS_PREP_WRITE_REQ\000"
- 653      455F4556 
- 653      545F4741 
- 653      5454535F 
- 653      50524550 
- 654              	.LASF84:
- 655 04ea 4359424C 		.ascii	"CYBLE_EVT_LE_PING_AUTH_TIMEOUT\000"
- 655      455F4556 
- 655      545F4C45 
- 655      5F50494E 
- 655      475F4155 
- 656              	.LASF54:
- 657 0509 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_INFO_RSP\000"
- 657      455F4556 
- 657      545F4741 
- 657      5454435F 
- 657      46494E44 
- 658              	.LASF0:
- 659 0527 7369676E 		.ascii	"signed char\000"
- 659      65642063 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 16
+ 658      5F50494E 
+ 658      475F4155 
+ 659              	.LASF54:
+ 660 0563 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_INFO_RSP\000"
+ 660      455F4556 
+ 660      545F4741 
+ 660      5454435F 
+ 660      46494E44 
+ 661              	.LASF0:
+ 662 0581 7369676E 		.ascii	"signed char\000"
+ 662      65642063 
+ 662      68617200 
+ 663              	.LASF59:
+ 664 058d 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_REQ\000"
+ 664      455F4556 
+ 664      545F4741 
+ 664      5454535F 
+ 664      57524954 
+ 665              	.LASF55:
+ 666 05a7 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_BY_TYPE_VALUE_RSP\000"
+ 666      455F4556 
+ 666      545F4741 
+ 666      5454435F 
+ 666      46494E44 
+ 667              	.LASF27:
+ 668 05ce 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_COMPLETE\000"
+ 668      455F4556 
+ 668      545F4741 
+ 668      505F4155 
+ 668      54485F43 
+ 669              	.LASF8:
+ 670 05ea 756E7369 		.ascii	"unsigned int\000"
+ 670      676E6564 
+ 670      20696E74 
+ 670      00
+ 671              	.LASF48:
+ 672 05f7 4359424C 		.ascii	"CYBLE_EVT_GATT_CONNECT_IND\000"
+ 672      455F4556 
+ 672      545F4741 
+ 672      54545F43 
+ 672      4F4E4E45 
+ 673              	.LASF5:
+ 674 0612 6C6F6E67 		.ascii	"long unsigned int\000"
+ 674      20756E73 
+ 674      69676E65 
+ 674      6420696E 
+ 674      7400
+ 675              	.LASF24:
+ 676 0624 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_REQ\000"
+ 676      455F4556 
+ 676      545F4741 
+ 676      505F4155 
+ 676      54485F52 
+ 677              	.LASF77:
+ 678 063b 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_IND\000"
+ 678      455F4556 
+ 678      545F4C32 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccgwPaT0.s 			page 17
 
 
- 659      68617200 
- 660              	.LASF59:
- 661 0533 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_REQ\000"
- 661      455F4556 
- 661      545F4741 
- 661      5454535F 
- 661      57524954 
- 662              	.LASF55:
- 663 054d 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_BY_TYPE_VALUE_RSP\000"
- 663      455F4556 
- 663      545F4741 
- 663      5454435F 
- 663      46494E44 
- 664              	.LASF27:
- 665 0574 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_COMPLETE\000"
- 665      455F4556 
- 665      545F4741 
- 665      505F4155 
- 665      54485F43 
- 666              	.LASF8:
- 667 0590 756E7369 		.ascii	"unsigned int\000"
- 667      676E6564 
- 667      20696E74 
- 667      00
- 668              	.LASF48:
- 669 059d 4359424C 		.ascii	"CYBLE_EVT_GATT_CONNECT_IND\000"
- 669      455F4556 
- 669      545F4741 
- 669      54545F43 
- 669      4F4E4E45 
- 670              	.LASF5:
- 671 05b8 6C6F6E67 		.ascii	"long unsigned int\000"
- 671      20756E73 
- 671      69676E65 
- 671      6420696E 
- 671      7400
- 672              	.LASF24:
- 673 05ca 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_REQ\000"
- 673      455F4556 
- 673      545F4741 
- 673      505F4155 
- 673      54485F52 
- 674              	.LASF77:
- 675 05e1 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_IND\000"
- 675      455F4556 
- 675      545F4C32 
- 675      4341505F 
- 675      43424643 
- 676              	.LASF32:
- 677 0602 4359424C 		.ascii	"CYBLE_EVT_GAP_ENCRYPT_CHANGE\000"
- 677      455F4556 
- 677      545F4741 
- 677      505F454E 
- 677      43525950 
- 678              	.LASF43:
- 679 061f 4359424C 		.ascii	"CYBLE_EVT_GAP_CONN_ESTB\000"
- 679      455F4556 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 17
+ 678      4341505F 
+ 678      43424643 
+ 679              	.LASF32:
+ 680 065c 4359424C 		.ascii	"CYBLE_EVT_GAP_ENCRYPT_CHANGE\000"
+ 680      455F4556 
+ 680      545F4741 
+ 680      505F454E 
+ 680      43525950 
+ 681              	.LASF43:
+ 682 0679 4359424C 		.ascii	"CYBLE_EVT_GAP_CONN_ESTB\000"
+ 682      455F4556 
+ 682      545F4741 
+ 682      505F434F 
+ 682      4E4E5F45 
+ 683              	.LASF71:
+ 684 0691 4359424C 		.ascii	"CYBLE_EVT_GATTC_LONG_PROCEDURE_END\000"
+ 684      455F4556 
+ 684      545F4741 
+ 684      5454435F 
+ 684      4C4F4E47 
+ 685              	.LASF3:
+ 686 06b4 73686F72 		.ascii	"short unsigned int\000"
+ 686      7420756E 
+ 686      7369676E 
+ 686      65642069 
+ 686      6E7400
+ 687              	.LASF86:
+ 688 06c7 4359424C 		.ascii	"CYBLE_EVT_FLASH_CORRUPT\000"
+ 688      455F4556 
+ 688      545F464C 
+ 688      4153485F 
+ 688      434F5252 
+ 689              	.LASF33:
+ 690 06df 4359424C 		.ascii	"CYBLE_EVT_GAP_CONNECTION_UPDATE_COMPLETE\000"
+ 690      455F4556 
+ 690      545F4741 
+ 690      505F434F 
+ 690      4E4E4543 
+ 691              	.LASF42:
+ 692 0708 4359424C 		.ascii	"CYBLE_EVT_GAP_SMP_NEGOTIATED_AUTH_INFO\000"
+ 692      455F4556 
+ 692      545F4741 
+ 692      505F534D 
+ 692      505F4E45 
+ 693              	.LASF13:
+ 694 072f 63686172 		.ascii	"char\000"
+ 694      00
+ 695              	.LASF74:
+ 696 0734 4359424C 		.ascii	"CYBLE_EVT_L2CAP_COMMAND_REJ\000"
+ 696      455F4556 
+ 696      545F4C32 
+ 696      4341505F 
+ 696      434F4D4D 
+ 697              	.LASF57:
+ 698 0750 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BLOB_RSP\000"
+ 698      455F4556 
+ 698      545F4741 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccgwPaT0.s 			page 18
 
 
- 679      545F4741 
- 679      505F434F 
- 679      4E4E5F45 
- 680              	.LASF71:
- 681 0637 4359424C 		.ascii	"CYBLE_EVT_GATTC_LONG_PROCEDURE_END\000"
- 681      455F4556 
- 681      545F4741 
- 681      5454435F 
- 681      4C4F4E47 
- 682              	.LASF3:
- 683 065a 73686F72 		.ascii	"short unsigned int\000"
- 683      7420756E 
- 683      7369676E 
- 683      65642069 
- 683      6E7400
- 684              	.LASF86:
- 685 066d 4359424C 		.ascii	"CYBLE_EVT_FLASH_CORRUPT\000"
- 685      455F4556 
- 685      545F464C 
- 685      4153485F 
- 685      434F5252 
- 686              	.LASF33:
- 687 0685 4359424C 		.ascii	"CYBLE_EVT_GAP_CONNECTION_UPDATE_COMPLETE\000"
- 687      455F4556 
- 687      545F4741 
- 687      505F434F 
- 687      4E4E4543 
- 688              	.LASF42:
- 689 06ae 4359424C 		.ascii	"CYBLE_EVT_GAP_SMP_NEGOTIATED_AUTH_INFO\000"
- 689      455F4556 
- 689      545F4741 
- 689      505F534D 
- 689      505F4E45 
- 690              	.LASF13:
- 691 06d5 63686172 		.ascii	"char\000"
- 691      00
- 692              	.LASF74:
- 693 06da 4359424C 		.ascii	"CYBLE_EVT_L2CAP_COMMAND_REJ\000"
- 693      455F4556 
- 693      545F4C32 
- 693      4341505F 
- 693      434F4D4D 
- 694              	.LASF57:
- 695 06f6 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BLOB_RSP\000"
- 695      455F4556 
- 695      545F4741 
- 695      5454435F 
- 695      52454144 
- 696              	.LASF64:
- 697 0714 4359424C 		.ascii	"CYBLE_EVT_GATTC_EXEC_WRITE_RSP\000"
- 697      455F4556 
- 697      545F4741 
- 697      5454435F 
- 697      45584543 
- 698              	.LASF34:
- 699 0733 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_START_STOP\000"
- 699      455F4556 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 18
+ 698      5454435F 
+ 698      52454144 
+ 699              	.LASF64:
+ 700 076e 4359424C 		.ascii	"CYBLE_EVT_GATTC_EXEC_WRITE_RSP\000"
+ 700      455F4556 
+ 700      545F4741 
+ 700      5454435F 
+ 700      45584543 
+ 701              	.LASF34:
+ 702 078d 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_START_STOP\000"
+ 702      455F4556 
+ 702      545F4741 
+ 702      50435F53 
+ 702      43414E5F 
+ 703              	.LASF83:
+ 704 07ac 4359424C 		.ascii	"CYBLE_EVT_PENDING_FLASH_WRITE\000"
+ 704      455F4556 
+ 704      545F5045 
+ 704      4E44494E 
+ 704      475F464C 
+ 705              	.LASF80:
+ 706 07ca 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_RX_CREDIT_IND\000"
+ 706      455F4556 
+ 706      545F4C32 
+ 706      4341505F 
+ 706      43424643 
+ 707              	.LASF12:
+ 708 07ed 646F7562 		.ascii	"double\000"
+ 708      6C6500
+ 709              	.LASF81:
+ 710 07f4 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_TX_CREDIT_IND\000"
+ 710      455F4556 
+ 710      545F4C32 
+ 710      4341505F 
+ 710      43424643 
+ 711              	.LASF44:
+ 712 0817 4359424C 		.ascii	"CYBLE_EVT_GAP_SCAN_REQ_RECVD\000"
+ 712      455F4556 
+ 712      545F4741 
+ 712      505F5343 
+ 712      414E5F52 
+ 713              	.LASF21:
+ 714 0834 4359424C 		.ascii	"CYBLE_EVT_STACK_BUSY_STATUS\000"
+ 714      455F4556 
+ 714      545F5354 
+ 714      41434B5F 
+ 714      42555359 
+ 715              	.LASF29:
+ 716 0850 4359424C 		.ascii	"CYBLE_EVT_GAPP_ADVERTISEMENT_START_STOP\000"
+ 716      455F4556 
+ 716      545F4741 
+ 716      50505F41 
+ 716      44564552 
+ 717              	.LASF19:
+ 718 0878 4359424C 		.ascii	"CYBLE_EVT_HARDWARE_ERROR\000"
+ 718      455F4556 
+ 718      545F4841 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccgwPaT0.s 			page 19
 
 
- 699      545F4741 
- 699      50435F53 
- 699      43414E5F 
- 700              	.LASF83:
- 701 0752 4359424C 		.ascii	"CYBLE_EVT_PENDING_FLASH_WRITE\000"
- 701      455F4556 
- 701      545F5045 
- 701      4E44494E 
- 701      475F464C 
- 702              	.LASF80:
- 703 0770 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_RX_CREDIT_IND\000"
- 703      455F4556 
- 703      545F4C32 
- 703      4341505F 
- 703      43424643 
- 704              	.LASF12:
- 705 0793 646F7562 		.ascii	"double\000"
- 705      6C6500
- 706              	.LASF90:
- 707 079a 453A5C4D 		.ascii	"E:\\MyProjects\\WWV1_0_0\\WW_V1_1.cydsn\000"
- 707      7950726F 
- 707      6A656374 
- 707      735C5757 
- 707      56315F30 
- 708              	.LASF81:
- 709 07bf 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_TX_CREDIT_IND\000"
- 709      455F4556 
- 709      545F4C32 
- 709      4341505F 
- 709      43424643 
- 710              	.LASF44:
- 711 07e2 4359424C 		.ascii	"CYBLE_EVT_GAP_SCAN_REQ_RECVD\000"
- 711      455F4556 
- 711      545F4741 
- 711      505F5343 
- 711      414E5F52 
- 712              	.LASF21:
- 713 07ff 4359424C 		.ascii	"CYBLE_EVT_STACK_BUSY_STATUS\000"
- 713      455F4556 
- 713      545F5354 
- 713      41434B5F 
- 713      42555359 
- 714              	.LASF29:
- 715 081b 4359424C 		.ascii	"CYBLE_EVT_GAPP_ADVERTISEMENT_START_STOP\000"
- 715      455F4556 
- 715      545F4741 
- 715      50505F41 
- 715      44564552 
- 716              	.LASF19:
- 717 0843 4359424C 		.ascii	"CYBLE_EVT_HARDWARE_ERROR\000"
- 717      455F4556 
- 717      545F4841 
- 717      52445741 
- 717      52455F45 
- 718              	.LASF79:
- 719 085c 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_READ\000"
- 719      455F4556 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 19
+ 718      52445741 
+ 718      52455F45 
+ 719              	.LASF79:
+ 720 0891 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_READ\000"
+ 720      455F4556 
+ 720      545F4C32 
+ 720      4341505F 
+ 720      43424643 
+ 721              	.LASF73:
+ 722 08b0 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_RSP\000"
+ 722      455F4556 
+ 722      545F4C32 
+ 722      4341505F 
+ 722      434F4E4E 
+ 723              	.LASF23:
+ 724 08d6 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT\000"
+ 724      455F4556 
+ 724      545F4741 
+ 724      50435F53 
+ 724      43414E5F 
+ 725              	.LASF52:
+ 726 08fa 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_GROUP_TYPE_RSP\000"
+ 726      455F4556 
+ 726      545F4741 
+ 726      5454435F 
+ 726      52454144 
+ 727              	.LASF61:
+ 728 0921 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_CMD_REQ\000"
+ 728      455F4556 
+ 728      545F4741 
+ 728      5454535F 
+ 728      57524954 
+ 729              	.LASF51:
+ 730 093f 4359424C 		.ascii	"CYBLE_EVT_GATTC_XCHNG_MTU_RSP\000"
+ 730      455F4556 
+ 730      545F4741 
+ 730      5454435F 
+ 730      5843484E 
+ 731              	.LASF82:
+ 732 095d 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_WRITE_IND\000"
+ 732      455F4556 
+ 732      545F4C32 
+ 732      4341505F 
+ 732      43424643 
+ 733              	.LASF18:
+ 734 0981 4359424C 		.ascii	"CYBLE_EVT_TIMEOUT\000"
+ 734      455F4556 
+ 734      545F5449 
+ 734      4D454F55 
+ 734      5400
+ 735              	.LASF87:
+ 736 0993 4359424C 		.ascii	"CYBLE_EVT_MAX\000"
+ 736      455F4556 
+ 736      545F4D41 
+ 736      5800
+ 737              	.LASF70:
+ 738 09a1 4359424C 		.ascii	"CYBLE_EVT_GATTS_READ_CHAR_VAL_ACCESS_REQ\000"
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccgwPaT0.s 			page 20
 
 
- 719      545F4C32 
- 719      4341505F 
- 719      43424643 
- 720              	.LASF73:
- 721 087b 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_RSP\000"
- 721      455F4556 
- 721      545F4C32 
- 721      4341505F 
- 721      434F4E4E 
- 722              	.LASF23:
- 723 08a1 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT\000"
- 723      455F4556 
- 723      545F4741 
- 723      50435F53 
- 723      43414E5F 
- 724              	.LASF52:
- 725 08c5 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_GROUP_TYPE_RSP\000"
- 725      455F4556 
- 725      545F4741 
- 725      5454435F 
- 725      52454144 
- 726              	.LASF61:
- 727 08ec 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_CMD_REQ\000"
- 727      455F4556 
- 727      545F4741 
- 727      5454535F 
- 727      57524954 
- 728              	.LASF51:
- 729 090a 4359424C 		.ascii	"CYBLE_EVT_GATTC_XCHNG_MTU_RSP\000"
- 729      455F4556 
- 729      545F4741 
- 729      5454435F 
- 729      5843484E 
- 730              	.LASF82:
- 731 0928 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_WRITE_IND\000"
- 731      455F4556 
- 731      545F4C32 
- 731      4341505F 
- 731      43424643 
- 732              	.LASF18:
- 733 094c 4359424C 		.ascii	"CYBLE_EVT_TIMEOUT\000"
- 733      455F4556 
- 733      545F5449 
- 733      4D454F55 
- 733      5400
- 734              	.LASF87:
- 735 095e 4359424C 		.ascii	"CYBLE_EVT_MAX\000"
- 735      455F4556 
- 735      545F4D41 
- 735      5800
- 736              	.LASF70:
- 737 096c 4359424C 		.ascii	"CYBLE_EVT_GATTS_READ_CHAR_VAL_ACCESS_REQ\000"
- 737      455F4556 
- 737      545F4741 
- 737      5454535F 
- 737      52454144 
- 738              	.LASF69:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccEhQHiQ.s 			page 20
-
-
- 739 0995 4359424C 		.ascii	"CYBLE_EVT_GATTC_STOP_CMD_COMPLETE\000"
- 739      455F4556 
- 739      545F4741 
- 739      5454435F 
- 739      53544F50 
- 740              	.LASF63:
- 741 09b7 4359424C 		.ascii	"CYBLE_EVT_GATTS_EXEC_WRITE_REQ\000"
- 741      455F4556 
- 741      545F4741 
- 741      5454535F 
- 741      45584543 
- 742              	.LASF31:
- 743 09d6 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_DISCONNECTED\000"
- 743      455F4556 
- 743      545F4741 
- 743      505F4445 
- 743      56494345 
- 744              	.LASF68:
- 745 09f8 4359424C 		.ascii	"CYBLE_EVT_GATTS_DATA_SIGNED_CMD_REQ\000"
- 745      455F4556 
- 745      545F4741 
- 745      5454535F 
- 745      44415441 
- 746              	.LASF85:
- 747 0a1c 4359424C 		.ascii	"CYBLE_EVT_HCI_PKT\000"
- 747      455F4556 
- 747      545F4843 
- 747      495F504B 
- 747      5400
- 748              	.LASF91:
- 749 0a2e 496E636F 		.ascii	"IncomingDataAnalys\000"
- 749      6D696E67 
- 749      44617461 
- 749      416E616C 
- 749      797300
- 750              	.LASF38:
- 751 0a41 4359424C 		.ascii	"CYBLE_EVT_GAP_OOB_GENERATED_NOTIFICATION\000"
- 751      455F4556 
- 751      545F4741 
- 751      505F4F4F 
- 751      425F4745 
- 752              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 738      455F4556 
+ 738      545F4741 
+ 738      5454535F 
+ 738      52454144 
+ 739              	.LASF69:
+ 740 09ca 4359424C 		.ascii	"CYBLE_EVT_GATTC_STOP_CMD_COMPLETE\000"
+ 740      455F4556 
+ 740      545F4741 
+ 740      5454435F 
+ 740      53544F50 
+ 741              	.LASF63:
+ 742 09ec 4359424C 		.ascii	"CYBLE_EVT_GATTS_EXEC_WRITE_REQ\000"
+ 742      455F4556 
+ 742      545F4741 
+ 742      5454535F 
+ 742      45584543 
+ 743              	.LASF31:
+ 744 0a0b 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_DISCONNECTED\000"
+ 744      455F4556 
+ 744      545F4741 
+ 744      505F4445 
+ 744      56494345 
+ 745              	.LASF68:
+ 746 0a2d 4359424C 		.ascii	"CYBLE_EVT_GATTS_DATA_SIGNED_CMD_REQ\000"
+ 746      455F4556 
+ 746      545F4741 
+ 746      5454535F 
+ 746      44415441 
+ 747              	.LASF85:
+ 748 0a51 4359424C 		.ascii	"CYBLE_EVT_HCI_PKT\000"
+ 748      455F4556 
+ 748      545F4843 
+ 748      495F504B 
+ 748      5400
+ 749              	.LASF91:
+ 750 0a63 496E636F 		.ascii	"IncomingDataAnalys\000"
+ 750      6D696E67 
+ 750      44617461 
+ 750      416E616C 
+ 750      797300
+ 751              	.LASF38:
+ 752 0a76 4359424C 		.ascii	"CYBLE_EVT_GAP_OOB_GENERATED_NOTIFICATION\000"
+ 752      455F4556 
+ 752      545F4741 
+ 752      505F4F4F 
+ 752      425F4745 
+ 753              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
