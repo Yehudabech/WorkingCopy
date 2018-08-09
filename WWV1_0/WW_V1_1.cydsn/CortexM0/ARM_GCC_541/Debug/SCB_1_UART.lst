@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
   28:Generated_Source\PSoC4/SCB_1_UART.c ****     /** This global variable determines whether to enable Skip Start
   29:Generated_Source\PSoC4/SCB_1_UART.c ****     * functionality when SCB_1_Sleep() function is called:
   30:Generated_Source\PSoC4/SCB_1_UART.c ****     * 0 – disable, other values – enable. Default value is 1.
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 2
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 2
 
 
   31:Generated_Source\PSoC4/SCB_1_UART.c ****     * It is only available when Enable wakeup from Deep Sleep Mode is enabled.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
   85:Generated_Source\PSoC4/SCB_1_UART.c ****     *
   86:Generated_Source\PSoC4/SCB_1_UART.c ****     *  This function is intended specifically to be used when the SCB_1
   87:Generated_Source\PSoC4/SCB_1_UART.c ****     *  configuration is set to “Unconfigured SCB_1” in the customizer.
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 3
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 3
 
 
   88:Generated_Source\PSoC4/SCB_1_UART.c ****     *  After initializing the SCB_1 in UART mode using this function,
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  142:Generated_Source\PSoC4/SCB_1_UART.c ****                                                 (SCB_1_UART_GET_CTRL_OVS_IRDA_LP(config->oversample
  143:Generated_Source\PSoC4/SCB_1_UART.c ****                                                 (SCB_1_CTRL_OVS_IRDA_OVS16));
  144:Generated_Source\PSoC4/SCB_1_UART.c ****             }
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 4
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 4
 
 
  145:Generated_Source\PSoC4/SCB_1_UART.c ****             else
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  199:Generated_Source\PSoC4/SCB_1_UART.c ****                                             SCB_1_GET_UART_FLOW_CTRL_CTS_POLARITY (config->ctsPolar
  200:Generated_Source\PSoC4/SCB_1_UART.c ****                                             SCB_1_GET_UART_FLOW_CTRL_RTS_POLARITY (config->rtsPolar
  201:Generated_Source\PSoC4/SCB_1_UART.c ****                                             SCB_1_GET_UART_FLOW_CTRL_TRIGGER_LEVEL(config->rtsRxFif
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 5
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 5
 
 
  202:Generated_Source\PSoC4/SCB_1_UART.c ****         #endif /* !(SCB_1_CY_SCBIP_V0 || SCB_1_CY_SCBIP_V1) */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
   35              		.cfi_offset 14, -4
   36 0002 00AF     		add	r7, sp, #0
   37              		.cfi_def_cfa_register 7
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 6
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 6
 
 
  249:Generated_Source\PSoC4/SCB_1_UART.c ****         /* Configure UART interface */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  267:Generated_Source\PSoC4/SCB_1_UART.c ****         SCB_1_UART_FLOW_CTRL_REG = SCB_1_UART_DEFAULT_FLOW_CTRL;
   74              		.loc 1 267 0
   75 003a 1A4B     		ldr	r3, .L2+48
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 7
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 7
 
 
   76 003c 0422     		movs	r2, #4
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  104 0066 1B68     		ldr	r3, [r3]
  105 0068 9AB2     		uxth	r2, r3
  106 006a 154B     		ldr	r3, .L2+76
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 8
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 8
 
 
  107 006c 1A80     		strh	r2, [r3]
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  308:Generated_Source\PSoC4/SCB_1_UART.c **** 
  309:Generated_Source\PSoC4/SCB_1_UART.c **** /*******************************************************************************
  310:Generated_Source\PSoC4/SCB_1_UART.c **** * Function Name: SCB_1_UartPostEnable
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 9
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 9
 
 
  311:Generated_Source\PSoC4/SCB_1_UART.c **** ****************************************************************************//**
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  345:Generated_Source\PSoC4/SCB_1_UART.c ****     #endif /* (SCB_1_UART_TX_PIN) */
  346:Generated_Source\PSoC4/SCB_1_UART.c **** 
  347:Generated_Source\PSoC4/SCB_1_UART.c ****     #if (SCB_1_UART_RTS_PIN)
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 10
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 10
 
 
  348:Generated_Source\PSoC4/SCB_1_UART.c ****         /* Set SCB UART to drive the output pin */
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  198              		@ frame_needed = 1, uses_anonymous_args = 0
  199 0000 80B5     		push	{r7, lr}
  200              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 11
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 11
 
 
  201              		.cfi_offset 7, -8
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  414:Generated_Source\PSoC4/SCB_1_UART.c ****     /* Disable skip start feature used for wakeup */
  415:Generated_Source\PSoC4/SCB_1_UART.c ****     SCB_1_UART_RX_CTRL_REG &= (uint32) ~SCB_1_UART_RX_CTRL_SKIP_START;
  416:Generated_Source\PSoC4/SCB_1_UART.c **** #endif /* (SCB_1_UART_WAKE_ENABLE_CONST) */
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 12
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 12
 
 
  417:Generated_Source\PSoC4/SCB_1_UART.c **** 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  248              		@ frame_needed = 1, uses_anonymous_args = 0
  249 0000 80B5     		push	{r7, lr}
  250              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 13
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 13
 
 
  251              		.cfi_offset 7, -8
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  296              		.type	SCB_1_UartSetRxAddressMask, %function
  297              	SCB_1_UartSetRxAddressMask:
  298              	.LFB6:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 14
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 14
 
 
  444:Generated_Source\PSoC4/SCB_1_UART.c **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  329 0022 FA68     		ldr	r2, [r7, #12]
  330 0024 1A60     		str	r2, [r3]
  468:Generated_Source\PSoC4/SCB_1_UART.c **** }
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 15
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 15
 
 
  331              		.loc 1 468 0
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  354              		.cfi_startproc
  355              		@ args = 0, pretend = 0, frame = 8
  356              		@ frame_needed = 1, uses_anonymous_args = 0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 16
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 16
 
 
  357 0000 80B5     		push	{r7, lr}
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  395              		.loc 1 515 0
  396 0034 1800     		movs	r0, r3
  397 0036 BD46     		mov	sp, r7
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 17
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 17
 
 
  398 0038 02B0     		add	sp, sp, #8
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  418              		@ args = 0, pretend = 0, frame = 8
  419              		@ frame_needed = 1, uses_anonymous_args = 0
  420 0000 80B5     		push	{r7, lr}
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 18
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 18
 
 
  421              		.cfi_def_cfa_offset 8
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  582:Generated_Source\PSoC4/SCB_1_UART.c ****             #if (SCB_1_CHECK_RX_SW_BUFFER)
  583:Generated_Source\PSoC4/SCB_1_UART.c ****             {
  584:Generated_Source\PSoC4/SCB_1_UART.c **** 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 19
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 19
 
 
  585:Generated_Source\PSoC4/SCB_1_UART.c ****                 /* The byte has been read from RX FIFO. Clear RX interrupt to
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  476              		.size	SCB_1_UartGetByte, .-SCB_1_UartGetByte
  477              		.section	.text.SCB_1_UartSetRtsPolarity,"ax",%progbits
  478              		.align	2
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 20
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 20
 
 
  479              		.global	SCB_1_UartSetRtsPolarity
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  629:Generated_Source\PSoC4/SCB_1_UART.c ****             {
  630:Generated_Source\PSoC4/SCB_1_UART.c ****                 SCB_1_UART_FLOW_CTRL_REG &= (uint32) ~SCB_1_UART_FLOW_CTRL_RTS_POLARITY;
  631:Generated_Source\PSoC4/SCB_1_UART.c ****             }
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 21
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 21
 
 
  632:Generated_Source\PSoC4/SCB_1_UART.c ****         }
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  543              		.loc 1 651 0
  544              		.cfi_startproc
  545              		@ args = 0, pretend = 0, frame = 16
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 22
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 22
 
 
  546              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  591              		.global	SCB_1_UartPutString
  592              		.code	16
  593              		.thumb_func
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 23
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 23
 
 
  594              		.type	SCB_1_UartPutString, %function
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  619 0012 D318     		adds	r3, r2, r3
  620 0014 1B78     		ldrb	r3, [r3]
  621 0016 1800     		movs	r0, r3
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 24
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 24
 
 
  622 0018 FFF7FEFF 		bl	SCB_1_SpiUartWriteTxData
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  656 0000 80B5     		push	{r7, lr}
  657              		.cfi_def_cfa_offset 8
  658              		.cfi_offset 7, -8
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 25
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 25
 
 
  659              		.cfi_offset 14, -4
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  695              		@ frame_needed = 1, uses_anonymous_args = 0
  696 0000 80B5     		push	{r7, lr}
  697              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 26
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 26
 
 
  698              		.cfi_offset 7, -8
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  737              		.cfi_offset 14, -4
  738 0002 00AF     		add	r7, sp, #0
  739              		.cfi_def_cfa_register 7
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 27
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 27
 
 
  742:Generated_Source\PSoC4/SCB_1_UART.c ****             SCB_1_UART_FLOW_CTRL_REG &= (uint32) ~SCB_1_UART_FLOW_CTRL_CTS_ENABLE;
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  774              		.cfi_offset 7, -8
  775              		.cfi_offset 14, -4
  776 0002 82B0     		sub	sp, sp, #8
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 28
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 28
 
 
  777              		.cfi_def_cfa_offset 16
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  821              		.code	16
  822              		.thumb_func
  823              		.type	SCB_1_UartSendBreakBlocking, %function
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 29
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 29
 
 
  824              	SCB_1_UartSendBreakBlocking:
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  802:Generated_Source\PSoC4/SCB_1_UART.c ****         SCB_1_ClearTxInterruptSource(SCB_1_INTR_TX_UART_DONE);
  847              		.loc 1 802 0
  848 0014 154B     		ldr	r3, .L55+4
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 30
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 30
 
 
  849 0016 8022     		movs	r2, #128
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  820:Generated_Source\PSoC4/SCB_1_UART.c ****         SCB_1_ClearTxInterruptSource(SCB_1_INTR_TX_ALL);
  885              		.loc 1 820 0 is_stmt 1
  886 004e 074B     		ldr	r3, .L55+4
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 31
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 31
 
 
  887 0050 094A     		ldr	r2, .L55+16
@@ -1844,40 +1844,40 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  922 0006 00000000 		.4byte	.Ldebug_abbrev0
  923 000a 04       		.byte	0x4
  924 000b 01       		.uleb128 0x1
- 925 000c 12010000 		.4byte	.LASF47
+ 925 000c 6C010000 		.4byte	.LASF47
  926 0010 0C       		.byte	0xc
- 927 0011 B2020000 		.4byte	.LASF48
- 928 0015 60020000 		.4byte	.LASF49
+ 927 0011 E7020000 		.4byte	.LASF48
+ 928 0015 FD000000 		.4byte	.LASF49
  929 0019 00000000 		.4byte	.Ldebug_ranges0+0
  930 001d 00000000 		.4byte	0
  931 0021 00000000 		.4byte	.Ldebug_line0
  932 0025 02       		.uleb128 0x2
  933 0026 01       		.byte	0x1
  934 0027 06       		.byte	0x6
- 935 0028 4E030000 		.4byte	.LASF0
+ 935 0028 83030000 		.4byte	.LASF0
  936 002c 02       		.uleb128 0x2
  937 002d 01       		.byte	0x1
  938 002e 08       		.byte	0x8
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 32
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 32
 
 
- 939 002f 9B000000 		.4byte	.LASF1
+ 939 002f AE000000 		.4byte	.LASF1
  940 0033 02       		.uleb128 0x2
  941 0034 02       		.byte	0x2
  942 0035 05       		.byte	0x5
- 943 0036 F3020000 		.4byte	.LASF2
+ 943 0036 28030000 		.4byte	.LASF2
  944 003a 02       		.uleb128 0x2
  945 003b 02       		.byte	0x2
  946 003c 07       		.byte	0x7
- 947 003d EA000000 		.4byte	.LASF3
+ 947 003d 44000000 		.4byte	.LASF3
  948 0041 02       		.uleb128 0x2
  949 0042 04       		.byte	0x4
  950 0043 05       		.byte	0x5
- 951 0044 26030000 		.4byte	.LASF4
+ 951 0044 5B030000 		.4byte	.LASF4
  952 0048 02       		.uleb128 0x2
  953 0049 04       		.byte	0x4
  954 004a 07       		.byte	0x7
- 955 004b D8000000 		.4byte	.LASF5
+ 955 004b EB000000 		.4byte	.LASF5
  956 004f 02       		.uleb128 0x2
  957 0050 08       		.byte	0x8
  958 0051 05       		.byte	0x5
@@ -1885,7 +1885,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  960 0056 02       		.uleb128 0x2
  961 0057 08       		.byte	0x8
  962 0058 07       		.byte	0x7
- 963 0059 1B020000 		.4byte	.LASF7
+ 963 0059 6C020000 		.4byte	.LASF7
  964 005d 03       		.uleb128 0x3
  965 005e 04       		.byte	0x4
  966 005f 05       		.byte	0x5
@@ -1893,37 +1893,37 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  968 0064 02       		.uleb128 0x2
  969 0065 04       		.byte	0x4
  970 0066 07       		.byte	0x7
- 971 0067 F4010000 		.4byte	.LASF8
+ 971 0067 45020000 		.4byte	.LASF8
  972 006b 04       		.uleb128 0x4
- 973 006c E6010000 		.4byte	.LASF9
+ 973 006c 37020000 		.4byte	.LASF9
  974 0070 02       		.byte	0x2
  975 0071 E501     		.2byte	0x1e5
  976 0073 3A000000 		.4byte	0x3a
  977 0077 04       		.uleb128 0x4
- 978 0078 ED010000 		.4byte	.LASF10
+ 978 0078 3E020000 		.4byte	.LASF10
  979 007c 02       		.byte	0x2
  980 007d E601     		.2byte	0x1e6
  981 007f 48000000 		.4byte	0x48
  982 0083 02       		.uleb128 0x2
  983 0084 04       		.byte	0x4
  984 0085 04       		.byte	0x4
- 985 0086 8B000000 		.4byte	.LASF11
+ 985 0086 9E000000 		.4byte	.LASF11
  986 008a 02       		.uleb128 0x2
  987 008b 08       		.byte	0x8
  988 008c 04       		.byte	0x4
- 989 008d B3010000 		.4byte	.LASF12
+ 989 008d 0D020000 		.4byte	.LASF12
  990 0091 04       		.uleb128 0x4
- 991 0092 C0000000 		.4byte	.LASF13
+ 991 0092 D3000000 		.4byte	.LASF13
  992 0096 02       		.byte	0x2
  993 0097 F501     		.2byte	0x1f5
  994 0099 9D000000 		.4byte	0x9d
  995 009d 02       		.uleb128 0x2
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 33
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 33
 
 
  996 009e 01       		.byte	0x1
  997 009f 08       		.byte	0x8
- 998 00a0 44000000 		.4byte	.LASF14
+ 998 00a0 57000000 		.4byte	.LASF14
  999 00a4 04       		.uleb128 0x4
  1000 00a5 0E000000 		.4byte	.LASF15
  1001 00a9 02       		.byte	0x2
@@ -1934,13 +1934,13 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1006 00b5 02       		.uleb128 0x2
  1007 00b6 08       		.byte	0x8
  1008 00b7 04       		.byte	0x4
- 1009 00b8 42030000 		.4byte	.LASF16
+ 1009 00b8 77030000 		.4byte	.LASF16
  1010 00bc 02       		.uleb128 0x2
  1011 00bd 04       		.byte	0x4
  1012 00be 07       		.byte	0x7
- 1013 00bf A9020000 		.4byte	.LASF17
+ 1013 00bf DE020000 		.4byte	.LASF17
  1014 00c3 06       		.uleb128 0x6
- 1015 00c4 BA010000 		.4byte	.LASF18
+ 1015 00c4 14020000 		.4byte	.LASF18
  1016 00c8 01       		.byte	0x1
  1017 00c9 F7       		.byte	0xf7
  1018 00ca 00000000 		.4byte	.LFB2
@@ -1948,7 +1948,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1020 00d2 01       		.uleb128 0x1
  1021 00d3 9C       		.byte	0x9c
  1022 00d4 07       		.uleb128 0x7
- 1023 00d5 4B020000 		.4byte	.LASF19
+ 1023 00d5 9C020000 		.4byte	.LASF19
  1024 00d9 01       		.byte	0x1
  1025 00da 3D01     		.2byte	0x13d
  1026 00dc 00000000 		.4byte	.LFB3
@@ -1956,7 +1956,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1028 00e4 01       		.uleb128 0x1
  1029 00e5 9C       		.byte	0x9c
  1030 00e6 07       		.uleb128 0x7
- 1031 00e7 FD020000 		.4byte	.LASF20
+ 1031 00e7 32030000 		.4byte	.LASF20
  1032 00eb 01       		.byte	0x1
  1033 00ec 7101     		.2byte	0x171
  1034 00ee 00000000 		.4byte	.LFB4
@@ -1964,7 +1964,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1036 00f6 01       		.uleb128 0x1
  1037 00f7 9C       		.byte	0x9c
  1038 00f8 08       		.uleb128 0x8
- 1039 00f9 A9000000 		.4byte	.LASF21
+ 1039 00f9 BC000000 		.4byte	.LASF21
  1040 00fd 01       		.byte	0x1
  1041 00fe B101     		.2byte	0x1b1
  1042 0100 00000000 		.4byte	.LFB5
@@ -1973,18 +1973,18 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1045 0109 9C       		.byte	0x9c
  1046 010a 2D010000 		.4byte	0x12d
  1047 010e 09       		.uleb128 0x9
- 1048 010f 13020000 		.4byte	.LASF23
+ 1048 010f 64020000 		.4byte	.LASF23
  1049 0113 01       		.byte	0x1
  1050 0114 B101     		.2byte	0x1b1
  1051 0116 77000000 		.4byte	0x77
  1052 011a 02       		.uleb128 0x2
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 34
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 34
 
 
  1053 011b 91       		.byte	0x91
  1054 011c 6C       		.sleb128 -20
  1055 011d 0A       		.uleb128 0xa
- 1056 011e 39030000 		.4byte	.LASF25
+ 1056 011e 6E030000 		.4byte	.LASF25
  1057 0122 01       		.byte	0x1
  1058 0123 B301     		.2byte	0x1b3
  1059 0125 77000000 		.4byte	0x77
@@ -1993,7 +1993,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1062 012b 74       		.sleb128 -12
  1063 012c 00       		.byte	0
  1064 012d 08       		.uleb128 0x8
- 1065 012e 8E020000 		.4byte	.LASF22
+ 1065 012e C3020000 		.4byte	.LASF22
  1066 0132 01       		.byte	0x1
  1067 0133 CA01     		.2byte	0x1ca
  1068 0135 00000000 		.4byte	.LFB6
@@ -2002,7 +2002,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1071 013e 9C       		.byte	0x9c
  1072 013f 62010000 		.4byte	0x162
  1073 0143 09       		.uleb128 0x9
- 1074 0144 A7010000 		.4byte	.LASF24
+ 1074 0144 01020000 		.4byte	.LASF24
  1075 0148 01       		.byte	0x1
  1076 0149 CA01     		.2byte	0x1ca
  1077 014b 77000000 		.4byte	0x77
@@ -2010,7 +2010,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1079 0150 91       		.byte	0x91
  1080 0151 6C       		.sleb128 -20
  1081 0152 0A       		.uleb128 0xa
- 1082 0153 39030000 		.4byte	.LASF25
+ 1082 0153 6E030000 		.4byte	.LASF25
  1083 0157 01       		.byte	0x1
  1084 0158 CC01     		.2byte	0x1cc
  1085 015a 77000000 		.4byte	0x77
@@ -2019,7 +2019,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1088 0160 74       		.sleb128 -12
  1089 0161 00       		.byte	0
  1090 0162 0B       		.uleb128 0xb
- 1091 0163 E1020000 		.4byte	.LASF27
+ 1091 0163 16030000 		.4byte	.LASF27
  1092 0167 01       		.byte	0x1
  1093 0168 F201     		.2byte	0x1f2
  1094 016a 77000000 		.4byte	0x77
@@ -2029,7 +2029,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1098 0177 9C       		.byte	0x9c
  1099 0178 8C010000 		.4byte	0x18c
  1100 017c 0A       		.uleb128 0xa
- 1101 017d A0010000 		.4byte	.LASF26
+ 1101 017d FA010000 		.4byte	.LASF26
  1102 0181 01       		.byte	0x1
  1103 0182 F401     		.2byte	0x1f4
  1104 0184 77000000 		.4byte	0x77
@@ -2038,10 +2038,10 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1107 018a 74       		.sleb128 -12
  1108 018b 00       		.byte	0
  1109 018c 0B       		.uleb128 0xb
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 35
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 35
 
 
- 1110 018d C6000000 		.4byte	.LASF28
+ 1110 018d D9000000 		.4byte	.LASF28
  1111 0191 01       		.byte	0x1
  1112 0192 2402     		.2byte	0x224
  1113 0194 77000000 		.4byte	0x77
@@ -2051,7 +2051,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1117 01a1 9C       		.byte	0x9c
  1118 01a2 C5010000 		.4byte	0x1c5
  1119 01a6 0A       		.uleb128 0xa
- 1120 01a7 A0010000 		.4byte	.LASF26
+ 1120 01a7 FA010000 		.4byte	.LASF26
  1121 01ab 01       		.byte	0x1
  1122 01ac 2602     		.2byte	0x226
  1123 01ae 77000000 		.4byte	0x77
@@ -2059,7 +2059,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1125 01b3 91       		.byte	0x91
  1126 01b4 74       		.sleb128 -12
  1127 01b5 0A       		.uleb128 0xa
- 1128 01b6 2F030000 		.4byte	.LASF29
+ 1128 01b6 64030000 		.4byte	.LASF29
  1129 01ba 01       		.byte	0x1
  1130 01bb 2702     		.2byte	0x227
  1131 01bd 77000000 		.4byte	0x77
@@ -2068,7 +2068,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1134 01c3 70       		.sleb128 -16
  1135 01c4 00       		.byte	0
  1136 01c5 08       		.uleb128 0x8
- 1137 01c6 32020000 		.4byte	.LASF30
+ 1137 01c6 83020000 		.4byte	.LASF30
  1138 01ca 01       		.byte	0x1
  1139 01cb 6E02     		.2byte	0x26e
  1140 01cd 00000000 		.4byte	.LFB9
@@ -2077,7 +2077,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1143 01d6 9C       		.byte	0x9c
  1144 01d7 EB010000 		.4byte	0x1eb
  1145 01db 09       		.uleb128 0x9
- 1146 01dc DD010000 		.4byte	.LASF31
+ 1146 01dc B1020000 		.4byte	.LASF31
  1147 01e0 01       		.byte	0x1
  1148 01e1 6E02     		.2byte	0x26e
  1149 01e3 77000000 		.4byte	0x77
@@ -2086,7 +2086,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1152 01e9 74       		.sleb128 -12
  1153 01ea 00       		.byte	0
  1154 01eb 08       		.uleb128 0x8
- 1155 01ec 0C030000 		.4byte	.LASF32
+ 1155 01ec 41030000 		.4byte	.LASF32
  1156 01f0 01       		.byte	0x1
  1157 01f1 8A02     		.2byte	0x28a
  1158 01f3 00000000 		.4byte	.LFB10
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1164 0202 14000000 		.4byte	.LASF33
  1165 0206 01       		.byte	0x1
  1166 0207 8A02     		.2byte	0x28a
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 36
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 36
 
 
  1167 0209 77000000 		.4byte	0x77
@@ -2106,7 +2106,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1169 020e 91       		.byte	0x91
  1170 020f 6C       		.sleb128 -20
  1171 0210 0A       		.uleb128 0xa
- 1172 0211 64030000 		.4byte	.LASF34
+ 1172 0211 99030000 		.4byte	.LASF34
  1173 0215 01       		.byte	0x1
  1174 0216 8C02     		.2byte	0x28c
  1175 0218 77000000 		.4byte	0x77
@@ -2115,7 +2115,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1178 021e 74       		.sleb128 -12
  1179 021f 00       		.byte	0
  1180 0220 0C       		.uleb128 0xc
- 1181 0221 C9010000 		.4byte	.LASF35
+ 1181 0221 23020000 		.4byte	.LASF35
  1182 0225 01       		.byte	0x1
  1183 0226 A802     		.2byte	0x2a8
  1184 0228 00000000 		.4byte	.LFB11
@@ -2124,7 +2124,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1187 0231 9C       		.byte	0x9c
  1188 0232 55020000 		.4byte	0x255
  1189 0236 09       		.uleb128 0x9
- 1190 0237 5D000000 		.4byte	.LASF36
+ 1190 0237 70000000 		.4byte	.LASF36
  1191 023b 01       		.byte	0x1
  1192 023c A802     		.2byte	0x2a8
  1193 023e 55020000 		.4byte	0x255
@@ -2132,7 +2132,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1195 0243 91       		.byte	0x91
  1196 0244 6C       		.sleb128 -20
  1197 0245 0A       		.uleb128 0xa
- 1198 0246 85020000 		.4byte	.LASF37
+ 1198 0246 BA020000 		.4byte	.LASF37
  1199 024a 01       		.byte	0x1
  1200 024b AA02     		.2byte	0x2aa
  1201 024d 77000000 		.4byte	0x77
@@ -2146,7 +2146,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1209 025b 0E       		.uleb128 0xe
  1210 025c 91000000 		.4byte	0x91
  1211 0260 0C       		.uleb128 0xc
- 1212 0261 01020000 		.4byte	.LASF38
+ 1212 0261 52020000 		.4byte	.LASF38
  1213 0265 01       		.byte	0x1
  1214 0266 C302     		.2byte	0x2c3
  1215 0268 00000000 		.4byte	.LFB12
@@ -2155,10 +2155,10 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1218 0271 9C       		.byte	0x9c
  1219 0272 86020000 		.4byte	0x286
  1220 0276 09       		.uleb128 0x9
- 1221 0277 D6020000 		.4byte	.LASF39
+ 1221 0277 0B030000 		.4byte	.LASF39
  1222 027b 01       		.byte	0x1
  1223 027c C302     		.2byte	0x2c3
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 37
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 37
 
 
  1224 027e 77000000 		.4byte	0x77
@@ -2167,7 +2167,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1227 0284 74       		.sleb128 -12
  1228 0285 00       		.byte	0
  1229 0286 07       		.uleb128 0x7
- 1230 0287 49000000 		.4byte	.LASF40
+ 1230 0287 5C000000 		.4byte	.LASF40
  1231 028b 01       		.byte	0x1
  1232 028c D502     		.2byte	0x2d5
  1233 028e 00000000 		.4byte	.LFB13
@@ -2175,7 +2175,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1235 0296 01       		.uleb128 0x1
  1236 0297 9C       		.byte	0x9c
  1237 0298 07       		.uleb128 0x7
- 1238 0299 FD000000 		.4byte	.LASF41
+ 1238 0299 57010000 		.4byte	.LASF41
  1239 029d 01       		.byte	0x1
  1240 029e E402     		.2byte	0x2e4
  1241 02a0 00000000 		.4byte	.LFB14
@@ -2192,7 +2192,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1252 02bb 9C       		.byte	0x9c
  1253 02bc D0020000 		.4byte	0x2d0
  1254 02c0 09       		.uleb128 0x9
- 1255 02c1 DD010000 		.4byte	.LASF31
+ 1255 02c1 B1020000 		.4byte	.LASF31
  1256 02c5 01       		.byte	0x1
  1257 02c6 F802     		.2byte	0x2f8
  1258 02c8 77000000 		.4byte	0x77
@@ -2201,7 +2201,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1261 02ce 74       		.sleb128 -12
  1262 02cf 00       		.byte	0
  1263 02d0 08       		.uleb128 0x8
- 1264 02d1 64000000 		.4byte	.LASF43
+ 1264 02d1 77000000 		.4byte	.LASF43
  1265 02d5 01       		.byte	0x1
  1266 02d6 1A03     		.2byte	0x31a
  1267 02d8 00000000 		.4byte	.LFB16
@@ -2210,7 +2210,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1270 02e1 9C       		.byte	0x9c
  1271 02e2 14030000 		.4byte	0x314
  1272 02e6 09       		.uleb128 0x9
- 1273 02e7 80000000 		.4byte	.LASF44
+ 1273 02e7 93000000 		.4byte	.LASF44
  1274 02eb 01       		.byte	0x1
  1275 02ec 1A03     		.2byte	0x31a
  1276 02ee 77000000 		.4byte	0x77
@@ -2218,10 +2218,10 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1278 02f3 91       		.byte	0x91
  1279 02f4 6C       		.sleb128 -20
  1280 02f5 0A       		.uleb128 0xa
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 38
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 38
 
 
- 1281 02f6 5A030000 		.4byte	.LASF45
+ 1281 02f6 8F030000 		.4byte	.LASF45
  1282 02fa 01       		.byte	0x1
  1283 02fb 1C03     		.2byte	0x31c
  1284 02fd 77000000 		.4byte	0x77
@@ -2229,7 +2229,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1286 0302 91       		.byte	0x91
  1287 0303 70       		.sleb128 -16
  1288 0304 0A       		.uleb128 0xa
- 1289 0305 91000000 		.4byte	.LASF46
+ 1289 0305 A4000000 		.4byte	.LASF46
  1290 0309 01       		.byte	0x1
  1291 030a 1D03     		.2byte	0x31d
  1292 030c 77000000 		.4byte	0x77
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1335 001e 03       		.uleb128 0x3
  1336 001f 24       		.uleb128 0x24
  1337 0020 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 39
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 39
 
 
  1338 0021 0B       		.uleb128 0xb
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1392 0058 3F       		.uleb128 0x3f
  1393 0059 19       		.uleb128 0x19
  1394 005a 03       		.uleb128 0x3
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 40
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 40
 
 
  1395 005b 0E       		.uleb128 0xe
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1449 0093 18       		.uleb128 0x18
  1450 0094 00       		.byte	0
  1451 0095 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 41
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 41
 
 
  1452 0096 0A       		.uleb128 0xa
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1506 00cd 19       		.uleb128 0x19
  1507 00ce 11       		.uleb128 0x11
  1508 00cf 01       		.uleb128 0x1
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 42
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 42
 
 
  1509 00d0 12       		.uleb128 0x12
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1563 0018 00000000 		.4byte	.LFB3
  1564 001c 34000000 		.4byte	.LFE3-.LFB3
  1565 0020 00000000 		.4byte	.LFB4
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 43
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 43
 
 
  1566 0024 38000000 		.4byte	.LFE4-.LFB4
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1620 0064 20000000 		.4byte	.LFE14
  1621 0068 00000000 		.4byte	.LFB15
  1622 006c 3C000000 		.4byte	.LFE15
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 44
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 44
 
 
  1623 0070 00000000 		.4byte	.LFB16
@@ -2615,242 +2615,247 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 1
  1639      72745365 
  1639      74437473 
  1639      506F6C61 
- 1640              	.LASF14:
- 1641 0044 63686172 		.ascii	"char\000"
- 1641      00
- 1642              	.LASF40:
- 1643 0049 5343425F 		.ascii	"SCB_1_UartEnableCts\000"
- 1643      315F5561 
- 1643      7274456E 
- 1643      61626C65 
- 1643      43747300 
- 1644              	.LASF36:
- 1645 005d 73747269 		.ascii	"string\000"
- 1645      6E6700
- 1646              	.LASF43:
- 1647 0064 5343425F 		.ascii	"SCB_1_UartSendBreakBlocking\000"
- 1647      315F5561 
- 1647      72745365 
- 1647      6E644272 
- 1647      65616B42 
- 1648              	.LASF44:
- 1649 0080 62726561 		.ascii	"breakWidth\000"
- 1649      6B576964 
- 1649      746800
- 1650              	.LASF11:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 45
+ 1640              	.LASF3:
+ 1641 0044 73686F72 		.ascii	"short unsigned int\000"
+ 1641      7420756E 
+ 1641      7369676E 
+ 1641      65642069 
+ 1641      6E7400
+ 1642              	.LASF14:
+ 1643 0057 63686172 		.ascii	"char\000"
+ 1643      00
+ 1644              	.LASF40:
+ 1645 005c 5343425F 		.ascii	"SCB_1_UartEnableCts\000"
+ 1645      315F5561 
+ 1645      7274456E 
+ 1645      61626C65 
+ 1645      43747300 
+ 1646              	.LASF36:
+ 1647 0070 73747269 		.ascii	"string\000"
+ 1647      6E6700
+ 1648              	.LASF43:
+ 1649 0077 5343425F 		.ascii	"SCB_1_UartSendBreakBlocking\000"
+ 1649      315F5561 
+ 1649      72745365 
+ 1649      6E644272 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 45
 
 
- 1651 008b 666C6F61 		.ascii	"float\000"
- 1651      7400
- 1652              	.LASF46:
- 1653 0091 7478496E 		.ascii	"txIntrReg\000"
- 1653      74725265 
- 1653      6700
- 1654              	.LASF1:
- 1655 009b 756E7369 		.ascii	"unsigned char\000"
- 1655      676E6564 
- 1655      20636861 
- 1655      7200
- 1656              	.LASF21:
- 1657 00a9 5343425F 		.ascii	"SCB_1_UartSetRxAddress\000"
- 1657      315F5561 
- 1657      72745365 
- 1657      74527841 
- 1657      64647265 
- 1658              	.LASF13:
- 1659 00c0 63686172 		.ascii	"char8\000"
- 1659      3800
- 1660              	.LASF28:
- 1661 00c6 5343425F 		.ascii	"SCB_1_UartGetByte\000"
- 1661      315F5561 
- 1661      72744765 
- 1661      74427974 
- 1661      6500
- 1662              	.LASF5:
- 1663 00d8 6C6F6E67 		.ascii	"long unsigned int\000"
- 1663      20756E73 
- 1663      69676E65 
- 1663      6420696E 
- 1663      7400
- 1664              	.LASF3:
- 1665 00ea 73686F72 		.ascii	"short unsigned int\000"
- 1665      7420756E 
- 1665      7369676E 
- 1665      65642069 
- 1665      6E7400
- 1666              	.LASF41:
- 1667 00fd 5343425F 		.ascii	"SCB_1_UartDisableCts\000"
- 1667      315F5561 
- 1667      72744469 
- 1667      7361626C 
- 1667      65437473 
- 1668              	.LASF47:
- 1669 0112 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1669      43313120 
- 1669      352E342E 
- 1669      31203230 
- 1669      31363036 
- 1670 0145 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 1670      20726576 
- 1670      6973696F 
- 1670      6E203233 
- 1670      37373135 
- 1671 0178 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 1671      66756E63 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 46
+ 1649      65616B42 
+ 1650              	.LASF44:
+ 1651 0093 62726561 		.ascii	"breakWidth\000"
+ 1651      6B576964 
+ 1651      746800
+ 1652              	.LASF11:
+ 1653 009e 666C6F61 		.ascii	"float\000"
+ 1653      7400
+ 1654              	.LASF46:
+ 1655 00a4 7478496E 		.ascii	"txIntrReg\000"
+ 1655      74725265 
+ 1655      6700
+ 1656              	.LASF1:
+ 1657 00ae 756E7369 		.ascii	"unsigned char\000"
+ 1657      676E6564 
+ 1657      20636861 
+ 1657      7200
+ 1658              	.LASF21:
+ 1659 00bc 5343425F 		.ascii	"SCB_1_UartSetRxAddress\000"
+ 1659      315F5561 
+ 1659      72745365 
+ 1659      74527841 
+ 1659      64647265 
+ 1660              	.LASF13:
+ 1661 00d3 63686172 		.ascii	"char8\000"
+ 1661      3800
+ 1662              	.LASF28:
+ 1663 00d9 5343425F 		.ascii	"SCB_1_UartGetByte\000"
+ 1663      315F5561 
+ 1663      72744765 
+ 1663      74427974 
+ 1663      6500
+ 1664              	.LASF5:
+ 1665 00eb 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1665      20756E73 
+ 1665      69676E65 
+ 1665      6420696E 
+ 1665      7400
+ 1666              	.LASF49:
+ 1667 00fd 433A5C55 		.ascii	"C:\\Users\\Yehuda Ben Chaim\\Google Drive\\My Proje"
+ 1667      73657273 
+ 1667      5C596568 
+ 1667      75646120 
+ 1667      42656E20 
+ 1668 012c 6374735C 		.ascii	"cts\\WW\\FW\\WorkingCopy\\WWV1_0\\WW_V1_1.cydsn\000"
+ 1668      57575C46 
+ 1668      575C576F 
+ 1668      726B696E 
+ 1668      67436F70 
+ 1669              	.LASF41:
+ 1670 0157 5343425F 		.ascii	"SCB_1_UartDisableCts\000"
+ 1670      315F5561 
+ 1670      72744469 
+ 1670      7361626C 
+ 1670      65437473 
+ 1671              	.LASF47:
+ 1672 016c 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 46
 
 
- 1671      74696F6E 
- 1671      2D736563 
- 1671      74696F6E 
- 1672              	.LASF26:
- 1673 01a0 72784461 		.ascii	"rxData\000"
- 1673      746100
- 1674              	.LASF24:
- 1675 01a7 61646472 		.ascii	"addressMask\000"
- 1675      6573734D 
- 1675      61736B00 
- 1676              	.LASF12:
- 1677 01b3 646F7562 		.ascii	"double\000"
- 1677      6C6500
- 1678              	.LASF18:
- 1679 01ba 5343425F 		.ascii	"SCB_1_UartInit\000"
- 1679      315F5561 
- 1679      7274496E 
- 1679      697400
- 1680              	.LASF35:
- 1681 01c9 5343425F 		.ascii	"SCB_1_UartPutString\000"
- 1681      315F5561 
- 1681      72745075 
- 1681      74537472 
- 1681      696E6700 
- 1682              	.LASF31:
- 1683 01dd 706F6C61 		.ascii	"polarity\000"
- 1683      72697479 
- 1683      00
- 1684              	.LASF9:
- 1685 01e6 75696E74 		.ascii	"uint16\000"
- 1685      313600
- 1686              	.LASF10:
- 1687 01ed 75696E74 		.ascii	"uint32\000"
- 1687      333200
- 1688              	.LASF8:
- 1689 01f4 756E7369 		.ascii	"unsigned int\000"
- 1689      676E6564 
- 1689      20696E74 
- 1689      00
- 1690              	.LASF38:
- 1691 0201 5343425F 		.ascii	"SCB_1_UartPutCRLF\000"
- 1691      315F5561 
- 1691      72745075 
- 1691      7443524C 
- 1691      4600
- 1692              	.LASF23:
- 1693 0213 61646472 		.ascii	"address\000"
- 1693      65737300 
- 1694              	.LASF7:
- 1695 021b 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1695      206C6F6E 
- 1695      6720756E 
- 1695      7369676E 
- 1695      65642069 
- 1696              	.LASF30:
- 1697 0232 5343425F 		.ascii	"SCB_1_UartSetRtsPolarity\000"
- 1697      315F5561 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 47
+ 1672      43313120 
+ 1672      352E342E 
+ 1672      31203230 
+ 1672      31363036 
+ 1673 019f 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 1673      20726576 
+ 1673      6973696F 
+ 1673      6E203233 
+ 1673      37373135 
+ 1674 01d2 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1674      66756E63 
+ 1674      74696F6E 
+ 1674      2D736563 
+ 1674      74696F6E 
+ 1675              	.LASF26:
+ 1676 01fa 72784461 		.ascii	"rxData\000"
+ 1676      746100
+ 1677              	.LASF24:
+ 1678 0201 61646472 		.ascii	"addressMask\000"
+ 1678      6573734D 
+ 1678      61736B00 
+ 1679              	.LASF12:
+ 1680 020d 646F7562 		.ascii	"double\000"
+ 1680      6C6500
+ 1681              	.LASF18:
+ 1682 0214 5343425F 		.ascii	"SCB_1_UartInit\000"
+ 1682      315F5561 
+ 1682      7274496E 
+ 1682      697400
+ 1683              	.LASF35:
+ 1684 0223 5343425F 		.ascii	"SCB_1_UartPutString\000"
+ 1684      315F5561 
+ 1684      72745075 
+ 1684      74537472 
+ 1684      696E6700 
+ 1685              	.LASF9:
+ 1686 0237 75696E74 		.ascii	"uint16\000"
+ 1686      313600
+ 1687              	.LASF10:
+ 1688 023e 75696E74 		.ascii	"uint32\000"
+ 1688      333200
+ 1689              	.LASF8:
+ 1690 0245 756E7369 		.ascii	"unsigned int\000"
+ 1690      676E6564 
+ 1690      20696E74 
+ 1690      00
+ 1691              	.LASF38:
+ 1692 0252 5343425F 		.ascii	"SCB_1_UartPutCRLF\000"
+ 1692      315F5561 
+ 1692      72745075 
+ 1692      7443524C 
+ 1692      4600
+ 1693              	.LASF23:
+ 1694 0264 61646472 		.ascii	"address\000"
+ 1694      65737300 
+ 1695              	.LASF7:
+ 1696 026c 6C6F6E67 		.ascii	"long long unsigned int\000"
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 47
 
 
- 1697      72745365 
- 1697      74527473 
- 1697      506F6C61 
- 1698              	.LASF19:
- 1699 024b 5343425F 		.ascii	"SCB_1_UartPostEnable\000"
- 1699      315F5561 
- 1699      7274506F 
- 1699      7374456E 
- 1699      61626C65 
- 1700              	.LASF49:
- 1701 0260 453A5C4D 		.ascii	"E:\\MyProjects\\WWV1_0_0\\WW_V1_1.cydsn\000"
- 1701      7950726F 
- 1701      6A656374 
- 1701      735C5757 
- 1701      56315F30 
- 1702              	.LASF37:
- 1703 0285 62756649 		.ascii	"bufIndex\000"
- 1703      6E646578 
- 1703      00
- 1704              	.LASF22:
- 1705 028e 5343425F 		.ascii	"SCB_1_UartSetRxAddressMask\000"
- 1705      315F5561 
- 1705      72745365 
- 1705      74527841 
- 1705      64647265 
- 1706              	.LASF17:
- 1707 02a9 73697A65 		.ascii	"sizetype\000"
- 1707      74797065 
- 1707      00
- 1708              	.LASF48:
- 1709 02b2 47656E65 		.ascii	"Generated_Source\\PSoC4\\SCB_1_UART.c\000"
- 1709      72617465 
- 1709      645F536F 
- 1709      75726365 
- 1709      5C50536F 
- 1710              	.LASF39:
- 1711 02d6 74784461 		.ascii	"txDataByte\000"
- 1711      74614279 
- 1711      746500
- 1712              	.LASF27:
- 1713 02e1 5343425F 		.ascii	"SCB_1_UartGetChar\000"
- 1713      315F5561 
- 1713      72744765 
- 1713      74436861 
- 1713      7200
- 1714              	.LASF2:
- 1715 02f3 73686F72 		.ascii	"short int\000"
- 1715      7420696E 
- 1715      7400
- 1716              	.LASF20:
- 1717 02fd 5343425F 		.ascii	"SCB_1_UartStop\000"
- 1717      315F5561 
- 1717      72745374 
- 1717      6F7000
- 1718              	.LASF32:
- 1719 030c 5343425F 		.ascii	"SCB_1_UartSetRtsFifoLevel\000"
- 1719      315F5561 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccrhvd89.s 			page 48
+ 1696      206C6F6E 
+ 1696      6720756E 
+ 1696      7369676E 
+ 1696      65642069 
+ 1697              	.LASF30:
+ 1698 0283 5343425F 		.ascii	"SCB_1_UartSetRtsPolarity\000"
+ 1698      315F5561 
+ 1698      72745365 
+ 1698      74527473 
+ 1698      506F6C61 
+ 1699              	.LASF19:
+ 1700 029c 5343425F 		.ascii	"SCB_1_UartPostEnable\000"
+ 1700      315F5561 
+ 1700      7274506F 
+ 1700      7374456E 
+ 1700      61626C65 
+ 1701              	.LASF31:
+ 1702 02b1 706F6C61 		.ascii	"polarity\000"
+ 1702      72697479 
+ 1702      00
+ 1703              	.LASF37:
+ 1704 02ba 62756649 		.ascii	"bufIndex\000"
+ 1704      6E646578 
+ 1704      00
+ 1705              	.LASF22:
+ 1706 02c3 5343425F 		.ascii	"SCB_1_UartSetRxAddressMask\000"
+ 1706      315F5561 
+ 1706      72745365 
+ 1706      74527841 
+ 1706      64647265 
+ 1707              	.LASF17:
+ 1708 02de 73697A65 		.ascii	"sizetype\000"
+ 1708      74797065 
+ 1708      00
+ 1709              	.LASF48:
+ 1710 02e7 47656E65 		.ascii	"Generated_Source\\PSoC4\\SCB_1_UART.c\000"
+ 1710      72617465 
+ 1710      645F536F 
+ 1710      75726365 
+ 1710      5C50536F 
+ 1711              	.LASF39:
+ 1712 030b 74784461 		.ascii	"txDataByte\000"
+ 1712      74614279 
+ 1712      746500
+ 1713              	.LASF27:
+ 1714 0316 5343425F 		.ascii	"SCB_1_UartGetChar\000"
+ 1714      315F5561 
+ 1714      72744765 
+ 1714      74436861 
+ 1714      7200
+ 1715              	.LASF2:
+ 1716 0328 73686F72 		.ascii	"short int\000"
+ 1716      7420696E 
+ 1716      7400
+ 1717              	.LASF20:
+ 1718 0332 5343425F 		.ascii	"SCB_1_UartStop\000"
+ 1718      315F5561 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccF70MIu.s 			page 48
 
 
- 1719      72745365 
- 1719      74527473 
- 1719      4669666F 
- 1720              	.LASF4:
- 1721 0326 6C6F6E67 		.ascii	"long int\000"
- 1721      20696E74 
- 1721      00
- 1722              	.LASF29:
- 1723 032f 746D7053 		.ascii	"tmpStatus\000"
- 1723      74617475 
- 1723      7300
- 1724              	.LASF25:
- 1725 0339 6D617463 		.ascii	"matchReg\000"
- 1725      68526567 
- 1725      00
- 1726              	.LASF16:
- 1727 0342 6C6F6E67 		.ascii	"long double\000"
- 1727      20646F75 
- 1727      626C6500 
- 1728              	.LASF0:
- 1729 034e 7369676E 		.ascii	"signed char\000"
- 1729      65642063 
- 1729      68617200 
- 1730              	.LASF45:
- 1731 035a 74784374 		.ascii	"txCtrlReg\000"
- 1731      726C5265 
- 1731      6700
- 1732              	.LASF34:
- 1733 0364 75617274 		.ascii	"uartFlowCtrl\000"
- 1733      466C6F77 
- 1733      4374726C 
- 1733      00
- 1734              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1718      72745374 
+ 1718      6F7000
+ 1719              	.LASF32:
+ 1720 0341 5343425F 		.ascii	"SCB_1_UartSetRtsFifoLevel\000"
+ 1720      315F5561 
+ 1720      72745365 
+ 1720      74527473 
+ 1720      4669666F 
+ 1721              	.LASF4:
+ 1722 035b 6C6F6E67 		.ascii	"long int\000"
+ 1722      20696E74 
+ 1722      00
+ 1723              	.LASF29:
+ 1724 0364 746D7053 		.ascii	"tmpStatus\000"
+ 1724      74617475 
+ 1724      7300
+ 1725              	.LASF25:
+ 1726 036e 6D617463 		.ascii	"matchReg\000"
+ 1726      68526567 
+ 1726      00
+ 1727              	.LASF16:
+ 1728 0377 6C6F6E67 		.ascii	"long double\000"
+ 1728      20646F75 
+ 1728      626C6500 
+ 1729              	.LASF0:
+ 1730 0383 7369676E 		.ascii	"signed char\000"
+ 1730      65642063 
+ 1730      68617200 
+ 1731              	.LASF45:
+ 1732 038f 74784374 		.ascii	"txCtrlReg\000"
+ 1732      726C5265 
+ 1732      6700
+ 1733              	.LASF34:
+ 1734 0399 75617274 		.ascii	"uartFlowCtrl\000"
+ 1734      466C6F77 
+ 1734      4374726C 
+ 1734      00
+ 1735              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

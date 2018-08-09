@@ -226,7 +226,7 @@ CYBLE_GAP_AUTH_INFO_T cyBle_authInfo =
 {
     (CYBLE_GAP_SEC_MODE_1 | CYBLE_GAP_SEC_LEVEL_1 ), /* uint8 security */
     CYBLE_GAP_BONDING, /* uint8 bonding */
-    0x10u,      /* uint8 ekeySize */
+    0x08u,      /* uint8 ekeySize */
     CYBLE_GAP_AUTH_ERROR_NONE, /* CYBLE_AUTH_FAILED_REASON_T authErr */
     0x01u,      /* uint8 pairingProperties */
 };

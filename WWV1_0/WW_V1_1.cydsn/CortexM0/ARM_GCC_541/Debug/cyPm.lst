@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
   29:Generated_Source\PSoC4/cyPm.h **** \brief PSoC 4 devices support the following power modes (in order of high to low power consumption)
   30:Generated_Source\PSoC4/cyPm.h **** Deep Sleep, Hibernate, and Stop. Active, Sleep and Deep-Sleep are standard ARM defined power modes,
   31:Generated_Source\PSoC4/cyPm.h **** ARM CPUs. Hibernate/Stop are even lower power modes that are entered from firmware just like Deep-S
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 2
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 2
 
 
   32:Generated_Source\PSoC4/cyPm.h **** the CPU (and all peripherals) goes through a full reset.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
   86:Generated_Source\PSoC4/cyPm.h **** void CySysPmSleep(void);
   87:Generated_Source\PSoC4/cyPm.h **** void CySysPmDeepSleep(void);
   88:Generated_Source\PSoC4/cyPm.h **** 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 3
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 3
 
 
   89:Generated_Source\PSoC4/cyPm.h **** #if(CY_IP_SRSSV2)
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  143:Generated_Source\PSoC4/cyPm.h ****     #define CY_PM_CPU_SCR_REG                   (*(reg32 *) CYREG_CM0P_SCR)
  144:Generated_Source\PSoC4/cyPm.h ****     #define CY_PM_CPU_SCR_PTR                   ( (reg32 *) CYREG_CM0P_SCR)
  145:Generated_Source\PSoC4/cyPm.h **** #endif /* (CY_IP_CPUSS_CM0) */
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 4
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 4
 
 
  146:Generated_Source\PSoC4/cyPm.h **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  200:Generated_Source\PSoC4/cyPm.h **** #else
  201:Generated_Source\PSoC4/cyPm.h ****     #define CY_PM_PWR_KEY_DELAY_REG_DEFAULT     ((uint32) 248u)
  202:Generated_Source\PSoC4/cyPm.h ****     #define CY_PM_PWR_KEY_DELAY_FREQ_DEFAULT    (48u)
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 5
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 5
 
 
  203:Generated_Source\PSoC4/cyPm.h **** #endif /* (CY_IP_SRSSV2) */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  233:Generated_Source\PSoC4/cyPm.h ****                 CY_CLEAR_REG32_FIELD( CYREG_GPIO_PRT2_PC, CYFLD_GPIO_PRT_PORT_IB_MODE_SEL);
   51              		.loc 1 233 0
   52 001c 124B     		ldr	r3, .L2+8
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 6
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 6
 
 
   53 001e 124A     		ldr	r2, .L2+8
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  255:Generated_Source\PSoC4/cyPm.h **** 
  256:Generated_Source\PSoC4/cyPm.h ****             #ifdef CYREG_GPIO_PRT8_PC
  257:Generated_Source\PSoC4/cyPm.h ****                 CY_CLEAR_REG32_FIELD( CYREG_GPIO_PRT8_PC, CYFLD_GPIO_PRT_PORT_IB_MODE_SEL);
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 7
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 7
 
 
  258:Generated_Source\PSoC4/cyPm.h ****             #endif /* CYREG_GPIO_PRT8_PC */
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  110              	CySysPmSleep:
  111              	.LFB3:
  112              		.file 2 "Generated_Source\\PSoC4\\cyPm.c"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 8
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 8
 
 
    1:Generated_Source\PSoC4/cyPm.c **** /***************************************************************************//**
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  130 000e 2370     		strb	r3, [r4]
   38:Generated_Source\PSoC4/cyPm.c **** 
   39:Generated_Source\PSoC4/cyPm.c ****     /* CPU enters Sleep mode upon execution of WFI */
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 9
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 9
 
 
   40:Generated_Source\PSoC4/cyPm.c ****     CY_PM_CPU_SCR_REG &= (uint32) (~CY_PM_CPU_SCR_SLEEPDEEP);
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
   53:Generated_Source\PSoC4/cyPm.c **** * Puts the part into the Deep Sleep state. If the firmware attempts to enter
   54:Generated_Source\PSoC4/cyPm.c **** * this mode before the system is ready (that is, when
   55:Generated_Source\PSoC4/cyPm.c **** * PWR_CONTROL.LPM_READY = 0), then the device will go into the Sleep mode
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 10
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 10
 
 
   56:Generated_Source\PSoC4/cyPm.c **** * instead and automatically enter the originally intended mode when the
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  192 0012 114A     		ldr	r2, .L8
  193 0014 1268     		ldr	r2, [r2]
  194 0016 5200     		lsls	r2, r2, #1
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 11
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 11
 
 
  195 0018 5208     		lsrs	r2, r2, #1
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  223              		.loc 2 115 0
  224              		.thumb
  225              		.syntax unified
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 12
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 12
 
 
  226 0040 094B     		ldr	r3, .L8+16
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  137:Generated_Source\PSoC4/cyPm.c ****     ****************************************************************************//**
  138:Generated_Source\PSoC4/cyPm.c ****     *
  139:Generated_Source\PSoC4/cyPm.c ****     * Puts the part into the Hibernate state. Only SRAM and UDBs are retained;
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 13
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 13
 
 
  140:Generated_Source\PSoC4/cyPm.c ****     * most internal supplies are off. Wakeup is possible from a pin or a hibernate
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  280 0014 114B     		ldr	r3, .L11
  281 0016 114A     		ldr	r2, .L11
  282 0018 1268     		ldr	r2, [r2]
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 14
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 14
 
 
  283 001a 8021     		movs	r1, #128
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  316              		.thumb
  317              		.syntax unified
  318 004a FB1D     		adds	r3, r7, #7
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 15
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 15
 
 
  319 004c 1B78     		ldrb	r3, [r3]
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  220:Generated_Source\PSoC4/cyPm.c ****     {
  347              		.loc 2 220 0
  348              		.cfi_startproc
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 16
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 16
 
 
  349              		@ args = 0, pretend = 0, frame = 0
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  385              		.loc 2 238 0
  386              	@ 238 "Generated_Source\PSoC4\cyPm.c" 1
  387 002e C046     		NOP
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 17
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 17
 
 
  388              	
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  264:Generated_Source\PSoC4/cyPm.c ****     void CySysPmSetWakeupPolarity(uint32 polarity)
  265:Generated_Source\PSoC4/cyPm.c ****     {
  417              		.loc 2 265 0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 18
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 18
 
 
  418              		.cfi_startproc
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  461 0032 0F23     		movs	r3, #15
  462 0034 FB18     		adds	r3, r7, r3
  463 0036 1B78     		ldrb	r3, [r3]
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 19
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 19
 
 
  464 0038 1800     		movs	r0, r3
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  499              		.cfi_def_cfa_register 7
  294:Generated_Source\PSoC4/cyPm.c ****         uint32 reason = CY_PM_RESET_REASON_UNKN;
  500              		.loc 2 294 0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 20
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 20
 
 
  501 0006 0023     		movs	r3, #0
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  529              		.loc 2 310 0
  530 002c 0323     		movs	r3, #3
  531 002e 7B60     		str	r3, [r7, #4]
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 21
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 21
 
 
  311:Generated_Source\PSoC4/cyPm.c **** 
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  565              		.cfi_offset 7, -8
  566              		.cfi_offset 14, -4
  567 0002 83B0     		sub	sp, sp, #12
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 22
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 22
 
 
  568              		.cfi_def_cfa_offset 24
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  357:Generated_Source\PSoC4/cyPm.c **** 
  358:Generated_Source\PSoC4/cyPm.c ****             /* Second write causes the freeze of IO-Cells to save IO-Cell state */
  359:Generated_Source\PSoC4/cyPm.c ****             CY_PM_PWR_STOP_REG = CY_PM_PWR_STOP_REG;
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 23
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 23
 
 
  600              		.loc 2 359 0
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  380:Generated_Source\PSoC4/cyPm.c ****     *
  381:Generated_Source\PSoC4/cyPm.c ****     *******************************************************************************/
  382:Generated_Source\PSoC4/cyPm.c ****     void CySysPmUnfreezeIo(void)
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 24
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 24
 
 
  383:Generated_Source\PSoC4/cyPm.c ****     {
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  400:Generated_Source\PSoC4/cyPm.c ****         /* Lock STOP mode: write PWR_STOP.FREEZE=0, UNLOCK=0x00, STOP=0, .TOKEN */
  401:Generated_Source\PSoC4/cyPm.c ****         CY_PM_PWR_STOP_REG &= (CY_PM_PWR_STOP_TOKEN_MASK | CY_PM_PWR_STOP_POLARITY);
  670              		.loc 2 401 0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 25
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 25
 
 
  671 002a 074B     		ldr	r3, .L35
@@ -1479,17 +1479,17 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  703 0006 00000000 		.4byte	.Ldebug_abbrev0
  704 000a 04       		.byte	0x4
  705 000b 01       		.uleb128 0x1
- 706 000c AF000000 		.4byte	.LASF27
+ 706 000c 03010000 		.4byte	.LASF27
  707 0010 0C       		.byte	0xc
- 708 0011 2C020000 		.4byte	.LASF28
- 709 0015 A4010000 		.4byte	.LASF29
+ 708 0011 61020000 		.4byte	.LASF28
+ 709 0015 A9000000 		.4byte	.LASF29
  710 0019 00000000 		.4byte	.Ldebug_ranges0+0
  711 001d 00000000 		.4byte	0
  712 0021 00000000 		.4byte	.Ldebug_line0
  713 0025 02       		.uleb128 0x2
  714 0026 01       		.byte	0x1
  715 0027 06       		.byte	0x6
- 716 0028 56020000 		.4byte	.LASF0
+ 716 0028 8B020000 		.4byte	.LASF0
  717 002c 02       		.uleb128 0x2
  718 002d 01       		.byte	0x1
  719 002e 08       		.byte	0x8
@@ -1497,8 +1497,8 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  721 0033 02       		.uleb128 0x2
  722 0034 02       		.byte	0x2
  723 0035 05       		.byte	0x5
- 724 0036 08020000 		.4byte	.LASF2
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 26
+ 724 0036 37020000 		.4byte	.LASF2
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 26
 
 
  725 003a 02       		.uleb128 0x2
@@ -1508,7 +1508,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  729 0041 02       		.uleb128 0x2
  730 0042 04       		.byte	0x4
  731 0043 05       		.byte	0x5
- 732 0044 23020000 		.4byte	.LASF4
+ 732 0044 58020000 		.4byte	.LASF4
  733 0048 02       		.uleb128 0x2
  734 0049 04       		.byte	0x4
  735 004a 07       		.byte	0x7
@@ -1516,11 +1516,11 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  737 004f 02       		.uleb128 0x2
  738 0050 08       		.byte	0x8
  739 0051 05       		.byte	0x5
- 740 0052 E8010000 		.4byte	.LASF6
+ 740 0052 17020000 		.4byte	.LASF6
  741 0056 02       		.uleb128 0x2
  742 0057 08       		.byte	0x8
  743 0058 07       		.byte	0x7
- 744 0059 86010000 		.4byte	.LASF7
+ 744 0059 D1010000 		.4byte	.LASF7
  745 005d 03       		.uleb128 0x3
  746 005e 04       		.byte	0x4
  747 005f 05       		.byte	0x5
@@ -1528,19 +1528,19 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  749 0064 02       		.uleb128 0x2
  750 0065 04       		.byte	0x4
  751 0066 07       		.byte	0x7
- 752 0067 79010000 		.4byte	.LASF8
+ 752 0067 C4010000 		.4byte	.LASF8
  753 006b 04       		.uleb128 0x4
- 754 006c A9000000 		.4byte	.LASF9
+ 754 006c 41020000 		.4byte	.LASF9
  755 0070 03       		.byte	0x3
  756 0071 E401     		.2byte	0x1e4
  757 0073 2C000000 		.4byte	0x2c
  758 0077 04       		.uleb128 0x4
- 759 0078 6B010000 		.4byte	.LASF10
+ 759 0078 B6010000 		.4byte	.LASF10
  760 007c 03       		.byte	0x3
  761 007d E501     		.2byte	0x1e5
  762 007f 3A000000 		.4byte	0x3a
  763 0083 04       		.uleb128 0x4
- 764 0084 72010000 		.4byte	.LASF11
+ 764 0084 BD010000 		.4byte	.LASF11
  765 0088 03       		.byte	0x3
  766 0089 E601     		.2byte	0x1e6
  767 008b 48000000 		.4byte	0x48
@@ -1551,14 +1551,14 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  772 0096 02       		.uleb128 0x2
  773 0097 08       		.byte	0x8
  774 0098 04       		.byte	0x4
- 775 0099 49010000 		.4byte	.LASF13
+ 775 0099 9D010000 		.4byte	.LASF13
  776 009d 02       		.uleb128 0x2
  777 009e 01       		.byte	0x1
  778 009f 08       		.byte	0x8
- 779 00a0 F6010000 		.4byte	.LASF14
+ 779 00a0 25020000 		.4byte	.LASF14
  780 00a4 04       		.uleb128 0x4
  781 00a5 00000000 		.4byte	.LASF15
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 27
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 27
 
 
  782 00a9 03       		.byte	0x3
@@ -1576,11 +1576,11 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  794 00c6 02       		.uleb128 0x2
  795 00c7 08       		.byte	0x8
  796 00c8 04       		.byte	0x4
- 797 00c9 4A020000 		.4byte	.LASF17
+ 797 00c9 7F020000 		.4byte	.LASF17
  798 00cd 02       		.uleb128 0x2
  799 00ce 04       		.byte	0x4
  800 00cf 07       		.byte	0x7
- 801 00d0 DF010000 		.4byte	.LASF18
+ 801 00d0 0E020000 		.4byte	.LASF18
  802 00d4 06       		.uleb128 0x6
  803 00d5 56000000 		.4byte	.LASF30
  804 00d9 01       		.byte	0x1
@@ -1608,7 +1608,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  826 0107 6F       		.sleb128 -17
  827 0108 00       		.byte	0
  828 0109 07       		.uleb128 0x7
- 829 010a 12020000 		.4byte	.LASF20
+ 829 010a 47020000 		.4byte	.LASF20
  830 010e 02       		.byte	0x2
  831 010f 40       		.byte	0x40
  832 0110 00000000 		.4byte	.LFB4
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  836 011a 3B010000 		.4byte	0x13b
  837 011e 08       		.uleb128 0x8
  838 011f 88000000 		.4byte	.LASF21
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 28
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 28
 
 
  839 0123 02       		.byte	0x2
@@ -1628,7 +1628,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  843 012a 91       		.byte	0x91
  844 012b 6F       		.sleb128 -17
  845 012c 08       		.uleb128 0x8
- 846 012d FB010000 		.4byte	.LASF22
+ 846 012d 2A020000 		.4byte	.LASF22
  847 0131 02       		.byte	0x2
  848 0132 44       		.byte	0x44
  849 0133 C1000000 		.4byte	0xc1
@@ -1655,7 +1655,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  870 015d 6F       		.sleb128 -17
  871 015e 00       		.byte	0
  872 015f 09       		.uleb128 0x9
- 873 0160 3D010000 		.4byte	.LASF31
+ 873 0160 91010000 		.4byte	.LASF31
  874 0164 02       		.byte	0x2
  875 0165 DB       		.byte	0xdb
  876 0166 00000000 		.4byte	.LFB6
@@ -1672,13 +1672,13 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  887 0181 9C       		.byte	0x9c
  888 0182 A5010000 		.4byte	0x1a5
  889 0186 0B       		.uleb128 0xb
- 890 0187 62010000 		.4byte	.LASF32
+ 890 0187 EF010000 		.4byte	.LASF32
  891 018b 02       		.byte	0x2
  892 018c 0801     		.2byte	0x108
  893 018e 83000000 		.4byte	0x83
  894 0192 02       		.uleb128 0x2
  895 0193 91       		.byte	0x91
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 29
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 29
 
 
  896 0194 64       		.sleb128 -28
@@ -1692,7 +1692,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  904 01a3 6F       		.sleb128 -17
  905 01a4 00       		.byte	0
  906 01a5 0D       		.uleb128 0xd
- 907 01a6 C9010000 		.4byte	.LASF33
+ 907 01a6 F8010000 		.4byte	.LASF33
  908 01aa 02       		.byte	0x2
  909 01ab 2401     		.2byte	0x124
  910 01ad 83000000 		.4byte	0x83
@@ -1702,7 +1702,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  914 01ba 9C       		.byte	0x9c
  915 01bb CF010000 		.4byte	0x1cf
  916 01bf 0C       		.uleb128 0xc
- 917 01c0 9D010000 		.4byte	.LASF25
+ 917 01c0 E8010000 		.4byte	.LASF25
  918 01c4 02       		.byte	0x2
  919 01c5 2601     		.2byte	0x126
  920 01c7 83000000 		.4byte	0x83
@@ -1711,7 +1711,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  923 01cd 74       		.sleb128 -12
  924 01ce 00       		.byte	0
  925 01cf 0A       		.uleb128 0xa
- 926 01d0 62020000 		.4byte	.LASF26
+ 926 01d0 97020000 		.4byte	.LASF26
  927 01d4 02       		.byte	0x2
  928 01d5 4E01     		.2byte	0x14e
  929 01d7 00000000 		.4byte	.LFB9
@@ -1729,7 +1729,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  941 01f3 6F       		.sleb128 -17
  942 01f4 00       		.byte	0
  943 01f5 0E       		.uleb128 0xe
- 944 01f6 50010000 		.4byte	.LASF34
+ 944 01f6 A4010000 		.4byte	.LASF34
  945 01fa 02       		.byte	0x2
  946 01fb 7E01     		.2byte	0x17e
  947 01fd 00000000 		.4byte	.LFB10
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  950 0206 9C       		.byte	0x9c
  951 0207 0C       		.uleb128 0xc
  952 0208 88000000 		.4byte	.LASF21
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 30
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 30
 
 
  953 020c 02       		.byte	0x2
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  1007 002c 03       		.uleb128 0x3
  1008 002d 0E       		.uleb128 0xe
  1009 002e 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 31
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 31
 
 
  1010 002f 0B       		.uleb128 0xb
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  1064 0066 9642     		.uleb128 0x2116
  1065 0068 19       		.uleb128 0x19
  1066 0069 01       		.uleb128 0x1
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 32
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 32
 
 
  1067 006a 13       		.uleb128 0x13
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  1121 00a1 11       		.uleb128 0x11
  1122 00a2 01       		.uleb128 0x1
  1123 00a3 12       		.uleb128 0x12
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 33
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 33
 
 
  1124 00a4 06       		.uleb128 0x6
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  1178 00db 11       		.uleb128 0x11
  1179 00dc 01       		.uleb128 0x1
  1180 00dd 12       		.uleb128 0x12
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 34
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 34
 
 
  1181 00de 06       		.uleb128 0x6
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  1235 0044 40000000 		.4byte	.LFE8-.LFB8
  1236 0048 00000000 		.4byte	.LFB9
  1237 004c 5C000000 		.4byte	.LFE9-.LFB9
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 35
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 35
 
 
  1238 0050 00000000 		.4byte	.LFB10
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  1276      65642069 
  1276      6E7400
  1277              	.LASF23:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 36
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 36
 
 
  1278 0045 43795379 		.ascii	"CySysPmHibernate\000"
@@ -2131,128 +2131,133 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 1
  1288      69676E65 
  1288      6420696E 
  1288      7400
- 1289              	.LASF9:
- 1290 00a9 75696E74 		.ascii	"uint8\000"
- 1290      3800
- 1291              	.LASF27:
- 1292 00af 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1292      43313120 
- 1292      352E342E 
- 1292      31203230 
- 1292      31363036 
- 1293 00e2 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 1293      20726576 
- 1293      6973696F 
- 1293      6E203233 
- 1293      37373135 
- 1294 0115 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 1294      66756E63 
- 1294      74696F6E 
- 1294      2D736563 
- 1294      74696F6E 
- 1295              	.LASF31:
- 1296 013d 43795379 		.ascii	"CySysPmStop\000"
- 1296      73506D53 
- 1296      746F7000 
- 1297              	.LASF13:
- 1298 0149 646F7562 		.ascii	"double\000"
- 1298      6C6500
- 1299              	.LASF34:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 37
+ 1289              	.LASF29:
+ 1290 00a9 433A5C55 		.ascii	"C:\\Users\\Yehuda Ben Chaim\\Google Drive\\My Proje"
+ 1290      73657273 
+ 1290      5C596568 
+ 1290      75646120 
+ 1290      42656E20 
+ 1291 00d8 6374735C 		.ascii	"cts\\WW\\FW\\WorkingCopy\\WWV1_0\\WW_V1_1.cydsn\000"
+ 1291      57575C46 
+ 1291      575C576F 
+ 1291      726B696E 
+ 1291      67436F70 
+ 1292              	.LASF27:
+ 1293 0103 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1293      43313120 
+ 1293      352E342E 
+ 1293      31203230 
+ 1293      31363036 
+ 1294 0136 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 1294      20726576 
+ 1294      6973696F 
+ 1294      6E203233 
+ 1294      37373135 
+ 1295 0169 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1295      66756E63 
+ 1295      74696F6E 
+ 1295      2D736563 
+ 1295      74696F6E 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 37
 
 
- 1300 0150 43795379 		.ascii	"CySysPmUnfreezeIo\000"
- 1300      73506D55 
- 1300      6E667265 
- 1300      657A6549 
- 1300      6F00
- 1301              	.LASF32:
- 1302 0162 706F6C61 		.ascii	"polarity\000"
- 1302      72697479 
- 1302      00
- 1303              	.LASF10:
- 1304 016b 75696E74 		.ascii	"uint16\000"
- 1304      313600
- 1305              	.LASF11:
- 1306 0172 75696E74 		.ascii	"uint32\000"
- 1306      333200
- 1307              	.LASF8:
- 1308 0179 756E7369 		.ascii	"unsigned int\000"
- 1308      676E6564 
- 1308      20696E74 
- 1308      00
- 1309              	.LASF7:
- 1310 0186 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1310      206C6F6E 
- 1310      6720756E 
- 1310      7369676E 
- 1310      65642069 
- 1311              	.LASF25:
- 1312 019d 72656173 		.ascii	"reason\000"
- 1312      6F6E00
- 1313              	.LASF29:
- 1314 01a4 453A5C4D 		.ascii	"E:\\MyProjects\\WWV1_0_0\\WW_V1_1.cydsn\000"
- 1314      7950726F 
- 1314      6A656374 
- 1314      735C5757 
- 1314      56315F30 
- 1315              	.LASF33:
- 1316 01c9 43795379 		.ascii	"CySysPmGetResetReason\000"
- 1316      73506D47 
- 1316      65745265 
- 1316      73657452 
- 1316      6561736F 
- 1317              	.LASF18:
- 1318 01df 73697A65 		.ascii	"sizetype\000"
- 1318      74797065 
- 1318      00
- 1319              	.LASF6:
- 1320 01e8 6C6F6E67 		.ascii	"long long int\000"
- 1320      206C6F6E 
- 1320      6720696E 
- 1320      7400
- 1321              	.LASF14:
- 1322 01f6 63686172 		.ascii	"char\000"
- 1322      00
- 1323              	.LASF22:
- 1324 01fb 636C6B53 		.ascii	"clkSelectReg\000"
- 1324      656C6563 
- 1324      74526567 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc3bAknA.s 			page 38
+ 1296              	.LASF31:
+ 1297 0191 43795379 		.ascii	"CySysPmStop\000"
+ 1297      73506D53 
+ 1297      746F7000 
+ 1298              	.LASF13:
+ 1299 019d 646F7562 		.ascii	"double\000"
+ 1299      6C6500
+ 1300              	.LASF34:
+ 1301 01a4 43795379 		.ascii	"CySysPmUnfreezeIo\000"
+ 1301      73506D55 
+ 1301      6E667265 
+ 1301      657A6549 
+ 1301      6F00
+ 1302              	.LASF10:
+ 1303 01b6 75696E74 		.ascii	"uint16\000"
+ 1303      313600
+ 1304              	.LASF11:
+ 1305 01bd 75696E74 		.ascii	"uint32\000"
+ 1305      333200
+ 1306              	.LASF8:
+ 1307 01c4 756E7369 		.ascii	"unsigned int\000"
+ 1307      676E6564 
+ 1307      20696E74 
+ 1307      00
+ 1308              	.LASF7:
+ 1309 01d1 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1309      206C6F6E 
+ 1309      6720756E 
+ 1309      7369676E 
+ 1309      65642069 
+ 1310              	.LASF25:
+ 1311 01e8 72656173 		.ascii	"reason\000"
+ 1311      6F6E00
+ 1312              	.LASF32:
+ 1313 01ef 706F6C61 		.ascii	"polarity\000"
+ 1313      72697479 
+ 1313      00
+ 1314              	.LASF33:
+ 1315 01f8 43795379 		.ascii	"CySysPmGetResetReason\000"
+ 1315      73506D47 
+ 1315      65745265 
+ 1315      73657452 
+ 1315      6561736F 
+ 1316              	.LASF18:
+ 1317 020e 73697A65 		.ascii	"sizetype\000"
+ 1317      74797065 
+ 1317      00
+ 1318              	.LASF6:
+ 1319 0217 6C6F6E67 		.ascii	"long long int\000"
+ 1319      206C6F6E 
+ 1319      6720696E 
+ 1319      7400
+ 1320              	.LASF14:
+ 1321 0225 63686172 		.ascii	"char\000"
+ 1321      00
+ 1322              	.LASF22:
+ 1323 022a 636C6B53 		.ascii	"clkSelectReg\000"
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccmz08ZU.s 			page 38
 
 
- 1324      00
- 1325              	.LASF2:
- 1326 0208 73686F72 		.ascii	"short int\000"
- 1326      7420696E 
- 1326      7400
- 1327              	.LASF20:
- 1328 0212 43795379 		.ascii	"CySysPmDeepSleep\000"
- 1328      73506D44 
- 1328      65657053 
- 1328      6C656570 
- 1328      00
- 1329              	.LASF4:
- 1330 0223 6C6F6E67 		.ascii	"long int\000"
- 1330      20696E74 
- 1330      00
- 1331              	.LASF28:
- 1332 022c 47656E65 		.ascii	"Generated_Source\\PSoC4\\cyPm.c\000"
- 1332      72617465 
- 1332      645F536F 
- 1332      75726365 
- 1332      5C50536F 
- 1333              	.LASF17:
- 1334 024a 6C6F6E67 		.ascii	"long double\000"
- 1334      20646F75 
- 1334      626C6500 
- 1335              	.LASF0:
- 1336 0256 7369676E 		.ascii	"signed char\000"
- 1336      65642063 
- 1336      68617200 
- 1337              	.LASF26:
- 1338 0262 43795379 		.ascii	"CySysPmFreezeIo\000"
- 1338      73506D46 
- 1338      7265657A 
- 1338      65496F00 
- 1339              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1323      656C6563 
+ 1323      74526567 
+ 1323      00
+ 1324              	.LASF2:
+ 1325 0237 73686F72 		.ascii	"short int\000"
+ 1325      7420696E 
+ 1325      7400
+ 1326              	.LASF9:
+ 1327 0241 75696E74 		.ascii	"uint8\000"
+ 1327      3800
+ 1328              	.LASF20:
+ 1329 0247 43795379 		.ascii	"CySysPmDeepSleep\000"
+ 1329      73506D44 
+ 1329      65657053 
+ 1329      6C656570 
+ 1329      00
+ 1330              	.LASF4:
+ 1331 0258 6C6F6E67 		.ascii	"long int\000"
+ 1331      20696E74 
+ 1331      00
+ 1332              	.LASF28:
+ 1333 0261 47656E65 		.ascii	"Generated_Source\\PSoC4\\cyPm.c\000"
+ 1333      72617465 
+ 1333      645F536F 
+ 1333      75726365 
+ 1333      5C50536F 
+ 1334              	.LASF17:
+ 1335 027f 6C6F6E67 		.ascii	"long double\000"
+ 1335      20646F75 
+ 1335      626C6500 
+ 1336              	.LASF0:
+ 1337 028b 7369676E 		.ascii	"signed char\000"
+ 1337      65642063 
+ 1337      68617200 
+ 1338              	.LASF26:
+ 1339 0297 43795379 		.ascii	"CySysPmFreezeIo\000"
+ 1339      73506D46 
+ 1339      7265657A 
+ 1339      65496F00 
+ 1340              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

@@ -199,7 +199,7 @@ static void ClockSetup(void)
 	CyDelayUs(1500u); /* Wait to stabilize */
 
 	/* Setup phase aligned clocks */
-	CY_SET_REG32((void *)CYREG_PERI_DIV_16_CTL0, 0x00002200u);
+	CY_SET_REG32((void *)CYREG_PERI_DIV_16_CTL0, 0x00004400u);
 	CY_SET_REG32((void *)CYREG_PERI_DIV_CMD, 0x8000FF40u);
 
 	/* CYDEV_CLK_IMO_CONFIG Starting address: CYDEV_CLK_IMO_CONFIG */
@@ -293,7 +293,8 @@ void cyfitter_cfg(void)
 		}
 
 		/* HSIOM Starting address: CYDEV_HSIOM_BASE */
-		CY_SET_REG32((void *)(CYDEV_HSIOM_BASE), 0xEE990000u);
+		CY_SET_REG32((void *)(CYDEV_HSIOM_BASE), 0xEE900000u);
+		CY_SET_REG32((void *)(CYREG_HSIOM_PORT_SEL1), 0x00090000u);
 
 		/* UDB_PA_0 Starting address: CYDEV_UDB_PA0_BASE */
 		CY_SET_REG32((void *)(CYDEV_UDB_PA0_BASE), 0x00990000u);
@@ -313,15 +314,15 @@ void cyfitter_cfg(void)
 
 	/* Perform second pass device configuration. These items must be configured in specific order after the regular configuration is done. */
 	/* IOPINS0_0 Starting address: CYDEV_GPIO_PRT0_BASE */
-	CY_SET_REG32((void *)(CYDEV_GPIO_PRT0_BASE), 0x00000022u);
-	CY_SET_REG32((void *)(CYREG_GPIO_PRT0_PC), 0x00DB1D90u);
-	CY_SET_REG32((void *)(CYREG_GPIO_PRT0_INTR_CFG), 0x00000008u);
+	CY_SET_REG32((void *)(CYDEV_GPIO_PRT0_BASE), 0x0000002Cu);
+	CY_SET_REG32((void *)(CYREG_GPIO_PRT0_PC), 0x00DB64B0u);
+	CY_SET_REG32((void *)(CYREG_GPIO_PRT0_INTR_CFG), 0x000000A0u);
 	CY_SET_REG32((void *)(CYREG_GPIO_PRT0_PC2), 0x00000020u);
 
 	/* IOPINS0_1 Starting address: CYDEV_GPIO_PRT1_BASE */
-	CY_SET_REG32((void *)(CYDEV_GPIO_PRT1_BASE), 0x00000021u);
-	CY_SET_REG32((void *)(CYREG_GPIO_PRT1_PC), 0x00016DB2u);
-	CY_SET_REG32((void *)(CYREG_GPIO_PRT1_INTR_CFG), 0x00000802u);
+	CY_SET_REG32((void *)(CYDEV_GPIO_PRT1_BASE), 0x00000020u);
+	CY_SET_REG32((void *)(CYREG_GPIO_PRT1_PC), 0x00011DB6u);
+	CY_SET_REG32((void *)(CYREG_GPIO_PRT1_INTR_CFG), 0x00000800u);
 
 	/* IOPINS0_2 Starting address: CYDEV_GPIO_PRT2_BASE */
 	CY_SET_REG32((void *)(CYDEV_GPIO_PRT2_BASE), 0x00000002u);

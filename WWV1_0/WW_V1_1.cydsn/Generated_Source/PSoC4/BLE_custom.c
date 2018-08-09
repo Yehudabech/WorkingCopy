@@ -51,6 +51,17 @@ const CYBLE_CUSTOMS_T cyBle_customs[0x01u] = {
                     CYBLE_GATT_INVALID_ATTR_HANDLE_VALUE, 
                 }, 
             },
+
+            /* OutgoingData characteristic */
+            {
+                0x0019u, /* Handle of the OutgoingData characteristic */ 
+                
+                /* Array of Descriptors handles */
+                {
+                    0x001Au, /* Handle of the Custom Descriptor descriptor */ 
+                    CYBLE_GATT_INVALID_ATTR_HANDLE_VALUE, 
+                }, 
+            },
         }, 
     },
 };

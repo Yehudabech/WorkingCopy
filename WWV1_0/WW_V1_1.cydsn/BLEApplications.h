@@ -31,5 +31,5 @@ void UpdateConnectionParam(void);
 void Write_pass_to_flash(void);
 //void Update_password(void);
 void Update_password(uint8_t val[2]);
-uint8_t password[8];
+extern uint8_t password[4];
 /* [] END OF FILE */

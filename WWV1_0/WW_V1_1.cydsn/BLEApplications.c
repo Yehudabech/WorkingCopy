@@ -11,6 +11,8 @@
 #include "main.h"
 #include <stdbool.h>
 #include <CyFlash.h>
+#include "iprintf.h"
+
 #define CYREG_SRSS_TST_DDFT_CTRL 0x40030008
 CYBLE_GATT_HANDLE_VALUE_PAIR_T		rgbHandle;	
 uint8 ReedSwitchNotifications = FALSE;	
@@ -34,7 +36,7 @@ uint8 Addr_in_flash_flag = 0;
 cystatus WriteStatus = CYRET_SUCCESS;
 uint8 deviceConnected = FALSE;
 uint8 restartAdvertisement = FALSE;
-//uint8_t password[2];
+uint8_t password[4];        //This array is for storing the incoming data from the BLE
 uint8_t pass[2];
 static CYBLE_GATT_HANDLE_VALUE_PAIR_T        readHandle;
 static uint8 isConnectionUpdateRequested = TRUE;
@@ -111,9 +113,10 @@ void CustomEventHandler(uint32 event, void * eventParam)
            {      
                password[0] = wrReqParam->handleValPair.value.val[0];
                password[1] = wrReqParam->handleValPair.value.val[1];
-               //iprintf("the first part: %x\r\n", password[0]); 
-               //iprintf("the second part: %x\r\n", password[1]);
-               //Write_pass_to_flash();
+                
+                iprintf("The value of the password[o] is %x\n\r", password[0]);
+                iprintf("The value of the password[1] is %x\n\r", password[1]);
+           
                CyBle_GattsWriteAttributeValue(&wrReqParam->handleValPair, ZERO, &cyBle_connHandle, CYBLE_GATT_DB_PEER_INITIATED);
            }
 			/* ADD_CODE to send the response to the write request received. */

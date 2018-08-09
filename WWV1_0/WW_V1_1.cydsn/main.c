@@ -18,7 +18,7 @@ int main (void)
     CyGlobalIntEnable;
     CyBle_Start(CustomEventHandler);            //Start BLE component. the CustomEventHandler argument located in BLEApplication.c file
     SCB_1_Start();                              //Start the UART component of iprintf. UART as logger.
-    iprintf("Start up, welcome!");
+    iprintf("Start up, welcome!\n\r");
     for(;;)
     {
         if(CyBle_GetState() == CYBLE_STATE_CONNECTED)

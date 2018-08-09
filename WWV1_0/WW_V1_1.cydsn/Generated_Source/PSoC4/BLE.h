@@ -178,6 +178,9 @@
 
 #define CYBLE_ADV_PKT_INDEX_FLAGS   (0x00u)
 #define CYBLE_ADV_PKT_INDEX_LOCAL_NAME   (0x03u)
+#define CYBLE_ADV_PKT_INDEX_TX_POWER_LEVEL   (0x07u)
+#define CYBLE_ADV_PKT_INDEX_SERVICE_UUID_16   (0x0Au)
+#define CYBLE_ADV_PKT_INDEX_ADVERTISING_INTERVAL   (0x0Eu)
 
 #define CYBLE_SCN_PKT_INDEX_LOCAL_NAME   (0x00u)
 
@@ -192,7 +195,7 @@
 /* Security options from the customizer */
 #define CYBLE_SECURITY_MODE                         ((0x00u == 0u) ? CYBLE_GAP_SEC_MODE_1 : CYBLE_GAP_SEC_MODE_2)
 #define CYBLE_SECURITY_LEVEL                        (0x00u)
-#define CYBLE_SECURITY_ENC_KEY_SIZE                 (0x10u)
+#define CYBLE_SECURITY_ENC_KEY_SIZE                 (0x08u)
 
 #if (CYBLE_STRICT_PAIRING_ENABLED)
     #define CYBLE_STRICT_PAIRING_REQ_VALUE  \

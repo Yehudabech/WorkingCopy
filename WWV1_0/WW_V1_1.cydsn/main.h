@@ -17,6 +17,8 @@
 #define ENABLE_LOW_POWER_MODE
 #define HIGH                            (1)
 #define LOW                             (0)
+#define ON                              (0)
+#define OFF                             (1)
 extern bool User_RST;
 extern uint8 Notification_Data;
 extern bool RST_flag;

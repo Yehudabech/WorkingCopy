@@ -1,5 +1,5 @@
 -- Project:   C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\WW_V1_1.cyprj
--- Generated: 06/04/2018 21:28:36
+-- Generated: 08/07/2018 23:36:59
 -- PSoC Creator  4.2
 
 ENTITY WW_V1_1 IS
@@ -84,25 +84,25 @@ ARCHITECTURE __DEFAULT__ OF WW_V1_1 IS
     ATTRIBUTE lib_model OF \SCB_1:tx(0)\ : LABEL IS "iocell1";
     ATTRIBUTE Location OF \SCB_1:tx(0)\ : LABEL IS "P0[5]";
     ATTRIBUTE lib_model OF \SCB_1:rx(0)\ : LABEL IS "iocell2";
-    ATTRIBUTE Location OF \SCB_1:rx(0)\ : LABEL IS "P0[4]";
+    ATTRIBUTE Location OF \SCB_1:rx(0)\ : LABEL IS "P1[4]";
     ATTRIBUTE lib_model OF CPS(0) : LABEL IS "iocell3";
-    ATTRIBUTE Location OF CPS(0) : LABEL IS "P0[2]";
+    ATTRIBUTE Location OF CPS(0) : LABEL IS "P0[4]";
     ATTRIBUTE lib_model OF CSD(0) : LABEL IS "iocell4";
-    ATTRIBUTE Location OF CSD(0) : LABEL IS "P0[3]";
+    ATTRIBUTE Location OF CSD(0) : LABEL IS "P0[1]";
     ATTRIBUTE lib_model OF VerUp(0) : LABEL IS "iocell5";
-    ATTRIBUTE Location OF VerUp(0) : LABEL IS "P1[1]";
+    ATTRIBUTE Location OF VerUp(0) : LABEL IS "P1[0]";
     ATTRIBUTE lib_model OF VerDown(0) : LABEL IS "iocell6";
-    ATTRIBUTE Location OF VerDown(0) : LABEL IS "P1[2]";
+    ATTRIBUTE Location OF VerDown(0) : LABEL IS "P1[1]";
     ATTRIBUTE lib_model OF HozIn(0) : LABEL IS "iocell7";
-    ATTRIBUTE Location OF HozIn(0) : LABEL IS "P1[3]";
+    ATTRIBUTE Location OF HozIn(0) : LABEL IS "P1[2]";
     ATTRIBUTE lib_model OF HorOut(0) : LABEL IS "iocell8";
-    ATTRIBUTE Location OF HorOut(0) : LABEL IS "P1[4]";
+    ATTRIBUTE Location OF HorOut(0) : LABEL IS "P1[3]";
     ATTRIBUTE lib_model OF PBUp(0) : LABEL IS "iocell9";
     ATTRIBUTE Location OF PBUp(0) : LABEL IS "P1[5]";
     ATTRIBUTE lib_model OF PBDown(0) : LABEL IS "iocell10";
-    ATTRIBUTE Location OF PBDown(0) : LABEL IS "P0[1]";
+    ATTRIBUTE Location OF PBDown(0) : LABEL IS "P0[2]";
     ATTRIBUTE lib_model OF PBIn(0) : LABEL IS "iocell11";
-    ATTRIBUTE Location OF PBIn(0) : LABEL IS "P1[0]";
+    ATTRIBUTE Location OF PBIn(0) : LABEL IS "P0[3]";
     ATTRIBUTE lib_model OF PBOut(0) : LABEL IS "iocell12";
     ATTRIBUTE Location OF PBOut(0) : LABEL IS "P2[1]";
     ATTRIBUTE lib_model OF LED(0) : LABEL IS "iocell13";

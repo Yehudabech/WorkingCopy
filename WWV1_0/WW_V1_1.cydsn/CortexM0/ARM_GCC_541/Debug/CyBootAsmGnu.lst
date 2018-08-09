@@ -10791,13 +10791,13 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  261              	.set CPS__0__DR_INV, CYREG_GPIO_PRT0_DR_INV
  262              	.set CPS__0__DR_SET, CYREG_GPIO_PRT0_DR_SET
  263              	.set CPS__0__HSIOM, CYREG_HSIOM_PORT_SEL0
- 264              	.set CPS__0__HSIOM_MASK, 0x00000F00
- 265              	.set CPS__0__HSIOM_SHIFT, 8
+ 264              	.set CPS__0__HSIOM_MASK, 0x000F0000
+ 265              	.set CPS__0__HSIOM_SHIFT, 16
  266              	.set CPS__0__INTCFG, CYREG_GPIO_PRT0_INTR_CFG
  267              	.set CPS__0__INTR, CYREG_GPIO_PRT0_INTR
  268              	.set CPS__0__INTR_CFG, CYREG_GPIO_PRT0_INTR_CFG
  269              	.set CPS__0__INTSTAT, CYREG_GPIO_PRT0_INTR
- 270              	.set CPS__0__MASK, 0x04
+ 270              	.set CPS__0__MASK, 0x10
 ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 181
 
 
@@ -10820,7 +10820,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  287              	.set CPS__0__PC2, CYREG_GPIO_PRT0_PC2
  288              	.set CPS__0__PORT, 0
  289              	.set CPS__0__PS, CYREG_GPIO_PRT0_PS
- 290              	.set CPS__0__SHIFT, 2
+ 290              	.set CPS__0__SHIFT, 4
  291              	.set CPS__DR, CYREG_GPIO_PRT0_DR
  292              	.set CPS__DR_CLR, CYREG_GPIO_PRT0_DR_CLR
  293              	.set CPS__DR_INV, CYREG_GPIO_PRT0_DR_INV
@@ -10829,7 +10829,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  296              	.set CPS__INTR, CYREG_GPIO_PRT0_INTR
  297              	.set CPS__INTR_CFG, CYREG_GPIO_PRT0_INTR_CFG
  298              	.set CPS__INTSTAT, CYREG_GPIO_PRT0_INTR
- 299              	.set CPS__MASK, 0x04
+ 299              	.set CPS__MASK, 0x10
  300              	.set CPS__PA__CFG0, CYREG_UDB_PA0_CFG0
  301              	.set CPS__PA__CFG1, CYREG_UDB_PA0_CFG1
  302              	.set CPS__PA__CFG10, CYREG_UDB_PA0_CFG10
@@ -10849,7 +10849,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  316              	.set CPS__PC2, CYREG_GPIO_PRT0_PC2
  317              	.set CPS__PORT, 0
  318              	.set CPS__PS, CYREG_GPIO_PRT0_PS
- 319              	.set CPS__SHIFT, 2
+ 319              	.set CPS__SHIFT, 4
  320              	
  321              	/* CSD */
  322              	.set CSD__0__DR, CYREG_GPIO_PRT0_DR
@@ -10857,16 +10857,16 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  324              	.set CSD__0__DR_INV, CYREG_GPIO_PRT0_DR_INV
  325              	.set CSD__0__DR_SET, CYREG_GPIO_PRT0_DR_SET
  326              	.set CSD__0__HSIOM, CYREG_HSIOM_PORT_SEL0
- 327              	.set CSD__0__HSIOM_MASK, 0x0000F000
+ 327              	.set CSD__0__HSIOM_MASK, 0x000000F0
 ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 182
 
 
- 328              	.set CSD__0__HSIOM_SHIFT, 12
+ 328              	.set CSD__0__HSIOM_SHIFT, 4
  329              	.set CSD__0__INTCFG, CYREG_GPIO_PRT0_INTR_CFG
  330              	.set CSD__0__INTR, CYREG_GPIO_PRT0_INTR
  331              	.set CSD__0__INTR_CFG, CYREG_GPIO_PRT0_INTR_CFG
  332              	.set CSD__0__INTSTAT, CYREG_GPIO_PRT0_INTR
- 333              	.set CSD__0__MASK, 0x08
+ 333              	.set CSD__0__MASK, 0x02
  334              	.set CSD__0__PA__CFG0, CYREG_UDB_PA0_CFG0
  335              	.set CSD__0__PA__CFG1, CYREG_UDB_PA0_CFG1
  336              	.set CSD__0__PA__CFG10, CYREG_UDB_PA0_CFG10
@@ -10886,7 +10886,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  350              	.set CSD__0__PC2, CYREG_GPIO_PRT0_PC2
  351              	.set CSD__0__PORT, 0
  352              	.set CSD__0__PS, CYREG_GPIO_PRT0_PS
- 353              	.set CSD__0__SHIFT, 3
+ 353              	.set CSD__0__SHIFT, 1
  354              	.set CSD__DR, CYREG_GPIO_PRT0_DR
  355              	.set CSD__DR_CLR, CYREG_GPIO_PRT0_DR_CLR
  356              	.set CSD__DR_INV, CYREG_GPIO_PRT0_DR_INV
@@ -10895,7 +10895,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  359              	.set CSD__INTR, CYREG_GPIO_PRT0_INTR
  360              	.set CSD__INTR_CFG, CYREG_GPIO_PRT0_INTR_CFG
  361              	.set CSD__INTSTAT, CYREG_GPIO_PRT0_INTR
- 362              	.set CSD__MASK, 0x08
+ 362              	.set CSD__MASK, 0x02
  363              	.set CSD__PA__CFG0, CYREG_UDB_PA0_CFG0
  364              	.set CSD__PA__CFG1, CYREG_UDB_PA0_CFG1
  365              	.set CSD__PA__CFG10, CYREG_UDB_PA0_CFG10
@@ -10915,7 +10915,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  379              	.set CSD__PC2, CYREG_GPIO_PRT0_PC2
  380              	.set CSD__PORT, 0
  381              	.set CSD__PS, CYREG_GPIO_PRT0_PS
- 382              	.set CSD__SHIFT, 3
+ 382              	.set CSD__SHIFT, 1
  383              	
  384              	/* LED */
 ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 183
@@ -10987,71 +10987,71 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  445              	.set LED__SHIFT, 6
  446              	
  447              	/* PBIn */
- 448              	.set PBIn__0__DR, CYREG_GPIO_PRT1_DR
- 449              	.set PBIn__0__DR_CLR, CYREG_GPIO_PRT1_DR_CLR
- 450              	.set PBIn__0__DR_INV, CYREG_GPIO_PRT1_DR_INV
- 451              	.set PBIn__0__DR_SET, CYREG_GPIO_PRT1_DR_SET
- 452              	.set PBIn__0__HSIOM, CYREG_HSIOM_PORT_SEL1
- 453              	.set PBIn__0__HSIOM_MASK, 0x0000000F
- 454              	.set PBIn__0__HSIOM_SHIFT, 0
- 455              	.set PBIn__0__INTCFG, CYREG_GPIO_PRT1_INTR_CFG
- 456              	.set PBIn__0__INTR, CYREG_GPIO_PRT1_INTR
- 457              	.set PBIn__0__INTR_CFG, CYREG_GPIO_PRT1_INTR_CFG
- 458              	.set PBIn__0__INTSTAT, CYREG_GPIO_PRT1_INTR
- 459              	.set PBIn__0__MASK, 0x01
- 460              	.set PBIn__0__PA__CFG0, CYREG_UDB_PA1_CFG0
- 461              	.set PBIn__0__PA__CFG1, CYREG_UDB_PA1_CFG1
- 462              	.set PBIn__0__PA__CFG10, CYREG_UDB_PA1_CFG10
- 463              	.set PBIn__0__PA__CFG11, CYREG_UDB_PA1_CFG11
- 464              	.set PBIn__0__PA__CFG12, CYREG_UDB_PA1_CFG12
- 465              	.set PBIn__0__PA__CFG13, CYREG_UDB_PA1_CFG13
- 466              	.set PBIn__0__PA__CFG14, CYREG_UDB_PA1_CFG14
- 467              	.set PBIn__0__PA__CFG2, CYREG_UDB_PA1_CFG2
- 468              	.set PBIn__0__PA__CFG3, CYREG_UDB_PA1_CFG3
- 469              	.set PBIn__0__PA__CFG4, CYREG_UDB_PA1_CFG4
- 470              	.set PBIn__0__PA__CFG5, CYREG_UDB_PA1_CFG5
- 471              	.set PBIn__0__PA__CFG6, CYREG_UDB_PA1_CFG6
- 472              	.set PBIn__0__PA__CFG7, CYREG_UDB_PA1_CFG7
- 473              	.set PBIn__0__PA__CFG8, CYREG_UDB_PA1_CFG8
- 474              	.set PBIn__0__PA__CFG9, CYREG_UDB_PA1_CFG9
- 475              	.set PBIn__0__PC, CYREG_GPIO_PRT1_PC
- 476              	.set PBIn__0__PC2, CYREG_GPIO_PRT1_PC2
- 477              	.set PBIn__0__PORT, 1
- 478              	.set PBIn__0__PS, CYREG_GPIO_PRT1_PS
- 479              	.set PBIn__0__SHIFT, 0
- 480              	.set PBIn__DR, CYREG_GPIO_PRT1_DR
- 481              	.set PBIn__DR_CLR, CYREG_GPIO_PRT1_DR_CLR
- 482              	.set PBIn__DR_INV, CYREG_GPIO_PRT1_DR_INV
- 483              	.set PBIn__DR_SET, CYREG_GPIO_PRT1_DR_SET
- 484              	.set PBIn__INTCFG, CYREG_GPIO_PRT1_INTR_CFG
- 485              	.set PBIn__INTR, CYREG_GPIO_PRT1_INTR
- 486              	.set PBIn__INTR_CFG, CYREG_GPIO_PRT1_INTR_CFG
- 487              	.set PBIn__INTSTAT, CYREG_GPIO_PRT1_INTR
- 488              	.set PBIn__MASK, 0x01
- 489              	.set PBIn__PA__CFG0, CYREG_UDB_PA1_CFG0
- 490              	.set PBIn__PA__CFG1, CYREG_UDB_PA1_CFG1
- 491              	.set PBIn__PA__CFG10, CYREG_UDB_PA1_CFG10
- 492              	.set PBIn__PA__CFG11, CYREG_UDB_PA1_CFG11
- 493              	.set PBIn__PA__CFG12, CYREG_UDB_PA1_CFG12
- 494              	.set PBIn__PA__CFG13, CYREG_UDB_PA1_CFG13
- 495              	.set PBIn__PA__CFG14, CYREG_UDB_PA1_CFG14
- 496              	.set PBIn__PA__CFG2, CYREG_UDB_PA1_CFG2
- 497              	.set PBIn__PA__CFG3, CYREG_UDB_PA1_CFG3
- 498              	.set PBIn__PA__CFG4, CYREG_UDB_PA1_CFG4
+ 448              	.set PBIn__0__DR, CYREG_GPIO_PRT0_DR
+ 449              	.set PBIn__0__DR_CLR, CYREG_GPIO_PRT0_DR_CLR
+ 450              	.set PBIn__0__DR_INV, CYREG_GPIO_PRT0_DR_INV
+ 451              	.set PBIn__0__DR_SET, CYREG_GPIO_PRT0_DR_SET
+ 452              	.set PBIn__0__HSIOM, CYREG_HSIOM_PORT_SEL0
+ 453              	.set PBIn__0__HSIOM_MASK, 0x0000F000
+ 454              	.set PBIn__0__HSIOM_SHIFT, 12
+ 455              	.set PBIn__0__INTCFG, CYREG_GPIO_PRT0_INTR_CFG
+ 456              	.set PBIn__0__INTR, CYREG_GPIO_PRT0_INTR
+ 457              	.set PBIn__0__INTR_CFG, CYREG_GPIO_PRT0_INTR_CFG
+ 458              	.set PBIn__0__INTSTAT, CYREG_GPIO_PRT0_INTR
+ 459              	.set PBIn__0__MASK, 0x08
+ 460              	.set PBIn__0__PA__CFG0, CYREG_UDB_PA0_CFG0
+ 461              	.set PBIn__0__PA__CFG1, CYREG_UDB_PA0_CFG1
+ 462              	.set PBIn__0__PA__CFG10, CYREG_UDB_PA0_CFG10
+ 463              	.set PBIn__0__PA__CFG11, CYREG_UDB_PA0_CFG11
+ 464              	.set PBIn__0__PA__CFG12, CYREG_UDB_PA0_CFG12
+ 465              	.set PBIn__0__PA__CFG13, CYREG_UDB_PA0_CFG13
+ 466              	.set PBIn__0__PA__CFG14, CYREG_UDB_PA0_CFG14
+ 467              	.set PBIn__0__PA__CFG2, CYREG_UDB_PA0_CFG2
+ 468              	.set PBIn__0__PA__CFG3, CYREG_UDB_PA0_CFG3
+ 469              	.set PBIn__0__PA__CFG4, CYREG_UDB_PA0_CFG4
+ 470              	.set PBIn__0__PA__CFG5, CYREG_UDB_PA0_CFG5
+ 471              	.set PBIn__0__PA__CFG6, CYREG_UDB_PA0_CFG6
+ 472              	.set PBIn__0__PA__CFG7, CYREG_UDB_PA0_CFG7
+ 473              	.set PBIn__0__PA__CFG8, CYREG_UDB_PA0_CFG8
+ 474              	.set PBIn__0__PA__CFG9, CYREG_UDB_PA0_CFG9
+ 475              	.set PBIn__0__PC, CYREG_GPIO_PRT0_PC
+ 476              	.set PBIn__0__PC2, CYREG_GPIO_PRT0_PC2
+ 477              	.set PBIn__0__PORT, 0
+ 478              	.set PBIn__0__PS, CYREG_GPIO_PRT0_PS
+ 479              	.set PBIn__0__SHIFT, 3
+ 480              	.set PBIn__DR, CYREG_GPIO_PRT0_DR
+ 481              	.set PBIn__DR_CLR, CYREG_GPIO_PRT0_DR_CLR
+ 482              	.set PBIn__DR_INV, CYREG_GPIO_PRT0_DR_INV
+ 483              	.set PBIn__DR_SET, CYREG_GPIO_PRT0_DR_SET
+ 484              	.set PBIn__INTCFG, CYREG_GPIO_PRT0_INTR_CFG
+ 485              	.set PBIn__INTR, CYREG_GPIO_PRT0_INTR
+ 486              	.set PBIn__INTR_CFG, CYREG_GPIO_PRT0_INTR_CFG
+ 487              	.set PBIn__INTSTAT, CYREG_GPIO_PRT0_INTR
+ 488              	.set PBIn__MASK, 0x08
+ 489              	.set PBIn__PA__CFG0, CYREG_UDB_PA0_CFG0
+ 490              	.set PBIn__PA__CFG1, CYREG_UDB_PA0_CFG1
+ 491              	.set PBIn__PA__CFG10, CYREG_UDB_PA0_CFG10
+ 492              	.set PBIn__PA__CFG11, CYREG_UDB_PA0_CFG11
+ 493              	.set PBIn__PA__CFG12, CYREG_UDB_PA0_CFG12
+ 494              	.set PBIn__PA__CFG13, CYREG_UDB_PA0_CFG13
+ 495              	.set PBIn__PA__CFG14, CYREG_UDB_PA0_CFG14
+ 496              	.set PBIn__PA__CFG2, CYREG_UDB_PA0_CFG2
+ 497              	.set PBIn__PA__CFG3, CYREG_UDB_PA0_CFG3
+ 498              	.set PBIn__PA__CFG4, CYREG_UDB_PA0_CFG4
 ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 185
 
 
- 499              	.set PBIn__PA__CFG5, CYREG_UDB_PA1_CFG5
- 500              	.set PBIn__PA__CFG6, CYREG_UDB_PA1_CFG6
- 501              	.set PBIn__PA__CFG7, CYREG_UDB_PA1_CFG7
- 502              	.set PBIn__PA__CFG8, CYREG_UDB_PA1_CFG8
- 503              	.set PBIn__PA__CFG9, CYREG_UDB_PA1_CFG9
- 504              	.set PBIn__PC, CYREG_GPIO_PRT1_PC
- 505              	.set PBIn__PC2, CYREG_GPIO_PRT1_PC2
- 506              	.set PBIn__PORT, 1
- 507              	.set PBIn__PS, CYREG_GPIO_PRT1_PS
- 508              	.set PBIn__SHIFT, 0
- 509              	.set PBIn__SNAP, CYREG_GPIO_PRT1_INTR
+ 499              	.set PBIn__PA__CFG5, CYREG_UDB_PA0_CFG5
+ 500              	.set PBIn__PA__CFG6, CYREG_UDB_PA0_CFG6
+ 501              	.set PBIn__PA__CFG7, CYREG_UDB_PA0_CFG7
+ 502              	.set PBIn__PA__CFG8, CYREG_UDB_PA0_CFG8
+ 503              	.set PBIn__PA__CFG9, CYREG_UDB_PA0_CFG9
+ 504              	.set PBIn__PC, CYREG_GPIO_PRT0_PC
+ 505              	.set PBIn__PC2, CYREG_GPIO_PRT0_PC2
+ 506              	.set PBIn__PORT, 0
+ 507              	.set PBIn__PS, CYREG_GPIO_PRT0_PS
+ 508              	.set PBIn__SHIFT, 3
+ 509              	.set PBIn__SNAP, CYREG_GPIO_PRT0_INTR
  510              	
  511              	/* PBUp */
  512              	.set PBUp__0__DR, CYREG_GPIO_PRT1_DR
@@ -11126,13 +11126,13 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  578              	.set HozIn__0__DR_INV, CYREG_GPIO_PRT1_DR_INV
  579              	.set HozIn__0__DR_SET, CYREG_GPIO_PRT1_DR_SET
  580              	.set HozIn__0__HSIOM, CYREG_HSIOM_PORT_SEL1
- 581              	.set HozIn__0__HSIOM_MASK, 0x0000F000
- 582              	.set HozIn__0__HSIOM_SHIFT, 12
+ 581              	.set HozIn__0__HSIOM_MASK, 0x00000F00
+ 582              	.set HozIn__0__HSIOM_SHIFT, 8
  583              	.set HozIn__0__INTCFG, CYREG_GPIO_PRT1_INTR_CFG
  584              	.set HozIn__0__INTR, CYREG_GPIO_PRT1_INTR
  585              	.set HozIn__0__INTR_CFG, CYREG_GPIO_PRT1_INTR_CFG
  586              	.set HozIn__0__INTSTAT, CYREG_GPIO_PRT1_INTR
- 587              	.set HozIn__0__MASK, 0x08
+ 587              	.set HozIn__0__MASK, 0x04
  588              	.set HozIn__0__PA__CFG0, CYREG_UDB_PA1_CFG0
  589              	.set HozIn__0__PA__CFG1, CYREG_UDB_PA1_CFG1
  590              	.set HozIn__0__PA__CFG10, CYREG_UDB_PA1_CFG10
@@ -11152,7 +11152,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  604              	.set HozIn__0__PC2, CYREG_GPIO_PRT1_PC2
  605              	.set HozIn__0__PORT, 1
  606              	.set HozIn__0__PS, CYREG_GPIO_PRT1_PS
- 607              	.set HozIn__0__SHIFT, 3
+ 607              	.set HozIn__0__SHIFT, 2
  608              	.set HozIn__DR, CYREG_GPIO_PRT1_DR
  609              	.set HozIn__DR_CLR, CYREG_GPIO_PRT1_DR_CLR
  610              	.set HozIn__DR_INV, CYREG_GPIO_PRT1_DR_INV
@@ -11164,7 +11164,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  613              	.set HozIn__INTR, CYREG_GPIO_PRT1_INTR
  614              	.set HozIn__INTR_CFG, CYREG_GPIO_PRT1_INTR_CFG
  615              	.set HozIn__INTSTAT, CYREG_GPIO_PRT1_INTR
- 616              	.set HozIn__MASK, 0x08
+ 616              	.set HozIn__MASK, 0x04
  617              	.set HozIn__PA__CFG0, CYREG_UDB_PA1_CFG0
  618              	.set HozIn__PA__CFG1, CYREG_UDB_PA1_CFG1
  619              	.set HozIn__PA__CFG10, CYREG_UDB_PA1_CFG10
@@ -11184,7 +11184,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  633              	.set HozIn__PC2, CYREG_GPIO_PRT1_PC2
  634              	.set HozIn__PORT, 1
  635              	.set HozIn__PS, CYREG_GPIO_PRT1_PS
- 636              	.set HozIn__SHIFT, 3
+ 636              	.set HozIn__SHIFT, 2
  637              	
  638              	/* PBOut */
  639              	.set PBOut__0__DR, CYREG_GPIO_PRT2_DR
@@ -11254,11 +11254,11 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  700              	.set PBOut__SNAP, CYREG_GPIO_PRT2_INTR
  701              	
  702              	/* SCB_1 */
- 703              	.set SCB_1_rx__0__DR, CYREG_GPIO_PRT0_DR
- 704              	.set SCB_1_rx__0__DR_CLR, CYREG_GPIO_PRT0_DR_CLR
- 705              	.set SCB_1_rx__0__DR_INV, CYREG_GPIO_PRT0_DR_INV
- 706              	.set SCB_1_rx__0__DR_SET, CYREG_GPIO_PRT0_DR_SET
- 707              	.set SCB_1_rx__0__HSIOM, CYREG_HSIOM_PORT_SEL0
+ 703              	.set SCB_1_rx__0__DR, CYREG_GPIO_PRT1_DR
+ 704              	.set SCB_1_rx__0__DR_CLR, CYREG_GPIO_PRT1_DR_CLR
+ 705              	.set SCB_1_rx__0__DR_INV, CYREG_GPIO_PRT1_DR_INV
+ 706              	.set SCB_1_rx__0__DR_SET, CYREG_GPIO_PRT1_DR_SET
+ 707              	.set SCB_1_rx__0__HSIOM, CYREG_HSIOM_PORT_SEL1
  708              	.set SCB_1_rx__0__HSIOM_GPIO, 0
  709              	.set SCB_1_rx__0__HSIOM_I2C, 14
  710              	.set SCB_1_rx__0__HSIOM_I2C_SDA, 14
@@ -11268,62 +11268,62 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  714              	.set SCB_1_rx__0__HSIOM_SPI_MOSI, 15
  715              	.set SCB_1_rx__0__HSIOM_UART, 9
  716              	.set SCB_1_rx__0__HSIOM_UART_RX, 9
- 717              	.set SCB_1_rx__0__INTCFG, CYREG_GPIO_PRT0_INTR_CFG
- 718              	.set SCB_1_rx__0__INTR, CYREG_GPIO_PRT0_INTR
- 719              	.set SCB_1_rx__0__INTR_CFG, CYREG_GPIO_PRT0_INTR_CFG
- 720              	.set SCB_1_rx__0__INTSTAT, CYREG_GPIO_PRT0_INTR
+ 717              	.set SCB_1_rx__0__INTCFG, CYREG_GPIO_PRT1_INTR_CFG
+ 718              	.set SCB_1_rx__0__INTR, CYREG_GPIO_PRT1_INTR
+ 719              	.set SCB_1_rx__0__INTR_CFG, CYREG_GPIO_PRT1_INTR_CFG
+ 720              	.set SCB_1_rx__0__INTSTAT, CYREG_GPIO_PRT1_INTR
  721              	.set SCB_1_rx__0__MASK, 0x10
- 722              	.set SCB_1_rx__0__PA__CFG0, CYREG_UDB_PA0_CFG0
- 723              	.set SCB_1_rx__0__PA__CFG1, CYREG_UDB_PA0_CFG1
- 724              	.set SCB_1_rx__0__PA__CFG10, CYREG_UDB_PA0_CFG10
- 725              	.set SCB_1_rx__0__PA__CFG11, CYREG_UDB_PA0_CFG11
- 726              	.set SCB_1_rx__0__PA__CFG12, CYREG_UDB_PA0_CFG12
+ 722              	.set SCB_1_rx__0__PA__CFG0, CYREG_UDB_PA1_CFG0
+ 723              	.set SCB_1_rx__0__PA__CFG1, CYREG_UDB_PA1_CFG1
+ 724              	.set SCB_1_rx__0__PA__CFG10, CYREG_UDB_PA1_CFG10
+ 725              	.set SCB_1_rx__0__PA__CFG11, CYREG_UDB_PA1_CFG11
+ 726              	.set SCB_1_rx__0__PA__CFG12, CYREG_UDB_PA1_CFG12
 ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 189
 
 
- 727              	.set SCB_1_rx__0__PA__CFG13, CYREG_UDB_PA0_CFG13
- 728              	.set SCB_1_rx__0__PA__CFG14, CYREG_UDB_PA0_CFG14
- 729              	.set SCB_1_rx__0__PA__CFG2, CYREG_UDB_PA0_CFG2
- 730              	.set SCB_1_rx__0__PA__CFG3, CYREG_UDB_PA0_CFG3
- 731              	.set SCB_1_rx__0__PA__CFG4, CYREG_UDB_PA0_CFG4
- 732              	.set SCB_1_rx__0__PA__CFG5, CYREG_UDB_PA0_CFG5
- 733              	.set SCB_1_rx__0__PA__CFG6, CYREG_UDB_PA0_CFG6
- 734              	.set SCB_1_rx__0__PA__CFG7, CYREG_UDB_PA0_CFG7
- 735              	.set SCB_1_rx__0__PA__CFG8, CYREG_UDB_PA0_CFG8
- 736              	.set SCB_1_rx__0__PA__CFG9, CYREG_UDB_PA0_CFG9
- 737              	.set SCB_1_rx__0__PC, CYREG_GPIO_PRT0_PC
- 738              	.set SCB_1_rx__0__PC2, CYREG_GPIO_PRT0_PC2
- 739              	.set SCB_1_rx__0__PORT, 0
- 740              	.set SCB_1_rx__0__PS, CYREG_GPIO_PRT0_PS
+ 727              	.set SCB_1_rx__0__PA__CFG13, CYREG_UDB_PA1_CFG13
+ 728              	.set SCB_1_rx__0__PA__CFG14, CYREG_UDB_PA1_CFG14
+ 729              	.set SCB_1_rx__0__PA__CFG2, CYREG_UDB_PA1_CFG2
+ 730              	.set SCB_1_rx__0__PA__CFG3, CYREG_UDB_PA1_CFG3
+ 731              	.set SCB_1_rx__0__PA__CFG4, CYREG_UDB_PA1_CFG4
+ 732              	.set SCB_1_rx__0__PA__CFG5, CYREG_UDB_PA1_CFG5
+ 733              	.set SCB_1_rx__0__PA__CFG6, CYREG_UDB_PA1_CFG6
+ 734              	.set SCB_1_rx__0__PA__CFG7, CYREG_UDB_PA1_CFG7
+ 735              	.set SCB_1_rx__0__PA__CFG8, CYREG_UDB_PA1_CFG8
+ 736              	.set SCB_1_rx__0__PA__CFG9, CYREG_UDB_PA1_CFG9
+ 737              	.set SCB_1_rx__0__PC, CYREG_GPIO_PRT1_PC
+ 738              	.set SCB_1_rx__0__PC2, CYREG_GPIO_PRT1_PC2
+ 739              	.set SCB_1_rx__0__PORT, 1
+ 740              	.set SCB_1_rx__0__PS, CYREG_GPIO_PRT1_PS
  741              	.set SCB_1_rx__0__SHIFT, 4
- 742              	.set SCB_1_rx__DR, CYREG_GPIO_PRT0_DR
- 743              	.set SCB_1_rx__DR_CLR, CYREG_GPIO_PRT0_DR_CLR
- 744              	.set SCB_1_rx__DR_INV, CYREG_GPIO_PRT0_DR_INV
- 745              	.set SCB_1_rx__DR_SET, CYREG_GPIO_PRT0_DR_SET
- 746              	.set SCB_1_rx__INTCFG, CYREG_GPIO_PRT0_INTR_CFG
- 747              	.set SCB_1_rx__INTR, CYREG_GPIO_PRT0_INTR
- 748              	.set SCB_1_rx__INTR_CFG, CYREG_GPIO_PRT0_INTR_CFG
- 749              	.set SCB_1_rx__INTSTAT, CYREG_GPIO_PRT0_INTR
+ 742              	.set SCB_1_rx__DR, CYREG_GPIO_PRT1_DR
+ 743              	.set SCB_1_rx__DR_CLR, CYREG_GPIO_PRT1_DR_CLR
+ 744              	.set SCB_1_rx__DR_INV, CYREG_GPIO_PRT1_DR_INV
+ 745              	.set SCB_1_rx__DR_SET, CYREG_GPIO_PRT1_DR_SET
+ 746              	.set SCB_1_rx__INTCFG, CYREG_GPIO_PRT1_INTR_CFG
+ 747              	.set SCB_1_rx__INTR, CYREG_GPIO_PRT1_INTR
+ 748              	.set SCB_1_rx__INTR_CFG, CYREG_GPIO_PRT1_INTR_CFG
+ 749              	.set SCB_1_rx__INTSTAT, CYREG_GPIO_PRT1_INTR
  750              	.set SCB_1_rx__MASK, 0x10
- 751              	.set SCB_1_rx__PA__CFG0, CYREG_UDB_PA0_CFG0
- 752              	.set SCB_1_rx__PA__CFG1, CYREG_UDB_PA0_CFG1
- 753              	.set SCB_1_rx__PA__CFG10, CYREG_UDB_PA0_CFG10
- 754              	.set SCB_1_rx__PA__CFG11, CYREG_UDB_PA0_CFG11
- 755              	.set SCB_1_rx__PA__CFG12, CYREG_UDB_PA0_CFG12
- 756              	.set SCB_1_rx__PA__CFG13, CYREG_UDB_PA0_CFG13
- 757              	.set SCB_1_rx__PA__CFG14, CYREG_UDB_PA0_CFG14
- 758              	.set SCB_1_rx__PA__CFG2, CYREG_UDB_PA0_CFG2
- 759              	.set SCB_1_rx__PA__CFG3, CYREG_UDB_PA0_CFG3
- 760              	.set SCB_1_rx__PA__CFG4, CYREG_UDB_PA0_CFG4
- 761              	.set SCB_1_rx__PA__CFG5, CYREG_UDB_PA0_CFG5
- 762              	.set SCB_1_rx__PA__CFG6, CYREG_UDB_PA0_CFG6
- 763              	.set SCB_1_rx__PA__CFG7, CYREG_UDB_PA0_CFG7
- 764              	.set SCB_1_rx__PA__CFG8, CYREG_UDB_PA0_CFG8
- 765              	.set SCB_1_rx__PA__CFG9, CYREG_UDB_PA0_CFG9
- 766              	.set SCB_1_rx__PC, CYREG_GPIO_PRT0_PC
- 767              	.set SCB_1_rx__PC2, CYREG_GPIO_PRT0_PC2
- 768              	.set SCB_1_rx__PORT, 0
- 769              	.set SCB_1_rx__PS, CYREG_GPIO_PRT0_PS
+ 751              	.set SCB_1_rx__PA__CFG0, CYREG_UDB_PA1_CFG0
+ 752              	.set SCB_1_rx__PA__CFG1, CYREG_UDB_PA1_CFG1
+ 753              	.set SCB_1_rx__PA__CFG10, CYREG_UDB_PA1_CFG10
+ 754              	.set SCB_1_rx__PA__CFG11, CYREG_UDB_PA1_CFG11
+ 755              	.set SCB_1_rx__PA__CFG12, CYREG_UDB_PA1_CFG12
+ 756              	.set SCB_1_rx__PA__CFG13, CYREG_UDB_PA1_CFG13
+ 757              	.set SCB_1_rx__PA__CFG14, CYREG_UDB_PA1_CFG14
+ 758              	.set SCB_1_rx__PA__CFG2, CYREG_UDB_PA1_CFG2
+ 759              	.set SCB_1_rx__PA__CFG3, CYREG_UDB_PA1_CFG3
+ 760              	.set SCB_1_rx__PA__CFG4, CYREG_UDB_PA1_CFG4
+ 761              	.set SCB_1_rx__PA__CFG5, CYREG_UDB_PA1_CFG5
+ 762              	.set SCB_1_rx__PA__CFG6, CYREG_UDB_PA1_CFG6
+ 763              	.set SCB_1_rx__PA__CFG7, CYREG_UDB_PA1_CFG7
+ 764              	.set SCB_1_rx__PA__CFG8, CYREG_UDB_PA1_CFG8
+ 765              	.set SCB_1_rx__PA__CFG9, CYREG_UDB_PA1_CFG9
+ 766              	.set SCB_1_rx__PC, CYREG_GPIO_PRT1_PC
+ 767              	.set SCB_1_rx__PC2, CYREG_GPIO_PRT1_PC2
+ 768              	.set SCB_1_rx__PORT, 1
+ 769              	.set SCB_1_rx__PS, CYREG_GPIO_PRT1_PS
  770              	.set SCB_1_rx__SHIFT, 4
  771              	.set SCB_1_SCB__CTRL, CYREG_SCB0_CTRL
  772              	.set SCB_1_SCB__EZ_DATA0, CYREG_SCB0_EZ_DATA0
@@ -11499,13 +11499,13 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  933              	.set VerUp__0__DR_INV, CYREG_GPIO_PRT1_DR_INV
  934              	.set VerUp__0__DR_SET, CYREG_GPIO_PRT1_DR_SET
  935              	.set VerUp__0__HSIOM, CYREG_HSIOM_PORT_SEL1
- 936              	.set VerUp__0__HSIOM_MASK, 0x000000F0
- 937              	.set VerUp__0__HSIOM_SHIFT, 4
+ 936              	.set VerUp__0__HSIOM_MASK, 0x0000000F
+ 937              	.set VerUp__0__HSIOM_SHIFT, 0
  938              	.set VerUp__0__INTCFG, CYREG_GPIO_PRT1_INTR_CFG
  939              	.set VerUp__0__INTR, CYREG_GPIO_PRT1_INTR
  940              	.set VerUp__0__INTR_CFG, CYREG_GPIO_PRT1_INTR_CFG
  941              	.set VerUp__0__INTSTAT, CYREG_GPIO_PRT1_INTR
- 942              	.set VerUp__0__MASK, 0x02
+ 942              	.set VerUp__0__MASK, 0x01
  943              	.set VerUp__0__PA__CFG0, CYREG_UDB_PA1_CFG0
  944              	.set VerUp__0__PA__CFG1, CYREG_UDB_PA1_CFG1
  945              	.set VerUp__0__PA__CFG10, CYREG_UDB_PA1_CFG10
@@ -11528,7 +11528,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  959              	.set VerUp__0__PC2, CYREG_GPIO_PRT1_PC2
  960              	.set VerUp__0__PORT, 1
  961              	.set VerUp__0__PS, CYREG_GPIO_PRT1_PS
- 962              	.set VerUp__0__SHIFT, 1
+ 962              	.set VerUp__0__SHIFT, 0
  963              	.set VerUp__DR, CYREG_GPIO_PRT1_DR
  964              	.set VerUp__DR_CLR, CYREG_GPIO_PRT1_DR_CLR
  965              	.set VerUp__DR_INV, CYREG_GPIO_PRT1_DR_INV
@@ -11537,7 +11537,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  968              	.set VerUp__INTR, CYREG_GPIO_PRT1_INTR
  969              	.set VerUp__INTR_CFG, CYREG_GPIO_PRT1_INTR_CFG
  970              	.set VerUp__INTSTAT, CYREG_GPIO_PRT1_INTR
- 971              	.set VerUp__MASK, 0x02
+ 971              	.set VerUp__MASK, 0x01
  972              	.set VerUp__PA__CFG0, CYREG_UDB_PA1_CFG0
  973              	.set VerUp__PA__CFG1, CYREG_UDB_PA1_CFG1
  974              	.set VerUp__PA__CFG10, CYREG_UDB_PA1_CFG10
@@ -11557,7 +11557,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  988              	.set VerUp__PC2, CYREG_GPIO_PRT1_PC2
  989              	.set VerUp__PORT, 1
  990              	.set VerUp__PS, CYREG_GPIO_PRT1_PS
- 991              	.set VerUp__SHIFT, 1
+ 991              	.set VerUp__SHIFT, 0
  992              	
  993              	/* HorOut */
  994              	.set HorOut__0__DR, CYREG_GPIO_PRT1_DR
@@ -11565,13 +11565,13 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  996              	.set HorOut__0__DR_INV, CYREG_GPIO_PRT1_DR_INV
  997              	.set HorOut__0__DR_SET, CYREG_GPIO_PRT1_DR_SET
  998              	.set HorOut__0__HSIOM, CYREG_HSIOM_PORT_SEL1
- 999              	.set HorOut__0__HSIOM_MASK, 0x000F0000
- 1000              	.set HorOut__0__HSIOM_SHIFT, 16
+ 999              	.set HorOut__0__HSIOM_MASK, 0x0000F000
+ 1000              	.set HorOut__0__HSIOM_SHIFT, 12
  1001              	.set HorOut__0__INTCFG, CYREG_GPIO_PRT1_INTR_CFG
  1002              	.set HorOut__0__INTR, CYREG_GPIO_PRT1_INTR
  1003              	.set HorOut__0__INTR_CFG, CYREG_GPIO_PRT1_INTR_CFG
  1004              	.set HorOut__0__INTSTAT, CYREG_GPIO_PRT1_INTR
- 1005              	.set HorOut__0__MASK, 0x10
+ 1005              	.set HorOut__0__MASK, 0x08
  1006              	.set HorOut__0__PA__CFG0, CYREG_UDB_PA1_CFG0
  1007              	.set HorOut__0__PA__CFG1, CYREG_UDB_PA1_CFG1
  1008              	.set HorOut__0__PA__CFG10, CYREG_UDB_PA1_CFG10
@@ -11594,7 +11594,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  1022              	.set HorOut__0__PC2, CYREG_GPIO_PRT1_PC2
  1023              	.set HorOut__0__PORT, 1
  1024              	.set HorOut__0__PS, CYREG_GPIO_PRT1_PS
- 1025              	.set HorOut__0__SHIFT, 4
+ 1025              	.set HorOut__0__SHIFT, 3
  1026              	.set HorOut__DR, CYREG_GPIO_PRT1_DR
  1027              	.set HorOut__DR_CLR, CYREG_GPIO_PRT1_DR_CLR
  1028              	.set HorOut__DR_INV, CYREG_GPIO_PRT1_DR_INV
@@ -11603,7 +11603,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  1031              	.set HorOut__INTR, CYREG_GPIO_PRT1_INTR
  1032              	.set HorOut__INTR_CFG, CYREG_GPIO_PRT1_INTR_CFG
  1033              	.set HorOut__INTSTAT, CYREG_GPIO_PRT1_INTR
- 1034              	.set HorOut__MASK, 0x10
+ 1034              	.set HorOut__MASK, 0x08
  1035              	.set HorOut__PA__CFG0, CYREG_UDB_PA1_CFG0
  1036              	.set HorOut__PA__CFG1, CYREG_UDB_PA1_CFG1
  1037              	.set HorOut__PA__CFG10, CYREG_UDB_PA1_CFG10
@@ -11623,7 +11623,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  1051              	.set HorOut__PC2, CYREG_GPIO_PRT1_PC2
  1052              	.set HorOut__PORT, 1
  1053              	.set HorOut__PS, CYREG_GPIO_PRT1_PS
- 1054              	.set HorOut__SHIFT, 4
+ 1054              	.set HorOut__SHIFT, 3
  1055              	
  1056              	/* PBDown */
  1057              	.set PBDown__0__DR, CYREG_GPIO_PRT0_DR
@@ -11631,13 +11631,13 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  1059              	.set PBDown__0__DR_INV, CYREG_GPIO_PRT0_DR_INV
  1060              	.set PBDown__0__DR_SET, CYREG_GPIO_PRT0_DR_SET
  1061              	.set PBDown__0__HSIOM, CYREG_HSIOM_PORT_SEL0
- 1062              	.set PBDown__0__HSIOM_MASK, 0x000000F0
- 1063              	.set PBDown__0__HSIOM_SHIFT, 4
+ 1062              	.set PBDown__0__HSIOM_MASK, 0x00000F00
+ 1063              	.set PBDown__0__HSIOM_SHIFT, 8
  1064              	.set PBDown__0__INTCFG, CYREG_GPIO_PRT0_INTR_CFG
  1065              	.set PBDown__0__INTR, CYREG_GPIO_PRT0_INTR
  1066              	.set PBDown__0__INTR_CFG, CYREG_GPIO_PRT0_INTR_CFG
  1067              	.set PBDown__0__INTSTAT, CYREG_GPIO_PRT0_INTR
- 1068              	.set PBDown__0__MASK, 0x02
+ 1068              	.set PBDown__0__MASK, 0x04
 ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 195
 
 
@@ -11660,7 +11660,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  1085              	.set PBDown__0__PC2, CYREG_GPIO_PRT0_PC2
  1086              	.set PBDown__0__PORT, 0
  1087              	.set PBDown__0__PS, CYREG_GPIO_PRT0_PS
- 1088              	.set PBDown__0__SHIFT, 1
+ 1088              	.set PBDown__0__SHIFT, 2
  1089              	.set PBDown__DR, CYREG_GPIO_PRT0_DR
  1090              	.set PBDown__DR_CLR, CYREG_GPIO_PRT0_DR_CLR
  1091              	.set PBDown__DR_INV, CYREG_GPIO_PRT0_DR_INV
@@ -11669,7 +11669,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  1094              	.set PBDown__INTR, CYREG_GPIO_PRT0_INTR
  1095              	.set PBDown__INTR_CFG, CYREG_GPIO_PRT0_INTR_CFG
  1096              	.set PBDown__INTSTAT, CYREG_GPIO_PRT0_INTR
- 1097              	.set PBDown__MASK, 0x02
+ 1097              	.set PBDown__MASK, 0x04
  1098              	.set PBDown__PA__CFG0, CYREG_UDB_PA0_CFG0
  1099              	.set PBDown__PA__CFG1, CYREG_UDB_PA0_CFG1
  1100              	.set PBDown__PA__CFG10, CYREG_UDB_PA0_CFG10
@@ -11689,7 +11689,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  1114              	.set PBDown__PC2, CYREG_GPIO_PRT0_PC2
  1115              	.set PBDown__PORT, 0
  1116              	.set PBDown__PS, CYREG_GPIO_PRT0_PS
- 1117              	.set PBDown__SHIFT, 1
+ 1117              	.set PBDown__SHIFT, 2
  1118              	.set PBDown__SNAP, CYREG_GPIO_PRT0_INTR
  1119              	
  1120              	/* VerDown */
@@ -11701,13 +11701,13 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
 ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 196
 
 
- 1126              	.set VerDown__0__HSIOM_MASK, 0x00000F00
- 1127              	.set VerDown__0__HSIOM_SHIFT, 8
+ 1126              	.set VerDown__0__HSIOM_MASK, 0x000000F0
+ 1127              	.set VerDown__0__HSIOM_SHIFT, 4
  1128              	.set VerDown__0__INTCFG, CYREG_GPIO_PRT1_INTR_CFG
  1129              	.set VerDown__0__INTR, CYREG_GPIO_PRT1_INTR
  1130              	.set VerDown__0__INTR_CFG, CYREG_GPIO_PRT1_INTR_CFG
  1131              	.set VerDown__0__INTSTAT, CYREG_GPIO_PRT1_INTR
- 1132              	.set VerDown__0__MASK, 0x04
+ 1132              	.set VerDown__0__MASK, 0x02
  1133              	.set VerDown__0__PA__CFG0, CYREG_UDB_PA1_CFG0
  1134              	.set VerDown__0__PA__CFG1, CYREG_UDB_PA1_CFG1
  1135              	.set VerDown__0__PA__CFG10, CYREG_UDB_PA1_CFG10
@@ -11727,7 +11727,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  1149              	.set VerDown__0__PC2, CYREG_GPIO_PRT1_PC2
  1150              	.set VerDown__0__PORT, 1
  1151              	.set VerDown__0__PS, CYREG_GPIO_PRT1_PS
- 1152              	.set VerDown__0__SHIFT, 2
+ 1152              	.set VerDown__0__SHIFT, 1
  1153              	.set VerDown__DR, CYREG_GPIO_PRT1_DR
  1154              	.set VerDown__DR_CLR, CYREG_GPIO_PRT1_DR_CLR
  1155              	.set VerDown__DR_INV, CYREG_GPIO_PRT1_DR_INV
@@ -11736,7 +11736,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  1158              	.set VerDown__INTR, CYREG_GPIO_PRT1_INTR
  1159              	.set VerDown__INTR_CFG, CYREG_GPIO_PRT1_INTR_CFG
  1160              	.set VerDown__INTSTAT, CYREG_GPIO_PRT1_INTR
- 1161              	.set VerDown__MASK, 0x04
+ 1161              	.set VerDown__MASK, 0x02
  1162              	.set VerDown__PA__CFG0, CYREG_UDB_PA1_CFG0
  1163              	.set VerDown__PA__CFG1, CYREG_UDB_PA1_CFG1
  1164              	.set VerDown__PA__CFG10, CYREG_UDB_PA1_CFG10
@@ -11756,7 +11756,7 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  1178              	.set VerDown__PC2, CYREG_GPIO_PRT1_PC2
  1179              	.set VerDown__PORT, 1
  1180              	.set VerDown__PS, CYREG_GPIO_PRT1_PS
- 1181              	.set VerDown__SHIFT, 2
+ 1181              	.set VerDown__SHIFT, 1
  1182              	
 ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 197
 

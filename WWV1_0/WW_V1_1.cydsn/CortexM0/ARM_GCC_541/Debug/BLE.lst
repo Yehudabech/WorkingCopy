@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
   51 000f 00       		.space	1
   52              		.global	cyBle_discoveryData
   53              		.align	2
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 2
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 2
 
 
   54              		.type	cyBle_discoveryData, %object
@@ -71,16 +71,16 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
   61 0014 09       		.byte	9
   62 0015 57       		.byte	87
   63 0016 57       		.byte	87
-  64 0017 00       		.byte	0
-  65 0018 00       		.byte	0
-  66 0019 00       		.byte	0
-  67 001a 00       		.byte	0
-  68 001b 00       		.byte	0
-  69 001c 00       		.byte	0
-  70 001d 00       		.byte	0
-  71 001e 00       		.byte	0
-  72 001f 00       		.byte	0
-  73 0020 00       		.byte	0
+  64 0017 02       		.byte	2
+  65 0018 0A       		.byte	10
+  66 0019 FA       		.byte	-6
+  67 001a 03       		.byte	3
+  68 001b 03       		.byte	3
+  69 001c C8       		.byte	-56
+  70 001d D7       		.byte	-41
+  71 001e 03       		.byte	3
+  72 001f 1A       		.byte	26
+  73 0020 28       		.byte	40
   74 0021 00       		.byte	0
   75 0022 00       		.byte	0
   76 0023 00       		.byte	0
@@ -95,7 +95,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
   85 002c 00       		.byte	0
   86 002d 00       		.byte	0
   87 002e 00       		.byte	0
-  88 002f 07       		.byte	7
+  88 002f 12       		.byte	18
   89              		.global	cyBle_scanRspData
   90              		.align	2
   91              		.type	cyBle_scanRspData, %object
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  108 003e 00       		.byte	0
  109 003f 00       		.byte	0
  110 0040 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 3
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 3
 
 
  111 0041 00       		.byte	0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  165              		.global	CyBle_Init
  166              		.code	16
  167              		.thumb_func
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 4
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 4
 
 
  168              		.type	CyBle_Init, %function
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
   51:Generated_Source\PSoC4/BLE.c **** 
   52:Generated_Source\PSoC4/BLE.c **** #else
   53:Generated_Source\PSoC4/BLE.c **** 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 5
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 5
 
 
   54:Generated_Source\PSoC4/BLE.c **** CYBLE_CYALIGNED_BEGIN CY_NOINIT uint8 cyBle_stackMemoryRam[CYBLE_STACK_RAM_SIZE] CYBLE_CYALIGNED_EN
@@ -262,10 +262,10 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
   72:Generated_Source\PSoC4/BLE.c **** CYBLE_GAPP_DISC_DATA_T cyBle_discoveryData =
   73:Generated_Source\PSoC4/BLE.c **** {
   74:Generated_Source\PSoC4/BLE.c ****     { 0x02u, 0x01u, 0x06u, 0x03u, 0x09u, 0x57u, 0x57u,
-  75:Generated_Source\PSoC4/BLE.c ****     0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u,
-  76:Generated_Source\PSoC4/BLE.c ****     0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u,
+  75:Generated_Source\PSoC4/BLE.c ****     0x02u, 0x0Au, 0xFAu, 0x03u, 0x03u, 0xC8u, 0xD7u, 0x03u,
+  76:Generated_Source\PSoC4/BLE.c ****     0x1Au, 0x28u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u,
   77:Generated_Source\PSoC4/BLE.c ****     0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u }, /* uint8 advertising_data[CYBLE_MAX_A
-  78:Generated_Source\PSoC4/BLE.c ****     0x07u,      /* uint8 adv_data_length */
+  78:Generated_Source\PSoC4/BLE.c ****     0x12u,      /* uint8 adv_data_length */
   79:Generated_Source\PSoC4/BLE.c **** };
   80:Generated_Source\PSoC4/BLE.c **** 
   81:Generated_Source\PSoC4/BLE.c **** CYBLE_GAPP_SCAN_RSP_DATA_T cyBle_scanRspData =
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  108:Generated_Source\PSoC4/BLE.c **** 
  109:Generated_Source\PSoC4/BLE.c **** #if(CYBLE_GAP_ROLE_CENTRAL)
  110:Generated_Source\PSoC4/BLE.c ****     
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 6
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 6
 
 
  111:Generated_Source\PSoC4/BLE.c **** CYBLE_GAPC_CONN_PARAM_T cyBle_connectionParameters;
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  182              		.loc 1 154 0
  183 0004 094B     		ldr	r3, .L2
  184 0006 0022     		movs	r2, #0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 7
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 7
 
 
  185 0008 1A70     		strb	r2, [r3]
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  205 0026 C046     		nop
  206 0028 BD46     		mov	sp, r7
  207              		@ sp needed
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 8
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 8
 
 
  208 002a 80BD     		pop	{r7, pc}
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  213:Generated_Source\PSoC4/BLE.c ****     #endif /* CYBLE_GATT_ROLE_CLIENT */
  214:Generated_Source\PSoC4/BLE.c **** 
  215:Generated_Source\PSoC4/BLE.c ****    	#ifdef CYBLE_AIOS
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 9
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 9
 
 
  216:Generated_Source\PSoC4/BLE.c ****         CyBle_AiosInit();
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  268:Generated_Source\PSoC4/BLE.c ****         CyBle_EssInit();
  269:Generated_Source\PSoC4/BLE.c ****     #endif /* CYBLE_ESS */
  270:Generated_Source\PSoC4/BLE.c ****     
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 10
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 10
 
 
  271:Generated_Source\PSoC4/BLE.c ****     #ifdef CYBLE_GLS
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  325:Generated_Source\PSoC4/BLE.c ****     #endif /* CYBLE_RTUS */
  326:Generated_Source\PSoC4/BLE.c **** 
  327:Generated_Source\PSoC4/BLE.c ****     #ifdef CYBLE_SCPS
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 11
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 11
 
 
  328:Generated_Source\PSoC4/BLE.c ****         CyBle_ScpsInit();
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  348:Generated_Source\PSoC4/BLE.c **** 
  349:Generated_Source\PSoC4/BLE.c **** /******************************************************************************
  350:Generated_Source\PSoC4/BLE.c **** * Function Name: CyBle_Start
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 12
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 12
 
 
  351:Generated_Source\PSoC4/BLE.c **** ***************************************************************************//**
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  405:Generated_Source\PSoC4/BLE.c **** * 
  406:Generated_Source\PSoC4/BLE.c **** ******************************************************************************/
  407:Generated_Source\PSoC4/BLE.c **** CYBLE_API_RESULT_T CyBle_Start(CYBLE_CALLBACK_T callbackFunc)
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 13
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 13
 
 
  408:Generated_Source\PSoC4/BLE.c **** {
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  308              		.loc 1 427 0
  309 002a FFF7FEFF 		bl	CyBle_Init
  428:Generated_Source\PSoC4/BLE.c ****         cyBle_initVar = 1u;
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 14
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 14
 
 
  310              		.loc 1 428 0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  339 0058 2022     		movs	r2, #32
  340 005a BA18     		adds	r2, r7, r2
  341 005c 1A60     		str	r2, [r3]
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 15
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 15
 
 
  454:Generated_Source\PSoC4/BLE.c ****             
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  376 0096 FFF7FEFF 		bl	CyBle_StackSetFeatureConfig
  377 009a 0300     		movs	r3, r0
  378 009c 2380     		strh	r3, [r4]
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 16
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 16
 
 
  379              	.L8:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  501:Generated_Source\PSoC4/BLE.c ****             apiResult = CyBle_StackInit(&CyBle_EventHandler, cyBle_stackMemoryRam, CYBLE_STACK_RAM_
  502:Generated_Source\PSoC4/BLE.c ****                 NULL, 0u, NULL, 0u);
  503:Generated_Source\PSoC4/BLE.c ****         #endif /* CYBLE_MODE_PROFILE */
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 17
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 17
 
 
  504:Generated_Source\PSoC4/BLE.c **** 
@@ -987,7 +987,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  418 00e0 FC18     		adds	r4, r7, r3
  419 00e2 124B     		ldr	r3, .L12+32
  420 00e4 0822     		movs	r2, #8
- 421 00e6 1721     		movs	r1, #23
+ 421 00e6 1A21     		movs	r1, #26
  422 00e8 1800     		movs	r0, r3
  423 00ea FFF7FEFF 		bl	CyBle_GattsDbRegister
  424 00ee 0300     		movs	r3, r0
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  438              		.loc 1 525 0
  439 0102 1800     		movs	r0, r3
  440 0104 BD46     		mov	sp, r7
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 18
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 18
 
 
  441 0106 10B0     		add	sp, sp, #64
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  478 0004 FFF7FEFF 		bl	CyBle_Shutdown
  543:Generated_Source\PSoC4/BLE.c ****     CyBle_SetState(CYBLE_STATE_STOPPED);
  479              		.loc 1 543 0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 19
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 19
 
 
  480 0008 024B     		ldr	r3, .L15
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  575:Generated_Source\PSoC4/BLE.c **** *   ----------------------------------   | ------------------------------------
  576:Generated_Source\PSoC4/BLE.c **** *   CYBLE_ERROR_OK                       | On successful operation
  577:Generated_Source\PSoC4/BLE.c **** *   CYBLE_ERROR_FLASH_WRITE_NOT_PERMITED | Flash Write is not complete
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 20
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 20
 
 
  578:Generated_Source\PSoC4/BLE.c **** *   CYBLE_ERROR_INVALID_PARAMETER        | Invalid input parameter  
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  531              		.loc 1 603 0
  532 0020 2623     		movs	r3, #38
  533 0022 FC18     		adds	r4, r7, r3
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 21
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 21
 
 
  534 0024 FB1D     		adds	r3, r7, #7
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  575 006a 1B78     		ldrb	r3, [r3]
  576 006c 002B     		cmp	r3, #0
  577 006e 26D0     		beq	.L20
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 22
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 22
 
 
  578              	.L19:
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  621 00b6 9343     		bics	r3, r2
  622 00b8 DAB2     		uxtb	r2, r3
  623 00ba 304B     		ldr	r3, .L27
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 23
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 23
 
 
  624 00bc 1A70     		strb	r2, [r3]
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  663 00f8 FC18     		adds	r4, r7, r3
  664 00fa FB1D     		adds	r3, r7, #7
  665 00fc 1B78     		ldrb	r3, [r3]
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 24
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 24
 
 
  666 00fe 2349     		ldr	r1, .L27+16
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  709 0148 B818     		adds	r0, r7, r2
  710 014a 0422     		movs	r2, #4
  711 014c FFF7FEFF 		bl	CyBle_StoreAppData
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 25
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 25
 
 
  712 0150 0300     		movs	r3, r0
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  756              		.thumb_func
  757              		.type	CyBle_GapRemoveBondedDevice, %function
  758              	CyBle_GapRemoveBondedDevice:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 26
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 26
 
 
  759              	.LFB7:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  776 000a FB18     		adds	r3, r7, r3
  777 000c 0022     		movs	r2, #0
  778 000e 1A80     		strh	r2, [r3]
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 27
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 27
 
 
  697:Generated_Source\PSoC4/BLE.c ****     
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  815 004e 7A68     		ldr	r2, [r7, #4]
  816 0050 1523     		movs	r3, #21
  817 0052 FB18     		adds	r3, r7, r3
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 28
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 28
 
 
  818 0054 1100     		movs	r1, r2
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  726:Generated_Source\PSoC4/BLE.c ****         }
  727:Generated_Source\PSoC4/BLE.c ****     }
  728:Generated_Source\PSoC4/BLE.c ****     else
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 29
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 29
 
 
  729:Generated_Source\PSoC4/BLE.c ****     {
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  751:Generated_Source\PSoC4/BLE.c ****     *  
  752:Generated_Source\PSoC4/BLE.c ****     *  On start of advertisement, GAP Peripheral receives the
  753:Generated_Source\PSoC4/BLE.c ****     *  CYBLE_EVT_GAPP_ADVERTISEMENT_START_STOP event. The following events are 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 30
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 30
 
 
  754:Generated_Source\PSoC4/BLE.c ****     *  possible on invoking this function:
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  908 000a 1A70     		strb	r2, [r3]
  793:Generated_Source\PSoC4/BLE.c ****         CYBLE_API_RESULT_T apiResult;
  794:Generated_Source\PSoC4/BLE.c ****         
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 31
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 31
 
 
  795:Generated_Source\PSoC4/BLE.c ****         if(advertisingIntervalType > CYBLE_ADVERTISING_CUSTOM)
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  952 0050 5A80     		strh	r2, [r3, #2]
  953 0052 10E0     		b	.L43
  954              	.L42:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 32
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 32
 
 
  806:Generated_Source\PSoC4/BLE.c ****             }
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  995 0096 0DD1     		bne	.L40
  820:Generated_Source\PSoC4/BLE.c ****             {
  821:Generated_Source\PSoC4/BLE.c ****                 cyBle_eventHandlerFlag |= CYBLE_START_FLAG;
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 33
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 33
 
 
  996              		.loc 1 821 0
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  1040              		.type	CyBle_GappStopAdvertisement, %function
  1041              	CyBle_GappStopAdvertisement:
  1042              	.LFB9:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 34
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 34
 
 
  831:Generated_Source\PSoC4/BLE.c **** 
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  1071              	.L49:
  1072 0020 00000000 		.word	cyBle_eventHandlerFlag
  1073              		.cfi_endproc
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 35
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 35
 
 
  1074              	.LFE9:
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  882:Generated_Source\PSoC4/BLE.c ****                 destBuffer = &cyBle_discoveryData.advData[CYBLE_ADV_PKT_INDEX_BLUETOOTH_DEVICE_ADDR
  883:Generated_Source\PSoC4/BLE.c ****             #endif /* CYBLE_ADV_PKT_INDEX_BLUETOOTH_DEVICE_ADDRESS */
  884:Generated_Source\PSoC4/BLE.c ****         }
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 36
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 36
 
 
  885:Generated_Source\PSoC4/BLE.c ****         else                /* Destination - scan response structure */
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  897:Generated_Source\PSoC4/BLE.c ****             {
  1141              		.loc 1 897 0 is_stmt 0 discriminator 1
  1142 0050 0F23     		movs	r3, #15
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 37
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 37
 
 
  1143 0052 FB18     		adds	r3, r7, r3
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  933:Generated_Source\PSoC4/BLE.c ****     *                                  limited discoverable mode only. Received data
  934:Generated_Source\PSoC4/BLE.c ****     *                                  is provided by the event, 
  935:Generated_Source\PSoC4/BLE.c ****     *                                  CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT. This 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 38
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 38
 
 
  936:Generated_Source\PSoC4/BLE.c ****     *                                  procedure requires the scanType sub-parameter 
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  990:Generated_Source\PSoC4/BLE.c ****             if(scanningIntervalType == CYBLE_SCANNING_FAST)
  991:Generated_Source\PSoC4/BLE.c ****             {
  992:Generated_Source\PSoC4/BLE.c ****                 cyBle_discoveryInfo.scanTo = CYBLE_FAST_SCAN_TIMEOUT;
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 39
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 39
 
 
  993:Generated_Source\PSoC4/BLE.c ****                 cyBle_discoveryInfo.scanIntv = CYBLE_FAST_SCAN_INTERVAL;
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
 1047:Generated_Source\PSoC4/BLE.c **** #if(CYBLE_GAP_ROLE_CENTRAL)
 1048:Generated_Source\PSoC4/BLE.c **** 
 1049:Generated_Source\PSoC4/BLE.c ****     /******************************************************************************
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 40
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 40
 
 
 1050:Generated_Source\PSoC4/BLE.c ****     * Function Name: CyBle_GapcConnectDevice
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
 1104:Generated_Source\PSoC4/BLE.c ****             for(i = 0u; i < CYBLE_GAP_BD_ADDR_SIZE; i++)
 1105:Generated_Source\PSoC4/BLE.c ****             {
 1106:Generated_Source\PSoC4/BLE.c ****                 cyBle_connectionParameters.peerBdAddr[i] = address->bdAddr[i];
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 41
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 41
 
 
 1107:Generated_Source\PSoC4/BLE.c ****             }
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
 1161:Generated_Source\PSoC4/BLE.c **** 
 1162:Generated_Source\PSoC4/BLE.c ****             if(apiResult == CYBLE_ERROR_OK)
 1163:Generated_Source\PSoC4/BLE.c ****             {
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 42
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 42
 
 
 1164:Generated_Source\PSoC4/BLE.c ****                 CyBle_SetState(CYBLE_STATE_DISCONNECTED);
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
 1197:Generated_Source\PSoC4/BLE.c ****             uint8 adLength = 0u;
  1185              		.loc 1 1197 0
  1186 0016 1523     		movs	r3, #21
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 43
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 43
 
 
  1187 0018 FB18     		adds	r3, r7, r3
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  1223              		.loc 1 1215 0
  1224 004e 1423     		movs	r3, #20
  1225 0050 FB18     		adds	r3, r7, r3
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 44
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 44
 
 
  1226 0052 1B78     		ldrb	r3, [r3]
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  1268 0098 1623     		movs	r3, #22
  1269 009a FB18     		adds	r3, r7, r3
  1270 009c 0122     		movs	r2, #1
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 45
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 45
 
 
  1271 009e 1A70     		strb	r2, [r3]
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  1309 00d8 1B78     		ldrb	r3, [r3]
  1310 00da 002B     		cmp	r3, #0
  1311 00dc 5BD0     		beq	.L73
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 46
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 46
 
 
 1241:Generated_Source\PSoC4/BLE.c ****             {
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  1355 012a 5218     		adds	r2, r2, r1
  1356 012c 1278     		ldrb	r2, [r2]
  1357 012e 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 47
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 47
 
 
 1249:Generated_Source\PSoC4/BLE.c ****                 {
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
 1260:Generated_Source\PSoC4/BLE.c ****                     i++;
  1401              		.loc 1 1260 0
  1402 0178 1723     		movs	r3, #23
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 48
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 48
 
 
  1403 017a FB18     		adds	r3, r7, r3
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
 1275:Generated_Source\PSoC4/BLE.c ****     * 
 1276:Generated_Source\PSoC4/BLE.c ****     *  \param name: The local device name string. The name string to be written as
 1277:Generated_Source\PSoC4/BLE.c ****     *              the local device name. It represents a UTF-8 encoded User
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 49
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 49
 
 
 1278:Generated_Source\PSoC4/BLE.c ****     *              Friendly Descriptive Name for the device. The length of the local
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  1469 001e 1300     		movs	r3, r2
  1470 0020 9B00     		lsls	r3, r3, #2
  1471 0022 9B18     		adds	r3, r3, r2
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 50
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 50
 
 
  1472 0024 9B00     		lsls	r3, r3, #2
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  1514 006e 1523     		movs	r3, #21
  1515 0070 FB18     		adds	r3, r7, r3
  1516 0072 1A78     		ldrb	r2, [r3]
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 51
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 51
 
 
  1517 0074 1523     		movs	r3, #21
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
 1326:Generated_Source\PSoC4/BLE.c ****             /* Update device name in advertising and scan response structure */
 1327:Generated_Source\PSoC4/BLE.c ****             #if(CYBLE_GAP_ROLE_PERIPHERAL)
 1328:Generated_Source\PSoC4/BLE.c ****                 CyBle_ChangeAdLocalName(name, 0u);
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 52
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 52
 
 
  1559              		.loc 1 1328 0
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
 1339:Generated_Source\PSoC4/BLE.c **** 
 1340:Generated_Source\PSoC4/BLE.c **** 
 1341:Generated_Source\PSoC4/BLE.c ****     /******************************************************************************
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 53
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 53
 
 
 1342:Generated_Source\PSoC4/BLE.c ****     * Function Name: CyBle_GapGetLocalName
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
 1374:Generated_Source\PSoC4/BLE.c ****         {
 1375:Generated_Source\PSoC4/BLE.c ****             /* Get the pointer to the Device Name characteristic  */
 1376:Generated_Source\PSoC4/BLE.c ****             ptr = (char8 *) CYBLE_GATT_DB_ATTR_GET_ATTR_GEN_PTR(cyBle_gaps.deviceNameCharHandle);
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 54
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 54
 
 
  1625              		.loc 1 1376 0
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  1668 0062 1522     		movs	r2, #21
  1669 0064 BA18     		adds	r2, r7, r2
  1670 0066 1278     		ldrb	r2, [r2]
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 55
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 55
 
 
  1671 0068 3969     		ldr	r1, [r7, #16]
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  1714 00ae 1623     		movs	r3, #22
  1715 00b0 FB18     		adds	r3, r7, r3
  1716 00b2 0122     		movs	r2, #1
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 56
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 56
 
 
  1717 00b4 1A80     		strh	r2, [r3]
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  1749 0000 80B5     		push	{r7, lr}
  1750              		.cfi_def_cfa_offset 8
  1751              		.cfi_offset 7, -8
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 57
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 57
 
 
  1752              		.cfi_offset 14, -4
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  1787              		.loc 1 1436 0
  1788              		.cfi_startproc
  1789              		@ args = 0, pretend = 0, frame = 8
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 58
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 58
 
 
  1790              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -3478,13 +3478,13 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  1841 0006 00000000 		.4byte	.Ldebug_abbrev0
  1842 000a 04       		.byte	0x4
  1843 000b 01       		.uleb128 0x1
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 59
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 59
 
 
- 1844 000c 67080000 		.4byte	.LASF259
+ 1844 000c C1080000 		.4byte	.LASF259
  1845 0010 0C       		.byte	0xc
- 1846 0011 9B100000 		.4byte	.LASF260
- 1847 0015 E2120000 		.4byte	.LASF261
+ 1846 0011 F5100000 		.4byte	.LASF260
+ 1847 0015 AA060000 		.4byte	.LASF261
  1848 0019 00000000 		.4byte	.Ldebug_ranges0+0
  1849 001d 00000000 		.4byte	0
  1850 0021 00000000 		.4byte	.Ldebug_line0
@@ -3499,11 +3499,11 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  1859 0033 02       		.uleb128 0x2
  1860 0034 02       		.byte	0x2
  1861 0035 05       		.byte	0x5
- 1862 0036 50130000 		.4byte	.LASF2
+ 1862 0036 85130000 		.4byte	.LASF2
  1863 003a 02       		.uleb128 0x2
  1864 003b 02       		.byte	0x2
  1865 003c 07       		.byte	0x7
- 1866 003d 73160000 		.4byte	.LASF3
+ 1866 003d A8160000 		.4byte	.LASF3
  1867 0041 02       		.uleb128 0x2
  1868 0042 04       		.byte	0x4
  1869 0043 05       		.byte	0x5
@@ -3511,15 +3511,15 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  1871 0048 02       		.uleb128 0x2
  1872 0049 04       		.byte	0x4
  1873 004a 07       		.byte	0x7
- 1874 004b 9F090000 		.4byte	.LASF5
+ 1874 004b F9090000 		.4byte	.LASF5
  1875 004f 02       		.uleb128 0x2
  1876 0050 08       		.byte	0x8
  1877 0051 05       		.byte	0x5
- 1878 0052 410B0000 		.4byte	.LASF6
+ 1878 0052 9B0B0000 		.4byte	.LASF6
  1879 0056 02       		.uleb128 0x2
  1880 0057 08       		.byte	0x8
  1881 0058 07       		.byte	0x7
- 1882 0059 2F100000 		.4byte	.LASF7
+ 1882 0059 89100000 		.4byte	.LASF7
  1883 005d 03       		.uleb128 0x3
  1884 005e 04       		.byte	0x4
  1885 005f 05       		.byte	0x5
@@ -3527,18 +3527,18 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  1887 0064 02       		.uleb128 0x2
  1888 0065 04       		.byte	0x4
  1889 0066 07       		.byte	0x7
- 1890 0067 2D0D0000 		.4byte	.LASF8
+ 1890 0067 870D0000 		.4byte	.LASF8
  1891 006b 04       		.uleb128 0x4
- 1892 006c 07130000 		.4byte	.LASF9
+ 1892 006c 3C130000 		.4byte	.LASF9
  1893 0070 02       		.byte	0x2
  1894 0071 E401     		.2byte	0x1e4
  1895 0073 2C000000 		.4byte	0x2c
  1896 0077 04       		.uleb128 0x4
- 1897 0078 D8170000 		.4byte	.LASF10
+ 1897 0078 0D180000 		.4byte	.LASF10
  1898 007c 02       		.byte	0x2
  1899 007d E501     		.2byte	0x1e5
  1900 007f 3A000000 		.4byte	0x3a
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 60
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 60
 
 
  1901 0083 04       		.uleb128 0x4
@@ -3549,11 +3549,11 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  1906 008f 02       		.uleb128 0x2
  1907 0090 04       		.byte	0x4
  1908 0091 04       		.byte	0x4
- 1909 0092 B80C0000 		.4byte	.LASF12
+ 1909 0092 120D0000 		.4byte	.LASF12
  1910 0096 02       		.uleb128 0x2
  1911 0097 08       		.byte	0x8
  1912 0098 04       		.byte	0x4
- 1913 0099 9B0B0000 		.4byte	.LASF13
+ 1913 0099 F50B0000 		.4byte	.LASF13
  1914 009d 04       		.uleb128 0x4
  1915 009e 11010000 		.4byte	.LASF14
  1916 00a2 02       		.byte	0x2
@@ -3568,7 +3568,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  1925 00b5 02       		.uleb128 0x2
  1926 00b6 08       		.byte	0x8
  1927 00b7 04       		.byte	0x4
- 1928 00b8 690F0000 		.4byte	.LASF16
+ 1928 00b8 C30F0000 		.4byte	.LASF16
  1929 00bc 02       		.uleb128 0x2
  1930 00bd 04       		.byte	0x4
  1931 00be 07       		.byte	0x7
@@ -3598,70 +3598,70 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  1955 00ef 07030000 		.4byte	.LASF19
  1956 00f3 01       		.byte	0x1
  1957 00f4 0B       		.uleb128 0xb
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 61
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 61
 
 
- 1958 00f5 46100000 		.4byte	.LASF20
+ 1958 00f5 A0100000 		.4byte	.LASF20
  1959 00f9 02       		.byte	0x2
  1960 00fa 0B       		.uleb128 0xb
  1961 00fb 45040000 		.4byte	.LASF21
  1962 00ff 03       		.byte	0x3
  1963 0100 0B       		.uleb128 0xb
- 1964 0101 1B170000 		.4byte	.LASF22
+ 1964 0101 50170000 		.4byte	.LASF22
  1965 0105 04       		.byte	0x4
  1966 0106 0B       		.uleb128 0xb
- 1967 0107 E4150000 		.4byte	.LASF23
+ 1967 0107 19160000 		.4byte	.LASF23
  1968 010b 05       		.byte	0x5
  1969 010c 0B       		.uleb128 0xb
- 1970 010d 800F0000 		.4byte	.LASF24
+ 1970 010d DA0F0000 		.4byte	.LASF24
  1971 0111 06       		.byte	0x6
  1972 0112 0B       		.uleb128 0xb
- 1973 0113 45140000 		.4byte	.LASF25
+ 1973 0113 7A140000 		.4byte	.LASF25
  1974 0117 20       		.byte	0x20
  1975 0118 0B       		.uleb128 0xb
  1976 0119 87010000 		.4byte	.LASF26
  1977 011d 21       		.byte	0x21
  1978 011e 0B       		.uleb128 0xb
- 1979 011f DC0A0000 		.4byte	.LASF27
+ 1979 011f 360B0000 		.4byte	.LASF27
  1980 0123 22       		.byte	0x22
  1981 0124 0B       		.uleb128 0xb
- 1982 0125 640E0000 		.4byte	.LASF28
+ 1982 0125 BE0E0000 		.4byte	.LASF28
  1983 0129 23       		.byte	0x23
  1984 012a 0B       		.uleb128 0xb
- 1985 012b 17090000 		.4byte	.LASF29
+ 1985 012b 71090000 		.4byte	.LASF29
  1986 012f 24       		.byte	0x24
  1987 0130 0B       		.uleb128 0xb
- 1988 0131 43090000 		.4byte	.LASF30
+ 1988 0131 9D090000 		.4byte	.LASF30
  1989 0135 25       		.byte	0x25
  1990 0136 0B       		.uleb128 0xb
- 1991 0137 8C120000 		.4byte	.LASF31
+ 1991 0137 E6120000 		.4byte	.LASF31
  1992 013b 26       		.byte	0x26
  1993 013c 0B       		.uleb128 0xb
  1994 013d 5A000000 		.4byte	.LASF32
  1995 0141 27       		.byte	0x27
  1996 0142 0B       		.uleb128 0xb
- 1997 0143 95170000 		.4byte	.LASF33
+ 1997 0143 CA170000 		.4byte	.LASF33
  1998 0147 28       		.byte	0x28
  1999 0148 0B       		.uleb128 0xb
- 2000 0149 BF0F0000 		.4byte	.LASF34
+ 2000 0149 19100000 		.4byte	.LASF34
  2001 014d 29       		.byte	0x29
  2002 014e 0B       		.uleb128 0xb
- 2003 014f 410A0000 		.4byte	.LASF35
+ 2003 014f 9B0A0000 		.4byte	.LASF35
  2004 0153 2A       		.byte	0x2a
  2005 0154 0B       		.uleb128 0xb
- 2006 0155 C40D0000 		.4byte	.LASF36
+ 2006 0155 1E0E0000 		.4byte	.LASF36
  2007 0159 2B       		.byte	0x2b
  2008 015a 0B       		.uleb128 0xb
- 2009 015b 00160000 		.4byte	.LASF37
+ 2009 015b 35160000 		.4byte	.LASF37
  2010 015f 2C       		.byte	0x2c
  2011 0160 0B       		.uleb128 0xb
  2012 0161 27000000 		.4byte	.LASF38
  2013 0165 2D       		.byte	0x2d
  2014 0166 0B       		.uleb128 0xb
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 62
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 62
 
 
- 2015 0167 1B130000 		.4byte	.LASF39
+ 2015 0167 50130000 		.4byte	.LASF39
  2016 016b 2E       		.byte	0x2e
  2017 016c 0B       		.uleb128 0xb
  2018 016d 18020000 		.4byte	.LASF40
@@ -3670,7 +3670,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2021 0173 A4050000 		.4byte	.LASF41
  2022 0177 30       		.byte	0x30
  2023 0178 0B       		.uleb128 0xb
- 2024 0179 240C0000 		.4byte	.LASF42
+ 2024 0179 7E0C0000 		.4byte	.LASF42
  2025 017d 31       		.byte	0x31
  2026 017e 0B       		.uleb128 0xb
  2027 017f 24060000 		.4byte	.LASF43
@@ -3682,25 +3682,25 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2033 018b FB040000 		.4byte	.LASF45
  2034 018f 34       		.byte	0x34
  2035 0190 0B       		.uleb128 0xb
- 2036 0191 B5140000 		.4byte	.LASF46
+ 2036 0191 EA140000 		.4byte	.LASF46
  2037 0195 35       		.byte	0x35
  2038 0196 0B       		.uleb128 0xb
  2039 0197 DF010000 		.4byte	.LASF47
  2040 019b 36       		.byte	0x36
  2041 019c 0B       		.uleb128 0xb
- 2042 019d FA0F0000 		.4byte	.LASF48
+ 2042 019d 54100000 		.4byte	.LASF48
  2043 01a1 37       		.byte	0x37
  2044 01a2 0B       		.uleb128 0xb
- 2045 01a3 BC130000 		.4byte	.LASF49
+ 2045 01a3 F1130000 		.4byte	.LASF49
  2046 01a7 40       		.byte	0x40
  2047 01a8 0B       		.uleb128 0xb
  2048 01a9 79000000 		.4byte	.LASF50
  2049 01ad 41       		.byte	0x41
  2050 01ae 0B       		.uleb128 0xb
- 2051 01af 30170000 		.4byte	.LASF51
+ 2051 01af 65170000 		.4byte	.LASF51
  2052 01b3 42       		.byte	0x42
  2053 01b4 0B       		.uleb128 0xb
- 2054 01b5 DC0F0000 		.4byte	.LASF52
+ 2054 01b5 36100000 		.4byte	.LASF52
  2055 01b9 43       		.byte	0x43
  2056 01ba 0B       		.uleb128 0xb
  2057 01bb B6040000 		.4byte	.LASF53
@@ -3709,19 +3709,19 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2060 01c1 6D040000 		.4byte	.LASF54
  2061 01c5 45       		.byte	0x45
  2062 01c6 0B       		.uleb128 0xb
- 2063 01c7 AF110000 		.4byte	.LASF55
+ 2063 01c7 09120000 		.4byte	.LASF55
  2064 01cb 46       		.byte	0x46
  2065 01cc 0B       		.uleb128 0xb
- 2066 01cd 91110000 		.4byte	.LASF56
+ 2066 01cd EB110000 		.4byte	.LASF56
  2067 01d1 47       		.byte	0x47
  2068 01d2 0B       		.uleb128 0xb
  2069 01d3 7D050000 		.4byte	.LASF57
  2070 01d7 48       		.byte	0x48
  2071 01d8 0B       		.uleb128 0xb
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 63
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 63
 
 
- 2072 01d9 BC0E0000 		.4byte	.LASF58
+ 2072 01d9 160F0000 		.4byte	.LASF58
  2073 01dd 49       		.byte	0x49
  2074 01de 0B       		.uleb128 0xb
  2075 01df 62060000 		.4byte	.LASF59
@@ -3730,19 +3730,19 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2078 01e5 D8050000 		.4byte	.LASF60
  2079 01e9 4B       		.byte	0x4b
  2080 01ea 0B       		.uleb128 0xb
- 2081 01eb F40D0000 		.4byte	.LASF61
+ 2081 01eb 4E0E0000 		.4byte	.LASF61
  2082 01ef 4C       		.byte	0x4c
  2083 01f0 0B       		.uleb128 0xb
- 2084 01f1 22120000 		.4byte	.LASF62
+ 2084 01f1 7C120000 		.4byte	.LASF62
  2085 01f5 4D       		.byte	0x4d
  2086 01f6 0B       		.uleb128 0xb
  2087 01f7 63020000 		.4byte	.LASF63
  2088 01fb 4E       		.byte	0x4e
  2089 01fc 0B       		.uleb128 0xb
- 2090 01fd 470D0000 		.4byte	.LASF64
+ 2090 01fd A10D0000 		.4byte	.LASF64
  2091 0201 4F       		.byte	0x4f
  2092 0202 0B       		.uleb128 0xb
- 2093 0203 26140000 		.4byte	.LASF65
+ 2093 0203 5B140000 		.4byte	.LASF65
  2094 0207 50       		.byte	0x50
  2095 0208 0B       		.uleb128 0xb
  2096 0209 80060000 		.4byte	.LASF66
@@ -3751,49 +3751,49 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2099 020f 66010000 		.4byte	.LASF67
  2100 0213 52       		.byte	0x52
  2101 0214 0B       		.uleb128 0xb
- 2102 0215 9E150000 		.4byte	.LASF68
+ 2102 0215 D3150000 		.4byte	.LASF68
  2103 0219 53       		.byte	0x53
  2104 021a 0B       		.uleb128 0xb
- 2105 021b B7170000 		.4byte	.LASF69
+ 2105 021b EC170000 		.4byte	.LASF69
  2106 021f 54       		.byte	0x54
  2107 0220 0B       		.uleb128 0xb
- 2108 0221 160E0000 		.4byte	.LASF70
+ 2108 0221 700E0000 		.4byte	.LASF70
  2109 0225 55       		.byte	0x55
  2110 0226 0B       		.uleb128 0xb
- 2111 0227 AA060000 		.4byte	.LASF71
+ 2111 0227 04070000 		.4byte	.LASF71
  2112 022b 56       		.byte	0x56
  2113 022c 0B       		.uleb128 0xb
- 2114 022d E30C0000 		.4byte	.LASF72
+ 2114 022d 3D0D0000 		.4byte	.LASF72
  2115 0231 57       		.byte	0x57
  2116 0232 0B       		.uleb128 0xb
- 2117 0233 72170000 		.4byte	.LASF73
+ 2117 0233 A7170000 		.4byte	.LASF73
  2118 0237 58       		.byte	0x58
  2119 0238 0B       		.uleb128 0xb
- 2120 0239 24160000 		.4byte	.LASF74
+ 2120 0239 59160000 		.4byte	.LASF74
  2121 023d 70       		.byte	0x70
  2122 023e 0B       		.uleb128 0xb
- 2123 023f 21080000 		.4byte	.LASF75
+ 2123 023f 7B080000 		.4byte	.LASF75
  2124 0243 71       		.byte	0x71
  2125 0244 0B       		.uleb128 0xb
  2126 0245 BB030000 		.4byte	.LASF76
  2127 0249 72       		.byte	0x72
  2128 024a 0B       		.uleb128 0xb
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 64
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 64
 
 
- 2129 024b 08140000 		.4byte	.LASF77
+ 2129 024b 3D140000 		.4byte	.LASF77
  2130 024f 73       		.byte	0x73
  2131 0250 0B       		.uleb128 0xb
- 2132 0251 010F0000 		.4byte	.LASF78
+ 2132 0251 5B0F0000 		.4byte	.LASF78
  2133 0255 74       		.byte	0x74
  2134 0256 0B       		.uleb128 0xb
- 2135 0257 B00A0000 		.4byte	.LASF79
+ 2135 0257 0A0B0000 		.4byte	.LASF79
  2136 025b 75       		.byte	0x75
  2137 025c 0B       		.uleb128 0xb
  2138 025d 5C050000 		.4byte	.LASF80
  2139 0261 76       		.byte	0x76
  2140 0262 0B       		.uleb128 0xb
- 2141 0263 B8100000 		.4byte	.LASF81
+ 2141 0263 12110000 		.4byte	.LASF81
  2142 0267 77       		.byte	0x77
  2143 0268 0B       		.uleb128 0xb
  2144 0269 17010000 		.4byte	.LASF82
@@ -3802,22 +3802,22 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2147 026f 81020000 		.4byte	.LASF83
  2148 0273 79       		.byte	0x79
  2149 0274 0B       		.uleb128 0xb
- 2150 0275 4E170000 		.4byte	.LASF84
+ 2150 0275 83170000 		.4byte	.LASF84
  2151 0279 7A       		.byte	0x7a
  2152 027a 0B       		.uleb128 0xb
- 2153 027b C40B0000 		.4byte	.LASF85
+ 2153 027b 1E0C0000 		.4byte	.LASF85
  2154 027f FA       		.byte	0xfa
  2155 0280 0B       		.uleb128 0xb
- 2156 0281 58150000 		.4byte	.LASF86
+ 2156 0281 8D150000 		.4byte	.LASF86
  2157 0285 FB       		.byte	0xfb
  2158 0286 0B       		.uleb128 0xb
- 2159 0287 47080000 		.4byte	.LASF87
+ 2159 0287 A1080000 		.4byte	.LASF87
  2160 028b FC       		.byte	0xfc
  2161 028c 0B       		.uleb128 0xb
- 2162 028d 510F0000 		.4byte	.LASF88
+ 2162 028d AB0F0000 		.4byte	.LASF88
  2163 0291 FD       		.byte	0xfd
  2164 0292 0B       		.uleb128 0xb
- 2165 0293 B60D0000 		.4byte	.LASF89
+ 2165 0293 100E0000 		.4byte	.LASF89
  2166 0297 FF       		.byte	0xff
  2167 0298 00       		.byte	0
  2168 0299 0A       		.uleb128 0xa
@@ -3830,58 +3830,58 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2175 02a7 5E040000 		.4byte	.LASF90
  2176 02ab 00       		.byte	0
  2177 02ac 0B       		.uleb128 0xb
- 2178 02ad 3D070000 		.4byte	.LASF91
+ 2178 02ad 97070000 		.4byte	.LASF91
  2179 02b1 01       		.byte	0x1
  2180 02b2 0B       		.uleb128 0xb
- 2181 02b3 F4160000 		.4byte	.LASF92
+ 2181 02b3 29170000 		.4byte	.LASF92
  2182 02b7 02       		.byte	0x2
  2183 02b8 0B       		.uleb128 0xb
- 2184 02b9 B9070000 		.4byte	.LASF93
+ 2184 02b9 13080000 		.4byte	.LASF93
  2185 02bd 03       		.byte	0x3
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 65
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 65
 
 
  2186 02be 0B       		.uleb128 0xb
- 2187 02bf 7C090000 		.4byte	.LASF94
+ 2187 02bf D6090000 		.4byte	.LASF94
  2188 02c3 04       		.byte	0x4
  2189 02c4 0B       		.uleb128 0xb
- 2190 02c5 7D0B0000 		.4byte	.LASF95
+ 2190 02c5 D70B0000 		.4byte	.LASF95
  2191 02c9 05       		.byte	0x5
  2192 02ca 0B       		.uleb128 0xb
- 2193 02cb 32150000 		.4byte	.LASF96
+ 2193 02cb 67150000 		.4byte	.LASF96
  2194 02cf 06       		.byte	0x6
  2195 02d0 0B       		.uleb128 0xb
  2196 02d1 45060000 		.4byte	.LASF97
  2197 02d5 07       		.byte	0x7
  2198 02d6 0B       		.uleb128 0xb
- 2199 02d7 9A0C0000 		.4byte	.LASF98
+ 2199 02d7 F40C0000 		.4byte	.LASF98
  2200 02db 08       		.byte	0x8
  2201 02dc 0B       		.uleb128 0xb
- 2202 02dd 8B140000 		.4byte	.LASF99
+ 2202 02dd C0140000 		.4byte	.LASF99
  2203 02e1 09       		.byte	0x9
  2204 02e2 0B       		.uleb128 0xb
- 2205 02e3 EB170000 		.4byte	.LASF100
+ 2205 02e3 20180000 		.4byte	.LASF100
  2206 02e7 0A       		.byte	0xa
  2207 02e8 0B       		.uleb128 0xb
  2208 02e9 BF010000 		.4byte	.LASF101
  2209 02ed 0B       		.byte	0xb
  2210 02ee 0B       		.uleb128 0xb
- 2211 02ef BF150000 		.4byte	.LASF102
+ 2211 02ef F4150000 		.4byte	.LASF102
  2212 02f3 0C       		.byte	0xc
  2213 02f4 0B       		.uleb128 0xb
- 2214 02f5 890D0000 		.4byte	.LASF103
+ 2214 02f5 E30D0000 		.4byte	.LASF103
  2215 02f9 0D       		.byte	0xd
  2216 02fa 0B       		.uleb128 0xb
- 2217 02fb 0B0A0000 		.4byte	.LASF104
+ 2217 02fb 650A0000 		.4byte	.LASF104
  2218 02ff 0E       		.byte	0xe
  2219 0300 0B       		.uleb128 0xb
- 2220 0301 580B0000 		.4byte	.LASF105
+ 2220 0301 B20B0000 		.4byte	.LASF105
  2221 0305 0F       		.byte	0xf
  2222 0306 0B       		.uleb128 0xb
  2223 0307 C7000000 		.4byte	.LASF106
  2224 030b 10       		.byte	0x10
  2225 030c 0B       		.uleb128 0xb
- 2226 030d 480C0000 		.4byte	.LASF107
+ 2226 030d A20C0000 		.4byte	.LASF107
  2227 0311 11       		.byte	0x11
  2228 0312 0B       		.uleb128 0xb
  2229 0313 1A030000 		.4byte	.LASF108
@@ -3890,53 +3890,53 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2232 0319 E9030000 		.4byte	.LASF109
  2233 031d 13       		.byte	0x13
  2234 031e 0B       		.uleb128 0xb
- 2235 031f A20B0000 		.4byte	.LASF110
+ 2235 031f FC0B0000 		.4byte	.LASF110
  2236 0323 27       		.byte	0x27
  2237 0324 0B       		.uleb128 0xb
- 2238 0325 BE0C0000 		.4byte	.LASF111
+ 2238 0325 180D0000 		.4byte	.LASF111
  2239 0329 28       		.byte	0x28
  2240 032a 0B       		.uleb128 0xb
  2241 032b F5000000 		.4byte	.LASF112
  2242 032f 29       		.byte	0x29
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 66
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 66
 
 
  2243 0330 0B       		.uleb128 0xb
- 2244 0331 9F130000 		.4byte	.LASF113
+ 2244 0331 D4130000 		.4byte	.LASF113
  2245 0335 2A       		.byte	0x2a
  2246 0336 0B       		.uleb128 0xb
- 2247 0337 B1090000 		.4byte	.LASF114
+ 2247 0337 0B0A0000 		.4byte	.LASF114
  2248 033b 2B       		.byte	0x2b
  2249 033c 0B       		.uleb128 0xb
- 2250 033d F9100000 		.4byte	.LASF115
+ 2250 033d 53110000 		.4byte	.LASF115
  2251 0341 2C       		.byte	0x2c
  2252 0342 0B       		.uleb128 0xb
- 2253 0343 F8110000 		.4byte	.LASF116
+ 2253 0343 52120000 		.4byte	.LASF116
  2254 0347 2D       		.byte	0x2d
  2255 0348 0B       		.uleb128 0xb
- 2256 0349 21070000 		.4byte	.LASF117
+ 2256 0349 7B070000 		.4byte	.LASF117
  2257 034d FE       		.byte	0xfe
  2258 034e 0B       		.uleb128 0xb
- 2259 034f 11080000 		.4byte	.LASF118
+ 2259 034f 6B080000 		.4byte	.LASF118
  2260 0353 FF       		.byte	0xff
  2261 0354 0C       		.uleb128 0xc
- 2262 0355 A30E0000 		.4byte	.LASF119
+ 2262 0355 FD0E0000 		.4byte	.LASF119
  2263 0359 0001     		.2byte	0x100
  2264 035b 0C       		.uleb128 0xc
- 2265 035c 8A0E0000 		.4byte	.LASF120
+ 2265 035c E40E0000 		.4byte	.LASF120
  2266 0360 0101     		.2byte	0x101
  2267 0362 0C       		.uleb128 0xc
  2268 0363 66030000 		.4byte	.LASF121
  2269 0367 0201     		.2byte	0x102
  2270 0369 0C       		.uleb128 0xc
- 2271 036a 65100000 		.4byte	.LASF122
+ 2271 036a BF100000 		.4byte	.LASF122
  2272 036e 0301     		.2byte	0x103
  2273 0370 0C       		.uleb128 0xc
- 2274 0371 5D090000 		.4byte	.LASF123
+ 2274 0371 B7090000 		.4byte	.LASF123
  2275 0375 0401     		.2byte	0x104
  2276 0377 00       		.byte	0
  2277 0378 04       		.uleb128 0x4
- 2278 0379 77150000 		.4byte	.LASF124
+ 2278 0379 AC150000 		.4byte	.LASF124
  2279 037d 03       		.byte	0x3
  2280 037e 5C04     		.2byte	0x45c
  2281 0380 99020000 		.4byte	0x299
@@ -3946,7 +3946,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2285 0387 2A05     		.2byte	0x52a
  2286 0389 A8030000 		.4byte	0x3a8
  2287 038d 0E       		.uleb128 0xe
- 2288 038e F2140000 		.4byte	.LASF125
+ 2288 038e 27150000 		.4byte	.LASF125
  2289 0392 03       		.byte	0x3
  2290 0393 2D05     		.2byte	0x52d
  2291 0395 A8030000 		.4byte	0x3a8
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2297 03a2 6B000000 		.4byte	0x6b
  2298 03a6 06       		.byte	0x6
  2299 03a7 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 67
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 67
 
 
  2300 03a8 0F       		.uleb128 0xf
@@ -3969,7 +3969,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2305 03b6 05       		.byte	0x5
  2306 03b7 00       		.byte	0
  2307 03b8 04       		.uleb128 0x4
- 2308 03b9 1E110000 		.4byte	.LASF127
+ 2308 03b9 78110000 		.4byte	.LASF127
  2309 03bd 03       		.byte	0x3
  2310 03be 3005     		.2byte	0x530
  2311 03c0 84030000 		.4byte	0x384
@@ -3979,7 +3979,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2315 03c7 3A05     		.2byte	0x53a
  2316 03c9 E8030000 		.4byte	0x3e8
  2317 03cd 0E       		.uleb128 0xe
- 2318 03ce 750F0000 		.4byte	.LASF128
+ 2318 03ce CF0F0000 		.4byte	.LASF128
  2319 03d2 03       		.byte	0x3
  2320 03d3 3D05     		.2byte	0x53d
  2321 03d5 77000000 		.4byte	0x77
@@ -4002,23 +4002,23 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2338 03f7 4405     		.2byte	0x544
  2339 03f9 25040000 		.4byte	0x425
  2340 03fd 0E       		.uleb128 0xe
- 2341 03fe 1B0B0000 		.4byte	.LASF131
+ 2341 03fe 750B0000 		.4byte	.LASF131
  2342 0402 03       		.byte	0x3
  2343 0403 4705     		.2byte	0x547
  2344 0405 77000000 		.4byte	0x77
  2345 0409 00       		.byte	0
  2346 040a 0E       		.uleb128 0xe
- 2347 040b A7160000 		.4byte	.LASF132
+ 2347 040b DC160000 		.4byte	.LASF132
  2348 040f 03       		.byte	0x3
  2349 0410 4A05     		.2byte	0x54a
  2350 0412 77000000 		.4byte	0x77
  2351 0416 02       		.byte	0x2
  2352 0417 0E       		.uleb128 0xe
- 2353 0418 1E0D0000 		.4byte	.LASF133
+ 2353 0418 780D0000 		.4byte	.LASF133
  2354 041c 03       		.byte	0x3
  2355 041d 4D05     		.2byte	0x54d
  2356 041f 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 68
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 68
 
 
  2357 0423 04       		.byte	0x4
@@ -4034,14 +4034,14 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2367 0434 5105     		.2byte	0x551
  2368 0436 48040000 		.4byte	0x448
  2369 043a 0E       		.uleb128 0xe
- 2370 043b F9090000 		.4byte	.LASF135
+ 2370 043b 530A0000 		.4byte	.LASF135
  2371 043f 03       		.byte	0x3
  2372 0440 5405     		.2byte	0x554
  2373 0442 6B000000 		.4byte	0x6b
  2374 0446 00       		.byte	0
  2375 0447 00       		.byte	0
  2376 0448 04       		.uleb128 0x4
- 2377 0449 6C0C0000 		.4byte	.LASF136
+ 2377 0449 C60C0000 		.4byte	.LASF136
  2378 044d 03       		.byte	0x3
  2379 044e 5505     		.2byte	0x555
  2380 0450 31040000 		.4byte	0x431
@@ -4057,13 +4057,13 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2390 0465 85040000 		.4byte	0x485
  2391 0469 00       		.byte	0
  2392 046a 0E       		.uleb128 0xe
- 2393 046b 32110000 		.4byte	.LASF138
+ 2393 046b 8C110000 		.4byte	.LASF138
  2394 046f 03       		.byte	0x3
  2395 0470 6105     		.2byte	0x561
  2396 0472 8B040000 		.4byte	0x48b
  2397 0476 04       		.byte	0x4
  2398 0477 0E       		.uleb128 0xe
- 2399 0478 3A0D0000 		.4byte	.LASF139
+ 2399 0478 940D0000 		.4byte	.LASF139
  2400 047c 03       		.byte	0x3
  2401 047d 6705     		.2byte	0x567
  2402 047f 77000000 		.4byte	0x77
@@ -4076,9 +4076,9 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2409 048c 04       		.byte	0x4
  2410 048d 48040000 		.4byte	0x448
  2411 0491 04       		.uleb128 0x4
- 2412 0492 000B0000 		.4byte	.LASF140
+ 2412 0492 5A0B0000 		.4byte	.LASF140
  2413 0496 03       		.byte	0x3
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 69
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 69
 
 
  2414 0497 6805     		.2byte	0x568
@@ -4093,23 +4093,23 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2423 04aa E0       		.byte	0xe0
  2424 04ab CE040000 		.4byte	0x4ce
  2425 04af 0B       		.uleb128 0xb
- 2426 04b0 C8160000 		.4byte	.LASF141
+ 2426 04b0 FD160000 		.4byte	.LASF141
  2427 04b4 00       		.byte	0
  2428 04b5 0B       		.uleb128 0xb
- 2429 04b6 D50E0000 		.4byte	.LASF142
+ 2429 04b6 2F0F0000 		.4byte	.LASF142
  2430 04ba 01       		.byte	0x1
  2431 04bb 0B       		.uleb128 0xb
- 2432 04bc E4130000 		.4byte	.LASF143
+ 2432 04bc 19140000 		.4byte	.LASF143
  2433 04c0 02       		.byte	0x2
  2434 04c1 0B       		.uleb128 0xb
  2435 04c2 91030000 		.4byte	.LASF144
  2436 04c6 03       		.byte	0x3
  2437 04c7 0B       		.uleb128 0xb
- 2438 04c8 8E070000 		.4byte	.LASF145
+ 2438 04c8 E8070000 		.4byte	.LASF145
  2439 04cc 04       		.byte	0x4
  2440 04cd 00       		.byte	0
  2441 04ce 12       		.uleb128 0x12
- 2442 04cf E30D0000 		.4byte	.LASF146
+ 2442 04cf 3D0E0000 		.4byte	.LASF146
  2443 04d3 04       		.byte	0x4
  2444 04d4 F0       		.byte	0xf0
  2445 04d5 A3040000 		.4byte	0x4a3
@@ -4125,20 +4125,20 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2455 04ea 77000000 		.4byte	0x77
  2456 04ee 00       		.byte	0
  2457 04ef 0E       		.uleb128 0xe
- 2458 04f0 05180000 		.4byte	.LASF148
+ 2458 04f0 3A180000 		.4byte	.LASF148
  2459 04f4 04       		.byte	0x4
  2460 04f5 2D02     		.2byte	0x22d
  2461 04f7 77000000 		.4byte	0x77
  2462 04fb 02       		.byte	0x2
  2463 04fc 0E       		.uleb128 0xe
- 2464 04fd 74090000 		.4byte	.LASF149
+ 2464 04fd CE090000 		.4byte	.LASF149
  2465 0501 04       		.byte	0x4
  2466 0502 3602     		.2byte	0x236
  2467 0504 CE040000 		.4byte	0x4ce
  2468 0508 04       		.byte	0x4
  2469 0509 0E       		.uleb128 0xe
- 2470 050a DF170000 		.4byte	.LASF150
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 70
+ 2470 050a 14180000 		.4byte	.LASF150
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 70
 
 
  2471 050e 04       		.byte	0x4
@@ -4146,32 +4146,32 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2473 0511 6B000000 		.4byte	0x6b
  2474 0515 05       		.byte	0x5
  2475 0516 0E       		.uleb128 0xe
- 2476 0517 150C0000 		.4byte	.LASF151
+ 2476 0517 6F0C0000 		.4byte	.LASF151
  2477 051b 04       		.byte	0x4
  2478 051c 4502     		.2byte	0x245
  2479 051e 6B000000 		.4byte	0x6b
  2480 0522 06       		.byte	0x6
  2481 0523 0E       		.uleb128 0xe
- 2482 0524 86160000 		.4byte	.LASF152
+ 2482 0524 BB160000 		.4byte	.LASF152
  2483 0528 04       		.byte	0x4
  2484 0529 4B02     		.2byte	0x24b
  2485 052b A8030000 		.4byte	0x3a8
  2486 052f 07       		.byte	0x7
  2487 0530 0E       		.uleb128 0xe
- 2488 0531 BA160000 		.4byte	.LASF153
+ 2488 0531 EF160000 		.4byte	.LASF153
  2489 0535 04       		.byte	0x4
  2490 0536 5302     		.2byte	0x253
  2491 0538 6B000000 		.4byte	0x6b
  2492 053c 0D       		.byte	0xd
  2493 053d 0E       		.uleb128 0xe
- 2494 053e 33090000 		.4byte	.LASF154
+ 2494 053e 8D090000 		.4byte	.LASF154
  2495 0542 04       		.byte	0x4
  2496 0543 5F02     		.2byte	0x25f
  2497 0545 6B000000 		.4byte	0x6b
  2498 0549 0E       		.byte	0xe
  2499 054a 00       		.byte	0
  2500 054b 04       		.uleb128 0x4
- 2501 054c F5080000 		.4byte	.LASF155
+ 2501 054c 4F090000 		.4byte	.LASF155
  2502 0550 04       		.byte	0x4
  2503 0551 6102     		.2byte	0x261
  2504 0553 D9040000 		.4byte	0x4d9
@@ -4181,13 +4181,13 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2508 055a 6402     		.2byte	0x264
  2509 055c 7B050000 		.4byte	0x57b
  2510 0560 0E       		.uleb128 0xe
- 2511 0561 0E0E0000 		.4byte	.LASF156
+ 2511 0561 680E0000 		.4byte	.LASF156
  2512 0565 04       		.byte	0x4
  2513 0566 6702     		.2byte	0x267
  2514 0568 7B050000 		.4byte	0x57b
  2515 056c 00       		.byte	0
  2516 056d 0E       		.uleb128 0xe
- 2517 056e 4D110000 		.4byte	.LASF157
+ 2517 056e A7110000 		.4byte	.LASF157
  2518 0572 04       		.byte	0x4
  2519 0573 6A02     		.2byte	0x26a
  2520 0575 6B000000 		.4byte	0x6b
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2525 0580 8B050000 		.4byte	0x58b
  2526 0584 10       		.uleb128 0x10
  2527 0585 BC000000 		.4byte	0xbc
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 71
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 71
 
 
  2528 0589 1E       		.byte	0x1e
@@ -4220,14 +4220,14 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2544 05a8 7B050000 		.4byte	0x57b
  2545 05ac 00       		.byte	0
  2546 05ad 0E       		.uleb128 0xe
- 2547 05ae 90130000 		.4byte	.LASF160
+ 2547 05ae C5130000 		.4byte	.LASF160
  2548 05b2 04       		.byte	0x4
  2549 05b3 7602     		.2byte	0x276
  2550 05b5 6B000000 		.4byte	0x6b
  2551 05b9 1F       		.byte	0x1f
  2552 05ba 00       		.byte	0
  2553 05bb 04       		.uleb128 0x4
- 2554 05bc B4120000 		.4byte	.LASF161
+ 2554 05bc 0E130000 		.4byte	.LASF161
  2555 05c0 04       		.byte	0x4
  2556 05c1 7802     		.2byte	0x278
  2557 05c3 97050000 		.4byte	0x597
@@ -4243,13 +4243,13 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2567 05d8 6B000000 		.4byte	0x6b
  2568 05dc 00       		.byte	0
  2569 05dd 0E       		.uleb128 0xe
- 2570 05de 4F0B0000 		.4byte	.LASF163
+ 2570 05de A90B0000 		.4byte	.LASF163
  2571 05e2 04       		.byte	0x4
  2572 05e3 8602     		.2byte	0x286
  2573 05e5 12060000 		.4byte	0x612
  2574 05e9 04       		.byte	0x4
  2575 05ea 0E       		.uleb128 0xe
- 2576 05eb 0E0E0000 		.4byte	.LASF156
+ 2576 05eb 680E0000 		.4byte	.LASF156
  2577 05ef 04       		.byte	0x4
  2578 05f0 8802     		.2byte	0x288
  2579 05f2 18060000 		.4byte	0x618
@@ -4258,13 +4258,13 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2582 05f8 12000000 		.4byte	.LASF159
  2583 05fc 04       		.byte	0x4
  2584 05fd 8A02     		.2byte	0x28a
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 72
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 72
 
 
  2585 05ff 1E060000 		.4byte	0x61e
  2586 0603 0C       		.byte	0xc
  2587 0604 0E       		.uleb128 0xe
- 2588 0605 CC060000 		.4byte	.LASF164
+ 2588 0605 26070000 		.4byte	.LASF164
  2589 0609 04       		.byte	0x4
  2590 060a 9402     		.2byte	0x294
  2591 060c 77000000 		.4byte	0x77
@@ -4280,12 +4280,12 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2601 061f 04       		.byte	0x4
  2602 0620 BB050000 		.4byte	0x5bb
  2603 0624 04       		.uleb128 0x4
- 2604 0625 5D110000 		.4byte	.LASF165
+ 2604 0625 B7110000 		.4byte	.LASF165
  2605 0629 04       		.byte	0x4
  2606 062a 9602     		.2byte	0x296
  2607 062c C7050000 		.4byte	0x5c7
  2608 0630 04       		.uleb128 0x4
- 2609 0631 7F100000 		.4byte	.LASF166
+ 2609 0631 D9100000 		.4byte	.LASF166
  2610 0635 05       		.byte	0x5
  2611 0636 8901     		.2byte	0x189
  2612 0638 77000000 		.4byte	0x77
@@ -4301,7 +4301,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2622 064d 6B000000 		.4byte	0x6b
  2623 0651 00       		.byte	0
  2624 0652 0E       		.uleb128 0xe
- 2625 0653 EE160000 		.4byte	.LASF168
+ 2625 0653 23170000 		.4byte	.LASF168
  2626 0657 05       		.byte	0x5
  2627 0658 A001     		.2byte	0x1a0
  2628 065a 6B000000 		.4byte	0x6b
@@ -4318,23 +4318,23 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2639 066f CE       		.byte	0xce
  2640 0670 8D060000 		.4byte	0x68d
  2641 0674 14       		.uleb128 0x14
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 73
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 73
 
 
- 2642 0675 40110000 		.4byte	.LASF170
+ 2642 0675 9A110000 		.4byte	.LASF170
  2643 0679 06       		.byte	0x6
  2644 067a D1       		.byte	0xd1
  2645 067b 77000000 		.4byte	0x77
  2646 067f 00       		.byte	0
  2647 0680 14       		.uleb128 0x14
- 2648 0681 CF120000 		.4byte	.LASF171
+ 2648 0681 29130000 		.4byte	.LASF171
  2649 0685 06       		.byte	0x6
  2650 0686 D6       		.byte	0xd6
  2651 0687 C3000000 		.4byte	0xc3
  2652 068b 04       		.byte	0x4
  2653 068c 00       		.byte	0
  2654 068d 12       		.uleb128 0x12
- 2655 068e 330F0000 		.4byte	.LASF172
+ 2655 068e 8D0F0000 		.4byte	.LASF172
  2656 0692 06       		.byte	0x6
  2657 0693 D8       		.byte	0xd8
  2658 0694 6C060000 		.4byte	0x66c
@@ -4350,7 +4350,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2668 06a7 77000000 		.4byte	0x77
  2669 06ab 00       		.byte	0
  2670 06ac 14       		.uleb128 0x14
- 2671 06ad 70130000 		.4byte	.LASF174
+ 2671 06ad A5130000 		.4byte	.LASF174
  2672 06b1 06       		.byte	0x6
  2673 06b2 E3       		.byte	0xe3
  2674 06b3 B9060000 		.4byte	0x6b9
@@ -4360,7 +4360,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2678 06ba 04       		.byte	0x4
  2679 06bb 8D060000 		.4byte	0x68d
  2680 06bf 12       		.uleb128 0x12
- 2681 06c0 6D120000 		.4byte	.LASF175
+ 2681 06c0 C7120000 		.4byte	.LASF175
  2682 06c4 06       		.byte	0x6
  2683 06c5 E5       		.byte	0xe5
  2684 06c6 98060000 		.4byte	0x698
@@ -4370,21 +4370,21 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2688 06cd E8       		.byte	0xe8
  2689 06ce E9060000 		.4byte	0x6e9
  2690 06d2 16       		.uleb128 0x16
- 2691 06d3 81130000 		.4byte	.LASF176
+ 2691 06d3 B6130000 		.4byte	.LASF176
  2692 06d7 06       		.byte	0x6
  2693 06d8 EF       		.byte	0xef
  2694 06d9 BF060000 		.4byte	0x6bf
  2695 06dd 16       		.uleb128 0x16
- 2696 06de 340A0000 		.4byte	.LASF177
+ 2696 06de 8E0A0000 		.4byte	.LASF177
  2697 06e2 06       		.byte	0x6
  2698 06e3 F2       		.byte	0xf2
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 74
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 74
 
 
  2699 06e4 77000000 		.4byte	0x77
  2700 06e8 00       		.byte	0
  2701 06e9 12       		.uleb128 0x12
- 2702 06ea 55120000 		.4byte	.LASF178
+ 2702 06ea AF120000 		.4byte	.LASF178
  2703 06ee 06       		.byte	0x6
  2704 06ef F4       		.byte	0xf4
  2705 06f0 CA060000 		.4byte	0x6ca
@@ -4412,56 +4412,56 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2727 071d 83000000 		.4byte	0x83
  2728 0721 04       		.byte	0x4
  2729 0722 0E       		.uleb128 0xe
- 2730 0723 660D0000 		.4byte	.LASF182
+ 2730 0723 C00D0000 		.4byte	.LASF182
  2731 0727 06       		.byte	0x6
  2732 0728 0E01     		.2byte	0x10e
  2733 072a 77000000 		.4byte	0x77
  2734 072e 08       		.byte	0x8
  2735 072f 0E       		.uleb128 0xe
- 2736 0730 DD100000 		.4byte	.LASF183
+ 2736 0730 37110000 		.4byte	.LASF183
  2737 0734 06       		.byte	0x6
  2738 0735 1701     		.2byte	0x117
  2739 0737 E9060000 		.4byte	0x6e9
  2740 073b 0C       		.byte	0xc
  2741 073c 00       		.byte	0
  2742 073d 04       		.uleb128 0x4
- 2743 073e D2060000 		.4byte	.LASF184
+ 2743 073e 2C070000 		.4byte	.LASF184
  2744 0742 06       		.byte	0x6
  2745 0743 1801     		.2byte	0x118
  2746 0745 F4060000 		.4byte	0x6f4
  2747 0749 04       		.uleb128 0x4
  2748 074a 55010000 		.4byte	.LASF185
  2749 074e 07       		.byte	0x7
- 2750 074f 0302     		.2byte	0x203
+ 2750 074f 0602     		.2byte	0x206
  2751 0751 C5000000 		.4byte	0xc5
  2752 0755 17       		.uleb128 0x17
  2753 0756 8F02     		.2byte	0x28f
  2754 0758 08       		.byte	0x8
  2755 0759 9D       		.byte	0x9d
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 75
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 75
 
 
  2756 075a 92070000 		.4byte	0x792
  2757 075e 14       		.uleb128 0x14
- 2758 075f 59080000 		.4byte	.LASF186
+ 2758 075f B3080000 		.4byte	.LASF186
  2759 0763 08       		.byte	0x8
  2760 0764 A0       		.byte	0xa0
  2761 0765 92070000 		.4byte	0x792
  2762 0769 00       		.byte	0
  2763 076a 18       		.uleb128 0x18
- 2764 076b F8070000 		.4byte	.LASF187
+ 2764 076b 52080000 		.4byte	.LASF187
  2765 076f 08       		.byte	0x8
  2766 0770 A3       		.byte	0xa3
  2767 0771 A3070000 		.4byte	0x7a3
  2768 0775 7902     		.2byte	0x279
  2769 0777 18       		.uleb128 0x18
- 2770 0778 69140000 		.4byte	.LASF188
+ 2770 0778 9E140000 		.4byte	.LASF188
  2771 077c 08       		.byte	0x8
  2772 077d A6       		.byte	0xa6
  2773 077e 6B000000 		.4byte	0x6b
  2774 0782 8D02     		.2byte	0x28d
  2775 0784 18       		.uleb128 0x18
- 2776 0785 6F070000 		.4byte	.LASF189
+ 2776 0785 C9070000 		.4byte	.LASF189
  2777 0789 08       		.byte	0x8
  2778 078a A9       		.byte	0xa9
  2779 078b 6B000000 		.4byte	0x6b
@@ -4485,7 +4485,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2797 07b7 03       		.byte	0x3
  2798 07b8 00       		.byte	0
  2799 07b9 12       		.uleb128 0x12
- 2800 07ba E4090000 		.4byte	.LASF190
+ 2800 07ba 3E0A0000 		.4byte	.LASF190
  2801 07be 08       		.byte	0x8
  2802 07bf AA       		.byte	0xaa
  2803 07c0 55070000 		.4byte	0x755
@@ -4498,24 +4498,24 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2810 07d1 0B       		.uleb128 0xb
  2811 07d2 94040000 		.4byte	.LASF191
  2812 07d6 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 76
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 76
 
 
  2813 07d7 0B       		.uleb128 0xb
- 2814 07d8 970A0000 		.4byte	.LASF192
+ 2814 07d8 F10A0000 		.4byte	.LASF192
  2815 07dc 01       		.byte	0x1
  2816 07dd 0B       		.uleb128 0xb
- 2817 07de 91160000 		.4byte	.LASF193
+ 2817 07de C6160000 		.4byte	.LASF193
  2818 07e2 02       		.byte	0x2
  2819 07e3 0B       		.uleb128 0xb
  2820 07e4 00020000 		.4byte	.LASF194
  2821 07e8 03       		.byte	0x3
  2822 07e9 0B       		.uleb128 0xb
- 2823 07ea 3C120000 		.4byte	.LASF195
+ 2823 07ea 96120000 		.4byte	.LASF195
  2824 07ee 04       		.byte	0x4
  2825 07ef 00       		.byte	0
  2826 07f0 04       		.uleb128 0x4
- 2827 07f1 D6130000 		.4byte	.LASF196
+ 2827 07f1 0B140000 		.4byte	.LASF196
  2828 07f5 09       		.byte	0x9
  2829 07f6 6808     		.2byte	0x868
  2830 07f8 C4070000 		.4byte	0x7c4
@@ -4525,31 +4525,31 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2834 07ff A309     		.2byte	0x9a3
  2835 0801 54080000 		.4byte	0x854
  2836 0805 0E       		.uleb128 0xe
- 2837 0806 5E160000 		.4byte	.LASF197
+ 2837 0806 93160000 		.4byte	.LASF197
  2838 080a 09       		.byte	0x9
  2839 080b A609     		.2byte	0x9a6
  2840 080d 30060000 		.4byte	0x630
  2841 0811 00       		.byte	0
  2842 0812 0E       		.uleb128 0xe
- 2843 0813 000C0000 		.4byte	.LASF198
+ 2843 0813 5A0C0000 		.4byte	.LASF198
  2844 0817 09       		.byte	0x9
  2845 0818 A809     		.2byte	0x9a8
  2846 081a 30060000 		.4byte	0x630
  2847 081e 02       		.byte	0x2
  2848 081f 0E       		.uleb128 0xe
- 2849 0820 AA0F0000 		.4byte	.LASF199
+ 2849 0820 04100000 		.4byte	.LASF199
  2850 0824 09       		.byte	0x9
  2851 0825 AA09     		.2byte	0x9aa
  2852 0827 30060000 		.4byte	0x630
  2853 082b 04       		.byte	0x4
  2854 082c 0E       		.uleb128 0xe
- 2855 082d 4C0E0000 		.4byte	.LASF200
+ 2855 082d A60E0000 		.4byte	.LASF200
  2856 0831 09       		.byte	0x9
  2857 0832 AD09     		.2byte	0x9ad
  2858 0834 30060000 		.4byte	0x630
  2859 0838 06       		.byte	0x6
  2860 0839 0E       		.uleb128 0xe
- 2861 083a D2140000 		.4byte	.LASF201
+ 2861 083a 07150000 		.4byte	.LASF201
  2862 083e 09       		.byte	0x9
  2863 083f AF09     		.2byte	0x9af
  2864 0841 30060000 		.4byte	0x630
@@ -4558,14 +4558,14 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2867 0847 D7030000 		.4byte	.LASF202
  2868 084b 09       		.byte	0x9
  2869 084c B109     		.2byte	0x9b1
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 77
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 77
 
 
  2870 084e 30060000 		.4byte	0x630
  2871 0852 0A       		.byte	0xa
  2872 0853 00       		.byte	0
  2873 0854 04       		.uleb128 0x4
- 2874 0855 11110000 		.4byte	.LASF203
+ 2874 0855 6B110000 		.4byte	.LASF203
  2875 0859 09       		.byte	0x9
  2876 085a B209     		.2byte	0x9b2
  2877 085c FC070000 		.4byte	0x7fc
@@ -4586,7 +4586,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2892 0880 01       		.uleb128 0x1
  2893 0881 9C       		.byte	0x9c
  2894 0882 1B       		.uleb128 0x1b
- 2895 0883 D0110000 		.4byte	.LASF213
+ 2895 0883 2A120000 		.4byte	.LASF213
  2896 0887 01       		.byte	0x1
  2897 0888 9701     		.2byte	0x197
  2898 088a 78030000 		.4byte	0x378
@@ -4612,13 +4612,13 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2918 08b9 91       		.byte	0x91
  2919 08ba 6E       		.sleb128 -18
  2920 08bb 1D       		.uleb128 0x1d
- 2921 08bc 5B070000 		.4byte	.LASF207
+ 2921 08bc B5070000 		.4byte	.LASF207
  2922 08c0 01       		.byte	0x1
  2923 08c1 9D01     		.2byte	0x19d
  2924 08c3 12090000 		.4byte	0x912
  2925 08c7 02       		.uleb128 0x2
  2926 08c8 91       		.byte	0x91
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 78
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 78
 
 
  2927 08c9 58       		.sleb128 -40
@@ -4626,7 +4626,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2929 08cb 4A000000 		.4byte	.LBB2
  2930 08cf 54000000 		.4byte	.LBE2-.LBB2
  2931 08d3 1D       		.uleb128 0x1d
- 2932 08d4 E8110000 		.4byte	.LASF208
+ 2932 08d4 42120000 		.4byte	.LASF208
  2933 08d8 01       		.byte	0x1
  2934 08d9 BF01     		.2byte	0x1bf
  2935 08db 25040000 		.4byte	0x425
@@ -4634,7 +4634,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2937 08e0 91       		.byte	0x91
  2938 08e1 50       		.sleb128 -48
  2939 08e2 1D       		.uleb128 0x1d
- 2940 08e3 1F0F0000 		.4byte	.LASF209
+ 2940 08e3 790F0000 		.4byte	.LASF209
  2941 08e7 01       		.byte	0x1
  2942 08e8 C001     		.2byte	0x1c0
  2943 08ea 48040000 		.4byte	0x448
@@ -4650,7 +4650,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2953 08fe 91       		.byte	0x91
  2954 08ff 40       		.sleb128 -64
  2955 0900 1D       		.uleb128 0x1d
- 2956 0901 7F070000 		.4byte	.LASF211
+ 2956 0901 D9070000 		.4byte	.LASF211
  2957 0905 01       		.byte	0x1
  2958 0906 C201     		.2byte	0x1c2
  2959 0908 77000000 		.4byte	0x77
@@ -4667,7 +4667,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2970 0920 04       		.byte	0x4
  2971 0921 00       		.byte	0
  2972 0922 1F       		.uleb128 0x1f
- 2973 0923 D10A0000 		.4byte	.LASF212
+ 2973 0923 2B0B0000 		.4byte	.LASF212
  2974 0927 01       		.byte	0x1
  2975 0928 1C02     		.2byte	0x21c
  2976 092a 00000000 		.4byte	.LFB5
@@ -4675,10 +4675,10 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2978 0932 01       		.uleb128 0x1
  2979 0933 9C       		.byte	0x9c
  2980 0934 1B       		.uleb128 0x1b
- 2981 0935 1B150000 		.4byte	.LASF214
+ 2981 0935 50150000 		.4byte	.LASF214
  2982 0939 01       		.byte	0x1
  2983 093a 5402     		.2byte	0x254
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 79
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 79
 
 
  2984 093c 78030000 		.4byte	0x378
@@ -4688,7 +4688,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  2988 0949 9C       		.byte	0x9c
  2989 094a A3090000 		.4byte	0x9a3
  2990 094e 1C       		.uleb128 0x1c
- 2991 094f 58100000 		.4byte	.LASF216
+ 2991 094f B2100000 		.4byte	.LASF216
  2992 0953 01       		.byte	0x1
  2993 0954 5402     		.2byte	0x254
  2994 0956 6B000000 		.4byte	0x6b
@@ -4708,7 +4708,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3008 0971 40000000 		.4byte	.LBE3-.LBB3
  3009 0975 89090000 		.4byte	0x989
  3010 0979 1D       		.uleb128 0x1d
- 3011 097a 0C0D0000 		.4byte	.LASF217
+ 3011 097a 660D0000 		.4byte	.LASF217
  3012 097e 01       		.byte	0x1
  3013 097f 7A02     		.2byte	0x27a
  3014 0981 A3070000 		.4byte	0x7a3
@@ -4720,7 +4720,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3020 098a 28010000 		.4byte	.LBB4
  3021 098e 44000000 		.4byte	.LBE4-.LBB4
  3022 0992 1D       		.uleb128 0x1d
- 3023 0993 0C0D0000 		.4byte	.LASF217
+ 3023 0993 660D0000 		.4byte	.LASF217
  3024 0997 01       		.byte	0x1
  3025 0998 8702     		.2byte	0x287
  3026 099a A3090000 		.4byte	0x9a3
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3038 09b2 00       		.byte	0
  3039 09b3 1B       		.uleb128 0x1b
  3040 09b4 1D040000 		.4byte	.LASF218
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 80
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 80
 
 
  3041 09b8 01       		.byte	0x1
@@ -4750,7 +4750,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3047 09c8 9C       		.byte	0x9c
  3048 09c9 140A0000 		.4byte	0xa14
  3049 09cd 1C       		.uleb128 0x1c
- 3050 09ce F2140000 		.4byte	.LASF125
+ 3050 09ce 27150000 		.4byte	.LASF125
  3051 09d2 01       		.byte	0x1
  3052 09d3 B602     		.2byte	0x2b6
  3053 09d5 140A0000 		.4byte	0xa14
@@ -4777,7 +4777,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3074 0a01 91       		.byte	0x91
  3075 0a02 6D       		.sleb128 -19
  3076 0a03 1D       		.uleb128 0x1d
- 3077 0a04 D6150000 		.4byte	.LASF220
+ 3077 0a04 0B160000 		.4byte	.LASF220
  3078 0a08 01       		.byte	0x1
  3079 0a09 C002     		.2byte	0x2c0
  3080 0a0b B8030000 		.4byte	0x3b8
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3095 0a2a D4000000 		.4byte	.LFE8-.LFB8
  3096 0a2e 01       		.uleb128 0x1
  3097 0a2f 9C       		.byte	0x9c
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 81
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 81
 
 
  3098 0a30 530A0000 		.4byte	0xa53
@@ -4820,7 +4820,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3114 0a51 6E       		.sleb128 -18
  3115 0a52 00       		.byte	0
  3116 0a53 1F       		.uleb128 0x1f
- 3117 0a54 05070000 		.4byte	.LASF223
+ 3117 0a54 5F070000 		.4byte	.LASF223
  3118 0a58 01       		.byte	0x1
  3119 0a59 5403     		.2byte	0x354
  3120 0a5b 00000000 		.4byte	.LFB9
@@ -4828,7 +4828,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3122 0a63 01       		.uleb128 0x1
  3123 0a64 9C       		.byte	0x9c
  3124 0a65 21       		.uleb128 0x21
- 3125 0a66 7B0A0000 		.4byte	.LASF235
+ 3125 0a66 D50A0000 		.4byte	.LASF235
  3126 0a6a 01       		.byte	0x1
  3127 0a6b 6A03     		.2byte	0x36a
  3128 0a6d 00000000 		.4byte	.LFB10
@@ -4837,7 +4837,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3131 0a76 9C       		.byte	0x9c
  3132 0a77 B60A0000 		.4byte	0xab6
  3133 0a7b 1C       		.uleb128 0x1c
- 3134 0a7c F2140000 		.4byte	.LASF125
+ 3134 0a7c 27150000 		.4byte	.LASF125
  3135 0a80 01       		.byte	0x1
  3136 0a81 6A03     		.2byte	0x36a
  3137 0a83 B60A0000 		.4byte	0xab6
@@ -4845,7 +4845,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3139 0a88 91       		.byte	0x91
  3140 0a89 6C       		.sleb128 -20
  3141 0a8a 1C       		.uleb128 0x1c
- 3142 0a8b 58110000 		.4byte	.LASF224
+ 3142 0a8b B2110000 		.4byte	.LASF224
  3143 0a8f 01       		.byte	0x1
  3144 0a90 6A03     		.2byte	0x36a
  3145 0a92 6B000000 		.4byte	0x6b
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3152 0a9d 6C03     		.2byte	0x36c
  3153 0a9f 6B000000 		.4byte	0x6b
  3154 0aa3 02       		.uleb128 0x2
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 82
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 82
 
 
  3155 0aa4 91       		.byte	0x91
@@ -4887,7 +4887,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3178 0ad2 9C       		.byte	0x9c
  3179 0ad3 4E0B0000 		.4byte	0xb4e
  3180 0ad7 1C       		.uleb128 0x1c
- 3181 0ad8 DD120000 		.4byte	.LASF226
+ 3181 0ad8 37130000 		.4byte	.LASF226
  3182 0adc 01       		.byte	0x1
  3183 0add A904     		.2byte	0x4a9
  3184 0adf 4E0B0000 		.4byte	0xb4e
@@ -4895,7 +4895,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3186 0ae4 91       		.byte	0x91
  3187 0ae5 64       		.sleb128 -28
  3188 0ae6 1C       		.uleb128 0x1c
- 3189 0ae7 58110000 		.4byte	.LASF224
+ 3189 0ae7 B2110000 		.4byte	.LASF224
  3190 0aeb 01       		.byte	0x1
  3191 0aec A904     		.2byte	0x4a9
  3192 0aee 6B000000 		.4byte	0x6b
@@ -4911,18 +4911,18 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3202 0b00 91       		.byte	0x91
  3203 0b01 77       		.sleb128 -9
  3204 0b02 1D       		.uleb128 0x1d
- 3205 0b03 730D0000 		.4byte	.LASF227
+ 3205 0b03 CD0D0000 		.4byte	.LASF227
  3206 0b07 01       		.byte	0x1
  3207 0b08 AC04     		.2byte	0x4ac
  3208 0b0a 6B000000 		.4byte	0x6b
  3209 0b0e 02       		.uleb128 0x2
  3210 0b0f 91       		.byte	0x91
  3211 0b10 76       		.sleb128 -10
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 83
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 83
 
 
  3212 0b11 1D       		.uleb128 0x1d
- 3213 0b12 12170000 		.4byte	.LASF228
+ 3213 0b12 47170000 		.4byte	.LASF228
  3214 0b16 01       		.byte	0x1
  3215 0b17 AD04     		.2byte	0x4ad
  3216 0b19 6B000000 		.4byte	0x6b
@@ -4930,7 +4930,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3218 0b1e 91       		.byte	0x91
  3219 0b1f 75       		.sleb128 -11
  3220 0b20 1D       		.uleb128 0x1d
- 3221 0b21 4C150000 		.4byte	.LASF229
+ 3221 0b21 81150000 		.4byte	.LASF229
  3222 0b25 01       		.byte	0x1
  3223 0b26 AE04     		.2byte	0x4ae
  3224 0b28 6B000000 		.4byte	0x6b
@@ -4946,7 +4946,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3234 0b3c 91       		.byte	0x91
  3235 0b3d 70       		.sleb128 -16
  3236 0b3e 1D       		.uleb128 0x1d
- 3237 0b3f 0D090000 		.4byte	.LASF230
+ 3237 0b3f 67090000 		.4byte	.LASF230
  3238 0b43 01       		.byte	0x1
  3239 0b44 B004     		.2byte	0x4b0
  3240 0b46 6B000000 		.4byte	0x6b
@@ -4960,7 +4960,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3248 0b54 23       		.uleb128 0x23
  3249 0b55 9D000000 		.4byte	0x9d
  3250 0b59 1B       		.uleb128 0x1b
- 3251 0b5a 5A130000 		.4byte	.LASF231
+ 3251 0b5a 8F130000 		.4byte	.LASF231
  3252 0b5e 01       		.byte	0x1
  3253 0b5f 0E05     		.2byte	0x50e
  3254 0b61 78030000 		.4byte	0x378
@@ -4970,7 +4970,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3258 0b6e 9C       		.byte	0x9c
  3259 0b6f BD0B0000 		.4byte	0xbbd
  3260 0b73 1C       		.uleb128 0x1c
- 3261 0b74 DD120000 		.4byte	.LASF226
+ 3261 0b74 37130000 		.4byte	.LASF226
  3262 0b78 01       		.byte	0x1
  3263 0b79 0E05     		.2byte	0x50e
  3264 0b7b 4E0B0000 		.4byte	0xb4e
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3266 0b80 91       		.byte	0x91
  3267 0b81 64       		.sleb128 -28
  3268 0b82 1D       		.uleb128 0x1d
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 84
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 84
 
 
  3269 0b83 50000000 		.4byte	.LASF206
@@ -5005,7 +5005,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3290 0bab 91       		.byte	0x91
  3291 0bac 70       		.sleb128 -16
  3292 0bad 1D       		.uleb128 0x1d
- 3293 0bae AE0D0000 		.4byte	.LASF232
+ 3293 0bae 080E0000 		.4byte	.LASF232
  3294 0bb2 01       		.byte	0x1
  3295 0bb3 1305     		.2byte	0x513
  3296 0bb5 6B000000 		.4byte	0x6b
@@ -5027,7 +5027,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3312 0bd8 9C       		.byte	0x9c
  3313 0bd9 270C0000 		.4byte	0xc27
  3314 0bdd 1C       		.uleb128 0x1c
- 3315 0bde DD120000 		.4byte	.LASF226
+ 3315 0bde 37130000 		.4byte	.LASF226
  3316 0be2 01       		.byte	0x1
  3317 0be3 5605     		.2byte	0x556
  3318 0be5 BD0B0000 		.4byte	0xbbd
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3323 0bed 50000000 		.4byte	.LASF206
  3324 0bf1 01       		.byte	0x1
  3325 0bf2 5805     		.2byte	0x558
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 85
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 85
 
 
  3326 0bf4 78030000 		.4byte	0x378
@@ -5046,7 +5046,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3328 0bf9 91       		.byte	0x91
  3329 0bfa 76       		.sleb128 -10
  3330 0bfb 1D       		.uleb128 0x1d
- 3331 0bfc AE0D0000 		.4byte	.LASF232
+ 3331 0bfc 080E0000 		.4byte	.LASF232
  3332 0c00 01       		.byte	0x1
  3333 0c01 5905     		.2byte	0x559
  3334 0c03 6B000000 		.4byte	0x6b
@@ -5071,7 +5071,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3353 0c25 70       		.sleb128 -16
  3354 0c26 00       		.byte	0
  3355 0c27 25       		.uleb128 0x25
- 3356 0c28 990F0000 		.4byte	.LASF234
+ 3356 0c28 F30F0000 		.4byte	.LASF234
  3357 0c2c 01       		.byte	0x1
  3358 0c2d 8805     		.2byte	0x588
  3359 0c2f 77000000 		.4byte	0x77
@@ -5095,10 +5095,10 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3377 0c57 23       		.uleb128 0x23
  3378 0c58 6B000000 		.4byte	0x6b
  3379 0c5c 21       		.uleb128 0x21
- 3380 0c5d 780D0000 		.4byte	.LASF236
+ 3380 0c5d D20D0000 		.4byte	.LASF236
  3381 0c61 01       		.byte	0x1
  3382 0c62 9B05     		.2byte	0x59b
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 86
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 86
 
 
  3383 0c64 00000000 		.4byte	.LFB15
@@ -5115,7 +5115,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3394 0c7f 91       		.byte	0x91
  3395 0c80 74       		.sleb128 -12
  3396 0c81 1C       		.uleb128 0x1c
- 3397 0c82 D7100000 		.4byte	.LASF237
+ 3397 0c82 31110000 		.4byte	.LASF237
  3398 0c86 01       		.byte	0x1
  3399 0c87 9B05     		.2byte	0x59b
  3400 0c89 77000000 		.4byte	0x77
@@ -5124,7 +5124,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3403 0c8f 72       		.sleb128 -14
  3404 0c90 00       		.byte	0
  3405 0c91 27       		.uleb128 0x27
- 3406 0c92 E3060000 		.4byte	.LASF238
+ 3406 0c92 3D070000 		.4byte	.LASF238
  3407 0c96 01       		.byte	0x1
  3408 0c97 84       		.byte	0x84
  3409 0c98 6B000000 		.4byte	0x6b
@@ -5132,7 +5132,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3411 0c9d 03       		.byte	0x3
  3412 0c9e 01000000 		.4byte	cyBle_pendingFlashClearCccdHandle
  3413 0ca2 28       		.uleb128 0x28
- 3414 0ca3 E6100000 		.4byte	.LASF239
+ 3414 0ca3 40110000 		.4byte	.LASF239
  3415 0ca7 01       		.byte	0x1
  3416 0ca8 89       		.byte	0x89
  3417 0ca9 49070000 		.4byte	0x749
@@ -5140,7 +5140,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3419 0cae 03       		.byte	0x3
  3420 0caf 00000000 		.4byte	CyBle_ApplCallback
  3421 0cb3 28       		.uleb128 0x28
- 3422 0cb4 0D130000 		.4byte	.LASF240
+ 3422 0cb4 42130000 		.4byte	.LASF240
  3423 0cb8 01       		.byte	0x1
  3424 0cb9 2B       		.byte	0x2b
  3425 0cba 6B000000 		.4byte	0x6b
@@ -5155,10 +5155,10 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3434 0cd2 DF0A     		.2byte	0xadf
  3435 0cd4 00       		.byte	0
  3436 0cd5 28       		.uleb128 0x28
- 3437 0cd6 A0140000 		.4byte	.LASF241
+ 3437 0cd6 D5140000 		.4byte	.LASF241
  3438 0cda 01       		.byte	0x1
  3439 0cdb 36       		.byte	0x36
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 87
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 87
 
 
  3440 0cdc C40C0000 		.4byte	0xcc4
@@ -5166,9 +5166,9 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3442 0ce1 03       		.byte	0x3
  3443 0ce2 00000000 		.4byte	cyBle_stackMemoryRam
  3444 0ce6 29       		.uleb128 0x29
- 3445 0ce7 04150000 		.4byte	.LASF242
+ 3445 0ce7 39150000 		.4byte	.LASF242
  3446 0ceb 07       		.byte	0x7
- 3447 0cec A302     		.2byte	0x2a3
+ 3447 0cec A602     		.2byte	0x2a6
  3448 0cee B0000000 		.4byte	0xb0
  3449 0cf2 28       		.uleb128 0x28
  3450 0cf3 52030000 		.4byte	.LASF243
@@ -5179,7 +5179,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3455 0cfe 03       		.byte	0x3
  3456 0cff 00000000 		.4byte	cyBle_deviceAddress
  3457 0d03 28       		.uleb128 0x28
- 3458 0d04 DE070000 		.4byte	.LASF244
+ 3458 0d04 38080000 		.4byte	.LASF244
  3459 0d08 01       		.byte	0x1
  3460 0d09 8B       		.byte	0x8b
  3461 0d0a 140A0000 		.4byte	0xa14
@@ -5195,7 +5195,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3471 0d20 03       		.byte	0x3
  3472 0d21 00000000 		.4byte	cyBle_discoveryParam
  3473 0d25 28       		.uleb128 0x28
- 3474 0d26 4A160000 		.4byte	.LASF246
+ 3474 0d26 7F160000 		.4byte	.LASF246
  3475 0d2a 01       		.byte	0x1
  3476 0d2b 48       		.byte	0x48
  3477 0d2c 8B050000 		.4byte	0x58b
@@ -5203,7 +5203,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3479 0d31 03       		.byte	0x3
  3480 0d32 00000000 		.4byte	cyBle_discoveryData
  3481 0d36 28       		.uleb128 0x28
- 3482 0d37 3A0E0000 		.4byte	.LASF247
+ 3482 0d37 940E0000 		.4byte	.LASF247
  3483 0d3b 01       		.byte	0x1
  3484 0d3c 51       		.byte	0x51
  3485 0d3d BB050000 		.4byte	0x5bb
@@ -5211,18 +5211,18 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3487 0d42 03       		.byte	0x3
  3488 0d43 00000000 		.4byte	cyBle_scanRspData
  3489 0d47 28       		.uleb128 0x28
- 3490 0d48 73140000 		.4byte	.LASF248
+ 3490 0d48 A8140000 		.4byte	.LASF248
  3491 0d4c 01       		.byte	0x1
  3492 0d4d 61       		.byte	0x61
  3493 0d4e 24060000 		.4byte	0x624
  3494 0d52 05       		.uleb128 0x5
  3495 0d53 03       		.byte	0x3
  3496 0d54 00000000 		.4byte	cyBle_discoveryModeInfo
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 88
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 88
 
 
  3497 0d58 28       		.uleb128 0x28
- 3498 0d59 79110000 		.4byte	.LASF249
+ 3498 0d59 D3110000 		.4byte	.LASF249
  3499 0d5d 01       		.byte	0x1
  3500 0d5e 81       		.byte	0x81
  3501 0d5f 6B000000 		.4byte	0x6b
@@ -5242,56 +5242,56 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3515 0d7f 8A0D0000 		.4byte	0xd8a
  3516 0d83 10       		.uleb128 0x10
  3517 0d84 BC000000 		.4byte	0xbc
- 3518 0d88 16       		.byte	0x16
+ 3518 0d88 19       		.byte	0x19
  3519 0d89 00       		.byte	0
  3520 0d8a 23       		.uleb128 0x23
  3521 0d8b 3D070000 		.4byte	0x73d
  3522 0d8f 2A       		.uleb128 0x2a
- 3523 0d90 8D0C0000 		.4byte	.LASF251
+ 3523 0d90 E70C0000 		.4byte	.LASF251
  3524 0d94 08       		.byte	0x8
  3525 0d95 E9       		.byte	0xe9
  3526 0d96 9A0D0000 		.4byte	0xd9a
  3527 0d9a 23       		.uleb128 0x23
  3528 0d9b 7A0D0000 		.4byte	0xd7a
  3529 0d9f 2A       		.uleb128 0x2a
- 3530 0da0 8A150000 		.4byte	.LASF252
+ 3530 0da0 BF150000 		.4byte	.LASF252
  3531 0da4 08       		.byte	0x8
  3532 0da5 ED       		.byte	0xed
  3533 0da6 A3090000 		.4byte	0x9a3
  3534 0daa 2A       		.uleb128 0x2a
- 3535 0dab 2E0B0000 		.4byte	.LASF253
+ 3535 0dab 880B0000 		.4byte	.LASF253
  3536 0daf 08       		.byte	0x8
  3537 0db0 F5       		.byte	0xf5
  3538 0db1 B50D0000 		.4byte	0xdb5
  3539 0db5 23       		.uleb128 0x23
  3540 0db6 B9070000 		.4byte	0x7b9
  3541 0dba 29       		.uleb128 0x29
- 3542 0dbb DC110000 		.4byte	.LASF254
+ 3542 0dbb 36120000 		.4byte	.LASF254
  3543 0dbf 09       		.byte	0x9
  3544 0dc0 B30A     		.2byte	0xab3
  3545 0dc2 F0070000 		.4byte	0x7f0
  3546 0dc6 29       		.uleb128 0x29
- 3547 0dc7 3F130000 		.4byte	.LASF255
+ 3547 0dc7 74130000 		.4byte	.LASF255
  3548 0dcb 09       		.byte	0x9
  3549 0dcc B40A     		.2byte	0xab4
  3550 0dce 60060000 		.4byte	0x660
  3551 0dd2 29       		.uleb128 0x29
- 3552 0dd3 6A0A0000 		.4byte	.LASF256
+ 3552 0dd3 C40A0000 		.4byte	.LASF256
  3553 0dd7 09       		.byte	0x9
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 89
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 89
 
 
  3554 0dd8 B50A     		.2byte	0xab5
  3555 0dda B0000000 		.4byte	0xb0
  3556 0dde 29       		.uleb128 0x29
- 3557 0ddf F9140000 		.4byte	.LASF257
+ 3557 0ddf 2E150000 		.4byte	.LASF257
  3558 0de3 09       		.byte	0x9
  3559 0de4 B60A     		.2byte	0xab6
  3560 0de6 EA0D0000 		.4byte	0xdea
  3561 0dea 23       		.uleb128 0x23
  3562 0deb 54080000 		.4byte	0x854
  3563 0def 29       		.uleb128 0x29
- 3564 0df0 E20B0000 		.4byte	.LASF258
+ 3564 0df0 3C0C0000 		.4byte	.LASF258
  3565 0df4 09       		.byte	0x9
  3566 0df5 B90A     		.2byte	0xab9
  3567 0df7 6B000000 		.4byte	0x6b
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3608 0025 03       		.uleb128 0x3
  3609 0026 08       		.uleb128 0x8
  3610 0027 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 90
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 90
 
 
  3611 0028 00       		.byte	0
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3665 005e 04       		.uleb128 0x4
  3666 005f 01       		.byte	0x1
  3667 0060 0B       		.uleb128 0xb
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 91
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 91
 
 
  3668 0061 0B       		.uleb128 0xb
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3722 0097 0B       		.uleb128 0xb
  3723 0098 00       		.byte	0
  3724 0099 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 92
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 92
 
 
  3725 009a 0F       		.uleb128 0xf
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3779 00d0 0B       		.uleb128 0xb
  3780 00d1 01       		.uleb128 0x1
  3781 00d2 13       		.uleb128 0x13
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 93
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 93
 
 
  3782 00d3 00       		.byte	0
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3836 0109 00       		.byte	0
  3837 010a 00       		.byte	0
  3838 010b 18       		.uleb128 0x18
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 94
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 94
 
 
  3839 010c 0D       		.uleb128 0xd
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3893 0143 0B       		.uleb128 0xb
  3894 0144 3B       		.uleb128 0x3b
  3895 0145 05       		.uleb128 0x5
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 95
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 95
 
 
  3896 0146 27       		.uleb128 0x27
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  3950 017d 00       		.byte	0
  3951 017e 1F       		.uleb128 0x1f
  3952 017f 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 96
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 96
 
 
  3953 0180 00       		.byte	0
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  4007 01b8 13       		.uleb128 0x13
  4008 01b9 00       		.byte	0
  4009 01ba 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 97
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 97
 
 
  4010 01bb 22       		.uleb128 0x22
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  4064 01f2 3B       		.uleb128 0x3b
  4065 01f3 05       		.uleb128 0x5
  4066 01f4 27       		.uleb128 0x27
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 98
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 98
 
 
  4067 01f5 19       		.uleb128 0x19
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  4121 022c 49       		.uleb128 0x49
  4122 022d 13       		.uleb128 0x13
  4123 022e 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 99
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 99
 
 
  4124 022f 19       		.uleb128 0x19
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  4178 0028 00000000 		.4byte	.LFB5
  4179 002c 18000000 		.4byte	.LFE5-.LFB5
  4180 0030 00000000 		.4byte	.LFB6
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 100
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 100
 
 
  4181 0034 94010000 		.4byte	.LFE6-.LFB6
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  4235              	.Ldebug_line0:
  4236 0000 D8020000 		.section	.debug_str,"MS",%progbits,1
  4236      0200B600 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 101
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 101
 
 
  4236      00000201 
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  4258      4D6F6465 
  4258      00
  4259              	.LASF106:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 102
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 102
 
 
  4260 00c7 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_CONNECTION_ENTITY_NOT_FOUND\000"
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  4280      455F5400 
  4281              	.LASF215:
  4282 01b2 63616C6C 		.ascii	"callbackFunc\000"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 103
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 103
 
 
  4282      6261636B 
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  4302 02ad 4379426C 		.ascii	"CyBle_ServiceInit\000"
  4302      655F5365 
  4302      72766963 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 104
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 104
 
 
  4302      65496E69 
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  4322      79706500 
  4323              	.LASF144:
  4324 0391 4359424C 		.ascii	"CYBLE_GAPP_NON_CONNECTABLE_UNDIRECTED_ADV\000"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 105
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 105
 
 
  4324      455F4741 
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  4344 0494 4359424C 		.ascii	"CYBLE_STATE_STOPPED\000"
  4344      455F5354 
  4344      4154455F 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 106
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 106
 
 
  4344      53544F50 
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  4364      545F4741 
  4364      5454435F 
  4364      46494E44 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 107
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 107
 
 
  4365              	.LASF41:
@@ -6418,1101 +6418,1106 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 1
  4384      5454435F 
  4384      45584543 
  4385              	.LASF204:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 108
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 108
 
 
  4386 069f 4379426C 		.ascii	"CyBle_Init\000"
  4386      655F496E 
  4386      697400
- 4387              	.LASF71:
- 4388 06aa 4359424C 		.ascii	"CYBLE_EVT_GATTC_STOP_CMD_COMPLETE\000"
- 4388      455F4556 
- 4388      545F4741 
- 4388      5454435F 
- 4388      53544F50 
- 4389              	.LASF164:
- 4390 06cc 61647654 		.ascii	"advTo\000"
- 4390      6F00
- 4391              	.LASF184:
- 4392 06d2 4359424C 		.ascii	"CYBLE_GATTS_DB_T\000"
- 4392      455F4741 
- 4392      5454535F 
- 4392      44425F54 
- 4392      00
- 4393              	.LASF238:
- 4394 06e3 6379426C 		.ascii	"cyBle_pendingFlashClearCccdHandle\000"
- 4394      655F7065 
- 4394      6E64696E 
- 4394      67466C61 
- 4394      7368436C 
- 4395              	.LASF223:
- 4396 0705 4379426C 		.ascii	"CyBle_GappStopAdvertisement\000"
- 4396      655F4761 
- 4396      70705374 
- 4396      6F704164 
- 4396      76657274 
- 4397              	.LASF117:
- 4398 0721 4359424C 		.ascii	"CYBLE_ERROR_CONTROLLER_BUSY\000"
- 4398      455F4552 
- 4398      524F525F 
- 4398      434F4E54 
- 4398      524F4C4C 
- 4399              	.LASF91:
- 4400 073d 4359424C 		.ascii	"CYBLE_ERROR_INVALID_PARAMETER\000"
- 4400      455F4552 
- 4400      524F525F 
- 4400      494E5641 
- 4400      4C49445F 
- 4401              	.LASF207:
- 4402 075b 6379426C 		.ascii	"cyBle_stackDataBuff\000"
- 4402      655F7374 
- 4402      61636B44 
- 4402      61746142 
- 4402      75666600 
- 4403              	.LASF189:
- 4404 076f 626F756E 		.ascii	"boundedDevCount\000"
- 4404      64656444 
- 4404      6576436F 
- 4404      756E7400 
- 4405              	.LASF211:
- 4406 077f 66656174 		.ascii	"featureHeapReq\000"
- 4406      75726548 
- 4406      65617052 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 109
+ 4387              	.LASF261:
+ 4388 06aa 433A5C55 		.ascii	"C:\\Users\\Yehuda Ben Chaim\\Google Drive\\My Proje"
+ 4388      73657273 
+ 4388      5C596568 
+ 4388      75646120 
+ 4388      42656E20 
+ 4389 06d9 6374735C 		.ascii	"cts\\WW\\FW\\WorkingCopy\\WWV1_0\\WW_V1_1.cydsn\000"
+ 4389      57575C46 
+ 4389      575C576F 
+ 4389      726B696E 
+ 4389      67436F70 
+ 4390              	.LASF71:
+ 4391 0704 4359424C 		.ascii	"CYBLE_EVT_GATTC_STOP_CMD_COMPLETE\000"
+ 4391      455F4556 
+ 4391      545F4741 
+ 4391      5454435F 
+ 4391      53544F50 
+ 4392              	.LASF164:
+ 4393 0726 61647654 		.ascii	"advTo\000"
+ 4393      6F00
+ 4394              	.LASF184:
+ 4395 072c 4359424C 		.ascii	"CYBLE_GATTS_DB_T\000"
+ 4395      455F4741 
+ 4395      5454535F 
+ 4395      44425F54 
+ 4395      00
+ 4396              	.LASF238:
+ 4397 073d 6379426C 		.ascii	"cyBle_pendingFlashClearCccdHandle\000"
+ 4397      655F7065 
+ 4397      6E64696E 
+ 4397      67466C61 
+ 4397      7368436C 
+ 4398              	.LASF223:
+ 4399 075f 4379426C 		.ascii	"CyBle_GappStopAdvertisement\000"
+ 4399      655F4761 
+ 4399      70705374 
+ 4399      6F704164 
+ 4399      76657274 
+ 4400              	.LASF117:
+ 4401 077b 4359424C 		.ascii	"CYBLE_ERROR_CONTROLLER_BUSY\000"
+ 4401      455F4552 
+ 4401      524F525F 
+ 4401      434F4E54 
+ 4401      524F4C4C 
+ 4402              	.LASF91:
+ 4403 0797 4359424C 		.ascii	"CYBLE_ERROR_INVALID_PARAMETER\000"
+ 4403      455F4552 
+ 4403      524F525F 
+ 4403      494E5641 
+ 4403      4C49445F 
+ 4404              	.LASF207:
+ 4405 07b5 6379426C 		.ascii	"cyBle_stackDataBuff\000"
+ 4405      655F7374 
+ 4405      61636B44 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 109
 
 
- 4406      657100
- 4407              	.LASF145:
- 4408 078e 4359424C 		.ascii	"CYBLE_GAPP_CONNECTABLE_LOW_DC_DIRECTED_ADV\000"
- 4408      455F4741 
- 4408      50505F43 
- 4408      4F4E4E45 
- 4408      43544142 
- 4409              	.LASF93:
- 4410 07b9 4359424C 		.ascii	"CYBLE_ERROR_MEMORY_ALLOCATION_FAILED\000"
- 4410      455F4552 
- 4410      524F525F 
- 4410      4D454D4F 
- 4410      52595F41 
- 4411              	.LASF244:
- 4412 07de 6379426C 		.ascii	"cyBle_sflashDeviceAddress\000"
- 4412      655F7366 
- 4412      6C617368 
- 4412      44657669 
- 4412      63654164 
- 4413              	.LASF187:
- 4414 07f8 61747456 		.ascii	"attValuesCCCDFlashMemory\000"
- 4414      616C7565 
- 4414      73434343 
- 4414      44466C61 
- 4414      73684D65 
- 4415              	.LASF118:
- 4416 0811 4359424C 		.ascii	"CYBLE_ERROR_MAX\000"
- 4416      455F4552 
- 4416      524F525F 
- 4416      4D415800 
- 4417              	.LASF75:
- 4418 0821 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_RSP\000"
- 4418      455F4556 
- 4418      545F4C32 
- 4418      4341505F 
- 4418      434F4E4E 
- 4419              	.LASF87:
- 4420 0847 4359424C 		.ascii	"CYBLE_EVT_HCI_PKT\000"
- 4420      455F4556 
- 4420      545F4843 
- 4420      495F504B 
- 4420      5400
- 4421              	.LASF186:
- 4422 0859 73746163 		.ascii	"stackFlashptr\000"
- 4422      6B466C61 
- 4422      73687074 
- 4422      7200
- 4423              	.LASF259:
- 4424 0867 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 4424      43313120 
- 4424      352E342E 
- 4424      31203230 
- 4424      31363036 
- 4425 089a 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 4425      20726576 
- 4425      6973696F 
- 4425      6E203233 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 110
+ 4405      61746142 
+ 4405      75666600 
+ 4406              	.LASF189:
+ 4407 07c9 626F756E 		.ascii	"boundedDevCount\000"
+ 4407      64656444 
+ 4407      6576436F 
+ 4407      756E7400 
+ 4408              	.LASF211:
+ 4409 07d9 66656174 		.ascii	"featureHeapReq\000"
+ 4409      75726548 
+ 4409      65617052 
+ 4409      657100
+ 4410              	.LASF145:
+ 4411 07e8 4359424C 		.ascii	"CYBLE_GAPP_CONNECTABLE_LOW_DC_DIRECTED_ADV\000"
+ 4411      455F4741 
+ 4411      50505F43 
+ 4411      4F4E4E45 
+ 4411      43544142 
+ 4412              	.LASF93:
+ 4413 0813 4359424C 		.ascii	"CYBLE_ERROR_MEMORY_ALLOCATION_FAILED\000"
+ 4413      455F4552 
+ 4413      524F525F 
+ 4413      4D454D4F 
+ 4413      52595F41 
+ 4414              	.LASF244:
+ 4415 0838 6379426C 		.ascii	"cyBle_sflashDeviceAddress\000"
+ 4415      655F7366 
+ 4415      6C617368 
+ 4415      44657669 
+ 4415      63654164 
+ 4416              	.LASF187:
+ 4417 0852 61747456 		.ascii	"attValuesCCCDFlashMemory\000"
+ 4417      616C7565 
+ 4417      73434343 
+ 4417      44466C61 
+ 4417      73684D65 
+ 4418              	.LASF118:
+ 4419 086b 4359424C 		.ascii	"CYBLE_ERROR_MAX\000"
+ 4419      455F4552 
+ 4419      524F525F 
+ 4419      4D415800 
+ 4420              	.LASF75:
+ 4421 087b 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_RSP\000"
+ 4421      455F4556 
+ 4421      545F4C32 
+ 4421      4341505F 
+ 4421      434F4E4E 
+ 4422              	.LASF87:
+ 4423 08a1 4359424C 		.ascii	"CYBLE_EVT_HCI_PKT\000"
+ 4423      455F4556 
+ 4423      545F4843 
+ 4423      495F504B 
+ 4423      5400
+ 4424              	.LASF186:
+ 4425 08b3 73746163 		.ascii	"stackFlashptr\000"
+ 4425      6B466C61 
+ 4425      73687074 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 110
 
 
- 4425      37373135 
- 4426 08cd 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 4426      66756E63 
- 4426      74696F6E 
- 4426      2D736563 
- 4426      74696F6E 
- 4427              	.LASF155:
- 4428 08f5 4359424C 		.ascii	"CYBLE_GAPP_DISC_PARAM_T\000"
- 4428      455F4741 
- 4428      50505F44 
- 4428      4953435F 
- 4428      50415241 
- 4429              	.LASF230:
- 4430 090d 6D61784C 		.ascii	"maxLength\000"
- 4430      656E6774 
- 4430      6800
- 4431              	.LASF29:
- 4432 0917 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_COMPLETE\000"
- 4432      455F4556 
- 4432      545F4741 
- 4432      505F4155 
- 4432      54485F43 
- 4433              	.LASF154:
- 4434 0933 61647646 		.ascii	"advFilterPolicy\000"
- 4434      696C7465 
- 4434      72506F6C 
- 4434      69637900 
- 4435              	.LASF30:
- 4436 0943 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_FAILED\000"
- 4436      455F4556 
- 4436      545F4741 
- 4436      505F4155 
- 4436      54485F46 
- 4437              	.LASF123:
- 4438 095d 4359424C 		.ascii	"CYBLE_ERROR_STACK_BUSY\000"
- 4438      455F4552 
- 4438      524F525F 
- 4438      53544143 
- 4438      4B5F4255 
- 4439              	.LASF149:
- 4440 0974 61647654 		.ascii	"advType\000"
- 4440      79706500 
- 4441              	.LASF94:
- 4442 097c 4359424C 		.ascii	"CYBLE_ERROR_INSUFFICIENT_RESOURCES\000"
- 4442      455F4552 
- 4442      524F525F 
- 4442      494E5355 
- 4442      46464943 
- 4443              	.LASF5:
- 4444 099f 6C6F6E67 		.ascii	"long unsigned int\000"
- 4444      20756E73 
- 4444      69676E65 
- 4444      6420696E 
- 4444      7400
- 4445              	.LASF114:
- 4446 09b1 4359424C 		.ascii	"CYBLE_ERROR_UNSUPPORTED_FEATURE_OR_PARAMETER_VALUE\000"
- 4446      455F4552 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 111
+ 4425      7200
+ 4426              	.LASF259:
+ 4427 08c1 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 4427      43313120 
+ 4427      352E342E 
+ 4427      31203230 
+ 4427      31363036 
+ 4428 08f4 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 4428      20726576 
+ 4428      6973696F 
+ 4428      6E203233 
+ 4428      37373135 
+ 4429 0927 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 4429      66756E63 
+ 4429      74696F6E 
+ 4429      2D736563 
+ 4429      74696F6E 
+ 4430              	.LASF155:
+ 4431 094f 4359424C 		.ascii	"CYBLE_GAPP_DISC_PARAM_T\000"
+ 4431      455F4741 
+ 4431      50505F44 
+ 4431      4953435F 
+ 4431      50415241 
+ 4432              	.LASF230:
+ 4433 0967 6D61784C 		.ascii	"maxLength\000"
+ 4433      656E6774 
+ 4433      6800
+ 4434              	.LASF29:
+ 4435 0971 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_COMPLETE\000"
+ 4435      455F4556 
+ 4435      545F4741 
+ 4435      505F4155 
+ 4435      54485F43 
+ 4436              	.LASF154:
+ 4437 098d 61647646 		.ascii	"advFilterPolicy\000"
+ 4437      696C7465 
+ 4437      72506F6C 
+ 4437      69637900 
+ 4438              	.LASF30:
+ 4439 099d 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_FAILED\000"
+ 4439      455F4556 
+ 4439      545F4741 
+ 4439      505F4155 
+ 4439      54485F46 
+ 4440              	.LASF123:
+ 4441 09b7 4359424C 		.ascii	"CYBLE_ERROR_STACK_BUSY\000"
+ 4441      455F4552 
+ 4441      524F525F 
+ 4441      53544143 
+ 4441      4B5F4255 
+ 4442              	.LASF149:
+ 4443 09ce 61647654 		.ascii	"advType\000"
+ 4443      79706500 
+ 4444              	.LASF94:
+ 4445 09d6 4359424C 		.ascii	"CYBLE_ERROR_INSUFFICIENT_RESOURCES\000"
+ 4445      455F4552 
+ 4445      524F525F 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 111
 
 
- 4446      524F525F 
- 4446      554E5355 
- 4446      50504F52 
- 4447              	.LASF190:
- 4448 09e4 43595F42 		.ascii	"CY_BLE_FLASH_STORAGE\000"
- 4448      4C455F46 
- 4448      4C415348 
- 4448      5F53544F 
- 4448      52414745 
- 4449              	.LASF135:
- 4450 09f9 7265736F 		.ascii	"resolvingListSize\000"
- 4450      6C76696E 
- 4450      674C6973 
- 4450      7453697A 
- 4450      6500
- 4451              	.LASF104:
- 4452 0a0b 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_PSM_ALREADY_REGISTERED\000"
- 4452      455F4552 
- 4452      524F525F 
- 4452      4C324341 
- 4452      505F5053 
- 4453              	.LASF177:
- 4454 0a34 61747456 		.ascii	"attValueUuid\000"
- 4454      616C7565 
- 4454      55756964 
- 4454      00
- 4455              	.LASF35:
- 4456 0a41 4359424C 		.ascii	"CYBLE_EVT_GAP_CONNECTION_UPDATE_COMPLETE\000"
- 4456      455F4556 
- 4456      545F4741 
- 4456      505F434F 
- 4456      4E4E4543 
- 4457              	.LASF256:
- 4458 0a6a 6379426C 		.ascii	"cyBle_busyStatus\000"
- 4458      655F6275 
- 4458      73795374 
- 4458      61747573 
- 4458      00
- 4459              	.LASF235:
- 4460 0a7b 4379426C 		.ascii	"CyBle_ChangeAdDeviceAddress\000"
- 4460      655F4368 
- 4460      616E6765 
- 4460      41644465 
- 4460      76696365 
- 4461              	.LASF192:
- 4462 0a97 4359424C 		.ascii	"CYBLE_STATE_INITIALIZING\000"
- 4462      455F5354 
- 4462      4154455F 
- 4462      494E4954 
- 4462      49414C49 
- 4463              	.LASF79:
- 4464 0ab0 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_IND\000"
- 4464      455F4556 
- 4464      545F4C32 
- 4464      4341505F 
- 4464      43424643 
- 4465              	.LASF212:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 112
+ 4445      494E5355 
+ 4445      46464943 
+ 4446              	.LASF5:
+ 4447 09f9 6C6F6E67 		.ascii	"long unsigned int\000"
+ 4447      20756E73 
+ 4447      69676E65 
+ 4447      6420696E 
+ 4447      7400
+ 4448              	.LASF114:
+ 4449 0a0b 4359424C 		.ascii	"CYBLE_ERROR_UNSUPPORTED_FEATURE_OR_PARAMETER_VALUE\000"
+ 4449      455F4552 
+ 4449      524F525F 
+ 4449      554E5355 
+ 4449      50504F52 
+ 4450              	.LASF190:
+ 4451 0a3e 43595F42 		.ascii	"CY_BLE_FLASH_STORAGE\000"
+ 4451      4C455F46 
+ 4451      4C415348 
+ 4451      5F53544F 
+ 4451      52414745 
+ 4452              	.LASF135:
+ 4453 0a53 7265736F 		.ascii	"resolvingListSize\000"
+ 4453      6C76696E 
+ 4453      674C6973 
+ 4453      7453697A 
+ 4453      6500
+ 4454              	.LASF104:
+ 4455 0a65 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_PSM_ALREADY_REGISTERED\000"
+ 4455      455F4552 
+ 4455      524F525F 
+ 4455      4C324341 
+ 4455      505F5053 
+ 4456              	.LASF177:
+ 4457 0a8e 61747456 		.ascii	"attValueUuid\000"
+ 4457      616C7565 
+ 4457      55756964 
+ 4457      00
+ 4458              	.LASF35:
+ 4459 0a9b 4359424C 		.ascii	"CYBLE_EVT_GAP_CONNECTION_UPDATE_COMPLETE\000"
+ 4459      455F4556 
+ 4459      545F4741 
+ 4459      505F434F 
+ 4459      4E4E4543 
+ 4460              	.LASF256:
+ 4461 0ac4 6379426C 		.ascii	"cyBle_busyStatus\000"
+ 4461      655F6275 
+ 4461      73795374 
+ 4461      61747573 
+ 4461      00
+ 4462              	.LASF235:
+ 4463 0ad5 4379426C 		.ascii	"CyBle_ChangeAdDeviceAddress\000"
+ 4463      655F4368 
+ 4463      616E6765 
+ 4463      41644465 
+ 4463      76696365 
+ 4464              	.LASF192:
+ 4465 0af1 4359424C 		.ascii	"CYBLE_STATE_INITIALIZING\000"
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 112
 
 
- 4466 0ad1 4379426C 		.ascii	"CyBle_Stop\000"
- 4466      655F5374 
- 4466      6F7000
- 4467              	.LASF27:
- 4468 0adc 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_ENTRY_REQUEST\000"
- 4468      455F4556 
- 4468      545F4741 
- 4468      505F5041 
- 4468      53534B45 
- 4469              	.LASF140:
- 4470 0b00 4359424C 		.ascii	"CYBLE_STACK_CONFIG_PARAM_T\000"
- 4470      455F5354 
- 4470      41434B5F 
- 4470      434F4E46 
- 4470      49475F50 
- 4471              	.LASF131:
- 4472 0b1b 646C654D 		.ascii	"dleMaxTxCapability\000"
- 4472      61785478 
- 4472      43617061 
- 4472      62696C69 
- 4472      747900
- 4473              	.LASF253:
- 4474 0b2e 6379426C 		.ascii	"cyBle_flashStorage\000"
- 4474      655F666C 
- 4474      61736853 
- 4474      746F7261 
- 4474      676500
- 4475              	.LASF6:
- 4476 0b41 6C6F6E67 		.ascii	"long long int\000"
- 4476      206C6F6E 
- 4476      6720696E 
- 4476      7400
- 4477              	.LASF163:
- 4478 0b4f 61647650 		.ascii	"advParam\000"
- 4478      6172616D 
- 4478      00
- 4479              	.LASF105:
- 4480 0b58 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_PSM_NOT_REGISTERED\000"
- 4480      455F4552 
- 4480      524F525F 
- 4480      4C324341 
- 4480      505F5053 
- 4481              	.LASF95:
- 4482 0b7d 4359424C 		.ascii	"CYBLE_ERROR_OOB_NOT_AVAILABLE\000"
- 4482      455F4552 
- 4482      524F525F 
- 4482      4F4F425F 
- 4482      4E4F545F 
- 4483              	.LASF13:
- 4484 0b9b 646F7562 		.ascii	"double\000"
- 4484      6C6500
- 4485              	.LASF110:
- 4486 0ba2 4359424C 		.ascii	"CYBLE_ERROR_DEVICE_ALREADY_EXISTS\000"
- 4486      455F4552 
- 4486      524F525F 
- 4486      44455649 
- 4486      43455F41 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 113
+ 4465      455F5354 
+ 4465      4154455F 
+ 4465      494E4954 
+ 4465      49414C49 
+ 4466              	.LASF79:
+ 4467 0b0a 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_IND\000"
+ 4467      455F4556 
+ 4467      545F4C32 
+ 4467      4341505F 
+ 4467      43424643 
+ 4468              	.LASF212:
+ 4469 0b2b 4379426C 		.ascii	"CyBle_Stop\000"
+ 4469      655F5374 
+ 4469      6F7000
+ 4470              	.LASF27:
+ 4471 0b36 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_ENTRY_REQUEST\000"
+ 4471      455F4556 
+ 4471      545F4741 
+ 4471      505F5041 
+ 4471      53534B45 
+ 4472              	.LASF140:
+ 4473 0b5a 4359424C 		.ascii	"CYBLE_STACK_CONFIG_PARAM_T\000"
+ 4473      455F5354 
+ 4473      41434B5F 
+ 4473      434F4E46 
+ 4473      49475F50 
+ 4474              	.LASF131:
+ 4475 0b75 646C654D 		.ascii	"dleMaxTxCapability\000"
+ 4475      61785478 
+ 4475      43617061 
+ 4475      62696C69 
+ 4475      747900
+ 4476              	.LASF253:
+ 4477 0b88 6379426C 		.ascii	"cyBle_flashStorage\000"
+ 4477      655F666C 
+ 4477      61736853 
+ 4477      746F7261 
+ 4477      676500
+ 4478              	.LASF6:
+ 4479 0b9b 6C6F6E67 		.ascii	"long long int\000"
+ 4479      206C6F6E 
+ 4479      6720696E 
+ 4479      7400
+ 4480              	.LASF163:
+ 4481 0ba9 61647650 		.ascii	"advParam\000"
+ 4481      6172616D 
+ 4481      00
+ 4482              	.LASF105:
+ 4483 0bb2 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_PSM_NOT_REGISTERED\000"
+ 4483      455F4552 
+ 4483      524F525F 
+ 4483      4C324341 
+ 4483      505F5053 
+ 4484              	.LASF95:
+ 4485 0bd7 4359424C 		.ascii	"CYBLE_ERROR_OOB_NOT_AVAILABLE\000"
+ 4485      455F4552 
+ 4485      524F525F 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 113
 
 
- 4487              	.LASF85:
- 4488 0bc4 4359424C 		.ascii	"CYBLE_EVT_PENDING_FLASH_WRITE\000"
- 4488      455F4556 
- 4488      545F5045 
- 4488      4E44494E 
- 4488      475F464C 
- 4489              	.LASF258:
- 4490 0be2 6379426C 		.ascii	"cyBle_advertisingIntervalType\000"
- 4490      655F6164 
- 4490      76657274 
- 4490      6973696E 
- 4490      67496E74 
- 4491              	.LASF198:
- 4492 0c00 64657669 		.ascii	"deviceNameCharHandle\000"
- 4492      63654E61 
- 4492      6D654368 
- 4492      61724861 
- 4492      6E646C65 
- 4493              	.LASF151:
- 4494 0c15 64697265 		.ascii	"directAddrType\000"
- 4494      63744164 
- 4494      64725479 
- 4494      706500
- 4495              	.LASF42:
- 4496 0c24 4359424C 		.ascii	"CYBLE_EVT_GAP_ENHANCE_CONN_COMPLETE\000"
- 4496      455F4556 
- 4496      545F4741 
- 4496      505F454E 
- 4496      48414E43 
- 4497              	.LASF107:
- 4498 0c48 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_CHANNEL_NOT_FOUND\000"
- 4498      455F4552 
- 4498      524F525F 
- 4498      4C324341 
- 4498      505F4348 
- 4499              	.LASF136:
- 4500 0c6c 4359424C 		.ascii	"CYBLE_PRIVACY_1_2_CONFIG_PARAM_T\000"
- 4500      455F5052 
- 4500      49564143 
- 4500      595F315F 
- 4500      325F434F 
- 4501              	.LASF251:
- 4502 0c8d 6379426C 		.ascii	"cyBle_gattDB\000"
- 4502      655F6761 
- 4502      74744442 
- 4502      00
- 4503              	.LASF98:
- 4504 0c9a 4359424C 		.ascii	"CYBLE_ERROR_REPEATED_ATTEMPTS\000"
- 4504      455F4552 
- 4504      524F525F 
- 4504      52455045 
- 4504      41544544 
- 4505              	.LASF12:
- 4506 0cb8 666C6F61 		.ascii	"float\000"
- 4506      7400
- 4507              	.LASF111:
- 4508 0cbe 4359424C 		.ascii	"CYBLE_ERROR_FLASH_WRITE_NOT_PERMITED\000"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 114
+ 4485      4F4F425F 
+ 4485      4E4F545F 
+ 4486              	.LASF13:
+ 4487 0bf5 646F7562 		.ascii	"double\000"
+ 4487      6C6500
+ 4488              	.LASF110:
+ 4489 0bfc 4359424C 		.ascii	"CYBLE_ERROR_DEVICE_ALREADY_EXISTS\000"
+ 4489      455F4552 
+ 4489      524F525F 
+ 4489      44455649 
+ 4489      43455F41 
+ 4490              	.LASF85:
+ 4491 0c1e 4359424C 		.ascii	"CYBLE_EVT_PENDING_FLASH_WRITE\000"
+ 4491      455F4556 
+ 4491      545F5045 
+ 4491      4E44494E 
+ 4491      475F464C 
+ 4492              	.LASF258:
+ 4493 0c3c 6379426C 		.ascii	"cyBle_advertisingIntervalType\000"
+ 4493      655F6164 
+ 4493      76657274 
+ 4493      6973696E 
+ 4493      67496E74 
+ 4494              	.LASF198:
+ 4495 0c5a 64657669 		.ascii	"deviceNameCharHandle\000"
+ 4495      63654E61 
+ 4495      6D654368 
+ 4495      61724861 
+ 4495      6E646C65 
+ 4496              	.LASF151:
+ 4497 0c6f 64697265 		.ascii	"directAddrType\000"
+ 4497      63744164 
+ 4497      64725479 
+ 4497      706500
+ 4498              	.LASF42:
+ 4499 0c7e 4359424C 		.ascii	"CYBLE_EVT_GAP_ENHANCE_CONN_COMPLETE\000"
+ 4499      455F4556 
+ 4499      545F4741 
+ 4499      505F454E 
+ 4499      48414E43 
+ 4500              	.LASF107:
+ 4501 0ca2 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_CHANNEL_NOT_FOUND\000"
+ 4501      455F4552 
+ 4501      524F525F 
+ 4501      4C324341 
+ 4501      505F4348 
+ 4502              	.LASF136:
+ 4503 0cc6 4359424C 		.ascii	"CYBLE_PRIVACY_1_2_CONFIG_PARAM_T\000"
+ 4503      455F5052 
+ 4503      49564143 
+ 4503      595F315F 
+ 4503      325F434F 
+ 4504              	.LASF251:
+ 4505 0ce7 6379426C 		.ascii	"cyBle_gattDB\000"
+ 4505      655F6761 
+ 4505      74744442 
+ 4505      00
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 114
 
 
- 4508      455F4552 
- 4508      524F525F 
- 4508      464C4153 
- 4508      485F5752 
- 4509              	.LASF72:
- 4510 0ce3 4359424C 		.ascii	"CYBLE_EVT_GATTS_READ_CHAR_VAL_ACCESS_REQ\000"
- 4510      455F4556 
- 4510      545F4741 
- 4510      5454535F 
- 4510      52454144 
- 4511              	.LASF217:
- 4512 0d0c 64656661 		.ascii	"defaultValuesCCCD\000"
- 4512      756C7456 
- 4512      616C7565 
- 4512      73434343 
- 4512      4400
- 4513              	.LASF133:
- 4514 0d1e 646C654E 		.ascii	"dleNumTxBuffer\000"
- 4514      756D5478 
- 4514      42756666 
- 4514      657200
- 4515              	.LASF8:
- 4516 0d2d 756E7369 		.ascii	"unsigned int\000"
- 4516      676E6564 
- 4516      20696E74 
- 4516      00
- 4517              	.LASF139:
- 4518 0d3a 66656174 		.ascii	"feature_mask\000"
- 4518      7572655F 
- 4518      6D61736B 
- 4518      00
- 4519              	.LASF64:
- 4520 0d47 4359424C 		.ascii	"CYBLE_EVT_GATTS_PREP_WRITE_REQ\000"
- 4520      455F4556 
- 4520      545F4741 
- 4520      5454535F 
- 4520      50524550 
- 4521              	.LASF182:
- 4522 0d66 61747445 		.ascii	"attEndHandle\000"
- 4522      6E644861 
- 4522      6E646C65 
- 4522      00
- 4523              	.LASF227:
- 4524 0d73 666C6167 		.ascii	"flag\000"
- 4524      00
- 4525              	.LASF236:
- 4526 0d78 4379426C 		.ascii	"CyBle_Set16ByPtr\000"
- 4526      655F5365 
- 4526      74313642 
- 4526      79507472 
- 4526      00
- 4527              	.LASF103:
- 4528 0d89 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_PSM_WRONG_ENCODING\000"
- 4528      455F4552 
- 4528      524F525F 
- 4528      4C324341 
- 4528      505F5053 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 115
+ 4506              	.LASF98:
+ 4507 0cf4 4359424C 		.ascii	"CYBLE_ERROR_REPEATED_ATTEMPTS\000"
+ 4507      455F4552 
+ 4507      524F525F 
+ 4507      52455045 
+ 4507      41544544 
+ 4508              	.LASF12:
+ 4509 0d12 666C6F61 		.ascii	"float\000"
+ 4509      7400
+ 4510              	.LASF111:
+ 4511 0d18 4359424C 		.ascii	"CYBLE_ERROR_FLASH_WRITE_NOT_PERMITED\000"
+ 4511      455F4552 
+ 4511      524F525F 
+ 4511      464C4153 
+ 4511      485F5752 
+ 4512              	.LASF72:
+ 4513 0d3d 4359424C 		.ascii	"CYBLE_EVT_GATTS_READ_CHAR_VAL_ACCESS_REQ\000"
+ 4513      455F4556 
+ 4513      545F4741 
+ 4513      5454535F 
+ 4513      52454144 
+ 4514              	.LASF217:
+ 4515 0d66 64656661 		.ascii	"defaultValuesCCCD\000"
+ 4515      756C7456 
+ 4515      616C7565 
+ 4515      73434343 
+ 4515      4400
+ 4516              	.LASF133:
+ 4517 0d78 646C654E 		.ascii	"dleNumTxBuffer\000"
+ 4517      756D5478 
+ 4517      42756666 
+ 4517      657200
+ 4518              	.LASF8:
+ 4519 0d87 756E7369 		.ascii	"unsigned int\000"
+ 4519      676E6564 
+ 4519      20696E74 
+ 4519      00
+ 4520              	.LASF139:
+ 4521 0d94 66656174 		.ascii	"feature_mask\000"
+ 4521      7572655F 
+ 4521      6D61736B 
+ 4521      00
+ 4522              	.LASF64:
+ 4523 0da1 4359424C 		.ascii	"CYBLE_EVT_GATTS_PREP_WRITE_REQ\000"
+ 4523      455F4556 
+ 4523      545F4741 
+ 4523      5454535F 
+ 4523      50524550 
+ 4524              	.LASF182:
+ 4525 0dc0 61747445 		.ascii	"attEndHandle\000"
+ 4525      6E644861 
+ 4525      6E646C65 
+ 4525      00
+ 4526              	.LASF227:
+ 4527 0dcd 666C6167 		.ascii	"flag\000"
+ 4527      00
+ 4528              	.LASF236:
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 115
 
 
- 4529              	.LASF232:
- 4530 0dae 63686172 		.ascii	"charLen\000"
- 4530      4C656E00 
- 4531              	.LASF89:
- 4532 0db6 4359424C 		.ascii	"CYBLE_EVT_MAX\000"
- 4532      455F4556 
- 4532      545F4D41 
- 4532      5800
- 4533              	.LASF36:
- 4534 0dc4 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_START_STOP\000"
- 4534      455F4556 
- 4534      545F4741 
- 4534      50435F53 
- 4534      43414E5F 
- 4535              	.LASF146:
- 4536 0de3 4359424C 		.ascii	"CYBLE_GAPP_ADV_T\000"
- 4536      455F4741 
- 4536      50505F41 
- 4536      44565F54 
- 4536      00
- 4537              	.LASF61:
- 4538 0df4 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_REQ\000"
- 4538      455F4556 
- 4538      545F4741 
- 4538      5454535F 
- 4538      57524954 
- 4539              	.LASF156:
- 4540 0e0e 61647644 		.ascii	"advData\000"
- 4540      61746100 
- 4541              	.LASF70:
- 4542 0e16 4359424C 		.ascii	"CYBLE_EVT_GATTS_DATA_SIGNED_CMD_REQ\000"
- 4542      455F4556 
- 4542      545F4741 
- 4542      5454535F 
- 4542      44415441 
- 4543              	.LASF247:
- 4544 0e3a 6379426C 		.ascii	"cyBle_scanRspData\000"
- 4544      655F7363 
- 4544      616E5273 
- 4544      70446174 
- 4544      6100
- 4545              	.LASF200:
- 4546 0e4c 70726566 		.ascii	"prefConnParamCharHandle\000"
- 4546      436F6E6E 
- 4546      50617261 
- 4546      6D436861 
- 4546      7248616E 
- 4547              	.LASF28:
- 4548 0e64 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_DISPLAY_REQUEST\000"
- 4548      455F4556 
- 4548      545F4741 
- 4548      505F5041 
- 4548      53534B45 
- 4549              	.LASF120:
- 4550 0e8a 4359424C 		.ascii	"CYBLE_ERROR_IND_DISABLED\000"
- 4550      455F4552 
- 4550      524F525F 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 116
+ 4529 0dd2 4379426C 		.ascii	"CyBle_Set16ByPtr\000"
+ 4529      655F5365 
+ 4529      74313642 
+ 4529      79507472 
+ 4529      00
+ 4530              	.LASF103:
+ 4531 0de3 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_PSM_WRONG_ENCODING\000"
+ 4531      455F4552 
+ 4531      524F525F 
+ 4531      4C324341 
+ 4531      505F5053 
+ 4532              	.LASF232:
+ 4533 0e08 63686172 		.ascii	"charLen\000"
+ 4533      4C656E00 
+ 4534              	.LASF89:
+ 4535 0e10 4359424C 		.ascii	"CYBLE_EVT_MAX\000"
+ 4535      455F4556 
+ 4535      545F4D41 
+ 4535      5800
+ 4536              	.LASF36:
+ 4537 0e1e 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_START_STOP\000"
+ 4537      455F4556 
+ 4537      545F4741 
+ 4537      50435F53 
+ 4537      43414E5F 
+ 4538              	.LASF146:
+ 4539 0e3d 4359424C 		.ascii	"CYBLE_GAPP_ADV_T\000"
+ 4539      455F4741 
+ 4539      50505F41 
+ 4539      44565F54 
+ 4539      00
+ 4540              	.LASF61:
+ 4541 0e4e 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_REQ\000"
+ 4541      455F4556 
+ 4541      545F4741 
+ 4541      5454535F 
+ 4541      57524954 
+ 4542              	.LASF156:
+ 4543 0e68 61647644 		.ascii	"advData\000"
+ 4543      61746100 
+ 4544              	.LASF70:
+ 4545 0e70 4359424C 		.ascii	"CYBLE_EVT_GATTS_DATA_SIGNED_CMD_REQ\000"
+ 4545      455F4556 
+ 4545      545F4741 
+ 4545      5454535F 
+ 4545      44415441 
+ 4546              	.LASF247:
+ 4547 0e94 6379426C 		.ascii	"cyBle_scanRspData\000"
+ 4547      655F7363 
+ 4547      616E5273 
+ 4547      70446174 
+ 4547      6100
+ 4548              	.LASF200:
+ 4549 0ea6 70726566 		.ascii	"prefConnParamCharHandle\000"
+ 4549      436F6E6E 
+ 4549      50617261 
+ 4549      6D436861 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 116
 
 
- 4550      494E445F 
- 4550      44495341 
- 4551              	.LASF119:
- 4552 0ea3 4359424C 		.ascii	"CYBLE_ERROR_NTF_DISABLED\000"
- 4552      455F4552 
- 4552      524F525F 
- 4552      4E54465F 
- 4552      44495341 
- 4553              	.LASF58:
- 4554 0ebc 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_RSP\000"
- 4554      455F4556 
- 4554      545F4741 
- 4554      5454435F 
- 4554      52454144 
- 4555              	.LASF142:
- 4556 0ed5 4359424C 		.ascii	"CYBLE_GAPP_CONNECTABLE_HIGH_DC_DIRECTED_ADV\000"
- 4556      455F4741 
- 4556      50505F43 
- 4556      4F4E4E45 
- 4556      43544142 
- 4557              	.LASF78:
- 4558 0f01 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_CNF\000"
- 4558      455F4556 
- 4558      545F4C32 
- 4558      4341505F 
- 4558      43424643 
- 4559              	.LASF209:
- 4560 0f1f 70726976 		.ascii	"privacyConfigParams\000"
- 4560      61637943 
- 4560      6F6E6669 
- 4560      67506172 
- 4560      616D7300 
- 4561              	.LASF172:
- 4562 0f33 4359424C 		.ascii	"CYBLE_GATTS_ATT_GEN_VAL_LEN_T\000"
- 4562      455F4741 
- 4562      5454535F 
- 4562      4154545F 
- 4562      47454E5F 
- 4563              	.LASF88:
- 4564 0f51 4359424C 		.ascii	"CYBLE_EVT_FLASH_CORRUPT\000"
- 4564      455F4556 
- 4564      545F464C 
- 4564      4153485F 
- 4564      434F5252 
- 4565              	.LASF16:
- 4566 0f69 6C6F6E67 		.ascii	"long double\000"
- 4566      20646F75 
- 4566      626C6500 
- 4567              	.LASF128:
- 4568 0f75 62756666 		.ascii	"bufferSize\000"
- 4568      65725369 
- 4568      7A6500
- 4569              	.LASF24:
- 4570 0f80 4359424C 		.ascii	"CYBLE_EVT_MEMORY_REQUEST\000"
- 4570      455F4556 
- 4570      545F4D45 
- 4570      4D4F5259 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 117
+ 4549      7248616E 
+ 4550              	.LASF28:
+ 4551 0ebe 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_DISPLAY_REQUEST\000"
+ 4551      455F4556 
+ 4551      545F4741 
+ 4551      505F5041 
+ 4551      53534B45 
+ 4552              	.LASF120:
+ 4553 0ee4 4359424C 		.ascii	"CYBLE_ERROR_IND_DISABLED\000"
+ 4553      455F4552 
+ 4553      524F525F 
+ 4553      494E445F 
+ 4553      44495341 
+ 4554              	.LASF119:
+ 4555 0efd 4359424C 		.ascii	"CYBLE_ERROR_NTF_DISABLED\000"
+ 4555      455F4552 
+ 4555      524F525F 
+ 4555      4E54465F 
+ 4555      44495341 
+ 4556              	.LASF58:
+ 4557 0f16 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_RSP\000"
+ 4557      455F4556 
+ 4557      545F4741 
+ 4557      5454435F 
+ 4557      52454144 
+ 4558              	.LASF142:
+ 4559 0f2f 4359424C 		.ascii	"CYBLE_GAPP_CONNECTABLE_HIGH_DC_DIRECTED_ADV\000"
+ 4559      455F4741 
+ 4559      50505F43 
+ 4559      4F4E4E45 
+ 4559      43544142 
+ 4560              	.LASF78:
+ 4561 0f5b 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_CNF\000"
+ 4561      455F4556 
+ 4561      545F4C32 
+ 4561      4341505F 
+ 4561      43424643 
+ 4562              	.LASF209:
+ 4563 0f79 70726976 		.ascii	"privacyConfigParams\000"
+ 4563      61637943 
+ 4563      6F6E6669 
+ 4563      67506172 
+ 4563      616D7300 
+ 4564              	.LASF172:
+ 4565 0f8d 4359424C 		.ascii	"CYBLE_GATTS_ATT_GEN_VAL_LEN_T\000"
+ 4565      455F4741 
+ 4565      5454535F 
+ 4565      4154545F 
+ 4565      47454E5F 
+ 4566              	.LASF88:
+ 4567 0fab 4359424C 		.ascii	"CYBLE_EVT_FLASH_CORRUPT\000"
+ 4567      455F4556 
+ 4567      545F464C 
+ 4567      4153485F 
+ 4567      434F5252 
+ 4568              	.LASF16:
+ 4569 0fc3 6C6F6E67 		.ascii	"long double\000"
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 117
 
 
- 4570      5F524551 
- 4571              	.LASF234:
- 4572 0f99 4379426C 		.ascii	"CyBle_Get16ByPtr\000"
- 4572      655F4765 
- 4572      74313642 
- 4572      79507472 
- 4572      00
- 4573              	.LASF199:
- 4574 0faa 61707065 		.ascii	"appearanceCharHandle\000"
- 4574      6172616E 
- 4574      63654368 
- 4574      61724861 
- 4574      6E646C65 
- 4575              	.LASF34:
- 4576 0fbf 4359424C 		.ascii	"CYBLE_EVT_GAP_ENCRYPT_CHANGE\000"
- 4576      455F4556 
- 4576      545F4741 
- 4576      505F454E 
- 4576      43525950 
- 4577              	.LASF52:
- 4578 0fdc 4359424C 		.ascii	"CYBLE_EVT_GATTS_XCNHG_MTU_REQ\000"
- 4578      455F4556 
- 4578      545F4741 
- 4578      5454535F 
- 4578      58434E48 
- 4579              	.LASF48:
- 4580 0ffa 4359424C 		.ascii	"CYBLE_EVT_GAP_SMP_LOC_P256_KEYS_GEN_AND_SET_COMPLET"
- 4580      455F4556 
- 4580      545F4741 
- 4580      505F534D 
- 4580      505F4C4F 
- 4581 102d 4500     		.ascii	"E\000"
- 4582              	.LASF7:
- 4583 102f 6C6F6E67 		.ascii	"long long unsigned int\000"
- 4583      206C6F6E 
- 4583      6720756E 
- 4583      7369676E 
- 4583      65642069 
- 4584              	.LASF20:
- 4585 1046 4359424C 		.ascii	"CYBLE_EVT_TIMEOUT\000"
- 4585      455F4556 
- 4585      545F5449 
- 4585      4D454F55 
- 4585      5400
- 4586              	.LASF216:
- 4587 1058 6973466F 		.ascii	"isForceWrite\000"
- 4587      72636557 
- 4587      72697465 
- 4587      00
- 4588              	.LASF122:
- 4589 1065 4359424C 		.ascii	"CYBLE_ERROR_INVALID_STATE\000"
- 4589      455F4552 
- 4589      524F525F 
- 4589      494E5641 
- 4589      4C49445F 
- 4590              	.LASF166:
- 4591 107f 4359424C 		.ascii	"CYBLE_GATT_DB_ATTR_HANDLE_T\000"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 118
+ 4569      20646F75 
+ 4569      626C6500 
+ 4570              	.LASF128:
+ 4571 0fcf 62756666 		.ascii	"bufferSize\000"
+ 4571      65725369 
+ 4571      7A6500
+ 4572              	.LASF24:
+ 4573 0fda 4359424C 		.ascii	"CYBLE_EVT_MEMORY_REQUEST\000"
+ 4573      455F4556 
+ 4573      545F4D45 
+ 4573      4D4F5259 
+ 4573      5F524551 
+ 4574              	.LASF234:
+ 4575 0ff3 4379426C 		.ascii	"CyBle_Get16ByPtr\000"
+ 4575      655F4765 
+ 4575      74313642 
+ 4575      79507472 
+ 4575      00
+ 4576              	.LASF199:
+ 4577 1004 61707065 		.ascii	"appearanceCharHandle\000"
+ 4577      6172616E 
+ 4577      63654368 
+ 4577      61724861 
+ 4577      6E646C65 
+ 4578              	.LASF34:
+ 4579 1019 4359424C 		.ascii	"CYBLE_EVT_GAP_ENCRYPT_CHANGE\000"
+ 4579      455F4556 
+ 4579      545F4741 
+ 4579      505F454E 
+ 4579      43525950 
+ 4580              	.LASF52:
+ 4581 1036 4359424C 		.ascii	"CYBLE_EVT_GATTS_XCNHG_MTU_REQ\000"
+ 4581      455F4556 
+ 4581      545F4741 
+ 4581      5454535F 
+ 4581      58434E48 
+ 4582              	.LASF48:
+ 4583 1054 4359424C 		.ascii	"CYBLE_EVT_GAP_SMP_LOC_P256_KEYS_GEN_AND_SET_COMPLET"
+ 4583      455F4556 
+ 4583      545F4741 
+ 4583      505F534D 
+ 4583      505F4C4F 
+ 4584 1087 4500     		.ascii	"E\000"
+ 4585              	.LASF7:
+ 4586 1089 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 4586      206C6F6E 
+ 4586      6720756E 
+ 4586      7369676E 
+ 4586      65642069 
+ 4587              	.LASF20:
+ 4588 10a0 4359424C 		.ascii	"CYBLE_EVT_TIMEOUT\000"
+ 4588      455F4556 
+ 4588      545F5449 
+ 4588      4D454F55 
+ 4588      5400
+ 4589              	.LASF216:
+ 4590 10b2 6973466F 		.ascii	"isForceWrite\000"
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 118
 
 
- 4591      455F4741 
- 4591      54545F44 
- 4591      425F4154 
- 4591      54525F48 
- 4592              	.LASF260:
- 4593 109b 47656E65 		.ascii	"Generated_Source\\PSoC4\\BLE.c\000"
- 4593      72617465 
- 4593      645F536F 
- 4593      75726365 
- 4593      5C50536F 
- 4594              	.LASF81:
- 4595 10b8 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_READ\000"
- 4595      455F4556 
- 4595      545F4C32 
- 4595      4341505F 
- 4595      43424643 
- 4596              	.LASF237:
- 4597 10d7 76616C75 		.ascii	"value\000"
- 4597      6500
- 4598              	.LASF183:
- 4599 10dd 61747456 		.ascii	"attValue\000"
- 4599      616C7565 
- 4599      00
- 4600              	.LASF239:
- 4601 10e6 4379426C 		.ascii	"CyBle_ApplCallback\000"
- 4601      655F4170 
- 4601      706C4361 
- 4601      6C6C6261 
- 4601      636B00
- 4602              	.LASF115:
- 4603 10f9 4359424C 		.ascii	"CYBLE_ERROR_FLASH_WRITE\000"
- 4603      455F4552 
- 4603      524F525F 
- 4603      464C4153 
- 4603      485F5752 
- 4604              	.LASF203:
- 4605 1111 4359424C 		.ascii	"CYBLE_GAPS_T\000"
- 4605      455F4741 
- 4605      50535F54 
- 4605      00
- 4606              	.LASF127:
- 4607 111e 4359424C 		.ascii	"CYBLE_GAP_BD_ADDR_T\000"
- 4607      455F4741 
- 4607      505F4244 
- 4607      5F414444 
- 4607      525F5400 
- 4608              	.LASF138:
- 4609 1132 70726976 		.ascii	"privacyConfig\000"
- 4609      61637943 
- 4609      6F6E6669 
- 4609      6700
- 4610              	.LASF170:
- 4611 1140 61637475 		.ascii	"actualLength\000"
- 4611      616C4C65 
- 4611      6E677468 
- 4611      00
- 4612              	.LASF157:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 119
+ 4590      72636557 
+ 4590      72697465 
+ 4590      00
+ 4591              	.LASF122:
+ 4592 10bf 4359424C 		.ascii	"CYBLE_ERROR_INVALID_STATE\000"
+ 4592      455F4552 
+ 4592      524F525F 
+ 4592      494E5641 
+ 4592      4C49445F 
+ 4593              	.LASF166:
+ 4594 10d9 4359424C 		.ascii	"CYBLE_GATT_DB_ATTR_HANDLE_T\000"
+ 4594      455F4741 
+ 4594      54545F44 
+ 4594      425F4154 
+ 4594      54525F48 
+ 4595              	.LASF260:
+ 4596 10f5 47656E65 		.ascii	"Generated_Source\\PSoC4\\BLE.c\000"
+ 4596      72617465 
+ 4596      645F536F 
+ 4596      75726365 
+ 4596      5C50536F 
+ 4597              	.LASF81:
+ 4598 1112 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_READ\000"
+ 4598      455F4556 
+ 4598      545F4C32 
+ 4598      4341505F 
+ 4598      43424643 
+ 4599              	.LASF237:
+ 4600 1131 76616C75 		.ascii	"value\000"
+ 4600      6500
+ 4601              	.LASF183:
+ 4602 1137 61747456 		.ascii	"attValue\000"
+ 4602      616C7565 
+ 4602      00
+ 4603              	.LASF239:
+ 4604 1140 4379426C 		.ascii	"CyBle_ApplCallback\000"
+ 4604      655F4170 
+ 4604      706C4361 
+ 4604      6C6C6261 
+ 4604      636B00
+ 4605              	.LASF115:
+ 4606 1153 4359424C 		.ascii	"CYBLE_ERROR_FLASH_WRITE\000"
+ 4606      455F4552 
+ 4606      524F525F 
+ 4606      464C4153 
+ 4606      485F5752 
+ 4607              	.LASF203:
+ 4608 116b 4359424C 		.ascii	"CYBLE_GAPS_T\000"
+ 4608      455F4741 
+ 4608      50535F54 
+ 4608      00
+ 4609              	.LASF127:
+ 4610 1178 4359424C 		.ascii	"CYBLE_GAP_BD_ADDR_T\000"
+ 4610      455F4741 
+ 4610      505F4244 
+ 4610      5F414444 
+ 4610      525F5400 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 119
 
 
- 4613 114d 61647644 		.ascii	"advDataLen\000"
- 4613      6174614C 
- 4613      656E00
- 4614              	.LASF224:
- 4615 1158 64657374 		.ascii	"dest\000"
- 4615      00
- 4616              	.LASF165:
- 4617 115d 4359424C 		.ascii	"CYBLE_GAPP_DISC_MODE_INFO_T\000"
- 4617      455F4741 
- 4617      50505F44 
- 4617      4953435F 
- 4617      4D4F4445 
- 4618              	.LASF249:
- 4619 1179 6379426C 		.ascii	"cyBle_pendingFlashWrite\000"
- 4619      655F7065 
- 4619      6E64696E 
- 4619      67466C61 
- 4619      73685772 
- 4620              	.LASF56:
- 4621 1191 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_INFO_RSP\000"
- 4621      455F4556 
- 4621      545F4741 
- 4621      5454435F 
- 4621      46494E44 
- 4622              	.LASF55:
- 4623 11af 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_TYPE_RSP\000"
- 4623      455F4556 
- 4623      545F4741 
- 4623      5454435F 
- 4623      52454144 
- 4624              	.LASF213:
- 4625 11d0 4379426C 		.ascii	"CyBle_Start\000"
- 4625      655F5374 
- 4625      61727400 
- 4626              	.LASF254:
- 4627 11dc 6379426C 		.ascii	"cyBle_state\000"
- 4627      655F7374 
- 4627      61746500 
- 4628              	.LASF208:
- 4629 11e8 646C6543 		.ascii	"dleConfigParams\000"
- 4629      6F6E6669 
- 4629      67506172 
- 4629      616D7300 
- 4630              	.LASF116:
- 4631 11f8 4359424C 		.ascii	"CYBLE_ERROR_LL_SAME_TRANSACTION_COLLISION\000"
- 4631      455F4552 
- 4631      524F525F 
- 4631      4C4C5F53 
- 4631      414D455F 
- 4632              	.LASF62:
- 4633 1222 4359424C 		.ascii	"CYBLE_EVT_GATTC_WRITE_RSP\000"
- 4633      455F4556 
- 4633      545F4741 
- 4633      5454435F 
- 4633      57524954 
- 4634              	.LASF195:
- 4635 123c 4359424C 		.ascii	"CYBLE_STATE_DISCONNECTED\000"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 120
+ 4611              	.LASF138:
+ 4612 118c 70726976 		.ascii	"privacyConfig\000"
+ 4612      61637943 
+ 4612      6F6E6669 
+ 4612      6700
+ 4613              	.LASF170:
+ 4614 119a 61637475 		.ascii	"actualLength\000"
+ 4614      616C4C65 
+ 4614      6E677468 
+ 4614      00
+ 4615              	.LASF157:
+ 4616 11a7 61647644 		.ascii	"advDataLen\000"
+ 4616      6174614C 
+ 4616      656E00
+ 4617              	.LASF224:
+ 4618 11b2 64657374 		.ascii	"dest\000"
+ 4618      00
+ 4619              	.LASF165:
+ 4620 11b7 4359424C 		.ascii	"CYBLE_GAPP_DISC_MODE_INFO_T\000"
+ 4620      455F4741 
+ 4620      50505F44 
+ 4620      4953435F 
+ 4620      4D4F4445 
+ 4621              	.LASF249:
+ 4622 11d3 6379426C 		.ascii	"cyBle_pendingFlashWrite\000"
+ 4622      655F7065 
+ 4622      6E64696E 
+ 4622      67466C61 
+ 4622      73685772 
+ 4623              	.LASF56:
+ 4624 11eb 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_INFO_RSP\000"
+ 4624      455F4556 
+ 4624      545F4741 
+ 4624      5454435F 
+ 4624      46494E44 
+ 4625              	.LASF55:
+ 4626 1209 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_TYPE_RSP\000"
+ 4626      455F4556 
+ 4626      545F4741 
+ 4626      5454435F 
+ 4626      52454144 
+ 4627              	.LASF213:
+ 4628 122a 4379426C 		.ascii	"CyBle_Start\000"
+ 4628      655F5374 
+ 4628      61727400 
+ 4629              	.LASF254:
+ 4630 1236 6379426C 		.ascii	"cyBle_state\000"
+ 4630      655F7374 
+ 4630      61746500 
+ 4631              	.LASF208:
+ 4632 1242 646C6543 		.ascii	"dleConfigParams\000"
+ 4632      6F6E6669 
+ 4632      67506172 
+ 4632      616D7300 
+ 4633              	.LASF116:
+ 4634 1252 4359424C 		.ascii	"CYBLE_ERROR_LL_SAME_TRANSACTION_COLLISION\000"
+ 4634      455F4552 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 120
 
 
- 4635      455F5354 
- 4635      4154455F 
- 4635      44495343 
- 4635      4F4E4E45 
- 4636              	.LASF178:
- 4637 1255 4359424C 		.ascii	"CYBLE_GATTS_ATT_VALUE_T\000"
- 4637      455F4741 
- 4637      5454535F 
- 4637      4154545F 
- 4637      56414C55 
- 4638              	.LASF175:
- 4639 126d 4359424C 		.ascii	"CYBLE_GATTS_ATT_PACK_VAL_LEN_T\000"
- 4639      455F4741 
- 4639      5454535F 
- 4639      4154545F 
- 4639      5041434B 
- 4640              	.LASF31:
- 4641 128c 4359424C 		.ascii	"CYBLE_EVT_GAPP_ADVERTISEMENT_START_STOP\000"
- 4641      455F4556 
- 4641      545F4741 
- 4641      50505F41 
- 4641      44564552 
- 4642              	.LASF161:
- 4643 12b4 4359424C 		.ascii	"CYBLE_GAPP_SCAN_RSP_DATA_T\000"
- 4643      455F4741 
- 4643      50505F53 
- 4643      43414E5F 
- 4643      5253505F 
- 4644              	.LASF171:
- 4645 12cf 61747447 		.ascii	"attGenericVal\000"
- 4645      656E6572 
- 4645      69635661 
- 4645      6C00
- 4646              	.LASF226:
- 4647 12dd 6E616D65 		.ascii	"name\000"
- 4647      00
- 4648              	.LASF261:
- 4649 12e2 453A5C4D 		.ascii	"E:\\MyProjects\\WWV1_0_0\\WW_V1_1.cydsn\000"
- 4649      7950726F 
- 4649      6A656374 
- 4649      735C5757 
- 4649      56315F30 
- 4650              	.LASF9:
- 4651 1307 75696E74 		.ascii	"uint8\000"
- 4651      3800
- 4652              	.LASF240:
- 4653 130d 6379426C 		.ascii	"cyBle_initVar\000"
- 4653      655F696E 
- 4653      69745661 
- 4653      7200
- 4654              	.LASF39:
- 4655 131b 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYPRESS_NOTIFICATION\000"
- 4655      455F4556 
- 4655      545F4741 
- 4655      505F4B45 
- 4655      59505245 
- 4656              	.LASF255:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 121
+ 4634      524F525F 
+ 4634      4C4C5F53 
+ 4634      414D455F 
+ 4635              	.LASF62:
+ 4636 127c 4359424C 		.ascii	"CYBLE_EVT_GATTC_WRITE_RSP\000"
+ 4636      455F4556 
+ 4636      545F4741 
+ 4636      5454435F 
+ 4636      57524954 
+ 4637              	.LASF195:
+ 4638 1296 4359424C 		.ascii	"CYBLE_STATE_DISCONNECTED\000"
+ 4638      455F5354 
+ 4638      4154455F 
+ 4638      44495343 
+ 4638      4F4E4E45 
+ 4639              	.LASF178:
+ 4640 12af 4359424C 		.ascii	"CYBLE_GATTS_ATT_VALUE_T\000"
+ 4640      455F4741 
+ 4640      5454535F 
+ 4640      4154545F 
+ 4640      56414C55 
+ 4641              	.LASF175:
+ 4642 12c7 4359424C 		.ascii	"CYBLE_GATTS_ATT_PACK_VAL_LEN_T\000"
+ 4642      455F4741 
+ 4642      5454535F 
+ 4642      4154545F 
+ 4642      5041434B 
+ 4643              	.LASF31:
+ 4644 12e6 4359424C 		.ascii	"CYBLE_EVT_GAPP_ADVERTISEMENT_START_STOP\000"
+ 4644      455F4556 
+ 4644      545F4741 
+ 4644      50505F41 
+ 4644      44564552 
+ 4645              	.LASF161:
+ 4646 130e 4359424C 		.ascii	"CYBLE_GAPP_SCAN_RSP_DATA_T\000"
+ 4646      455F4741 
+ 4646      50505F53 
+ 4646      43414E5F 
+ 4646      5253505F 
+ 4647              	.LASF171:
+ 4648 1329 61747447 		.ascii	"attGenericVal\000"
+ 4648      656E6572 
+ 4648      69635661 
+ 4648      6C00
+ 4649              	.LASF226:
+ 4650 1337 6E616D65 		.ascii	"name\000"
+ 4650      00
+ 4651              	.LASF9:
+ 4652 133c 75696E74 		.ascii	"uint8\000"
+ 4652      3800
+ 4653              	.LASF240:
+ 4654 1342 6379426C 		.ascii	"cyBle_initVar\000"
+ 4654      655F696E 
+ 4654      69745661 
+ 4654      7200
+ 4655              	.LASF39:
+ 4656 1350 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYPRESS_NOTIFICATION\000"
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 121
 
 
- 4657 133f 6379426C 		.ascii	"cyBle_connHandle\000"
- 4657      655F636F 
- 4657      6E6E4861 
- 4657      6E646C65 
- 4657      00
- 4658              	.LASF2:
- 4659 1350 73686F72 		.ascii	"short int\000"
- 4659      7420696E 
- 4659      7400
- 4660              	.LASF231:
- 4661 135a 4379426C 		.ascii	"CyBle_GapSetLocalName\000"
- 4661      655F4761 
- 4661      70536574 
- 4661      4C6F6361 
- 4661      6C4E616D 
- 4662              	.LASF174:
- 4663 1370 61747447 		.ascii	"attGenericValLen\000"
- 4663      656E6572 
- 4663      69635661 
- 4663      6C4C656E 
- 4663      00
- 4664              	.LASF176:
- 4665 1381 61747446 		.ascii	"attFormatValue\000"
- 4665      6F726D61 
- 4665      7456616C 
- 4665      756500
- 4666              	.LASF160:
- 4667 1390 7363616E 		.ascii	"scanRspDataLen\000"
- 4667      52737044 
- 4667      6174614C 
- 4667      656E00
- 4668              	.LASF113:
- 4669 139f 4359424C 		.ascii	"CYBLE_ERROR_HARDWARE_FAILURE\000"
- 4669      455F4552 
- 4669      524F525F 
- 4669      48415244 
- 4669      57415245 
- 4670              	.LASF49:
- 4671 13bc 4359424C 		.ascii	"CYBLE_EVT_GATTC_ERROR_RSP\000"
- 4671      455F4556 
- 4671      545F4741 
- 4671      5454435F 
- 4671      4552524F 
- 4672              	.LASF196:
- 4673 13d6 4359424C 		.ascii	"CYBLE_STATE_T\000"
- 4673      455F5354 
- 4673      4154455F 
- 4673      5400
- 4674              	.LASF143:
- 4675 13e4 4359424C 		.ascii	"CYBLE_GAPP_SCANNABLE_UNDIRECTED_ADV\000"
- 4675      455F4741 
- 4675      50505F53 
- 4675      43414E4E 
- 4675      41424C45 
- 4676              	.LASF77:
- 4677 1408 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_IND\000"
- 4677      455F4556 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 122
+ 4656      455F4556 
+ 4656      545F4741 
+ 4656      505F4B45 
+ 4656      59505245 
+ 4657              	.LASF255:
+ 4658 1374 6379426C 		.ascii	"cyBle_connHandle\000"
+ 4658      655F636F 
+ 4658      6E6E4861 
+ 4658      6E646C65 
+ 4658      00
+ 4659              	.LASF2:
+ 4660 1385 73686F72 		.ascii	"short int\000"
+ 4660      7420696E 
+ 4660      7400
+ 4661              	.LASF231:
+ 4662 138f 4379426C 		.ascii	"CyBle_GapSetLocalName\000"
+ 4662      655F4761 
+ 4662      70536574 
+ 4662      4C6F6361 
+ 4662      6C4E616D 
+ 4663              	.LASF174:
+ 4664 13a5 61747447 		.ascii	"attGenericValLen\000"
+ 4664      656E6572 
+ 4664      69635661 
+ 4664      6C4C656E 
+ 4664      00
+ 4665              	.LASF176:
+ 4666 13b6 61747446 		.ascii	"attFormatValue\000"
+ 4666      6F726D61 
+ 4666      7456616C 
+ 4666      756500
+ 4667              	.LASF160:
+ 4668 13c5 7363616E 		.ascii	"scanRspDataLen\000"
+ 4668      52737044 
+ 4668      6174614C 
+ 4668      656E00
+ 4669              	.LASF113:
+ 4670 13d4 4359424C 		.ascii	"CYBLE_ERROR_HARDWARE_FAILURE\000"
+ 4670      455F4552 
+ 4670      524F525F 
+ 4670      48415244 
+ 4670      57415245 
+ 4671              	.LASF49:
+ 4672 13f1 4359424C 		.ascii	"CYBLE_EVT_GATTC_ERROR_RSP\000"
+ 4672      455F4556 
+ 4672      545F4741 
+ 4672      5454435F 
+ 4672      4552524F 
+ 4673              	.LASF196:
+ 4674 140b 4359424C 		.ascii	"CYBLE_STATE_T\000"
+ 4674      455F5354 
+ 4674      4154455F 
+ 4674      5400
+ 4675              	.LASF143:
+ 4676 1419 4359424C 		.ascii	"CYBLE_GAPP_SCANNABLE_UNDIRECTED_ADV\000"
+ 4676      455F4741 
+ 4676      50505F53 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 122
 
 
- 4677      545F4C32 
- 4677      4341505F 
- 4677      43424643 
- 4678              	.LASF65:
- 4679 1426 4359424C 		.ascii	"CYBLE_EVT_GATTS_EXEC_WRITE_REQ\000"
- 4679      455F4556 
- 4679      545F4741 
- 4679      5454535F 
- 4679      45584543 
- 4680              	.LASF25:
- 4681 1445 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT\000"
- 4681      455F4556 
- 4681      545F4741 
- 4681      50435F53 
- 4681      43414E5F 
- 4682              	.LASF188:
- 4683 1469 63636364 		.ascii	"cccdCount\000"
- 4683      436F756E 
- 4683      7400
- 4684              	.LASF248:
- 4685 1473 6379426C 		.ascii	"cyBle_discoveryModeInfo\000"
- 4685      655F6469 
- 4685      73636F76 
- 4685      6572794D 
- 4685      6F646549 
- 4686              	.LASF99:
- 4687 148b 4359424C 		.ascii	"CYBLE_ERROR_GAP_ROLE\000"
- 4687      455F4552 
- 4687      524F525F 
- 4687      4741505F 
- 4687      524F4C45 
- 4688              	.LASF241:
- 4689 14a0 6379426C 		.ascii	"cyBle_stackMemoryRam\000"
- 4689      655F7374 
- 4689      61636B4D 
- 4689      656D6F72 
- 4689      7952616D 
- 4690              	.LASF46:
- 4691 14b5 4359424C 		.ascii	"CYBLE_EVT_GAP_SCAN_REQ_RECVD\000"
- 4691      455F4556 
- 4691      545F4741 
- 4691      505F5343 
- 4691      414E5F52 
- 4692              	.LASF201:
- 4693 14d2 63656E74 		.ascii	"centralAddrResolutionCharHandle\000"
- 4693      72616C41 
- 4693      64647252 
- 4693      65736F6C 
- 4693      7574696F 
- 4694              	.LASF125:
- 4695 14f2 62644164 		.ascii	"bdAddr\000"
- 4695      647200
- 4696              	.LASF257:
- 4697 14f9 6379426C 		.ascii	"cyBle_gaps\000"
- 4697      655F6761 
- 4697      707300
- 4698              	.LASF242:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 123
+ 4676      43414E4E 
+ 4676      41424C45 
+ 4677              	.LASF77:
+ 4678 143d 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_IND\000"
+ 4678      455F4556 
+ 4678      545F4C32 
+ 4678      4341505F 
+ 4678      43424643 
+ 4679              	.LASF65:
+ 4680 145b 4359424C 		.ascii	"CYBLE_EVT_GATTS_EXEC_WRITE_REQ\000"
+ 4680      455F4556 
+ 4680      545F4741 
+ 4680      5454535F 
+ 4680      45584543 
+ 4681              	.LASF25:
+ 4682 147a 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT\000"
+ 4682      455F4556 
+ 4682      545F4741 
+ 4682      50435F53 
+ 4682      43414E5F 
+ 4683              	.LASF188:
+ 4684 149e 63636364 		.ascii	"cccdCount\000"
+ 4684      436F756E 
+ 4684      7400
+ 4685              	.LASF248:
+ 4686 14a8 6379426C 		.ascii	"cyBle_discoveryModeInfo\000"
+ 4686      655F6469 
+ 4686      73636F76 
+ 4686      6572794D 
+ 4686      6F646549 
+ 4687              	.LASF99:
+ 4688 14c0 4359424C 		.ascii	"CYBLE_ERROR_GAP_ROLE\000"
+ 4688      455F4552 
+ 4688      524F525F 
+ 4688      4741505F 
+ 4688      524F4C45 
+ 4689              	.LASF241:
+ 4690 14d5 6379426C 		.ascii	"cyBle_stackMemoryRam\000"
+ 4690      655F7374 
+ 4690      61636B4D 
+ 4690      656D6F72 
+ 4690      7952616D 
+ 4691              	.LASF46:
+ 4692 14ea 4359424C 		.ascii	"CYBLE_EVT_GAP_SCAN_REQ_RECVD\000"
+ 4692      455F4556 
+ 4692      545F4741 
+ 4692      505F5343 
+ 4692      414E5F52 
+ 4693              	.LASF201:
+ 4694 1507 63656E74 		.ascii	"centralAddrResolutionCharHandle\000"
+ 4694      72616C41 
+ 4694      64647252 
+ 4694      65736F6C 
+ 4694      7574696F 
+ 4695              	.LASF125:
+ 4696 1527 62644164 		.ascii	"bdAddr\000"
+ 4696      647200
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 123
 
 
- 4699 1504 6379426C 		.ascii	"cyBle_eventHandlerFlag\000"
- 4699      655F6576 
- 4699      656E7448 
- 4699      616E646C 
- 4699      6572466C 
- 4700              	.LASF214:
- 4701 151b 4379426C 		.ascii	"CyBle_StoreBondingData\000"
- 4701      655F5374 
- 4701      6F726542 
- 4701      6F6E6469 
- 4701      6E674461 
- 4702              	.LASF96:
- 4703 1532 4359424C 		.ascii	"CYBLE_ERROR_NO_CONNECTION\000"
- 4703      455F4552 
- 4703      524F525F 
- 4703      4E4F5F43 
- 4703      4F4E4E45 
- 4704              	.LASF229:
- 4705 154c 62797465 		.ascii	"byteCounter\000"
- 4705      436F756E 
- 4705      74657200 
- 4706              	.LASF86:
- 4707 1558 4359424C 		.ascii	"CYBLE_EVT_LE_PING_AUTH_TIMEOUT\000"
- 4707      455F4556 
- 4707      545F4C45 
- 4707      5F50494E 
- 4707      475F4155 
- 4708              	.LASF124:
- 4709 1577 4359424C 		.ascii	"CYBLE_API_RESULT_T\000"
- 4709      455F4150 
- 4709      495F5245 
- 4709      53554C54 
- 4709      5F5400
- 4710              	.LASF252:
- 4711 158a 6379426C 		.ascii	"cyBle_attValuesCCCD\000"
- 4711      655F6174 
- 4711      7456616C 
- 4711      75657343 
- 4711      43434400 
- 4712              	.LASF68:
- 4713 159e 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_IND\000"
- 4713      455F4556 
- 4713      545F4741 
- 4713      5454435F 
- 4713      48414E44 
- 4714              	.LASF102:
- 4715 15bf 4359424C 		.ascii	"CYBLE_ERROR_SEC_FAILED\000"
- 4715      455F4552 
- 4715      524F525F 
- 4715      5345435F 
- 4715      4641494C 
- 4716              	.LASF220:
- 4717 15d6 696E7661 		.ascii	"invalidBdAddr\000"
- 4717      6C696442 
- 4717      64416464 
- 4717      7200
- 4718              	.LASF23:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 124
+ 4697              	.LASF257:
+ 4698 152e 6379426C 		.ascii	"cyBle_gaps\000"
+ 4698      655F6761 
+ 4698      707300
+ 4699              	.LASF242:
+ 4700 1539 6379426C 		.ascii	"cyBle_eventHandlerFlag\000"
+ 4700      655F6576 
+ 4700      656E7448 
+ 4700      616E646C 
+ 4700      6572466C 
+ 4701              	.LASF214:
+ 4702 1550 4379426C 		.ascii	"CyBle_StoreBondingData\000"
+ 4702      655F5374 
+ 4702      6F726542 
+ 4702      6F6E6469 
+ 4702      6E674461 
+ 4703              	.LASF96:
+ 4704 1567 4359424C 		.ascii	"CYBLE_ERROR_NO_CONNECTION\000"
+ 4704      455F4552 
+ 4704      524F525F 
+ 4704      4E4F5F43 
+ 4704      4F4E4E45 
+ 4705              	.LASF229:
+ 4706 1581 62797465 		.ascii	"byteCounter\000"
+ 4706      436F756E 
+ 4706      74657200 
+ 4707              	.LASF86:
+ 4708 158d 4359424C 		.ascii	"CYBLE_EVT_LE_PING_AUTH_TIMEOUT\000"
+ 4708      455F4556 
+ 4708      545F4C45 
+ 4708      5F50494E 
+ 4708      475F4155 
+ 4709              	.LASF124:
+ 4710 15ac 4359424C 		.ascii	"CYBLE_API_RESULT_T\000"
+ 4710      455F4150 
+ 4710      495F5245 
+ 4710      53554C54 
+ 4710      5F5400
+ 4711              	.LASF252:
+ 4712 15bf 6379426C 		.ascii	"cyBle_attValuesCCCD\000"
+ 4712      655F6174 
+ 4712      7456616C 
+ 4712      75657343 
+ 4712      43434400 
+ 4713              	.LASF68:
+ 4714 15d3 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_IND\000"
+ 4714      455F4556 
+ 4714      545F4741 
+ 4714      5454435F 
+ 4714      48414E44 
+ 4715              	.LASF102:
+ 4716 15f4 4359424C 		.ascii	"CYBLE_ERROR_SEC_FAILED\000"
+ 4716      455F4552 
+ 4716      524F525F 
+ 4716      5345435F 
+ 4716      4641494C 
+ 4717              	.LASF220:
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 124
 
 
- 4719 15e4 4359424C 		.ascii	"CYBLE_EVT_STACK_BUSY_STATUS\000"
- 4719      455F4556 
- 4719      545F5354 
- 4719      41434B5F 
- 4719      42555359 
- 4720              	.LASF37:
- 4721 1600 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYINFO_EXCHNGE_CMPLT\000"
- 4721      455F4556 
- 4721      545F4741 
- 4721      505F4B45 
- 4721      59494E46 
- 4722              	.LASF74:
- 4723 1624 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_REQ\000"
- 4723      455F4556 
- 4723      545F4C32 
- 4723      4341505F 
- 4723      434F4E4E 
- 4724              	.LASF246:
- 4725 164a 6379426C 		.ascii	"cyBle_discoveryData\000"
- 4725      655F6469 
- 4725      73636F76 
- 4725      65727944 
- 4725      61746100 
- 4726              	.LASF197:
- 4727 165e 67617053 		.ascii	"gapServiceCharHandle\000"
- 4727      65727669 
- 4727      63654368 
- 4727      61724861 
- 4727      6E646C65 
- 4728              	.LASF3:
- 4729 1673 73686F72 		.ascii	"short unsigned int\000"
- 4729      7420756E 
- 4729      7369676E 
- 4729      65642069 
- 4729      6E7400
- 4730              	.LASF152:
- 4731 1686 64697265 		.ascii	"directAddr\000"
- 4731      63744164 
- 4731      647200
- 4732              	.LASF193:
- 4733 1691 4359424C 		.ascii	"CYBLE_STATE_CONNECTED\000"
- 4733      455F5354 
- 4733      4154455F 
- 4733      434F4E4E 
- 4733      45435445 
- 4734              	.LASF132:
- 4735 16a7 646C654D 		.ascii	"dleMaxRxCapability\000"
- 4735      61785278 
- 4735      43617061 
- 4735      62696C69 
- 4735      747900
- 4736              	.LASF153:
- 4737 16ba 61647643 		.ascii	"advChannelMap\000"
- 4737      68616E6E 
- 4737      656C4D61 
- 4737      7000
- 4738              	.LASF141:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 125
+ 4718 160b 696E7661 		.ascii	"invalidBdAddr\000"
+ 4718      6C696442 
+ 4718      64416464 
+ 4718      7200
+ 4719              	.LASF23:
+ 4720 1619 4359424C 		.ascii	"CYBLE_EVT_STACK_BUSY_STATUS\000"
+ 4720      455F4556 
+ 4720      545F5354 
+ 4720      41434B5F 
+ 4720      42555359 
+ 4721              	.LASF37:
+ 4722 1635 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYINFO_EXCHNGE_CMPLT\000"
+ 4722      455F4556 
+ 4722      545F4741 
+ 4722      505F4B45 
+ 4722      59494E46 
+ 4723              	.LASF74:
+ 4724 1659 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_REQ\000"
+ 4724      455F4556 
+ 4724      545F4C32 
+ 4724      4341505F 
+ 4724      434F4E4E 
+ 4725              	.LASF246:
+ 4726 167f 6379426C 		.ascii	"cyBle_discoveryData\000"
+ 4726      655F6469 
+ 4726      73636F76 
+ 4726      65727944 
+ 4726      61746100 
+ 4727              	.LASF197:
+ 4728 1693 67617053 		.ascii	"gapServiceCharHandle\000"
+ 4728      65727669 
+ 4728      63654368 
+ 4728      61724861 
+ 4728      6E646C65 
+ 4729              	.LASF3:
+ 4730 16a8 73686F72 		.ascii	"short unsigned int\000"
+ 4730      7420756E 
+ 4730      7369676E 
+ 4730      65642069 
+ 4730      6E7400
+ 4731              	.LASF152:
+ 4732 16bb 64697265 		.ascii	"directAddr\000"
+ 4732      63744164 
+ 4732      647200
+ 4733              	.LASF193:
+ 4734 16c6 4359424C 		.ascii	"CYBLE_STATE_CONNECTED\000"
+ 4734      455F5354 
+ 4734      4154455F 
+ 4734      434F4E4E 
+ 4734      45435445 
+ 4735              	.LASF132:
+ 4736 16dc 646C654D 		.ascii	"dleMaxRxCapability\000"
+ 4736      61785278 
+ 4736      43617061 
+ 4736      62696C69 
+ 4736      747900
+ 4737              	.LASF153:
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 125
 
 
- 4739 16c8 4359424C 		.ascii	"CYBLE_GAPP_CONNECTABLE_UNDIRECTED_ADV\000"
- 4739      455F4741 
- 4739      50505F43 
- 4739      4F4E4E45 
- 4739      43544142 
- 4740              	.LASF168:
- 4741 16ee 61747449 		.ascii	"attId\000"
- 4741      6400
- 4742              	.LASF92:
- 4743 16f4 4359424C 		.ascii	"CYBLE_ERROR_INVALID_OPERATION\000"
- 4743      455F4552 
- 4743      524F525F 
- 4743      494E5641 
- 4743      4C49445F 
- 4744              	.LASF228:
- 4745 1712 61644C65 		.ascii	"adLength\000"
- 4745      6E677468 
- 4745      00
- 4746              	.LASF22:
- 4747 171b 4359424C 		.ascii	"CYBLE_EVT_HCI_STATUS\000"
- 4747      455F4556 
- 4747      545F4843 
- 4747      495F5354 
- 4747      41545553 
- 4748              	.LASF51:
- 4749 1730 4359424C 		.ascii	"CYBLE_EVT_GATT_DISCONNECT_IND\000"
- 4749      455F4556 
- 4749      545F4741 
- 4749      54545F44 
- 4749      4953434F 
- 4750              	.LASF84:
- 4751 174e 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_WRITE_IND\000"
- 4751      455F4556 
- 4751      545F4C32 
- 4751      4341505F 
- 4751      43424643 
- 4752              	.LASF73:
- 4753 1772 4359424C 		.ascii	"CYBLE_EVT_GATTC_LONG_PROCEDURE_END\000"
- 4753      455F4556 
- 4753      545F4741 
- 4753      5454435F 
- 4753      4C4F4E47 
- 4754              	.LASF33:
- 4755 1795 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_DISCONNECTED\000"
- 4755      455F4556 
- 4755      545F4741 
- 4755      505F4445 
- 4755      56494345 
- 4756              	.LASF69:
- 4757 17b7 4359424C 		.ascii	"CYBLE_EVT_GATTS_HANDLE_VALUE_CNF\000"
- 4757      455F4556 
- 4757      545F4741 
- 4757      5454535F 
- 4757      48414E44 
- 4758              	.LASF10:
- 4759 17d8 75696E74 		.ascii	"uint16\000"
- 4759      313600
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccChBu2g.s 			page 126
+ 4738 16ef 61647643 		.ascii	"advChannelMap\000"
+ 4738      68616E6E 
+ 4738      656C4D61 
+ 4738      7000
+ 4739              	.LASF141:
+ 4740 16fd 4359424C 		.ascii	"CYBLE_GAPP_CONNECTABLE_UNDIRECTED_ADV\000"
+ 4740      455F4741 
+ 4740      50505F43 
+ 4740      4F4E4E45 
+ 4740      43544142 
+ 4741              	.LASF168:
+ 4742 1723 61747449 		.ascii	"attId\000"
+ 4742      6400
+ 4743              	.LASF92:
+ 4744 1729 4359424C 		.ascii	"CYBLE_ERROR_INVALID_OPERATION\000"
+ 4744      455F4552 
+ 4744      524F525F 
+ 4744      494E5641 
+ 4744      4C49445F 
+ 4745              	.LASF228:
+ 4746 1747 61644C65 		.ascii	"adLength\000"
+ 4746      6E677468 
+ 4746      00
+ 4747              	.LASF22:
+ 4748 1750 4359424C 		.ascii	"CYBLE_EVT_HCI_STATUS\000"
+ 4748      455F4556 
+ 4748      545F4843 
+ 4748      495F5354 
+ 4748      41545553 
+ 4749              	.LASF51:
+ 4750 1765 4359424C 		.ascii	"CYBLE_EVT_GATT_DISCONNECT_IND\000"
+ 4750      455F4556 
+ 4750      545F4741 
+ 4750      54545F44 
+ 4750      4953434F 
+ 4751              	.LASF84:
+ 4752 1783 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_WRITE_IND\000"
+ 4752      455F4556 
+ 4752      545F4C32 
+ 4752      4341505F 
+ 4752      43424643 
+ 4753              	.LASF73:
+ 4754 17a7 4359424C 		.ascii	"CYBLE_EVT_GATTC_LONG_PROCEDURE_END\000"
+ 4754      455F4556 
+ 4754      545F4741 
+ 4754      5454435F 
+ 4754      4C4F4E47 
+ 4755              	.LASF33:
+ 4756 17ca 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_DISCONNECTED\000"
+ 4756      455F4556 
+ 4756      545F4741 
+ 4756      505F4445 
+ 4756      56494345 
+ 4757              	.LASF69:
+ 4758 17ec 4359424C 		.ascii	"CYBLE_EVT_GATTS_HANDLE_VALUE_CNF\000"
+ 4758      455F4556 
+ 4758      545F4741 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccT65RC2.s 			page 126
 
 
- 4760              	.LASF150:
- 4761 17df 6F776E41 		.ascii	"ownAddrType\000"
- 4761      64647254 
- 4761      79706500 
- 4762              	.LASF100:
- 4763 17eb 4359424C 		.ascii	"CYBLE_ERROR_TX_POWER_READ\000"
- 4763      455F4552 
- 4763      524F525F 
- 4763      54585F50 
- 4763      4F574552 
- 4764              	.LASF148:
- 4765 1805 61647649 		.ascii	"advIntvMax\000"
- 4765      6E74764D 
- 4765      617800
- 4766              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 4758      5454535F 
+ 4758      48414E44 
+ 4759              	.LASF10:
+ 4760 180d 75696E74 		.ascii	"uint16\000"
+ 4760      313600
+ 4761              	.LASF150:
+ 4762 1814 6F776E41 		.ascii	"ownAddrType\000"
+ 4762      64647254 
+ 4762      79706500 
+ 4763              	.LASF100:
+ 4764 1820 4359424C 		.ascii	"CYBLE_ERROR_TX_POWER_READ\000"
+ 4764      455F4552 
+ 4764      524F525F 
+ 4764      54585F50 
+ 4764      4F574552 
+ 4765              	.LASF148:
+ 4766 183a 61647649 		.ascii	"advIntvMax\000"
+ 4766      6E74764D 
+ 4766      617800
+ 4767              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
