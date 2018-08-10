@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="WW_V1\WW_V1_1\Header Files\Control.h">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE_custom.c">
 <ExpandedNodeIds>
 <v>WW_V1</v>
 <v>WW_V1\WW_V1_1</v>
@@ -39,6 +39,7 @@
 <v>WW_V1\WW_V1_1\Source Files\main.c</v>
 <v>WW_V1\WW_V1_1\Generated_Source</v>
 <v>WW_V1\WW_V1_1\Generated_Source\PSoC4</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>WW_V1</v>
@@ -66,6 +67,26 @@
 <v>WW_V1\WW_V1_1\Generated_Source</v>
 <v>WW_V1\WW_V1_1\Generated_Source\PSoC4</v>
 <v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE.c</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE.h</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE_custom.c</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE_custom.h</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE_eventHandler.c</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE_eventHandler.h</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE_gatt.c</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE_gatt.h</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE_HAL_INT.c</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE_HAL_PVT.c</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE_HAL_PVT.h</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE_Stack.h</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE_STACK_PVT.h</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE_StackGap.h</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE_StackGatt.h</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE_StackGattClient.h</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE_StackGattDb.h</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE_StackGattServer.h</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE_StackHostMain.h</v>
+<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE_StackL2cap.h</v>
 <v>WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE_bless_isr</v>
 <v>WW_V1\WW_V1_1\Generated_Source\PSoC4\CPS</v>
 <v>WW_V1\WW_V1_1\Generated_Source\PSoC4\CSD</v>
@@ -89,18 +110,6 @@
 <v>WW_V1\WW_V1_1\Generated_Source\PSoC4\cycodeshareimport.ld</v>
 <v>WW_V1\WW_V1_1\Generated_Source\PSoC4\cycodeshareimport.scat</v>
 <v>WW_V1\WW_V1_1\Generated_Source\PSoC4\cydevice_trm.h</v>
-<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\cydevicegnu_trm.inc</v>
-<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\cydeviceiar_trm.inc</v>
-<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\cydevicerv_trm.inc</v>
-<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\cydisabledsheets.h</v>
-<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\cyfitter.h</v>
-<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\cyfitter_cfg.c</v>
-<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\cyfitter_cfg.h</v>
-<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\cyfittergnu.inc</v>
-<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\cyfitteriar.inc</v>
-<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\cyfitterrv.inc</v>
-<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\cymetadata.c</v>
-<v>WW_V1\WW_V1_1\Generated_Source\PSoC4\project.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -301,14 +310,33 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs />
+<OpenDocs>
+<name v=".\WW_V1_1.cydsn\main.c" />
+<name v=".\WW_V1_1.cydsn\Control.c" />
+<name v=".\WW_V1_1.cydsn\iprintf.c" />
+<name v=".\WW_V1_1.cydsn\WW_V1_1.cydwr" />
+<name v=".\WW_V1_1.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE.c" />
+<name v=".\WW_V1_1.cydsn\BLEApplications.c" />
+<name v=".\WW_V1_1.cydsn\BLEApplications.h" />
+<name v=".\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_StackGattServer.h" />
+<name v=".\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_StackGatt.h" />
+<name v=".\WW_V1_1.cydsn\Generated_Source\PSoC4\LED.c" />
+<name v=".\WW_V1_1.cydsn\main.h" />
+<name v=".\WW_V1_1.cydsn\Control.h" />
+<name v=".\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_gatt.c" />
+<name v=".\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_custom.h" />
+<name v=".\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_custom.c" />
+<name v=".\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_Stack.h" />
+<name v=".\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_1_eventHandler.c" />
+</OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
   Actipro Docking/MDI for WinForms
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1225, 540" SelectedTabbedMdiWindow="91e44c92-89db-4247-bc1c-1298b1d69469"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="91e44c92-89db-4247-bc1c-1298b1d69469" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="2210, 1116" SelectedTabbedMdiWindow="92357b00-62ff-4144-91fe-7fbbab3e6a6c"><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\main.c" Guid="66671804-fffc-4cf3-aac6-64e01c526a68" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Control.c" Guid="8a525969-8c0e-4a08-848d-6f4d896d760a" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\iprintf.c" Guid="2a62c8d0-21e3-4eb1-a775-bbca52c63e30" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\WW_V1_1.cydwr" Guid="14cca5f2-ea4a-476d-9c0b-22bf8936d38c" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\TopDesign\TopDesign.cysch" Guid="2fa4f18f-ad3e-4ac8-9234-7592f30e74e2" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="91e44c92-89db-4247-bc1c-1298b1d69469" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE.c" Guid="7ab45ff8-888a-4ed4-aadb-72a0eb046708" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\BLEApplications.c" Guid="4b48db4d-7522-4ec5-90eb-2595e4eb3f66" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\BLEApplications.h" Guid="b7d9f52e-7820-44ca-9b72-b9fe59bf6eb9" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_StackGattServer.h" Guid="72c96f9e-b798-4cb8-ac79-3321f6900c28" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_StackGatt.h" Guid="53c9ea15-bee2-4606-b403-d2cee0593446" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\LED.c" Guid="b7a7d951-9555-426e-9614-63bd28b18298" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\main.h" Guid="178cbf64-a31e-4442-b3c4-6cf117d9dc0c" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Control.h" Guid="753570ea-e27f-4c21-9b42-3d088837bed1" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_gatt.c" Guid="9545dbe6-cf9c-4a3f-b121-41e86d618bab" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_custom.h" Guid="f944cf90-c04d-4525-aac5-ddbf216abe92" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_custom.c" Guid="92357b00-62ff-4144-91fe-7fbbab3e6a6c" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_Stack.h" Guid="81945f51-0aa1-4f68-b354-96b246ae457d" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_1_eventHandler.c" Guid="44eef075-112c-4492-871e-38541355ddab" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

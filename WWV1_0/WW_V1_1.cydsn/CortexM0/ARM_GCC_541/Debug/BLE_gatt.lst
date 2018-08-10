@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
   55 001d 00       		.byte	0
   56 001e 00       		.byte	0
   57 001f 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 2
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 2
 
 
   58 0020 00       		.byte	0
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  112 0056 00       		.byte	0
  113 0057 00       		.byte	0
  114 0058 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 3
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 3
 
 
  115 0059 00       		.byte	0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  169 008f 00       		.byte	0
  170 0090 00       		.byte	0
  171 0091 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 4
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 4
 
 
  172 0092 00       		.byte	0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  226 00c8 00       		.byte	0
  227 00c9 00       		.byte	0
  228 00ca 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 5
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 5
 
 
  229 00cb 00       		.byte	0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  283 0101 00       		.byte	0
  284 0102 00       		.byte	0
  285 0103 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 6
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 6
 
 
  286 0104 00       		.byte	0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  340 013a 00       		.byte	0
  341 013b 00       		.byte	0
  342 013c 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 7
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 7
 
 
  343 013d 00       		.byte	0
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  397 0173 00       		.byte	0
  398 0174 00       		.byte	0
  399 0175 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 8
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 8
 
 
  400 0176 00       		.byte	0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  454 01ac 00       		.byte	0
  455 01ad 00       		.byte	0
  456 01ae 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 9
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 9
 
 
  457 01af 00       		.byte	0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  511 01e5 00       		.byte	0
  512 01e6 00       		.byte	0
  513 01e7 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 10
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 10
 
 
  514 01e8 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  568 021e 00       		.byte	0
  569 021f 00       		.byte	0
  570 0220 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 11
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 11
 
 
  571 0221 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  625 0257 00       		.byte	0
  626 0258 00       		.byte	0
  627 0259 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 12
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 12
 
 
  628 025a 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  682              		.section	.rodata
  683              		.align	2
  684              		.type	cyBle_gatts, %object
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 13
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 13
 
 
  685              		.size	cyBle_gatts, 6
@@ -776,9 +776,9 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  737 002a 31       		.byte	49
  738 002b 8D       		.byte	-115
  739 002c 49       		.byte	73
- 740 002d 00       		.byte	0
+ 740 002d 08       		.byte	8
  741 002e 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 14
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 14
 
 
  742 002f 85       		.byte	-123
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  796 0094 15000000 		.word	cyBle_attValues+21
  797 0098 0400     		.short	4
  798 009a 0000     		.space	2
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 15
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 15
 
 
  799 009c 19000000 		.word	cyBle_attValues+25
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  853 006e 0328     		.short	10243
  854 0070 01000200 		.word	131073
  855 0074 0700     		.short	7
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 16
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 16
 
 
  856 0076 0000     		.space	2
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  910 00fc 01002000 		.word	2097153
  911 0100 0F00     		.short	15
  912 0102 0000     		.space	2
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 17
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 17
 
 
  913 0104 052A     		.short	10757
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  967 018c 1400     		.short	20
  968 018e 0000     		.space	2
  969 0190 0200     		.short	2
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 18
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 18
 
 
  970 0192 0000     		.space	2
@@ -1049,7 +1049,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  995 01d0 58000000 		.word	cyBle_attValuesLen+88
  996 01d4 1800     		.short	24
  997 01d6 0328     		.short	10243
- 998 01d8 01000A00 		.word	655361
+ 998 01d8 01000200 		.word	131073
  999 01dc 1A00     		.short	26
  1000 01de 0000     		.space	2
  1001 01e0 3E73     		.short	29502
@@ -1057,7 +1057,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  1003 01e4 00000000 		.word	0
  1004 01e8 1900     		.short	25
  1005 01ea 3E73     		.short	29502
- 1006 01ec 01010A01 		.word	17432833
+ 1006 01ec 01000201 		.word	16908289
  1007 01f0 1A00     		.short	26
  1008 01f2 0000     		.space	2
  1009 01f4 0100     		.short	1
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  1024              		.thumb_func
  1025              		.type	CyBle_GattsReInitGattDb, %function
  1026              	CyBle_GattsReInitGattDb:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 19
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 19
 
 
  1027              	.LFB2:
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
   53:Generated_Source\PSoC4/BLE_gatt.c ****         0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 
   54:Generated_Source\PSoC4/BLE_gatt.c ****         0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 
   55:Generated_Source\PSoC4/BLE_gatt.c ****         0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 20
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 20
 
 
   56:Generated_Source\PSoC4/BLE_gatt.c ****         0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  110:Generated_Source\PSoC4/BLE_gatt.c **** {
  111:Generated_Source\PSoC4/BLE_gatt.c ****     0x000Cu,    /* Handle of the GATT service */
  112:Generated_Source\PSoC4/BLE_gatt.c ****     0x000Eu,    /* Handle of the Service Changed characteristic */
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 21
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 21
 
 
  113:Generated_Source\PSoC4/BLE_gatt.c ****     0x000Fu,    /* Handle of the Client Characteristic Configuration descriptor */
@@ -1237,7 +1237,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  146:Generated_Source\PSoC4/BLE_gatt.c ****     0xF5u, 0x31u, 0x8Du, 0x49u,
  147:Generated_Source\PSoC4/BLE_gatt.c **** 
  148:Generated_Source\PSoC4/BLE_gatt.c ****     /* OutgoingData */
- 149:Generated_Source\PSoC4/BLE_gatt.c ****     0x00u,
+ 149:Generated_Source\PSoC4/BLE_gatt.c ****     0x08u,
  150:Generated_Source\PSoC4/BLE_gatt.c **** 
  151:Generated_Source\PSoC4/BLE_gatt.c ****     /* Custom Descriptor */
  152:Generated_Source\PSoC4/BLE_gatt.c ****     0x00u, 0x85u, 0xDDu, 0x56u, 0x6Bu, 0x33u, 0x50u, 0x6Bu, 0x8Eu, 0xF0u, 0x48u, 0xA3u, 0x7Cu, 0x84
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  167:Generated_Source\PSoC4/BLE_gatt.c ****     { 0x0002u, (void *)&cyBle_attValuesCCCD[0] }, /* Client Characteristic Configuration */
  168:Generated_Source\PSoC4/BLE_gatt.c ****     { 0x0001u, (void *)&cyBle_attValues[18] }, /* Custom Characteristic */
  169:Generated_Source\PSoC4/BLE_gatt.c ****     { 0x0002u, (void *)&cyBle_attValues[19] }, /* Custom Descriptor */
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 22
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 22
 
 
  170:Generated_Source\PSoC4/BLE_gatt.c ****     { 0x0002u, (void *)&cyBle_attValuesCCCD[2] }, /* Client Characteristic Configuration */
@@ -1292,8 +1292,8 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  198:Generated_Source\PSoC4/BLE_gatt.c ****     { 0x0015u, 0x2803u /* Characteristic                      */, 0x000A0001u /* rd,wr  */, 0x0017u
  199:Generated_Source\PSoC4/BLE_gatt.c ****     { 0x0016u, 0x15E8u /* IncomingData                        */, 0x010A0101u /* rd,wr  */, 0x0017u
  200:Generated_Source\PSoC4/BLE_gatt.c ****     { 0x0017u, 0x31F5u /* Custom Descriptor                   */, 0x09000001u /*        */, 0x0017u
- 201:Generated_Source\PSoC4/BLE_gatt.c ****     { 0x0018u, 0x2803u /* Characteristic                      */, 0x000A0001u /* rd,wr  */, 0x001Au
- 202:Generated_Source\PSoC4/BLE_gatt.c ****     { 0x0019u, 0x733Eu /* OutgoingData                        */, 0x010A0101u /* rd,wr  */, 0x001Au
+ 201:Generated_Source\PSoC4/BLE_gatt.c ****     { 0x0018u, 0x2803u /* Characteristic                      */, 0x00020001u /* rd     */, 0x001Au
+ 202:Generated_Source\PSoC4/BLE_gatt.c ****     { 0x0019u, 0x733Eu /* OutgoingData                        */, 0x01020001u /* rd     */, 0x001Au
  203:Generated_Source\PSoC4/BLE_gatt.c ****     { 0x001Au, 0x9A84u /* Custom Descriptor                   */, 0x09000101u /*        */, 0x001Au
  204:Generated_Source\PSoC4/BLE_gatt.c **** };
  205:Generated_Source\PSoC4/BLE_gatt.c **** 
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  224:Generated_Source\PSoC4/BLE_gatt.c **** *  Reinitializes the GATT database.
  225:Generated_Source\PSoC4/BLE_gatt.c **** * 
  226:Generated_Source\PSoC4/BLE_gatt.c **** *  \return
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 23
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 23
 
 
  227:Generated_Source\PSoC4/BLE_gatt.c **** *  CYBLE_API_RESULT_T: A function result states if it succeeded or failed with
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  1062 0028 1A80     		strh	r2, [r3]
  1063              	.L3:
  248:Generated_Source\PSoC4/BLE_gatt.c ****     }
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 24
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 24
 
 
  249:Generated_Source\PSoC4/BLE_gatt.c ****     
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  1094              		.cfi_def_cfa_offset 12
  1095              		.cfi_offset 4, -12
  1096              		.cfi_offset 7, -8
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 25
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 25
 
 
  1097              		.cfi_offset 14, -4
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  1139 004a 1340     		ands	r3, r2
  1140 004c 9BB2     		uxth	r3, r3
  1141 004e 002B     		cmp	r3, #0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 26
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 26
 
 
  1142 0050 07D0     		beq	.L10
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  1184              	.L12:
  1185 0090 00000000 		.word	CyBle_ApplCallback
  1186 0094 00000000 		.word	cyBle_eventHandlerFlag
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 27
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 27
 
 
  1187              		.cfi_endproc
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  1241 0052 D01F0000 		.4byte	.LASF6
  1242 0056 02       		.uleb128 0x2
  1243 0057 08       		.byte	0x8
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 28
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 28
 
 
  1244 0058 07       		.byte	0x7
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  1298 00c4 09       		.uleb128 0x9
  1299 00c5 83000000 		.4byte	0x83
  1300 00c9 09       		.uleb128 0x9
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 29
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 29
 
 
  1301 00ca B7000000 		.4byte	0xb7
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  1355 0137 0B3D0000 		.4byte	.LASF32
  1356 013b 28       		.byte	0x28
  1357 013c 0B       		.uleb128 0xb
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 30
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 30
 
 
  1358 013d 902A0000 		.4byte	.LASF33
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  1412 01a9 0A2B0000 		.4byte	.LASF51
  1413 01ad 43       		.byte	0x43
  1414 01ae 0B       		.uleb128 0xb
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 31
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 31
 
 
  1415 01af 4D0E0000 		.4byte	.LASF52
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  1469 021b A3130000 		.4byte	.LASF70
  1470 021f 56       		.byte	0x56
  1471 0220 0B       		.uleb128 0xb
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 32
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 32
 
 
  1472 0221 A4230000 		.4byte	.LASF71
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  1526 028d 0A       		.uleb128 0xa
  1527 028e 02       		.byte	0x2
  1528 028f 3A000000 		.4byte	0x3a
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 33
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 33
 
 
  1529 0293 03       		.byte	0x3
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  1583 0300 0B       		.uleb128 0xb
  1584 0301 6C220000 		.4byte	.LASF106
  1585 0305 11       		.byte	0x11
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 34
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 34
 
 
  1586 0306 0B       		.uleb128 0xb
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  1640 0378 07       		.uleb128 0x7
  1641 0379 04       		.byte	0x4
  1642 037a 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 35
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 35
 
 
  1643 037e 0D       		.uleb128 0xd
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  1697 03ea 0B       		.uleb128 0xb
  1698 03eb 40050000 		.4byte	.LASF140
  1699 03ef 10       		.byte	0x10
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 36
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 36
 
 
  1700 03f0 0B       		.uleb128 0xb
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  1754 045c 0B       		.uleb128 0xb
  1755 045d 04140000 		.4byte	.LASF159
  1756 0461 A3       		.byte	0xa3
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 37
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 37
 
 
  1757 0462 0B       		.uleb128 0xb
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  1811 04d3 10       		.uleb128 0x10
  1812 04d4 6C656E00 		.ascii	"len\000"
  1813 04d8 04       		.byte	0x4
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 38
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 38
 
 
  1814 04d9 C401     		.2byte	0x1c4
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  1868 0549 04       		.byte	0x4
  1869 054a 00       		.byte	0
  1870 054b 13       		.uleb128 0x13
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 39
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 39
 
 
  1871 054c 72240000 		.4byte	.LASF175
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  1925 05b5 08       		.byte	0x8
  1926 05b6 06       		.byte	0x6
  1927 05b7 E8       		.byte	0xe8
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 40
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 40
 
 
  1928 05b8 D3050000 		.4byte	0x5d3
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  1982 0628 4B140000 		.4byte	.LASF190
  1983 062c 06       		.byte	0x6
  1984 062d 1801     		.2byte	0x118
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 41
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 41
 
 
  1985 062f DE050000 		.4byte	0x5de
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  2039 069e 08       		.byte	0x8
  2040 069f A6       		.byte	0xa6
  2041 06a0 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 42
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 42
 
 
  2042 06a4 8D02     		.2byte	0x28d
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  2096 071c 0C       		.uleb128 0xc
  2097 071d 5F0F0000 		.4byte	.LASF207
  2098 0721 0601     		.2byte	0x106
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 43
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 43
 
 
  2099 0723 0C       		.uleb128 0xc
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  2153 07a1 0C       		.uleb128 0xc
  2154 07a2 AA360000 		.4byte	.LASF226
  2155 07a6 1901     		.2byte	0x119
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 44
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 44
 
 
  2156 07a8 0C       		.uleb128 0xc
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  2210 0826 0C       		.uleb128 0xc
  2211 0827 EF3C0000 		.4byte	.LASF245
  2212 082b 2C01     		.2byte	0x12c
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 45
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 45
 
 
  2213 082d 0C       		.uleb128 0xc
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  2267 08ab 0C       		.uleb128 0xc
  2268 08ac 3C250000 		.4byte	.LASF264
  2269 08b0 3F01     		.2byte	0x13f
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 46
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 46
 
 
  2270 08b2 0C       		.uleb128 0xc
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  2324 0930 0C       		.uleb128 0xc
  2325 0931 CD000000 		.4byte	.LASF283
  2326 0935 5201     		.2byte	0x152
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 47
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 47
 
 
  2327 0937 0C       		.uleb128 0xc
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  2381 09b5 0C       		.uleb128 0xc
  2382 09b6 E7090000 		.4byte	.LASF302
  2383 09ba 6501     		.2byte	0x165
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 48
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 48
 
 
  2384 09bc 0C       		.uleb128 0xc
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  2438 0a3a 0C       		.uleb128 0xc
  2439 0a3b D12C0000 		.4byte	.LASF321
  2440 0a3f 7801     		.2byte	0x178
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 49
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 49
 
 
  2441 0a41 0C       		.uleb128 0xc
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  2495 0abf 0C       		.uleb128 0xc
  2496 0ac0 352C0000 		.4byte	.LASF340
  2497 0ac4 8B01     		.2byte	0x18b
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 50
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 50
 
 
  2498 0ac6 0C       		.uleb128 0xc
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  2552 0b44 0C       		.uleb128 0xc
  2553 0b45 2B1B0000 		.4byte	.LASF359
  2554 0b49 9E01     		.2byte	0x19e
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 51
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 51
 
 
  2555 0b4b 0C       		.uleb128 0xc
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  2609 0bc9 0C       		.uleb128 0xc
  2610 0bca 980B0000 		.4byte	.LASF378
  2611 0bce B101     		.2byte	0x1b1
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 52
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 52
 
 
  2612 0bd0 0C       		.uleb128 0xc
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  2666 0c4e 0C       		.uleb128 0xc
  2667 0c4f 52390000 		.4byte	.LASF397
  2668 0c53 C401     		.2byte	0x1c4
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 53
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 53
 
 
  2669 0c55 0C       		.uleb128 0xc
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  2723 0cd3 0C       		.uleb128 0xc
  2724 0cd4 04300000 		.4byte	.LASF416
  2725 0cd8 D701     		.2byte	0x1d7
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 54
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 54
 
 
  2726 0cda 0C       		.uleb128 0xc
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  2780 0d58 0C       		.uleb128 0xc
  2781 0d59 023E0000 		.4byte	.LASF435
  2782 0d5d EA01     		.2byte	0x1ea
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 55
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 55
 
 
  2783 0d5f 0C       		.uleb128 0xc
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  2837 0ddd 0C       		.uleb128 0xc
  2838 0dde 73100000 		.4byte	.LASF454
  2839 0de2 FD01     		.2byte	0x1fd
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 56
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 56
 
 
  2840 0de4 0C       		.uleb128 0xc
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  2894 0e62 0C       		.uleb128 0xc
  2895 0e63 69040000 		.4byte	.LASF473
  2896 0e67 1002     		.2byte	0x210
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 57
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 57
 
 
  2897 0e69 0C       		.uleb128 0xc
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  2951 0ee7 0C       		.uleb128 0xc
  2952 0ee8 CF0E0000 		.4byte	.LASF492
  2953 0eec 2302     		.2byte	0x223
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 58
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 58
 
 
  2954 0eee 0C       		.uleb128 0xc
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3008 0f5e 44160000 		.4byte	.LASF502
  3009 0f62 01       		.byte	0x1
  3010 0f63 0F01     		.2byte	0x10f
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 59
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 59
 
 
  3011 0f65 75040000 		.4byte	0x475
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3065 0fdb 6D       		.byte	0x6d
  3066 0fdc E60F0000 		.4byte	0xfe6
  3067 0fe0 05       		.uleb128 0x5
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 60
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 60
 
 
  3068 0fe1 03       		.byte	0x3
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3122 1059 361F0000 		.4byte	.LASF512
  3123 105d 01       		.byte	0x1
  3124 105e 20       		.byte	0x20
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 61
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 61
 
 
  3125 105f 69100000 		.4byte	0x1069
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3179 0025 03       		.uleb128 0x3
  3180 0026 08       		.uleb128 0x8
  3181 0027 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 62
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 62
 
 
  3182 0028 00       		.byte	0
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3236 005e 04       		.uleb128 0x4
  3237 005f 01       		.byte	0x1
  3238 0060 0B       		.uleb128 0xb
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 63
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 63
 
 
  3239 0061 0B       		.uleb128 0xb
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3293 0097 13       		.uleb128 0x13
  3294 0098 00       		.byte	0
  3295 0099 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 64
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 64
 
 
  3296 009a 0F       		.uleb128 0xf
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3350 00d0 38       		.uleb128 0x38
  3351 00d1 0B       		.uleb128 0xb
  3352 00d2 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 65
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 65
 
 
  3353 00d3 00       		.byte	0
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3407 0109 0D       		.uleb128 0xd
  3408 010a 00       		.byte	0
  3409 010b 03       		.uleb128 0x3
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 66
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 66
 
 
  3410 010c 0E       		.uleb128 0xe
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3464 0142 01       		.uleb128 0x1
  3465 0143 12       		.uleb128 0x12
  3466 0144 06       		.uleb128 0x6
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 67
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 67
 
 
  3467 0145 40       		.uleb128 0x40
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3521 017d 0E       		.uleb128 0xe
  3522 017e 3A       		.uleb128 0x3a
  3523 017f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 68
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 68
 
 
  3524 0180 3B       		.uleb128 0x3b
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3578 01b6 18       		.uleb128 0x18
  3579 01b7 00       		.byte	0
  3580 01b8 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 69
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 69
 
 
  3581 01b9 22       		.uleb128 0x22
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3619      4F544946 
  3620              	.LASF152:
  3621 0064 4359424C 		.ascii	"CYBLE_GATT_ERR_INVALID_CRC\000"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 70
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 70
 
 
  3621      455F4741 
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3639      5453435F 
  3639      4E4F5449 
  3640              	.LASF37:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 71
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 71
 
 
  3641 0191 4359424C 		.ascii	"CYBLE_EVT_GAP_NUMERIC_COMPARISON_REQUEST\000"
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3659      545F4741 
  3659      505F4445 
  3659      56494345 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 72
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 72
 
 
  3660              	.LASF401:
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3679      545F4354 
  3679      53435F52 
  3679      4541445F 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 73
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 73
 
 
  3680              	.LASF215:
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3698              	.LASF140:
  3699 0540 4359424C 		.ascii	"CYBLE_GATT_ERR_UNSUPPORTED_GROUP_TYPE\000"
  3699      455F4741 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 74
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 74
 
 
  3699      54545F45 
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3717      4E444943 
  3718              	.LASF142:
  3719 0678 4359424C 		.ascii	"CYBLE_GATT_ERR_TRIGGER_CODITION_VALUE_NOT_SUPPORTED"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 75
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 75
 
 
  3719      455F4741 
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3738 0799 4359424C 		.ascii	"CYBLE_CONN_HANDLE_T\000"
  3738      455F434F 
  3738      4E4E5F48 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 76
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 76
 
 
  3738      414E444C 
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3756      505F4F4F 
  3756      425F4745 
  3757              	.LASF165:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 77
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 77
 
 
  3758 08c5 62644861 		.ascii	"bdHandle\000"
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3776      545F4350 
  3776      53435F57 
  3776      52495445 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 78
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 78
 
 
  3777              	.LASF82:
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3796      455F4556 
  3796      545F4553 
  3796      53435F57 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 79
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 79
 
 
  3796      52495445 
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3815              	.LASF186:
  3816 0c56 61747454 		.ascii	"attType\000"
  3816      79706500 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 80
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 80
 
 
  3817              	.LASF334:
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3836      455F4556 
  3836      545F5753 
  3836      53435F57 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 81
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 81
 
 
  3836      52495445 
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3856 0e8f 4359424C 		.ascii	"CYBLE_EVT_CPSS_NOTIFICATION_DISABLED\000"
  3856      455F4556 
  3856      545F4350 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 82
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 82
 
 
  3856      53535F4E 
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3875              	.LASF392:
  3876 0fc3 4359424C 		.ascii	"CYBLE_EVT_IPSC_READ_CHAR_RESPONSE\000"
  3876      455F4556 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 83
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 83
 
 
  3876      545F4950 
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3896 10ef 4359424C 		.ascii	"CYBLE_EVT_PLXSS_NOTIFICATION_ENABLED\000"
  3896      455F4556 
  3896      545F504C 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 84
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 84
 
 
  3896      5853535F 
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3914      5454435F 
  3914      52454144 
  3915              	.LASF381:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 85
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 85
 
 
  3916 1221 4359424C 		.ascii	"CYBLE_EVT_HTSS_INDICATION_DISABLED\000"
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3934 1380 4359424C 		.ascii	"CYBLE_EVT_UDSS_INDICATION_DISABLED\000"
  3934      455F4556 
  3934      545F5544 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 86
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 86
 
 
  3934      53535F49 
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3952      53435F57 
  3952      52495445 
  3953              	.LASF490:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 87
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 87
 
 
  3954 14ca 4359424C 		.ascii	"CYBLE_EVT_WSSC_INDICATION\000"
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3972      455F4556 
  3972      545F4353 
  3972      4353535F 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 88
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 88
 
 
  3972      4E4F5449 
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  3990      73684D65 
  3991              	.LASF268:
  3992 1720 4359424C 		.ascii	"CYBLE_EVT_BLSC_INDICATION\000"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 89
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 89
 
 
  3992      455F4556 
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4010      545F4843 
  4010      495F504B 
  4010      5400
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 90
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 90
 
 
  4011              	.LASF465:
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4028      54545F45 
  4028      52525F55 
  4028      5345525F 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 91
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 91
 
 
  4029              	.LASF28:
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4047              	.LASF436:
  4048 1ae0 4359424C 		.ascii	"CYBLE_EVT_RSCSS_NOTIFICATION_DISABLED\000"
  4048      455F4556 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 92
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 92
 
 
  4048      545F5253 
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4066      545F5750 
  4066      5453535F 
  4066      494E4449 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 93
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 93
 
 
  4067              	.LASF424:
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4086 1d58 4359424C 		.ascii	"CYBLE_EVT_CPSC_WRITE_CHAR_RESPONSE\000"
  4086      455F4556 
  4086      545F4350 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 94
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 94
 
 
  4086      53435F57 
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4104      43484152 
  4105              	.LASF195:
  4106 1e87 4359424C 		.ascii	"CYBLE_GATTS_T\000"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 95
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 95
 
 
  4106      455F4741 
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4124      545F504C 
  4124      5853435F 
  4124      57524954 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 96
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 96
 
 
  4125              	.LASF384:
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4144 20d2 4359424C 		.ascii	"CYBLE_EVT_CGMSS_INDICATION_ENABLED\000"
  4144      455F4556 
  4144      545F4347 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 97
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 97
 
 
  4144      4D53535F 
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4164 2222 4359424C 		.ascii	"CYBLE_EVT_LLSC_READ_CHAR_RESPONSE\000"
  4164      455F4556 
  4164      545F4C4C 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 98
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 98
 
 
  4164      53435F52 
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4184      455F4556 
  4184      545F4553 
  4184      53435F4E 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 99
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 99
 
 
  4184      4F544946 
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4204      5454535F 
  4204      57524954 
  4204      455F5245 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 100
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 100
 
 
  4205              	.LASF8:
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4224      455F4556 
  4224      545F4553 
  4224      53535F49 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 101
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 101
 
 
  4224      4E444943 
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4242      52495445 
  4243              	.LASF88:
  4244 271d 4359424C 		.ascii	"CYBLE_EVT_MAX\000"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 102
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 102
 
 
  4244      455F4556 
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4262      545F4741 
  4262      5454435F 
  4262      52454144 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 103
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 103
 
 
  4263              	.LASF298:
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4281              	.LASF87:
  4282 2940 4359424C 		.ascii	"CYBLE_EVT_FLASH_CORRUPT\000"
  4282      455F4556 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 104
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 104
 
 
  4282      545F464C 
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4300      4F544946 
  4301              	.LASF315:
  4302 2a6b 4359424C 		.ascii	"CYBLE_EVT_CSCSC_WRITE_DESCR_RESPONSE\000"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 105
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 105
 
 
  4302      455F4556 
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4320      455F4556 
  4320      545F4C4E 
  4320      53535F49 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 106
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 106
 
 
  4320      4E444943 
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4339      5400
  4340              	.LASF321:
  4341 2cd1 4359424C 		.ascii	"CYBLE_EVT_CTSC_READ_DESCR_RESPONSE\000"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 107
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 107
 
 
  4341      455F4556 
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4359      52495445 
  4360              	.LASF189:
  4361 2de1 61747456 		.ascii	"attValue\000"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 108
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 108
 
 
  4361      616C7565 
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4379      53535F49 
  4379      4E444943 
  4380              	.LASF235:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 109
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 109
 
 
  4381 2ee2 4359424C 		.ascii	"CYBLE_EVT_ANCSS_NOTIFICATION_DISABLED\000"
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4399      5454435F 
  4399      52454144 
  4400              	.LASF416:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 110
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 110
 
 
  4401 3004 4359424C 		.ascii	"CYBLE_EVT_PASSS_NOTIFICATION_DISABLED\000"
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4419      414D455F 
  4420              	.LASF407:
  4421 313f 4359424C 		.ascii	"CYBLE_EVT_LNSS_WRITE_CHAR\000"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 111
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 111
 
 
  4421      455F4556 
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4439      455F4556 
  4439      545F424C 
  4439      53535F49 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 112
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 112
 
 
  4439      4E444943 
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4459      7400
  4460              	.LASF174:
  4461 3370 68616E64 		.ascii	"handleValPair\000"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 113
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 113
 
 
  4461      6C655661 
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4480      545F4741 
  4480      5454435F 
  4480      4552524F 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 114
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 114
 
 
  4481              	.LASF335:
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4499              	.LASF318:
  4500 35b2 4359424C 		.ascii	"CYBLE_EVT_CTSS_CHAR_WRITE\000"
  4500      455F4556 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 115
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 115
 
 
  4500      545F4354 
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4518      44455343 
  4519              	.LASF45:
  4520 36c6 4359424C 		.ascii	"CYBLE_EVT_GAP_SCAN_REQ_RECVD\000"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 116
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 116
 
 
  4520      455F4556 
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4538      455F4556 
  4538      545F4C45 
  4538      5F50494E 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 117
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 117
 
 
  4538      475F4155 
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4556      52454144 
  4557              	.LASF101:
  4558 391f 4359424C 		.ascii	"CYBLE_ERROR_SEC_FAILED\000"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 118
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 118
 
 
  4558      455F4552 
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4576      494E434C 
  4577              	.LASF127:
  4578 3a57 4359424C 		.ascii	"CYBLE_GATT_ERR_WRITE_NOT_PERMITTED\000"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 119
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 119
 
 
  4578      455F4741 
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4597              	.LASF218:
  4598 3b62 4359424C 		.ascii	"CYBLE_EVT_GATTC_DISC_SKIPPED_SERVICE\000"
  4598      455F4556 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 120
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 120
 
 
  4598      545F4741 
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4617              	.LASF262:
  4618 3c86 4359424C 		.ascii	"CYBLE_EVT_BCSC_WRITE_DESCR_RESPONSE\000"
  4618      455F4556 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 121
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 121
 
 
  4618      545F4243 
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4637              	.LASF238:
  4638 3dc4 4359424C 		.ascii	"CYBLE_EVT_ANCSC_WRITE_CHAR_RESPONSE\000"
  4638      455F4556 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 122
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 122
 
 
  4638      545F414E 
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 1
  4656      545F4852 
  4656      53535F4E 
  4656      4F544946 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc90qdTe.s 			page 123
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccMYYKSB.s 			page 123
 
 
  4657              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

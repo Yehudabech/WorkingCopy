@@ -146,7 +146,7 @@ CYBLE_STATE_T cyBle_state;
     0xF5u, 0x31u, 0x8Du, 0x49u,
 
     /* OutgoingData */
-    0x00u,
+    0x08u,
 
     /* Custom Descriptor */
     0x00u, 0x85u, 0xDDu, 0x56u, 0x6Bu, 0x33u, 0x50u, 0x6Bu, 0x8Eu, 0xF0u, 0x48u, 0xA3u, 0x7Cu, 0x84u, 0x9Au, 0x70u,
@@ -198,8 +198,8 @@ const CYBLE_GATTS_DB_T cyBle_gattDB[0x1Au] = {
     { 0x0015u, 0x2803u /* Characteristic                      */, 0x000A0001u /* rd,wr  */, 0x0017u, {{0x15E8u, NULL}}                           },
     { 0x0016u, 0x15E8u /* IncomingData                        */, 0x010A0101u /* rd,wr  */, 0x0017u, {{0x0004u, (void *)&cyBle_attValuesLen[10]}} },
     { 0x0017u, 0x31F5u /* Custom Descriptor                   */, 0x09000001u /*        */, 0x0017u, {{0x0004u, (void *)&cyBle_attValuesLen[11]}} },
-    { 0x0018u, 0x2803u /* Characteristic                      */, 0x000A0001u /* rd,wr  */, 0x001Au, {{0x733Eu, NULL}}                           },
-    { 0x0019u, 0x733Eu /* OutgoingData                        */, 0x010A0101u /* rd,wr  */, 0x001Au, {{0x0001u, (void *)&cyBle_attValuesLen[12]}} },
+    { 0x0018u, 0x2803u /* Characteristic                      */, 0x00020001u /* rd     */, 0x001Au, {{0x733Eu, NULL}}                           },
+    { 0x0019u, 0x733Eu /* OutgoingData                        */, 0x01020001u /* rd     */, 0x001Au, {{0x0001u, (void *)&cyBle_attValuesLen[12]}} },
     { 0x001Au, 0x9A84u /* Custom Descriptor                   */, 0x09000101u /*        */, 0x001Au, {{0x0001u, (void *)&cyBle_attValuesLen[13]}} },
 };
 
