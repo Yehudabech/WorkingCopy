@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc7HIu6p.s 			page 1
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc2Yxsiq.s 			page 1
 
 
    1              		.syntax unified
@@ -21,21 +21,29 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc7HIu6p.s 			page 1
   18              		.cfi_sections	.debug_frame
   19              		.section	.rodata
   20              		.align	2
-  21              	.LC1:
+  21              	.LC2:
   22 0000 53746172 		.ascii	"Start up, welcome!\012\015\000"
   22      74207570 
   22      2C207765 
   22      6C636F6D 
   22      65210A0D 
-  23              		.section	.text.main,"ax",%progbits
-  24              		.align	2
-  25              		.global	main
-  26              		.code	16
-  27              		.thumb_func
-  28              		.type	main, %function
-  29              	main:
-  30              	.LFB35:
-  31              		.file 1 "main.c"
+  23 0015 000000   		.align	2
+  24              	.LC0:
+  25 0018 02       		.byte	2
+  26 0019 02       		.byte	2
+  27 001a 03       		.byte	3
+  28 001b 04       		.byte	4
+  29 001c 05       		.byte	5
+  30 001d 06       		.byte	6
+  31              		.section	.text.main,"ax",%progbits
+  32              		.align	2
+  33              		.global	main
+  34              		.code	16
+  35              		.thumb_func
+  36              		.type	main, %function
+  37              	main:
+  38              	.LFB35:
+  39              		.file 1 "main.c"
    1:main.c        **** /* ========================================
    2:main.c        ****  * Written by Yehuda Ben Chaim
    3:main.c        ****  * 06/2018 Israel
@@ -50,500 +58,626 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc7HIu6p.s 			page 1
   12:main.c        **** #include "iprintf.h"
   13:main.c        **** 
   14:main.c        **** 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc2Yxsiq.s 			page 2
+
+
   15:main.c        **** void AppCallBack(uint32 event, void* eventParam);
   16:main.c        **** int main (void)
   17:main.c        **** {
-  32              		.loc 1 17 0
-  33              		.cfi_startproc
-  34              		@ args = 0, pretend = 0, frame = 0
-  35              		@ frame_needed = 1, uses_anonymous_args = 0
-  36 0000 80B5     		push	{r7, lr}
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc7HIu6p.s 			page 2
-
-
-  37              		.cfi_def_cfa_offset 8
-  38              		.cfi_offset 7, -8
-  39              		.cfi_offset 14, -4
-  40 0002 00AF     		add	r7, sp, #0
-  41              		.cfi_def_cfa_register 7
+  40              		.loc 1 17 0
+  41              		.cfi_startproc
+  42              		@ args = 0, pretend = 0, frame = 8
+  43              		@ frame_needed = 1, uses_anonymous_args = 0
+  44 0000 80B5     		push	{r7, lr}
+  45              		.cfi_def_cfa_offset 8
+  46              		.cfi_offset 7, -8
+  47              		.cfi_offset 14, -4
+  48 0002 82B0     		sub	sp, sp, #8
+  49              		.cfi_def_cfa_offset 16
+  50 0004 00AF     		add	r7, sp, #0
+  51              		.cfi_def_cfa_register 7
   18:main.c        ****     CyGlobalIntEnable;
-  42              		.loc 1 18 0
-  43              		.syntax divided
-  44              	@ 18 "main.c" 1
-  45 0004 62B6     		CPSIE   i
-  46              	@ 0 "" 2
+  52              		.loc 1 18 0
+  53              		.syntax divided
+  54              	@ 18 "main.c" 1
+  55 0006 62B6     		CPSIE   i
+  56              	@ 0 "" 2
   19:main.c        ****     CyBle_Start(CustomEventHandler);            //Start BLE component. the CustomEventHandler argum
-  47              		.loc 1 19 0
-  48              		.thumb
-  49              		.syntax unified
-  50 0006 0A4B     		ldr	r3, .L4
-  51 0008 1800     		movs	r0, r3
-  52 000a FFF7FEFF 		bl	CyBle_Start
+  57              		.loc 1 19 0
+  58              		.thumb
+  59              		.syntax unified
+  60 0008 164B     		ldr	r3, .L4
+  61 000a 1800     		movs	r0, r3
+  62 000c FFF7FEFF 		bl	CyBle_Start
   20:main.c        ****     SCB_1_Start();                              //Start the UART component of iprintf. UART as logg
-  53              		.loc 1 20 0
-  54 000e FFF7FEFF 		bl	SCB_1_Start
+  63              		.loc 1 20 0
+  64 0010 FFF7FEFF 		bl	SCB_1_Start
   21:main.c        ****     iprintf("Start up, welcome!\n\r");
-  55              		.loc 1 21 0
-  56 0012 084B     		ldr	r3, .L4+4
-  57 0014 1800     		movs	r0, r3
-  58 0016 FFF7FEFF 		bl	iprintf
-  59              	.L3:
-  22:main.c        ****     for(;;)
-  23:main.c        ****     {
-  24:main.c        ****         if(CyBle_GetState() == CYBLE_STATE_CONNECTED)
-  60              		.loc 1 24 0
-  61 001a 074B     		ldr	r3, .L4+8
-  62 001c 1B78     		ldrb	r3, [r3]
-  63 001e 022B     		cmp	r3, #2
-  64 0020 01D1     		bne	.L2
-  25:main.c        ****         {
-  26:main.c        ****             CyBle_ProcessEvents();
-  65              		.loc 1 26 0
-  66 0022 FFF7FEFF 		bl	CyBle_ProcessEvents
-  67              	.L2:
-  27:main.c        ****         }
-  28:main.c        ****         CyBle_ProcessEvents();
-  68              		.loc 1 28 0
-  69 0026 FFF7FEFF 		bl	CyBle_ProcessEvents
-  29:main.c        ****         IncomingDataAnalys();
-  70              		.loc 1 29 0
-  71 002a FFF7FEFF 		bl	IncomingDataAnalys
-  30:main.c        ****         
-  31:main.c        ****     }
-  72              		.loc 1 31 0
-  73 002e F4E7     		b	.L3
-  74              	.L5:
-  75              		.align	2
-  76              	.L4:
-  77 0030 00000000 		.word	CustomEventHandler
-  78 0034 00000000 		.word	.LC1
-  79 0038 00000000 		.word	cyBle_state
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc7HIu6p.s 			page 3
+  65              		.loc 1 21 0
+  66 0014 144B     		ldr	r3, .L4+4
+  67 0016 1800     		movs	r0, r3
+  68 0018 FFF7FEFF 		bl	iprintf
+  22:main.c        ****     uint8_t testArr[6] = {2,2,3,4,5,6};
+  69              		.loc 1 22 0
+  70 001c 3A00     		movs	r2, r7
+  71 001e 134B     		ldr	r3, .L4+8
+  72 0020 1000     		movs	r0, r2
+  73 0022 1900     		movs	r1, r3
+  74 0024 0623     		movs	r3, #6
+  75 0026 1A00     		movs	r2, r3
+  76 0028 FFF7FEFF 		bl	memcpy
+  23:main.c        ****     SendReedSwitchNotification(testArr);
+  77              		.loc 1 23 0
+  78 002c 3B00     		movs	r3, r7
+  79 002e 1800     		movs	r0, r3
+  80 0030 FFF7FEFF 		bl	SendReedSwitchNotification
+  81              	.L3:
+  24:main.c        ****     for(;;)
+  25:main.c        ****     {
+  26:main.c        ****         if(CyBle_GetState() == CYBLE_STATE_CONNECTED)
+  82              		.loc 1 26 0
+  83 0034 0E4B     		ldr	r3, .L4+12
+  84 0036 1B78     		ldrb	r3, [r3]
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc2Yxsiq.s 			page 3
 
 
-  80              		.cfi_endproc
-  81              	.LFE35:
-  82              		.size	main, .-main
-  83              		.text
-  84              	.Letext0:
-  85              		.file 2 "Generated_Source\\PSoC4/BLE_eventHandler.h"
-  86              		.section	.debug_info,"",%progbits
-  87              	.Ldebug_info0:
-  88 0000 E4000000 		.4byte	0xe4
-  89 0004 0400     		.2byte	0x4
-  90 0006 00000000 		.4byte	.Ldebug_abbrev0
-  91 000a 04       		.byte	0x4
-  92 000b 01       		.uleb128 0x1
-  93 000c 96010000 		.4byte	.LASF19
-  94 0010 0C       		.byte	0xc
-  95 0011 06010000 		.4byte	.LASF20
-  96 0015 21000000 		.4byte	.LASF21
-  97 0019 00000000 		.4byte	.Ldebug_ranges0+0
-  98 001d 00000000 		.4byte	0
-  99 0021 00000000 		.4byte	.Ldebug_line0
- 100 0025 02       		.uleb128 0x2
- 101 0026 01       		.byte	0x1
- 102 0027 06       		.byte	0x6
- 103 0028 4A010000 		.4byte	.LASF0
- 104 002c 02       		.uleb128 0x2
- 105 002d 01       		.byte	0x1
- 106 002e 08       		.byte	0x8
- 107 002f F3000000 		.4byte	.LASF1
- 108 0033 02       		.uleb128 0x2
- 109 0034 02       		.byte	0x2
- 110 0035 05       		.byte	0x5
- 111 0036 8C010000 		.4byte	.LASF2
- 112 003a 02       		.uleb128 0x2
- 113 003b 02       		.byte	0x2
- 114 003c 07       		.byte	0x7
- 115 003d 37010000 		.4byte	.LASF3
- 116 0041 02       		.uleb128 0x2
- 117 0042 04       		.byte	0x4
- 118 0043 05       		.byte	0x5
- 119 0044 0D010000 		.4byte	.LASF4
- 120 0048 02       		.uleb128 0x2
- 121 0049 04       		.byte	0x4
- 122 004a 07       		.byte	0x7
- 123 004b 94000000 		.4byte	.LASF5
- 124 004f 02       		.uleb128 0x2
- 125 0050 08       		.byte	0x8
- 126 0051 05       		.byte	0x5
- 127 0052 29010000 		.4byte	.LASF6
- 128 0056 02       		.uleb128 0x2
- 129 0057 08       		.byte	0x8
- 130 0058 07       		.byte	0x7
- 131 0059 BF000000 		.4byte	.LASF7
- 132 005d 03       		.uleb128 0x3
- 133 005e 04       		.byte	0x4
- 134 005f 05       		.byte	0x5
- 135 0060 696E7400 		.ascii	"int\000"
- 136 0064 02       		.uleb128 0x2
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc7HIu6p.s 			page 4
+  85 0038 022B     		cmp	r3, #2
+  86 003a 01D1     		bne	.L2
+  27:main.c        ****         {
+  28:main.c        ****             CyBle_ProcessEvents();
+  87              		.loc 1 28 0
+  88 003c FFF7FEFF 		bl	CyBle_ProcessEvents
+  89              	.L2:
+  29:main.c        ****         }
+  30:main.c        ****         CyBle_ProcessEvents();
+  90              		.loc 1 30 0
+  91 0040 FFF7FEFF 		bl	CyBle_ProcessEvents
+  31:main.c        ****         SendReedSwitchNotification(testArr);
+  92              		.loc 1 31 0
+  93 0044 3B00     		movs	r3, r7
+  94 0046 1800     		movs	r0, r3
+  95 0048 FFF7FEFF 		bl	SendReedSwitchNotification
+  32:main.c        ****         CyDelay(500);
+  96              		.loc 1 32 0
+  97 004c FA23     		movs	r3, #250
+  98 004e 5B00     		lsls	r3, r3, #1
+  99 0050 1800     		movs	r0, r3
+ 100 0052 FFF7FEFF 		bl	CyDelay
+  33:main.c        ****         SendReedSwitchNotification(testArr);
+ 101              		.loc 1 33 0
+ 102 0056 3B00     		movs	r3, r7
+ 103 0058 1800     		movs	r0, r3
+ 104 005a FFF7FEFF 		bl	SendReedSwitchNotification
+  34:main.c        ****         IncomingDataAnalys();
+ 105              		.loc 1 34 0
+ 106 005e FFF7FEFF 		bl	IncomingDataAnalys
+  35:main.c        ****         
+  36:main.c        ****     }
+ 107              		.loc 1 36 0
+ 108 0062 E7E7     		b	.L3
+ 109              	.L5:
+ 110              		.align	2
+ 111              	.L4:
+ 112 0064 00000000 		.word	CustomEventHandler
+ 113 0068 00000000 		.word	.LC2
+ 114 006c 18000000 		.word	.LC0
+ 115 0070 00000000 		.word	cyBle_state
+ 116              		.cfi_endproc
+ 117              	.LFE35:
+ 118              		.size	main, .-main
+ 119              		.text
+ 120              	.Letext0:
+ 121              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 122              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 123              		.file 4 "Generated_Source\\PSoC4/BLE_eventHandler.h"
+ 124              		.section	.debug_info,"",%progbits
+ 125              	.Ldebug_info0:
+ 126 0000 1D010000 		.4byte	0x11d
+ 127 0004 0400     		.2byte	0x4
+ 128 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 129 000a 04       		.byte	0x4
+ 130 000b 01       		.uleb128 0x1
+ 131 000c B0010000 		.4byte	.LASF22
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc2Yxsiq.s 			page 4
 
 
- 137 0065 04       		.byte	0x4
- 138 0066 07       		.byte	0x7
- 139 0067 14000000 		.4byte	.LASF8
- 140 006b 02       		.uleb128 0x2
- 141 006c 04       		.byte	0x4
- 142 006d 04       		.byte	0x4
- 143 006e 78010000 		.4byte	.LASF9
- 144 0072 02       		.uleb128 0x2
- 145 0073 08       		.byte	0x8
- 146 0074 04       		.byte	0x4
- 147 0075 22010000 		.4byte	.LASF10
- 148 0079 02       		.uleb128 0x2
- 149 007a 01       		.byte	0x1
- 150 007b 08       		.byte	0x8
- 151 007c D6000000 		.4byte	.LASF11
- 152 0080 02       		.uleb128 0x2
- 153 0081 08       		.byte	0x8
- 154 0082 04       		.byte	0x4
- 155 0083 56010000 		.4byte	.LASF12
- 156 0087 02       		.uleb128 0x2
- 157 0088 04       		.byte	0x4
- 158 0089 07       		.byte	0x7
- 159 008a 24020000 		.4byte	.LASF13
- 160 008e 04       		.uleb128 0x4
- 161 008f 01       		.byte	0x1
- 162 0090 2C000000 		.4byte	0x2c
- 163 0094 02       		.byte	0x2
- 164 0095 5A08     		.2byte	0x85a
- 165 0097 BA000000 		.4byte	0xba
- 166 009b 05       		.uleb128 0x5
- 167 009c 00000000 		.4byte	.LASF14
- 168 00a0 00       		.byte	0
- 169 00a1 05       		.uleb128 0x5
- 170 00a2 A6000000 		.4byte	.LASF15
- 171 00a6 01       		.byte	0x1
- 172 00a7 05       		.uleb128 0x5
- 173 00a8 62010000 		.4byte	.LASF16
- 174 00ac 02       		.byte	0x2
- 175 00ad 05       		.uleb128 0x5
- 176 00ae DB000000 		.4byte	.LASF17
- 177 00b2 03       		.byte	0x3
- 178 00b3 05       		.uleb128 0x5
- 179 00b4 7B000000 		.4byte	.LASF18
- 180 00b8 04       		.byte	0x4
- 181 00b9 00       		.byte	0
- 182 00ba 06       		.uleb128 0x6
- 183 00bb 7E010000 		.4byte	.LASF22
- 184 00bf 02       		.byte	0x2
- 185 00c0 6808     		.2byte	0x868
- 186 00c2 8E000000 		.4byte	0x8e
- 187 00c6 07       		.uleb128 0x7
- 188 00c7 01010000 		.4byte	.LASF23
- 189 00cb 01       		.byte	0x1
- 190 00cc 10       		.byte	0x10
- 191 00cd 5D000000 		.4byte	0x5d
- 192 00d1 00000000 		.4byte	.LFB35
- 193 00d5 3C000000 		.4byte	.LFE35-.LFB35
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc7HIu6p.s 			page 5
+ 132 0010 0C       		.byte	0xc
+ 133 0011 2B010000 		.4byte	.LASF23
+ 134 0015 34000000 		.4byte	.LASF24
+ 135 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 136 001d 00000000 		.4byte	0
+ 137 0021 00000000 		.4byte	.Ldebug_line0
+ 138 0025 02       		.uleb128 0x2
+ 139 0026 01       		.byte	0x1
+ 140 0027 06       		.byte	0x6
+ 141 0028 64010000 		.4byte	.LASF0
+ 142 002c 03       		.uleb128 0x3
+ 143 002d E9000000 		.4byte	.LASF9
+ 144 0031 02       		.byte	0x2
+ 145 0032 1D       		.byte	0x1d
+ 146 0033 37000000 		.4byte	0x37
+ 147 0037 02       		.uleb128 0x2
+ 148 0038 01       		.byte	0x1
+ 149 0039 08       		.byte	0x8
+ 150 003a 18010000 		.4byte	.LASF1
+ 151 003e 02       		.uleb128 0x2
+ 152 003f 02       		.byte	0x2
+ 153 0040 05       		.byte	0x5
+ 154 0041 A6010000 		.4byte	.LASF2
+ 155 0045 02       		.uleb128 0x2
+ 156 0046 02       		.byte	0x2
+ 157 0047 07       		.byte	0x7
+ 158 0048 14000000 		.4byte	.LASF3
+ 159 004c 02       		.uleb128 0x2
+ 160 004d 04       		.byte	0x4
+ 161 004e 05       		.byte	0x5
+ 162 004f 32010000 		.4byte	.LASF4
+ 163 0053 02       		.uleb128 0x2
+ 164 0054 04       		.byte	0x4
+ 165 0055 07       		.byte	0x7
+ 166 0056 A7000000 		.4byte	.LASF5
+ 167 005a 02       		.uleb128 0x2
+ 168 005b 08       		.byte	0x8
+ 169 005c 05       		.byte	0x5
+ 170 005d 4A010000 		.4byte	.LASF6
+ 171 0061 02       		.uleb128 0x2
+ 172 0062 08       		.byte	0x8
+ 173 0063 07       		.byte	0x7
+ 174 0064 D2000000 		.4byte	.LASF7
+ 175 0068 04       		.uleb128 0x4
+ 176 0069 04       		.byte	0x4
+ 177 006a 05       		.byte	0x5
+ 178 006b 696E7400 		.ascii	"int\000"
+ 179 006f 02       		.uleb128 0x2
+ 180 0070 04       		.byte	0x4
+ 181 0071 07       		.byte	0x7
+ 182 0072 27000000 		.4byte	.LASF8
+ 183 0076 03       		.uleb128 0x3
+ 184 0077 10010000 		.4byte	.LASF10
+ 185 007b 03       		.byte	0x3
+ 186 007c 18       		.byte	0x18
+ 187 007d 2C000000 		.4byte	0x2c
+ 188 0081 02       		.uleb128 0x2
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc2Yxsiq.s 			page 5
 
 
- 194 00d9 01       		.uleb128 0x1
- 195 00da 9C       		.byte	0x9c
- 196 00db 08       		.uleb128 0x8
- 197 00dc 16010000 		.4byte	.LASF24
- 198 00e0 02       		.byte	0x2
- 199 00e1 B30A     		.2byte	0xab3
- 200 00e3 BA000000 		.4byte	0xba
- 201 00e7 00       		.byte	0
- 202              		.section	.debug_abbrev,"",%progbits
- 203              	.Ldebug_abbrev0:
- 204 0000 01       		.uleb128 0x1
- 205 0001 11       		.uleb128 0x11
- 206 0002 01       		.byte	0x1
- 207 0003 25       		.uleb128 0x25
- 208 0004 0E       		.uleb128 0xe
- 209 0005 13       		.uleb128 0x13
- 210 0006 0B       		.uleb128 0xb
- 211 0007 03       		.uleb128 0x3
- 212 0008 0E       		.uleb128 0xe
- 213 0009 1B       		.uleb128 0x1b
- 214 000a 0E       		.uleb128 0xe
- 215 000b 55       		.uleb128 0x55
- 216 000c 17       		.uleb128 0x17
- 217 000d 11       		.uleb128 0x11
- 218 000e 01       		.uleb128 0x1
- 219 000f 10       		.uleb128 0x10
- 220 0010 17       		.uleb128 0x17
- 221 0011 00       		.byte	0
- 222 0012 00       		.byte	0
- 223 0013 02       		.uleb128 0x2
- 224 0014 24       		.uleb128 0x24
- 225 0015 00       		.byte	0
- 226 0016 0B       		.uleb128 0xb
- 227 0017 0B       		.uleb128 0xb
- 228 0018 3E       		.uleb128 0x3e
- 229 0019 0B       		.uleb128 0xb
- 230 001a 03       		.uleb128 0x3
- 231 001b 0E       		.uleb128 0xe
- 232 001c 00       		.byte	0
- 233 001d 00       		.byte	0
- 234 001e 03       		.uleb128 0x3
- 235 001f 24       		.uleb128 0x24
- 236 0020 00       		.byte	0
- 237 0021 0B       		.uleb128 0xb
- 238 0022 0B       		.uleb128 0xb
- 239 0023 3E       		.uleb128 0x3e
- 240 0024 0B       		.uleb128 0xb
- 241 0025 03       		.uleb128 0x3
- 242 0026 08       		.uleb128 0x8
- 243 0027 00       		.byte	0
- 244 0028 00       		.byte	0
- 245 0029 04       		.uleb128 0x4
- 246 002a 04       		.uleb128 0x4
- 247 002b 01       		.byte	0x1
- 248 002c 0B       		.uleb128 0xb
- 249 002d 0B       		.uleb128 0xb
- 250 002e 49       		.uleb128 0x49
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc7HIu6p.s 			page 6
+ 189 0082 04       		.byte	0x4
+ 190 0083 04       		.byte	0x4
+ 191 0084 92010000 		.4byte	.LASF11
+ 192 0088 02       		.uleb128 0x2
+ 193 0089 08       		.byte	0x8
+ 194 008a 04       		.byte	0x4
+ 195 008b 3B010000 		.4byte	.LASF12
+ 196 008f 02       		.uleb128 0x2
+ 197 0090 01       		.byte	0x1
+ 198 0091 08       		.byte	0x8
+ 199 0092 F3000000 		.4byte	.LASF13
+ 200 0096 02       		.uleb128 0x2
+ 201 0097 08       		.byte	0x8
+ 202 0098 04       		.byte	0x4
+ 203 0099 70010000 		.4byte	.LASF14
+ 204 009d 02       		.uleb128 0x2
+ 205 009e 04       		.byte	0x4
+ 206 009f 07       		.byte	0x7
+ 207 00a0 3E020000 		.4byte	.LASF15
+ 208 00a4 05       		.uleb128 0x5
+ 209 00a5 01       		.byte	0x1
+ 210 00a6 37000000 		.4byte	0x37
+ 211 00aa 04       		.byte	0x4
+ 212 00ab 5A08     		.2byte	0x85a
+ 213 00ad D0000000 		.4byte	0xd0
+ 214 00b1 06       		.uleb128 0x6
+ 215 00b2 00000000 		.4byte	.LASF16
+ 216 00b6 00       		.byte	0
+ 217 00b7 06       		.uleb128 0x6
+ 218 00b8 B9000000 		.4byte	.LASF17
+ 219 00bc 01       		.byte	0x1
+ 220 00bd 06       		.uleb128 0x6
+ 221 00be 7C010000 		.4byte	.LASF18
+ 222 00c2 02       		.byte	0x2
+ 223 00c3 06       		.uleb128 0x6
+ 224 00c4 F8000000 		.4byte	.LASF19
+ 225 00c8 03       		.byte	0x3
+ 226 00c9 06       		.uleb128 0x6
+ 227 00ca 8E000000 		.4byte	.LASF20
+ 228 00ce 04       		.byte	0x4
+ 229 00cf 00       		.byte	0
+ 230 00d0 07       		.uleb128 0x7
+ 231 00d1 98010000 		.4byte	.LASF21
+ 232 00d5 04       		.byte	0x4
+ 233 00d6 6808     		.2byte	0x868
+ 234 00d8 A4000000 		.4byte	0xa4
+ 235 00dc 08       		.uleb128 0x8
+ 236 00dd 26010000 		.4byte	.LASF25
+ 237 00e1 01       		.byte	0x1
+ 238 00e2 10       		.byte	0x10
+ 239 00e3 68000000 		.4byte	0x68
+ 240 00e7 00000000 		.4byte	.LFB35
+ 241 00eb 74000000 		.4byte	.LFE35-.LFB35
+ 242 00ef 01       		.uleb128 0x1
+ 243 00f0 9C       		.byte	0x9c
+ 244 00f1 04010000 		.4byte	0x104
+ 245 00f5 09       		.uleb128 0x9
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc2Yxsiq.s 			page 6
 
 
- 251 002f 13       		.uleb128 0x13
- 252 0030 3A       		.uleb128 0x3a
- 253 0031 0B       		.uleb128 0xb
- 254 0032 3B       		.uleb128 0x3b
- 255 0033 05       		.uleb128 0x5
- 256 0034 01       		.uleb128 0x1
- 257 0035 13       		.uleb128 0x13
- 258 0036 00       		.byte	0
- 259 0037 00       		.byte	0
- 260 0038 05       		.uleb128 0x5
- 261 0039 28       		.uleb128 0x28
- 262 003a 00       		.byte	0
- 263 003b 03       		.uleb128 0x3
- 264 003c 0E       		.uleb128 0xe
- 265 003d 1C       		.uleb128 0x1c
- 266 003e 0B       		.uleb128 0xb
- 267 003f 00       		.byte	0
- 268 0040 00       		.byte	0
- 269 0041 06       		.uleb128 0x6
- 270 0042 16       		.uleb128 0x16
- 271 0043 00       		.byte	0
- 272 0044 03       		.uleb128 0x3
- 273 0045 0E       		.uleb128 0xe
- 274 0046 3A       		.uleb128 0x3a
- 275 0047 0B       		.uleb128 0xb
- 276 0048 3B       		.uleb128 0x3b
- 277 0049 05       		.uleb128 0x5
- 278 004a 49       		.uleb128 0x49
- 279 004b 13       		.uleb128 0x13
- 280 004c 00       		.byte	0
- 281 004d 00       		.byte	0
- 282 004e 07       		.uleb128 0x7
- 283 004f 2E       		.uleb128 0x2e
- 284 0050 00       		.byte	0
- 285 0051 3F       		.uleb128 0x3f
- 286 0052 19       		.uleb128 0x19
- 287 0053 03       		.uleb128 0x3
- 288 0054 0E       		.uleb128 0xe
- 289 0055 3A       		.uleb128 0x3a
- 290 0056 0B       		.uleb128 0xb
- 291 0057 3B       		.uleb128 0x3b
- 292 0058 0B       		.uleb128 0xb
- 293 0059 27       		.uleb128 0x27
- 294 005a 19       		.uleb128 0x19
- 295 005b 49       		.uleb128 0x49
- 296 005c 13       		.uleb128 0x13
- 297 005d 11       		.uleb128 0x11
- 298 005e 01       		.uleb128 0x1
- 299 005f 12       		.uleb128 0x12
- 300 0060 06       		.uleb128 0x6
- 301 0061 40       		.uleb128 0x40
- 302 0062 18       		.uleb128 0x18
- 303 0063 9642     		.uleb128 0x2116
- 304 0065 19       		.uleb128 0x19
- 305 0066 00       		.byte	0
- 306 0067 00       		.byte	0
- 307 0068 08       		.uleb128 0x8
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc7HIu6p.s 			page 7
+ 246 00f6 42010000 		.4byte	.LASF26
+ 247 00fa 01       		.byte	0x1
+ 248 00fb 16       		.byte	0x16
+ 249 00fc 04010000 		.4byte	0x104
+ 250 0100 02       		.uleb128 0x2
+ 251 0101 91       		.byte	0x91
+ 252 0102 70       		.sleb128 -16
+ 253 0103 00       		.byte	0
+ 254 0104 0A       		.uleb128 0xa
+ 255 0105 76000000 		.4byte	0x76
+ 256 0109 14010000 		.4byte	0x114
+ 257 010d 0B       		.uleb128 0xb
+ 258 010e 9D000000 		.4byte	0x9d
+ 259 0112 05       		.byte	0x5
+ 260 0113 00       		.byte	0
+ 261 0114 0C       		.uleb128 0xc
+ 262 0115 58010000 		.4byte	.LASF27
+ 263 0119 04       		.byte	0x4
+ 264 011a B30A     		.2byte	0xab3
+ 265 011c D0000000 		.4byte	0xd0
+ 266 0120 00       		.byte	0
+ 267              		.section	.debug_abbrev,"",%progbits
+ 268              	.Ldebug_abbrev0:
+ 269 0000 01       		.uleb128 0x1
+ 270 0001 11       		.uleb128 0x11
+ 271 0002 01       		.byte	0x1
+ 272 0003 25       		.uleb128 0x25
+ 273 0004 0E       		.uleb128 0xe
+ 274 0005 13       		.uleb128 0x13
+ 275 0006 0B       		.uleb128 0xb
+ 276 0007 03       		.uleb128 0x3
+ 277 0008 0E       		.uleb128 0xe
+ 278 0009 1B       		.uleb128 0x1b
+ 279 000a 0E       		.uleb128 0xe
+ 280 000b 55       		.uleb128 0x55
+ 281 000c 17       		.uleb128 0x17
+ 282 000d 11       		.uleb128 0x11
+ 283 000e 01       		.uleb128 0x1
+ 284 000f 10       		.uleb128 0x10
+ 285 0010 17       		.uleb128 0x17
+ 286 0011 00       		.byte	0
+ 287 0012 00       		.byte	0
+ 288 0013 02       		.uleb128 0x2
+ 289 0014 24       		.uleb128 0x24
+ 290 0015 00       		.byte	0
+ 291 0016 0B       		.uleb128 0xb
+ 292 0017 0B       		.uleb128 0xb
+ 293 0018 3E       		.uleb128 0x3e
+ 294 0019 0B       		.uleb128 0xb
+ 295 001a 03       		.uleb128 0x3
+ 296 001b 0E       		.uleb128 0xe
+ 297 001c 00       		.byte	0
+ 298 001d 00       		.byte	0
+ 299 001e 03       		.uleb128 0x3
+ 300 001f 16       		.uleb128 0x16
+ 301 0020 00       		.byte	0
+ 302 0021 03       		.uleb128 0x3
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc2Yxsiq.s 			page 7
 
 
- 308 0069 34       		.uleb128 0x34
- 309 006a 00       		.byte	0
- 310 006b 03       		.uleb128 0x3
- 311 006c 0E       		.uleb128 0xe
- 312 006d 3A       		.uleb128 0x3a
- 313 006e 0B       		.uleb128 0xb
- 314 006f 3B       		.uleb128 0x3b
- 315 0070 05       		.uleb128 0x5
- 316 0071 49       		.uleb128 0x49
- 317 0072 13       		.uleb128 0x13
- 318 0073 3F       		.uleb128 0x3f
- 319 0074 19       		.uleb128 0x19
- 320 0075 3C       		.uleb128 0x3c
- 321 0076 19       		.uleb128 0x19
- 322 0077 00       		.byte	0
- 323 0078 00       		.byte	0
- 324 0079 00       		.byte	0
- 325              		.section	.debug_aranges,"",%progbits
- 326 0000 1C000000 		.4byte	0x1c
- 327 0004 0200     		.2byte	0x2
- 328 0006 00000000 		.4byte	.Ldebug_info0
- 329 000a 04       		.byte	0x4
- 330 000b 00       		.byte	0
- 331 000c 0000     		.2byte	0
- 332 000e 0000     		.2byte	0
- 333 0010 00000000 		.4byte	.LFB35
- 334 0014 3C000000 		.4byte	.LFE35-.LFB35
- 335 0018 00000000 		.4byte	0
- 336 001c 00000000 		.4byte	0
- 337              		.section	.debug_ranges,"",%progbits
- 338              	.Ldebug_ranges0:
- 339 0000 00000000 		.4byte	.LFB35
- 340 0004 3C000000 		.4byte	.LFE35
- 341 0008 00000000 		.4byte	0
- 342 000c 00000000 		.4byte	0
- 343              		.section	.debug_line,"",%progbits
- 344              	.Ldebug_line0:
- 345 0000 68000000 		.section	.debug_str,"MS",%progbits,1
- 345      02004A00 
- 345      00000201 
- 345      FB0E0D00 
- 345      01010101 
- 346              	.LASF14:
- 347 0000 4359424C 		.ascii	"CYBLE_STATE_STOPPED\000"
- 347      455F5354 
- 347      4154455F 
- 347      53544F50 
- 347      50454400 
- 348              	.LASF8:
- 349 0014 756E7369 		.ascii	"unsigned int\000"
- 349      676E6564 
- 349      20696E74 
- 349      00
- 350              	.LASF21:
- 351 0021 433A5C55 		.ascii	"C:\\Users\\Yehuda Ben Chaim\\Google Drive\\My Proje"
- 351      73657273 
- 351      5C596568 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc7HIu6p.s 			page 8
+ 303 0022 0E       		.uleb128 0xe
+ 304 0023 3A       		.uleb128 0x3a
+ 305 0024 0B       		.uleb128 0xb
+ 306 0025 3B       		.uleb128 0x3b
+ 307 0026 0B       		.uleb128 0xb
+ 308 0027 49       		.uleb128 0x49
+ 309 0028 13       		.uleb128 0x13
+ 310 0029 00       		.byte	0
+ 311 002a 00       		.byte	0
+ 312 002b 04       		.uleb128 0x4
+ 313 002c 24       		.uleb128 0x24
+ 314 002d 00       		.byte	0
+ 315 002e 0B       		.uleb128 0xb
+ 316 002f 0B       		.uleb128 0xb
+ 317 0030 3E       		.uleb128 0x3e
+ 318 0031 0B       		.uleb128 0xb
+ 319 0032 03       		.uleb128 0x3
+ 320 0033 08       		.uleb128 0x8
+ 321 0034 00       		.byte	0
+ 322 0035 00       		.byte	0
+ 323 0036 05       		.uleb128 0x5
+ 324 0037 04       		.uleb128 0x4
+ 325 0038 01       		.byte	0x1
+ 326 0039 0B       		.uleb128 0xb
+ 327 003a 0B       		.uleb128 0xb
+ 328 003b 49       		.uleb128 0x49
+ 329 003c 13       		.uleb128 0x13
+ 330 003d 3A       		.uleb128 0x3a
+ 331 003e 0B       		.uleb128 0xb
+ 332 003f 3B       		.uleb128 0x3b
+ 333 0040 05       		.uleb128 0x5
+ 334 0041 01       		.uleb128 0x1
+ 335 0042 13       		.uleb128 0x13
+ 336 0043 00       		.byte	0
+ 337 0044 00       		.byte	0
+ 338 0045 06       		.uleb128 0x6
+ 339 0046 28       		.uleb128 0x28
+ 340 0047 00       		.byte	0
+ 341 0048 03       		.uleb128 0x3
+ 342 0049 0E       		.uleb128 0xe
+ 343 004a 1C       		.uleb128 0x1c
+ 344 004b 0B       		.uleb128 0xb
+ 345 004c 00       		.byte	0
+ 346 004d 00       		.byte	0
+ 347 004e 07       		.uleb128 0x7
+ 348 004f 16       		.uleb128 0x16
+ 349 0050 00       		.byte	0
+ 350 0051 03       		.uleb128 0x3
+ 351 0052 0E       		.uleb128 0xe
+ 352 0053 3A       		.uleb128 0x3a
+ 353 0054 0B       		.uleb128 0xb
+ 354 0055 3B       		.uleb128 0x3b
+ 355 0056 05       		.uleb128 0x5
+ 356 0057 49       		.uleb128 0x49
+ 357 0058 13       		.uleb128 0x13
+ 358 0059 00       		.byte	0
+ 359 005a 00       		.byte	0
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc2Yxsiq.s 			page 8
 
 
- 351      75646120 
- 351      42656E20 
- 352 0050 6374735C 		.ascii	"cts\\WW\\FW\\WorkingCopy\\WWV1_0\\WW_V1_1.cydsn\000"
- 352      57575C46 
- 352      575C576F 
- 352      726B696E 
- 352      67436F70 
- 353              	.LASF18:
- 354 007b 4359424C 		.ascii	"CYBLE_STATE_DISCONNECTED\000"
- 354      455F5354 
- 354      4154455F 
- 354      44495343 
- 354      4F4E4E45 
- 355              	.LASF5:
- 356 0094 6C6F6E67 		.ascii	"long unsigned int\000"
- 356      20756E73 
- 356      69676E65 
- 356      6420696E 
- 356      7400
- 357              	.LASF15:
- 358 00a6 4359424C 		.ascii	"CYBLE_STATE_INITIALIZING\000"
- 358      455F5354 
- 358      4154455F 
- 358      494E4954 
- 358      49414C49 
- 359              	.LASF7:
- 360 00bf 6C6F6E67 		.ascii	"long long unsigned int\000"
- 360      206C6F6E 
- 360      6720756E 
- 360      7369676E 
- 360      65642069 
- 361              	.LASF11:
- 362 00d6 63686172 		.ascii	"char\000"
- 362      00
- 363              	.LASF17:
- 364 00db 4359424C 		.ascii	"CYBLE_STATE_ADVERTISING\000"
- 364      455F5354 
- 364      4154455F 
- 364      41445645 
- 364      52544953 
- 365              	.LASF1:
- 366 00f3 756E7369 		.ascii	"unsigned char\000"
- 366      676E6564 
- 366      20636861 
- 366      7200
- 367              	.LASF23:
- 368 0101 6D61696E 		.ascii	"main\000"
- 368      00
- 369              	.LASF20:
- 370 0106 6D61696E 		.ascii	"main.c\000"
- 370      2E6300
- 371              	.LASF4:
- 372 010d 6C6F6E67 		.ascii	"long int\000"
- 372      20696E74 
- 372      00
- 373              	.LASF24:
- 374 0116 6379426C 		.ascii	"cyBle_state\000"
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc7HIu6p.s 			page 9
+ 360 005b 08       		.uleb128 0x8
+ 361 005c 2E       		.uleb128 0x2e
+ 362 005d 01       		.byte	0x1
+ 363 005e 3F       		.uleb128 0x3f
+ 364 005f 19       		.uleb128 0x19
+ 365 0060 03       		.uleb128 0x3
+ 366 0061 0E       		.uleb128 0xe
+ 367 0062 3A       		.uleb128 0x3a
+ 368 0063 0B       		.uleb128 0xb
+ 369 0064 3B       		.uleb128 0x3b
+ 370 0065 0B       		.uleb128 0xb
+ 371 0066 27       		.uleb128 0x27
+ 372 0067 19       		.uleb128 0x19
+ 373 0068 49       		.uleb128 0x49
+ 374 0069 13       		.uleb128 0x13
+ 375 006a 11       		.uleb128 0x11
+ 376 006b 01       		.uleb128 0x1
+ 377 006c 12       		.uleb128 0x12
+ 378 006d 06       		.uleb128 0x6
+ 379 006e 40       		.uleb128 0x40
+ 380 006f 18       		.uleb128 0x18
+ 381 0070 9642     		.uleb128 0x2116
+ 382 0072 19       		.uleb128 0x19
+ 383 0073 01       		.uleb128 0x1
+ 384 0074 13       		.uleb128 0x13
+ 385 0075 00       		.byte	0
+ 386 0076 00       		.byte	0
+ 387 0077 09       		.uleb128 0x9
+ 388 0078 34       		.uleb128 0x34
+ 389 0079 00       		.byte	0
+ 390 007a 03       		.uleb128 0x3
+ 391 007b 0E       		.uleb128 0xe
+ 392 007c 3A       		.uleb128 0x3a
+ 393 007d 0B       		.uleb128 0xb
+ 394 007e 3B       		.uleb128 0x3b
+ 395 007f 0B       		.uleb128 0xb
+ 396 0080 49       		.uleb128 0x49
+ 397 0081 13       		.uleb128 0x13
+ 398 0082 02       		.uleb128 0x2
+ 399 0083 18       		.uleb128 0x18
+ 400 0084 00       		.byte	0
+ 401 0085 00       		.byte	0
+ 402 0086 0A       		.uleb128 0xa
+ 403 0087 01       		.uleb128 0x1
+ 404 0088 01       		.byte	0x1
+ 405 0089 49       		.uleb128 0x49
+ 406 008a 13       		.uleb128 0x13
+ 407 008b 01       		.uleb128 0x1
+ 408 008c 13       		.uleb128 0x13
+ 409 008d 00       		.byte	0
+ 410 008e 00       		.byte	0
+ 411 008f 0B       		.uleb128 0xb
+ 412 0090 21       		.uleb128 0x21
+ 413 0091 00       		.byte	0
+ 414 0092 49       		.uleb128 0x49
+ 415 0093 13       		.uleb128 0x13
+ 416 0094 2F       		.uleb128 0x2f
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc2Yxsiq.s 			page 9
 
 
- 374      655F7374 
- 374      61746500 
- 375              	.LASF10:
- 376 0122 646F7562 		.ascii	"double\000"
- 376      6C6500
- 377              	.LASF6:
- 378 0129 6C6F6E67 		.ascii	"long long int\000"
- 378      206C6F6E 
- 378      6720696E 
- 378      7400
- 379              	.LASF3:
- 380 0137 73686F72 		.ascii	"short unsigned int\000"
- 380      7420756E 
- 380      7369676E 
- 380      65642069 
- 380      6E7400
- 381              	.LASF0:
- 382 014a 7369676E 		.ascii	"signed char\000"
- 382      65642063 
- 382      68617200 
- 383              	.LASF12:
- 384 0156 6C6F6E67 		.ascii	"long double\000"
- 384      20646F75 
- 384      626C6500 
- 385              	.LASF16:
- 386 0162 4359424C 		.ascii	"CYBLE_STATE_CONNECTED\000"
- 386      455F5354 
- 386      4154455F 
- 386      434F4E4E 
- 386      45435445 
- 387              	.LASF9:
- 388 0178 666C6F61 		.ascii	"float\000"
- 388      7400
- 389              	.LASF22:
- 390 017e 4359424C 		.ascii	"CYBLE_STATE_T\000"
- 390      455F5354 
- 390      4154455F 
- 390      5400
- 391              	.LASF2:
- 392 018c 73686F72 		.ascii	"short int\000"
- 392      7420696E 
- 392      7400
- 393              	.LASF19:
- 394 0196 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 394      43313120 
- 394      352E342E 
- 394      31203230 
- 394      31363036 
- 395 01c9 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 395      20726576 
- 395      6973696F 
- 395      6E203233 
- 395      37373135 
- 396 01fc 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 396      66756E63 
- 396      74696F6E 
- 396      2D736563 
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc7HIu6p.s 			page 10
+ 417 0095 0B       		.uleb128 0xb
+ 418 0096 00       		.byte	0
+ 419 0097 00       		.byte	0
+ 420 0098 0C       		.uleb128 0xc
+ 421 0099 34       		.uleb128 0x34
+ 422 009a 00       		.byte	0
+ 423 009b 03       		.uleb128 0x3
+ 424 009c 0E       		.uleb128 0xe
+ 425 009d 3A       		.uleb128 0x3a
+ 426 009e 0B       		.uleb128 0xb
+ 427 009f 3B       		.uleb128 0x3b
+ 428 00a0 05       		.uleb128 0x5
+ 429 00a1 49       		.uleb128 0x49
+ 430 00a2 13       		.uleb128 0x13
+ 431 00a3 3F       		.uleb128 0x3f
+ 432 00a4 19       		.uleb128 0x19
+ 433 00a5 3C       		.uleb128 0x3c
+ 434 00a6 19       		.uleb128 0x19
+ 435 00a7 00       		.byte	0
+ 436 00a8 00       		.byte	0
+ 437 00a9 00       		.byte	0
+ 438              		.section	.debug_aranges,"",%progbits
+ 439 0000 1C000000 		.4byte	0x1c
+ 440 0004 0200     		.2byte	0x2
+ 441 0006 00000000 		.4byte	.Ldebug_info0
+ 442 000a 04       		.byte	0x4
+ 443 000b 00       		.byte	0
+ 444 000c 0000     		.2byte	0
+ 445 000e 0000     		.2byte	0
+ 446 0010 00000000 		.4byte	.LFB35
+ 447 0014 74000000 		.4byte	.LFE35-.LFB35
+ 448 0018 00000000 		.4byte	0
+ 449 001c 00000000 		.4byte	0
+ 450              		.section	.debug_ranges,"",%progbits
+ 451              	.Ldebug_ranges0:
+ 452 0000 00000000 		.4byte	.LFB35
+ 453 0004 74000000 		.4byte	.LFE35
+ 454 0008 00000000 		.4byte	0
+ 455 000c 00000000 		.4byte	0
+ 456              		.section	.debug_line,"",%progbits
+ 457              	.Ldebug_line0:
+ 458 0000 6A010000 		.section	.debug_str,"MS",%progbits,1
+ 458      02004701 
+ 458      00000201 
+ 458      FB0E0D00 
+ 458      01010101 
+ 459              	.LASF16:
+ 460 0000 4359424C 		.ascii	"CYBLE_STATE_STOPPED\000"
+ 460      455F5354 
+ 460      4154455F 
+ 460      53544F50 
+ 460      50454400 
+ 461              	.LASF3:
+ 462 0014 73686F72 		.ascii	"short unsigned int\000"
+ 462      7420756E 
+ 462      7369676E 
+ 462      65642069 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc2Yxsiq.s 			page 10
 
 
- 396      74696F6E 
- 397              	.LASF13:
- 398 0224 73697A65 		.ascii	"sizetype\000"
- 398      74797065 
- 398      00
- 399              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 462      6E7400
+ 463              	.LASF8:
+ 464 0027 756E7369 		.ascii	"unsigned int\000"
+ 464      676E6564 
+ 464      20696E74 
+ 464      00
+ 465              	.LASF24:
+ 466 0034 433A5C55 		.ascii	"C:\\Users\\Yehuda Ben Chaim\\Google Drive\\My Proje"
+ 466      73657273 
+ 466      5C596568 
+ 466      75646120 
+ 466      42656E20 
+ 467 0063 6374735C 		.ascii	"cts\\WW\\FW\\WorkingCopy\\WWV1_0\\WW_V1_1.cydsn\000"
+ 467      57575C46 
+ 467      575C576F 
+ 467      726B696E 
+ 467      67436F70 
+ 468              	.LASF20:
+ 469 008e 4359424C 		.ascii	"CYBLE_STATE_DISCONNECTED\000"
+ 469      455F5354 
+ 469      4154455F 
+ 469      44495343 
+ 469      4F4E4E45 
+ 470              	.LASF5:
+ 471 00a7 6C6F6E67 		.ascii	"long unsigned int\000"
+ 471      20756E73 
+ 471      69676E65 
+ 471      6420696E 
+ 471      7400
+ 472              	.LASF17:
+ 473 00b9 4359424C 		.ascii	"CYBLE_STATE_INITIALIZING\000"
+ 473      455F5354 
+ 473      4154455F 
+ 473      494E4954 
+ 473      49414C49 
+ 474              	.LASF7:
+ 475 00d2 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 475      206C6F6E 
+ 475      6720756E 
+ 475      7369676E 
+ 475      65642069 
+ 476              	.LASF9:
+ 477 00e9 5F5F7569 		.ascii	"__uint8_t\000"
+ 477      6E74385F 
+ 477      7400
+ 478              	.LASF13:
+ 479 00f3 63686172 		.ascii	"char\000"
+ 479      00
+ 480              	.LASF19:
+ 481 00f8 4359424C 		.ascii	"CYBLE_STATE_ADVERTISING\000"
+ 481      455F5354 
+ 481      4154455F 
+ 481      41445645 
+ 481      52544953 
+ 482              	.LASF10:
+ 483 0110 75696E74 		.ascii	"uint8_t\000"
+ 483      385F7400 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc2Yxsiq.s 			page 11
+
+
+ 484              	.LASF1:
+ 485 0118 756E7369 		.ascii	"unsigned char\000"
+ 485      676E6564 
+ 485      20636861 
+ 485      7200
+ 486              	.LASF25:
+ 487 0126 6D61696E 		.ascii	"main\000"
+ 487      00
+ 488              	.LASF23:
+ 489 012b 6D61696E 		.ascii	"main.c\000"
+ 489      2E6300
+ 490              	.LASF4:
+ 491 0132 6C6F6E67 		.ascii	"long int\000"
+ 491      20696E74 
+ 491      00
+ 492              	.LASF12:
+ 493 013b 646F7562 		.ascii	"double\000"
+ 493      6C6500
+ 494              	.LASF26:
+ 495 0142 74657374 		.ascii	"testArr\000"
+ 495      41727200 
+ 496              	.LASF6:
+ 497 014a 6C6F6E67 		.ascii	"long long int\000"
+ 497      206C6F6E 
+ 497      6720696E 
+ 497      7400
+ 498              	.LASF27:
+ 499 0158 6379426C 		.ascii	"cyBle_state\000"
+ 499      655F7374 
+ 499      61746500 
+ 500              	.LASF0:
+ 501 0164 7369676E 		.ascii	"signed char\000"
+ 501      65642063 
+ 501      68617200 
+ 502              	.LASF14:
+ 503 0170 6C6F6E67 		.ascii	"long double\000"
+ 503      20646F75 
+ 503      626C6500 
+ 504              	.LASF18:
+ 505 017c 4359424C 		.ascii	"CYBLE_STATE_CONNECTED\000"
+ 505      455F5354 
+ 505      4154455F 
+ 505      434F4E4E 
+ 505      45435445 
+ 506              	.LASF11:
+ 507 0192 666C6F61 		.ascii	"float\000"
+ 507      7400
+ 508              	.LASF21:
+ 509 0198 4359424C 		.ascii	"CYBLE_STATE_T\000"
+ 509      455F5354 
+ 509      4154455F 
+ 509      5400
+ 510              	.LASF2:
+ 511 01a6 73686F72 		.ascii	"short int\000"
+ 511      7420696E 
+ 511      7400
+ 512              	.LASF22:
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cc2Yxsiq.s 			page 12
+
+
+ 513 01b0 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 513      43313120 
+ 513      352E342E 
+ 513      31203230 
+ 513      31363036 
+ 514 01e3 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 514      20726576 
+ 514      6973696F 
+ 514      6E203233 
+ 514      37373135 
+ 515 0216 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 515      66756E63 
+ 515      74696F6E 
+ 515      2D736563 
+ 515      74696F6E 
+ 516              	.LASF15:
+ 517 023e 73697A65 		.ascii	"sizetype\000"
+ 517      74797065 
+ 517      00
+ 518              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

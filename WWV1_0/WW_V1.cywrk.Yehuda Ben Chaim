@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="WW_V1\WW_V1_1\Generated_Source\PSoC4\BLE\BLE_custom.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="WW_V1\WW_V1_1\TopDesign">
 <ExpandedNodeIds>
 <v>WW_V1</v>
 <v>WW_V1\WW_V1_1</v>
@@ -112,7 +112,7 @@
 <v>WW_V1\WW_V1_1\Generated_Source\PSoC4\cydevice_trm.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="WW_V1">
 <ExpandedNodeIds>
 <v>WW_V1</v>
 <v>WW_V1\WW_V1_1</v>
@@ -126,7 +126,7 @@
 <v>WW_V1\WW_V1_1\TopDesign\TopDesign.cysch</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="WW_V1">
 <ExpandedNodeIds>
 <v>WW_V1</v>
 <v>WW_V1\WW_V1_1</v>
@@ -199,69 +199,6 @@
 <VisibleNodeIds>
 <v>WW_V1</v>
 <v>WW_V1\WW_V1_1</v>
-<v>WW_V1\WW_V1_1\CortexM0</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_bless_isr.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_custom.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_eventHandler.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_gatt.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_HAL_INT.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_HAL_PVT.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\BLEApplications.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\Control.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CPS.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CPS_PM.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CSD.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CSD_PM.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\HorOut.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\HorOut_PM.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\HozIn.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\HozIn_PM.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\iprintf.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_PM.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\PBDown.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\PBDown_PM.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\PBIn.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\PBIn_PM.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\PBOut.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\PBOut_PM.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\PBUp.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\PBUp_PM.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_BOOT.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_PM.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_rx.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_rx_PM.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_SCBCLK.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_SPI_UART.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_SPI_UART_INT.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_tx.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_tx_PM.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_UART.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_UART_BOOT.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\VerDown.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\VerDown_PM.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\VerUp.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\Listing Files\VerUp_PM.lst</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\WW_V1_1.elf</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\WW_V1_1.hex</v>
-<v>WW_V1\WW_V1_1\CortexM0\ARM_GCC_541\Debug\WW_V1_1.map</v>
-<v>WW_V1\WW_V1_1\WW_V1_1.gpdsc</v>
 <v>WW_V1\WW_V1_1\WW_V1_1.rpt</v>
 <v>WW_V1\WW_V1_1\WW_V1_1_timing.html</v>
 </VisibleNodeIds>
@@ -271,7 +208,7 @@
 <v>Datasheet</v>
 </TreeKeysV2>
 <TreeStatesV2>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="WW_V1">
 <ExpandedNodeIds>
 <v>WW_V1</v>
 <v>WW_V1\WW_V1_1</v>
@@ -328,7 +265,6 @@
 <name v=".\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_custom.h" />
 <name v=".\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_custom.c" />
 <name v=".\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_Stack.h" />
-<name v=".\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_1_eventHandler.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -336,7 +272,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="2210, 1116" SelectedTabbedMdiWindow="92357b00-62ff-4144-91fe-7fbbab3e6a6c"><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\main.c" Guid="66671804-fffc-4cf3-aac6-64e01c526a68" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Control.c" Guid="8a525969-8c0e-4a08-848d-6f4d896d760a" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\iprintf.c" Guid="2a62c8d0-21e3-4eb1-a775-bbca52c63e30" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\WW_V1_1.cydwr" Guid="14cca5f2-ea4a-476d-9c0b-22bf8936d38c" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\TopDesign\TopDesign.cysch" Guid="2fa4f18f-ad3e-4ac8-9234-7592f30e74e2" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="91e44c92-89db-4247-bc1c-1298b1d69469" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE.c" Guid="7ab45ff8-888a-4ed4-aadb-72a0eb046708" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\BLEApplications.c" Guid="4b48db4d-7522-4ec5-90eb-2595e4eb3f66" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\BLEApplications.h" Guid="b7d9f52e-7820-44ca-9b72-b9fe59bf6eb9" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_StackGattServer.h" Guid="72c96f9e-b798-4cb8-ac79-3321f6900c28" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_StackGatt.h" Guid="53c9ea15-bee2-4606-b403-d2cee0593446" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\LED.c" Guid="b7a7d951-9555-426e-9614-63bd28b18298" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\main.h" Guid="178cbf64-a31e-4442-b3c4-6cf117d9dc0c" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Control.h" Guid="753570ea-e27f-4c21-9b42-3d088837bed1" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_gatt.c" Guid="9545dbe6-cf9c-4a3f-b121-41e86d618bab" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_custom.h" Guid="f944cf90-c04d-4525-aac5-ddbf216abe92" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_custom.c" Guid="92357b00-62ff-4144-91fe-7fbbab3e6a6c" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_Stack.h" Guid="81945f51-0aa1-4f68-b354-96b246ae457d" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_1_eventHandler.c" Guid="44eef075-112c-4492-871e-38541355ddab" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="2210, 916" SelectedTabbedMdiWindow="4b48db4d-7522-4ec5-90eb-2595e4eb3f66"><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\main.c" Guid="66671804-fffc-4cf3-aac6-64e01c526a68" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Control.c" Guid="8a525969-8c0e-4a08-848d-6f4d896d760a" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\iprintf.c" Guid="2a62c8d0-21e3-4eb1-a775-bbca52c63e30" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\WW_V1_1.cydwr" Guid="14cca5f2-ea4a-476d-9c0b-22bf8936d38c" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\TopDesign\TopDesign.cysch" Guid="2fa4f18f-ad3e-4ac8-9234-7592f30e74e2" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="91e44c92-89db-4247-bc1c-1298b1d69469" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE.c" Guid="7ab45ff8-888a-4ed4-aadb-72a0eb046708" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\BLEApplications.c" Guid="4b48db4d-7522-4ec5-90eb-2595e4eb3f66" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\BLEApplications.h" Guid="b7d9f52e-7820-44ca-9b72-b9fe59bf6eb9" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_StackGattServer.h" Guid="72c96f9e-b798-4cb8-ac79-3321f6900c28" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_StackGatt.h" Guid="53c9ea15-bee2-4606-b403-d2cee0593446" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\LED.c" Guid="b7a7d951-9555-426e-9614-63bd28b18298" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\main.h" Guid="178cbf64-a31e-4442-b3c4-6cf117d9dc0c" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Control.h" Guid="753570ea-e27f-4c21-9b42-3d088837bed1" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_gatt.c" Guid="9545dbe6-cf9c-4a3f-b121-41e86d618bab" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_custom.h" Guid="f944cf90-c04d-4525-aac5-ddbf216abe92" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_custom.c" Guid="92357b00-62ff-4144-91fe-7fbbab3e6a6c" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW_V1_1.cydsn\Generated_Source\PSoC4\BLE_Stack.h" Guid="81945f51-0aa1-4f68-b354-96b246ae457d" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

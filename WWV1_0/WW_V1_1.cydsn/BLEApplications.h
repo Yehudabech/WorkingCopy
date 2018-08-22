@@ -26,7 +26,7 @@ extern uint8 LPMselData;
 
 void CustomEventHandler(uint32 event, void * eventParam);
 void UpdateNotificationCCCD(void);
-void SendReedSwitchNotification(uint8 ReedData);
+void SendReedSwitchNotification(uint8 *ReedData);
 void UpdateConnectionParam(void);
 void Write_pass_to_flash(void);
 //void Update_password(void);

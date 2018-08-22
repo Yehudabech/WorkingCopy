@@ -37,7 +37,7 @@
 #define CYBLE_WW_SERVICE_INCOMINGDATA_CHAR_INDEX   (0x01u) /* Index of IncomingData characteristic */
 #define CYBLE_WW_SERVICE_INCOMINGDATA_CUSTOM_DESCRIPTOR_DESC_INDEX   (0x00u) /* Index of Custom Descriptor descriptor */
 #define CYBLE_WW_SERVICE_OUTGOINGDATA_CHAR_INDEX   (0x02u) /* Index of OutgoingData characteristic */
-#define CYBLE_WW_SERVICE_OUTGOINGDATA_CUSTOM_DESCRIPTOR_DESC_INDEX   (0x00u) /* Index of Custom Descriptor descriptor */
+#define CYBLE_WW_SERVICE_OUTGOINGDATA_CLIENT_CHARACTERISTIC_CONFIGURATION_DESC_INDEX   (0x00u) /* Index of Client Characteristic Configuration descriptor */
 
 
 #define CYBLE_WW_SERVICE_SERVICE_HANDLE   (0x0010u) /* Handle of WW_Service service */
@@ -50,7 +50,7 @@
 #define CYBLE_WW_SERVICE_INCOMINGDATA_CUSTOM_DESCRIPTOR_DESC_HANDLE   (0x0017u) /* Handle of Custom Descriptor descriptor */
 #define CYBLE_WW_SERVICE_OUTGOINGDATA_DECL_HANDLE   (0x0018u) /* Handle of OutgoingData characteristic declaration */
 #define CYBLE_WW_SERVICE_OUTGOINGDATA_CHAR_HANDLE   (0x0019u) /* Handle of OutgoingData characteristic */
-#define CYBLE_WW_SERVICE_OUTGOINGDATA_CUSTOM_DESCRIPTOR_DESC_HANDLE   (0x001Au) /* Handle of Custom Descriptor descriptor */
+#define CYBLE_WW_SERVICE_OUTGOINGDATA_CLIENT_CHARACTERISTIC_CONFIGURATION_DESC_HANDLE   (0x001Au) /* Handle of Client Characteristic Configuration descriptor */
 
 
 

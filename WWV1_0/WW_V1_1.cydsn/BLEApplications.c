@@ -158,7 +158,7 @@ void UpdateNotificationCCCD(void)
 		updateNotificationCCCAttribute = FALSE;
 	
 		/* Update CCCD handle with notification status data*/
-		//NotificationCCCDhandle.attrHandle =  CYBLE_WW_SERVICE_WW_CHARACTERISTIC_CUSTOM_DESCRIPTOR_DESC_HANDLE;
+		NotificationCCCDhandle.attrHandle =  CYBLE_WW_SERVICE_OUTGOINGDATA_CLIENT_CHARACTERISTIC_CONFIGURATION_DESC_HANDLE;
 		NotificationCCCDhandle.value.val = &Notification_Data;//CCCDvalue;
 		NotificationCCCDhandle.value.len = CCC_DATA_LEN;
 		
@@ -186,18 +186,18 @@ void UpdateNotificationCCCD(void)
 *  void
 *
 *******************************************************************************/
-void    SendReedSwitchNotification(uint8 ReedData)
+void    SendReedSwitchNotification(uint8 *ReedData)
 {
 	/* 'ReednotificationHandle' stores CapSense notification data parameters */
-	CYBLE_GATTS_HANDLE_VALUE_NTF_T		ReednotificationHandle;	
+	CYBLE_GATTS_HANDLE_VALUE_NTF_T		OutgoingNotificationsHandle;	
 	
 	/* Update notification handle with CapSense slider data*/
-	//ReednotificationHandle.attrHandle = CYBLE_WW_SERVICE_WW_CHARACTERISTIC_CHAR_HANDLE;				
-	ReednotificationHandle.value.val = &ReedData;
-	ReednotificationHandle.value.len = CHAR_DATA_LEN;
+	OutgoingNotificationsHandle.attrHandle = CYBLE_WW_SERVICE_CUSTOM_CHARACTERISTIC_CHAR_HANDLE;				
+	OutgoingNotificationsHandle.value.val = (void*)ReedData;
+	OutgoingNotificationsHandle.value.len = CHAR_DATA_LEN;
 	
 	/* Send notifications. */
-	CyBle_GattsNotification(cyBle_connHandle, &ReednotificationHandle);
+	CyBle_GattsNotification(cyBle_connHandle, &OutgoingNotificationsHandle);
 }
 
 void UpdateConnectionParam(void)
