@@ -10,7 +10,7 @@
  * ========================================
 */
 #include "project.h"
-#include <stdio.h>
+#include "iprintf.h"
 
 
 void CustomEventHandler(uint32, void *);
@@ -19,18 +19,17 @@ CYBLE_CONN_HANDLE_T  connectionHandle;
 uint8 deviceConnected = 0;
 CYBLE_GAP_BONDED_DEV_ADDR_LIST_T Peer_Addr1;
 
+
+uint8_t testvar= 0x89;
+
 int main(void)
 {
-    UART_Start();
+    SCB_1_Start();
     CyBle_Start(CustomEventHandler);
     CyGlobalIntEnable; /* Enable global interrupts. */
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
-    //printf("lkjfdkja\n\r");
-    UART_UartPutString("Test!!!!!!\n\r");
-    uint8_t tes = 0xFD;
-    char testt = tes;
-    UART_UartPutChar(testt);
+   iprintf("The value is: %x\n\r", testvar);
     for(;;)
     {
         CyBle_ProcessEvents();
@@ -111,14 +110,14 @@ void CustomEventHandler(uint32 event, void * eventParam)
                password[1] = wrReqParam->handleValPair.value.val[1];
             
             
-                UART_UartPutString("\n\r\n\r");
+                //UART_UartPutString("\n\r\n\r");
                 uint8_t tes = password[0];
                 char testt = tes;
-                UART_UartPutChar(testt);
-                UART_UartPutString("\n\r\n\r");
+                //UART_UartPutChar(testt);
+                //UART_UartPutString("\n\r\n\r");
                 tes = password[1];
                 testt = tes;
-                UART_UartPutChar(testt);
+              //  UART_UartPutChar(testt);
 //               Write_pass_to_flash();
                //CyBle_GattsWriteAttributeValue(&wrReqParam->handleValPair, ZERO, &cyBle_connHandle, CYBLE_GATT_DB_PEER_INITIATED);
            }

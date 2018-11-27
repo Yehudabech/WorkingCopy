@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
   29:Generated_Source\PSoC4/cyfitter_cfg.c **** #if defined(__GNUC__) || defined(__ARMCC_VERSION)
   30:Generated_Source\PSoC4/cyfitter_cfg.c ****     #define CYPACKED 
   31:Generated_Source\PSoC4/cyfitter_cfg.c ****     #define CYPACKED_ATTR __attribute__ ((packed))
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 2
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 2
 
 
   32:Generated_Source\PSoC4/cyfitter_cfg.c ****     #define CYALIGNED __attribute__ ((aligned))
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
   86:Generated_Source\PSoC4/cyfitter_cfg.c **** }
   87:Generated_Source\PSoC4/cyfitter_cfg.c **** CY_CFG_UNUSED
   88:Generated_Source\PSoC4/cyfitter_cfg.c **** static void CYCONFIGCPYCODE(void *dest, const void *src, size_t n);
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 3
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 3
 
 
   89:Generated_Source\PSoC4/cyfitter_cfg.c **** CY_CFG_UNUSED
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  143:Generated_Source\PSoC4/cyfitter_cfg.c ****     /* `#END` */
  144:Generated_Source\PSoC4/cyfitter_cfg.c **** 
  145:Generated_Source\PSoC4/cyfitter_cfg.c ****     while(1) {}
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 4
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 4
 
 
  146:Generated_Source\PSoC4/cyfitter_cfg.c **** #endif /* CY_CFG_CLOCK_STARTUP_ERROR_CALLBACK */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  200:Generated_Source\PSoC4/cyfitter_cfg.c **** 
  201:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* Setup phase aligned clocks */
  202:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)CYREG_PERI_DIV_16_CTL0, 0x00002200u);
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 5
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 5
 
 
  203:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)CYREG_PERI_DIV_CMD, 0x8000FF40u);
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
   40 000a 0022     		movs	r2, #0
   41 000c 034B     		ldr	r3, .L2+8
   42 000e 1A60     		str	r2, [r3]
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 6
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 6
 
 
  244:Generated_Source\PSoC4/cyfitter_cfg.c **** }
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
   92              		@ args = 0, pretend = 0, frame = 0
   93              		@ frame_needed = 0, uses_anonymous_args = 0
   94 0000 70B5     		push	{r4, r5, r6, lr}
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 7
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 7
 
 
   95              		.cfi_def_cfa_offset 16
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  139 003c 0022     		movs	r2, #0
  140 003e 1C4B     		ldr	r3, .L6+32
  141 0040 1A60     		str	r2, [r3]
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 8
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 8
 
 
  196:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* Start the ECO and do not check status since it is not needed for HFCLK */
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  186 0086 0820     		movs	r0, #8
  187 0088 FFF7FEFF 		bl	CyIntEnable
  188              	.LVL10:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 9
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 9
 
 
  216:Generated_Source\PSoC4/cyfitter_cfg.c **** }
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  261:Generated_Source\PSoC4/cyfitter_cfg.c **** * Return:
  262:Generated_Source\PSoC4/cyfitter_cfg.c **** *   void
  263:Generated_Source\PSoC4/cyfitter_cfg.c **** *
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 10
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 10
 
 
  264:Generated_Source\PSoC4/cyfitter_cfg.c **** *******************************************************************************/
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  291:Generated_Source\PSoC4/cyfitter_cfg.c **** 			const cfg_memset_t CYCODE * CYDATA ms = &cfg_memset_list[i];
  292:Generated_Source\PSoC4/cyfitter_cfg.c **** 			CYMEMZERO(ms->address, (size_t)(uint32)(ms->size));
  252              		.loc 1 292 0 discriminator 3
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 11
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 11
 
 
  253 00e6 1748     		ldr	r0, .L11+4
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  304:Generated_Source\PSoC4/cyfitter_cfg.c **** 
  305:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* Perform second pass device configuration. These items must be configured in specific order afte
  306:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* IOPINS0_0 Starting address: CYDEV_GPIO_PRT0_BASE */
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 12
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 12
 
 
  307:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYDEV_GPIO_PRT0_BASE), 0x00000020u);
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  336              	cfg_memset_list.4884:
  337 0000 00300F40 		.word	1074737152
  338 0004 0004     		.short	1024
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 13
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 13
 
 
  339 0006 00400F40 		.4byte	1074741248
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  393 005d 62020000 		.4byte	.LASF5
  394 0061 04       		.uleb128 0x4
  395 0062 02       		.byte	0x2
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 14
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 14
 
 
  396 0063 07       		.byte	0x7
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  450 00d0 06       		.uleb128 0x6
  451 00d1 0E000000 		.4byte	.LASF19
  452 00d5 03       		.byte	0x3
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 15
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 15
 
 
  453 00d6 9002     		.2byte	0x290
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  507 013c 51       		.byte	0x51
  508 013d 00       		.byte	0
  509 013e 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 16
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 16
 
 
  510 013f 09       		.uleb128 0x9
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  564 01af 00       		.byte	0
  565 01b0 0E       		.uleb128 0xe
  566 01b1 5A000000 		.4byte	.LVL8
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 17
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 17
 
 
  567 01b5 0B030000 		.4byte	0x30b
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  621 0222 6F000000 		.4byte	.LASF23
  622 0226 01       		.byte	0x1
  623 0227 1501     		.2byte	0x115
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 18
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 18
 
 
  624 0229 99000000 		.4byte	0x99
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  678 02a2 31       		.byte	0x31
  679 02a3 24       		.byte	0x24
  680 02a4 74       		.byte	0x74
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 19
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 19
 
 
  681 02a5 00       		.sleb128 0
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  735 0315 DA       		.byte	0xda
  736 0316 1B       		.uleb128 0x1b
  737 0317 2C000000 		.4byte	.LASF32
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 20
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 20
 
 
  738 031b 2C000000 		.4byte	.LASF32
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  792 002b 04       		.uleb128 0x4
  793 002c 24       		.uleb128 0x24
  794 002d 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 21
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 21
 
 
  795 002e 0B       		.uleb128 0xb
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  849 0065 00       		.byte	0
  850 0066 00       		.byte	0
  851 0067 09       		.uleb128 0x9
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 22
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 22
 
 
  852 0068 2E       		.uleb128 0x2e
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  906 00a4 00       		.byte	0
  907 00a5 0D       		.uleb128 0xd
  908 00a6 898201   		.uleb128 0x4109
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 23
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 23
 
 
  909 00a9 00       		.byte	0
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  963 00e2 11       		.uleb128 0x11
  964 00e3 13       		.uleb128 0x13
  965 00e4 01       		.byte	0x1
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 24
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 24
 
 
  966 00e5 0B       		.uleb128 0xb
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  1020 011b 0E       		.uleb128 0xe
  1021 011c 3A       		.uleb128 0x3a
  1022 011d 0B       		.uleb128 0xb
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 25
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 25
 
 
  1023 011e 3B       		.uleb128 0x3b
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  1077 0154 1B       		.uleb128 0x1b
  1078 0155 2E       		.uleb128 0x2e
  1079 0156 00       		.byte	0
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 26
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 26
 
 
  1080 0157 3F       		.uleb128 0x3f
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  1134 0058 9F       		.byte	0x9f
  1135 0059 E6000000 		.4byte	.LVL12
  1136 005d 04010000 		.4byte	.LVL14
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 27
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 27
 
 
  1137 0061 0100     		.2byte	0x1
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  1191 0004 20000000 		.4byte	.LFE6
  1192 0008 00000000 		.4byte	.LFB2
  1193 000c 0C000000 		.4byte	.LFE2
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 28
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 28
 
 
  1194 0010 00000000 		.4byte	.LFB5
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  1222 006f 73697A65 		.ascii	"size\000"
  1222      00
  1223              	.LASF36:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 29
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 29
 
 
  1224 0074 433A5C55 		.ascii	"C:\\Users\\Yehuda Ben Chaim\\Google Drive\\My Proje"
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  1247              	.LASF14:
  1248 0149 75696E74 		.ascii	"uint16\000"
  1248      313600
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 30
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 30
 
 
  1249              	.LASF15:
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 1
  1270      6C617955 
  1270      7300
  1271              	.LASF11:
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccbK5deX.s 			page 31
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccI1Ggj3.s 			page 31
 
 
  1272 024c 63686172 		.ascii	"char\000"

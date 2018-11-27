@@ -7,7 +7,7 @@
   <width>32</width>
   <peripherals>
     <peripheral>
-      <name>UART</name>
+      <name>SCB_1</name>
       <description>Serial Communication Block</description>
       <baseAddress>0x0</baseAddress>
       <addressBlock>

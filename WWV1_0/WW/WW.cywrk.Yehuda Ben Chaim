@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="WW\BLE_Imp\Generated_Source">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="WW\BLE_Imp\Header Files">
 <ExpandedNodeIds>
 <v>WW</v>
 <v>WW\BLE_Imp</v>
@@ -28,11 +28,12 @@
 <v>WW\BLE_Imp\BLE_Imp.cydwr\Flash Security</v>
 <v>WW\BLE_Imp\Header Files</v>
 <v>WW\BLE_Imp\Header Files\cyapicallbacks.h</v>
+<v>WW\BLE_Imp\Header Files\iprintf.h</v>
 <v>WW\BLE_Imp\Source Files</v>
+<v>WW\BLE_Imp\Source Files\iprintf.c</v>
 <v>WW\BLE_Imp\Source Files\main.c</v>
 <v>WW\BLE_Imp\Generated_Source\PSoC4</v>
 <v>WW\BLE_Imp\Generated_Source\PSoC4\BLE</v>
-<v>WW\BLE_Imp\Generated_Source\PSoC4\UART_tx</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>WW</v>
@@ -48,7 +49,9 @@
 <v>WW\BLE_Imp\BLE_Imp.cydwr\Flash Security</v>
 <v>WW\BLE_Imp\Header Files</v>
 <v>WW\BLE_Imp\Header Files\cyapicallbacks.h</v>
+<v>WW\BLE_Imp\Header Files\iprintf.h</v>
 <v>WW\BLE_Imp\Source Files</v>
+<v>WW\BLE_Imp\Source Files\iprintf.c</v>
 <v>WW\BLE_Imp\Source Files\main.c</v>
 <v>WW\BLE_Imp\Generated_Source</v>
 </VisibleNodeIds>
@@ -92,19 +95,20 @@
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\iprintf.lst</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
-<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
-<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_PM.lst</v>
-<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_rx.lst</v>
-<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_rx_PM.lst</v>
-<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SCBCLK.lst</v>
-<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SPI_UART.lst</v>
-<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SPI_UART_INT.lst</v>
-<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_tx.lst</v>
-<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_tx_PM.lst</v>
-<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_UART.lst</v>
-<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_UART_BOOT.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_BOOT.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_rx.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_rx_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_SCBCLK.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_SPI_UART.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_SPI_UART_INT.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_tx.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_tx_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_UART.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_UART_BOOT.lst</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\BLE_Imp.elf</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\BLE_Imp.hex</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\BLE_Imp.map</v>
@@ -159,7 +163,29 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs />
+<OpenDocs>
+<name v=".\BLE_Imp.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\BLE_Imp.cydsn\BLE_Imp.cydwr" />
+<name v=".\BLE_Imp.cydsn\main.c" />
+<name v=".\BLE_Imp.cydsn\Generated_Source\PSoC4\UART.c" />
+<name v=".\BLE_Imp.cydsn\Generated_Source\PSoC4\UART_tx.c" />
+<name v=".\BLE_Imp.cydsn\Generated_Source\PSoC4\UART_SPI_UART.h" />
+<name v=".\BLE_Imp.cydsn\Generated_Source\PSoC4\UART_UART.c" />
+<name v=".\BLE_Imp.cydsn\Generated_Source\PSoC4\BLE.c" />
+<name v=".\BLE_Imp.cydsn\Generated_Source\PSoC4\BLE.h" />
+<name v=".\BLE_Imp.cydsn\Generated_Source\PSoC4\CyLib.c" />
+<name v=".\BLE_Imp.cydsn\Generated_Source\PSoC4\BLE_eventHandler.c" />
+<name v=".\BLE_Imp.cydsn\Generated_Source\PSoC4\BLE_gatt.c" />
+<name v=".\BLE_Imp.cydsn\Generated_Source\PSoC4\BLE_custom.h" />
+<name v=".\BLE_Imp.cydsn\Generated_Source\PSoC4\BLE_custom.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="2124, 1183" SelectedTabbedMdiWindow="9df296f7-1662-46a4-982e-7db5222b4efb"><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\TopDesign\TopDesign.cysch" Guid="7fd9a6d0-ee8f-4692-af9f-c97296a61676" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\BLE_Imp.cydwr" Guid="e0c80bc6-0872-49cf-a395-954d5cfd30f7" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\main.c" Guid="9df296f7-1662-46a4-982e-7db5222b4efb" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\Generated_Source\PSoC4\UART.c" Guid="c91bf5dc-adce-48ec-ad3e-144ca519fcca" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\Generated_Source\PSoC4\UART_tx.c" Guid="d490fc65-9dba-4ed0-83c4-e5ff74ba3784" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\Generated_Source\PSoC4\UART_SPI_UART.h" Guid="a73779bb-de29-4e92-a7b7-3be595c82eca" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\Generated_Source\PSoC4\UART_UART.c" Guid="9bd5418b-6dc6-45e7-9d1c-4d1e52000f9e" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\Generated_Source\PSoC4\BLE.c" Guid="3da90c68-13e3-4176-8b9e-8dc520350e97" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\Generated_Source\PSoC4\BLE.h" Guid="df620fd8-1c56-4a6f-b605-2a6705b584da" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\Generated_Source\PSoC4\CyLib.c" Guid="86453bfb-6d92-4bd3-82dd-cdcb01c0ada7" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\Generated_Source\PSoC4\BLE_eventHandler.c" Guid="8b87f3df-afd5-46f9-a66a-bfdc453f452b" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\Generated_Source\PSoC4\BLE_gatt.c" Guid="ba3b3000-fb0a-4784-bcf8-6919165173f8" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\Generated_Source\PSoC4\BLE_custom.h" Guid="9e106959-577b-41f6-9100-a8dd3c4ebfc1" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\Generated_Source\PSoC4\BLE_custom.c" Guid="ce69d9cd-25f7-47ca-a75c-e6e2f4ca3232" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="91e44c92-89db-4247-bc1c-1298b1d69469" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
