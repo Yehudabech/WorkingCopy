@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="WW\BLE_Imp\Generated_Source">
+<ExpandedNodeIds>
+<v>WW</v>
+<v>WW\BLE_Imp</v>
+<v>WW\BLE_Imp\TopDesign</v>
+<v>WW\BLE_Imp\BLE_Imp.cydwr</v>
+<v>WW\BLE_Imp\BLE_Imp.cydwr\Pins</v>
+<v>WW\BLE_Imp\BLE_Imp.cydwr\Analog</v>
+<v>WW\BLE_Imp\BLE_Imp.cydwr\Clocks</v>
+<v>WW\BLE_Imp\BLE_Imp.cydwr\Interrupts</v>
+<v>WW\BLE_Imp\BLE_Imp.cydwr\System</v>
+<v>WW\BLE_Imp\BLE_Imp.cydwr\Directives</v>
+<v>WW\BLE_Imp\BLE_Imp.cydwr\Flash Security</v>
+<v>WW\BLE_Imp\Header Files</v>
+<v>WW\BLE_Imp\Header Files\cyapicallbacks.h</v>
+<v>WW\BLE_Imp\Source Files</v>
+<v>WW\BLE_Imp\Source Files\main.c</v>
+<v>WW\BLE_Imp\Generated_Source\PSoC4</v>
+<v>WW\BLE_Imp\Generated_Source\PSoC4\BLE</v>
+<v>WW\BLE_Imp\Generated_Source\PSoC4\UART_tx</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>WW</v>
+<v>WW\BLE_Imp</v>
+<v>WW\BLE_Imp\TopDesign</v>
+<v>WW\BLE_Imp\BLE_Imp.cydwr</v>
+<v>WW\BLE_Imp\BLE_Imp.cydwr\Pins</v>
+<v>WW\BLE_Imp\BLE_Imp.cydwr\Analog</v>
+<v>WW\BLE_Imp\BLE_Imp.cydwr\Clocks</v>
+<v>WW\BLE_Imp\BLE_Imp.cydwr\Interrupts</v>
+<v>WW\BLE_Imp\BLE_Imp.cydwr\System</v>
+<v>WW\BLE_Imp\BLE_Imp.cydwr\Directives</v>
+<v>WW\BLE_Imp\BLE_Imp.cydwr\Flash Security</v>
+<v>WW\BLE_Imp\Header Files</v>
+<v>WW\BLE_Imp\Header Files\cyapicallbacks.h</v>
+<v>WW\BLE_Imp\Source Files</v>
+<v>WW\BLE_Imp\Source Files\main.c</v>
+<v>WW\BLE_Imp\Generated_Source</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>WW</v>
+<v>WW\BLE_Imp</v>
+<v>WW\BLE_Imp\TopDesign</v>
+<v>WW\BLE_Imp\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>WW</v>
+<v>WW\BLE_Imp</v>
+<v>WW\BLE_Imp\TopDesign</v>
+<v>WW\BLE_Imp\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>WW</v>
+<v>WW\BLE_Imp</v>
+<v>WW\BLE_Imp\CortexM0</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_bless_isr.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_custom.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_eventHandler.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_gatt.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_HAL_INT.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_HAL_PVT.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_rx.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_rx_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SCBCLK.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SPI_UART.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SPI_UART_INT.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_tx.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_tx_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_UART.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_UART_BOOT.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\BLE_Imp.elf</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\BLE_Imp.hex</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\BLE_Imp.map</v>
+<v>WW\BLE_Imp\BLE_Imp.gpdsc</v>
+<v>WW\BLE_Imp\BLE_Imp.rpt</v>
+<v>WW\BLE_Imp\BLE_Imp_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>WW</v>
+<v>WW\BLE_Imp</v>
+<v>WW\BLE_Imp\BLE_Imp.rpt</v>
+<v>WW\BLE_Imp\BLE_Imp_timing.html</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>WW</v>
+<v>WW\BLE_Imp</v>
+<v>WW\BLE_Imp\PSoC 4 Architecture TRM</v>
+<v>WW\BLE_Imp\PSoC 4200 BLE Family Datasheet</v>
+<v>WW\BLE_Imp\System Reference Guides</v>
+<v>WW\BLE_Imp\System Reference Guides\cy_boot_v5_70</v>
+<v>WW\BLE_Imp\System Reference Guides\cy_lfclk_v1_20</v>
+<v>WW\BLE_Imp\BLE_v3_52.pdf</v>
+<v>WW\BLE_Imp\SCB_P4_v4_0.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>WW</v>
+<v>WW\BLE_Imp</v>
+<v>WW\BLE_Imp\PSoC 4 Architecture TRM</v>
+<v>WW\BLE_Imp\PSoC 4200 BLE Family Datasheet</v>
+<v>WW\BLE_Imp\System Reference Guides</v>
+<v>WW\BLE_Imp\System Reference Guides\cy_boot_v5_70</v>
+<v>WW\BLE_Imp\System Reference Guides\cy_lfclk_v1_20</v>
+<v>WW\BLE_Imp\BLE_v3_52.pdf</v>
+<v>WW\BLE_Imp\SCB_P4_v4_0.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs />
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
