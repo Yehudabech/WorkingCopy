@@ -23,7 +23,7 @@
 */
 /* This array contains attribute handles for the defined Custom Services and their characteristics and descriptors.
    The array index definitions are located in the CYBLE_custom.h file. */
-const CYBLE_CUSTOMS_T cyBle_customs[0x02u] = {
+const CYBLE_CUSTOMS_T cyBle_customs[0x01u] = {
 
     /* WW_Service service */
     {
@@ -37,25 +37,16 @@ const CYBLE_CUSTOMS_T cyBle_customs[0x02u] = {
                 /* Array of Descriptors handles */
                 {
                     0x0013u, /* Handle of the Characteristic User Description descriptor */ 
-                    0x0014u, /* Handle of the Client Characteristic Configuration descriptor */ 
                 }, 
             },
-        }, 
-    },
 
-    /* Custom Service 2 service */
-    {
-        0x0015u, /* Handle of the Custom Service 2 service */ 
-        {
-
-            /* Custom Characteristic characteristic */
+            /* OutgoingData characteristic */
             {
-                0x0017u, /* Handle of the Custom Characteristic characteristic */ 
+                0x0015u, /* Handle of the OutgoingData characteristic */ 
                 
                 /* Array of Descriptors handles */
                 {
-                    0x0018u, /* Handle of the Custom Descriptor descriptor */ 
-                    CYBLE_GATT_INVALID_ATTR_HANDLE_VALUE, 
+                    0x0016u, /* Handle of the Characteristic User Description descriptor */ 
                 }, 
             },
         }, 

@@ -38,8 +38,10 @@
         <Files Root="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn">
           <File BuildType="BUILD" Toolchain="">main.c</File>
           <File BuildType="BUILD" Toolchain="">iprintf.c</File>
+          <File BuildType="BUILD" Toolchain="">BLE_Applocations.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">iprintf.h</File>
+          <File BuildType="BUILD" Toolchain="">BLE_Applications.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\Generated_Source\PSoC4">
