@@ -27,7 +27,7 @@
 #define CYBLE_CUSTOMS_SERVICE_COUNT                  (0x01u)
 #define CYBLE_CUSTOMC_SERVICE_COUNT                  (0x00u)
 #define CYBLE_CUSTOM_SERVICE_CHAR_COUNT              (0x02u)
-#define CYBLE_CUSTOM_SERVICE_CHAR_DESCRIPTORS_COUNT  (0x01u)
+#define CYBLE_CUSTOM_SERVICE_CHAR_DESCRIPTORS_COUNT  (0x02u)
 
 /* Below are the indexes and handles of the defined Custom Services and their characteristics */
 #define CYBLE_WW_SERVICE_SERVICE_INDEX   (0x00u) /* Index of WW_Service service in the cyBle_customs array */
@@ -35,6 +35,7 @@
 #define CYBLE_WW_SERVICE_INCOMINGDATA_CHARACTERISTIC_USER_DESCRIPTION_DESC_INDEX   (0x00u) /* Index of Characteristic User Description descriptor */
 #define CYBLE_WW_SERVICE_OUTGOINGDATA_CHAR_INDEX   (0x01u) /* Index of OutgoingData characteristic */
 #define CYBLE_WW_SERVICE_OUTGOINGDATA_CHARACTERISTIC_USER_DESCRIPTION_DESC_INDEX   (0x00u) /* Index of Characteristic User Description descriptor */
+#define CYBLE_WW_SERVICE_OUTGOINGDATA_CLIENT_CHARACTERISTIC_CONFIGURATION_DESC_INDEX   (0x01u) /* Index of Client Characteristic Configuration descriptor */
 
 
 #define CYBLE_WW_SERVICE_SERVICE_HANDLE   (0x0010u) /* Handle of WW_Service service */
@@ -44,6 +45,7 @@
 #define CYBLE_WW_SERVICE_OUTGOINGDATA_DECL_HANDLE   (0x0014u) /* Handle of OutgoingData characteristic declaration */
 #define CYBLE_WW_SERVICE_OUTGOINGDATA_CHAR_HANDLE   (0x0015u) /* Handle of OutgoingData characteristic */
 #define CYBLE_WW_SERVICE_OUTGOINGDATA_CHARACTERISTIC_USER_DESCRIPTION_DESC_HANDLE   (0x0016u) /* Handle of Characteristic User Description descriptor */
+#define CYBLE_WW_SERVICE_OUTGOINGDATA_CLIENT_CHARACTERISTIC_CONFIGURATION_DESC_HANDLE   (0x0017u) /* Handle of Client Characteristic Configuration descriptor */
 
 
 

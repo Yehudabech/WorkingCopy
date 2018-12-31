@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="WW\BLE_Imp\TopDesign">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="WW\BLE_Imp\Header Files\BuzzerImp.h">
 <ExpandedNodeIds>
 <v>WW</v>
 <v>WW\BLE_Imp</v>
@@ -28,14 +28,21 @@
 <v>WW\BLE_Imp\BLE_Imp.cydwr\Flash Security</v>
 <v>WW\BLE_Imp\Header Files</v>
 <v>WW\BLE_Imp\Header Files\BLE_Applications.h</v>
+<v>WW\BLE_Imp\Header Files\BuzzerImp.h</v>
+<v>WW\BLE_Imp\Header Files\common.h</v>
 <v>WW\BLE_Imp\Header Files\cyapicallbacks.h</v>
+<v>WW\BLE_Imp\Header Files\GPIO.h</v>
 <v>WW\BLE_Imp\Header Files\iprintf.h</v>
+<v>WW\BLE_Imp\Header Files\main.h</v>
 <v>WW\BLE_Imp\Source Files</v>
 <v>WW\BLE_Imp\Source Files\BLE_Applocations.c</v>
+<v>WW\BLE_Imp\Source Files\BuzzerImp.c</v>
+<v>WW\BLE_Imp\Source Files\common.c</v>
+<v>WW\BLE_Imp\Source Files\GPIO.c</v>
 <v>WW\BLE_Imp\Source Files\iprintf.c</v>
 <v>WW\BLE_Imp\Source Files\main.c</v>
 <v>WW\BLE_Imp\Generated_Source\PSoC4</v>
-<v>WW\BLE_Imp\Generated_Source\PSoC4\BLE</v>
+<v>WW\BLE_Imp\Generated_Source\PSoC4\cy_lfclk</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>WW</v>
@@ -51,25 +58,44 @@
 <v>WW\BLE_Imp\BLE_Imp.cydwr\Flash Security</v>
 <v>WW\BLE_Imp\Header Files</v>
 <v>WW\BLE_Imp\Header Files\BLE_Applications.h</v>
+<v>WW\BLE_Imp\Header Files\BuzzerImp.h</v>
+<v>WW\BLE_Imp\Header Files\common.h</v>
 <v>WW\BLE_Imp\Header Files\cyapicallbacks.h</v>
+<v>WW\BLE_Imp\Header Files\GPIO.h</v>
 <v>WW\BLE_Imp\Header Files\iprintf.h</v>
+<v>WW\BLE_Imp\Header Files\main.h</v>
 <v>WW\BLE_Imp\Source Files</v>
 <v>WW\BLE_Imp\Source Files\BLE_Applocations.c</v>
+<v>WW\BLE_Imp\Source Files\BuzzerImp.c</v>
+<v>WW\BLE_Imp\Source Files\common.c</v>
+<v>WW\BLE_Imp\Source Files\GPIO.c</v>
 <v>WW\BLE_Imp\Source Files\iprintf.c</v>
 <v>WW\BLE_Imp\Source Files\main.c</v>
 <v>WW\BLE_Imp\Generated_Source</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="WW\BLE_Imp\SysTimers_v1_0\API\SysTimers.c">
 <ExpandedNodeIds>
 <v>WW</v>
 <v>WW\BLE_Imp</v>
+<v>WW\BLE_Imp\SysTimers_v1_0</v>
+<v>WW\BLE_Imp\SysTimers_v1_0\API</v>
+<v>WW\BLE_Imp\SysTimers_v1_0\API\SysTimers.c</v>
+<v>WW\BLE_Imp\SysTimers_v1_0\API\SysTimers.h</v>
+<v>WW\BLE_Imp\SysTimers_v1_0\SysTimers.pdf</v>
+<v>WW\BLE_Imp\SysTimers_v1_0\SysTimers_v1_0.cysym</v>
 <v>WW\BLE_Imp\TopDesign</v>
 <v>WW\BLE_Imp\TopDesign\TopDesign.cysch</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>WW</v>
 <v>WW\BLE_Imp</v>
+<v>WW\BLE_Imp\SysTimers_v1_0</v>
+<v>WW\BLE_Imp\SysTimers_v1_0\API</v>
+<v>WW\BLE_Imp\SysTimers_v1_0\API\SysTimers.c</v>
+<v>WW\BLE_Imp\SysTimers_v1_0\API\SysTimers.h</v>
+<v>WW\BLE_Imp\SysTimers_v1_0\SysTimers.pdf</v>
+<v>WW\BLE_Imp\SysTimers_v1_0\SysTimers_v1_0.cysym</v>
 <v>WW\BLE_Imp\TopDesign</v>
 <v>WW\BLE_Imp\TopDesign\TopDesign.cysch</v>
 </VisibleNodeIds>
@@ -90,7 +116,13 @@
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_gatt.lst</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_HAL_INT.lst</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_HAL_PVT.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\Buzzer.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\Buzzer_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BuzzerImp.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BuzzerPWM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BuzzerPWM_PM.lst</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\common.lst</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
@@ -100,8 +132,12 @@
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\GPIO.lst</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\iprintf.lst</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\OutBeforeDown.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\OutBeforeDown_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_CLK.lst</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1.lst</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_BOOT.lst</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_PM.lst</v>
@@ -114,6 +150,16 @@
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_tx_PM.lst</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_UART.lst</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_UART_BOOT.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UpBeforeIn.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UpBeforeIn_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\WinchDownPin.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\WinchDownPin_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\WinchInPin.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\WinchInPin_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\WinchOutPin.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\WinchOutPin_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\WinchUpPin.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\WinchUpPin_PM.lst</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\BLE_Imp.elf</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\BLE_Imp.hex</v>
 <v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\BLE_Imp.map</v>
@@ -124,8 +170,63 @@
 <VisibleNodeIds>
 <v>WW</v>
 <v>WW\BLE_Imp</v>
-<v>WW\BLE_Imp\BLE_Imp.rpt</v>
-<v>WW\BLE_Imp\BLE_Imp_timing.html</v>
+<v>WW\BLE_Imp\CortexM0</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_Applocations.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_bless_isr.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_custom.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_eventHandler.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_gatt.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_HAL_INT.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_HAL_PVT.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\Buzzer.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\Buzzer_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BuzzerImp.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BuzzerPWM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\BuzzerPWM_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\common.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\GPIO.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\iprintf.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\OutBeforeDown.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\OutBeforeDown_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_CLK.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_BOOT.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_rx.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_rx_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_SCBCLK.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_SPI_UART.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_SPI_UART_INT.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_tx.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_tx_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_UART.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\SCB_1_UART_BOOT.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UpBeforeIn.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\UpBeforeIn_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\WinchDownPin.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\WinchDownPin_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\WinchInPin.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\WinchInPin_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\WinchOutPin.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\WinchOutPin_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\WinchUpPin.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\Listing Files\WinchUpPin_PM.lst</v>
+<v>WW\BLE_Imp\CortexM0\ARM_GCC_541\Debug\BLE_Imp.elf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -143,6 +244,10 @@
 <v>WW\BLE_Imp\System Reference Guides\cy_boot_v5_70</v>
 <v>WW\BLE_Imp\System Reference Guides\cy_lfclk_v1_20</v>
 <v>WW\BLE_Imp\BLE_v3_52.pdf</v>
+<v>WW\BLE_Imp\cy_clock_v2_20.pdf</v>
+<v>WW\BLE_Imp\cy_pins_v2_20</v>
+<v>WW\BLE_Imp\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>WW\BLE_Imp\PWM_v3_30.pdf</v>
 <v>WW\BLE_Imp\SCB_P4_v4_0.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
@@ -154,6 +259,10 @@
 <v>WW\BLE_Imp\System Reference Guides\cy_boot_v5_70</v>
 <v>WW\BLE_Imp\System Reference Guides\cy_lfclk_v1_20</v>
 <v>WW\BLE_Imp\BLE_v3_52.pdf</v>
+<v>WW\BLE_Imp\cy_clock_v2_20.pdf</v>
+<v>WW\BLE_Imp\cy_pins_v2_20</v>
+<v>WW\BLE_Imp\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>WW\BLE_Imp\PWM_v3_30.pdf</v>
 <v>WW\BLE_Imp\SCB_P4_v4_0.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
@@ -162,15 +271,29 @@
 </dataGuid>
 <dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
 <CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
-<indicators />
+<indicators>
+<CyGuid_67999771-01c6-4f62-90b3-2054bb36a318 type_name="CyDesigner.Framework.CyBookmark" version="1">
+<CyGuid_a1027fc4-3497-43a6-85d7-b91ffa0029b7 type_name="CyDesigner.Framework.CySerializableMarginIndicator" version="1" LineNumber="81" DocumentName=".\BLE_Imp.cydsn\main.c" />
+</CyGuid_67999771-01c6-4f62-90b3-2054bb36a318>
+<CyGuid_67999771-01c6-4f62-90b3-2054bb36a318 type_name="CyDesigner.Framework.CyBookmark" version="1">
+<CyGuid_a1027fc4-3497-43a6-85d7-b91ffa0029b7 type_name="CyDesigner.Framework.CySerializableMarginIndicator" version="1" LineNumber="83" DocumentName=".\BLE_Imp.cydsn\main.c" />
+</CyGuid_67999771-01c6-4f62-90b3-2054bb36a318>
+</indicators>
 </CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
 </dataGuid>
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\BLE_Imp.cydsn\main.c" />
 <name v=".\BLE_Imp.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\BLE_Imp.cydsn\BLE_Imp.cydwr" />
+<name v=".\BLE_Imp.cydsn\main.c" />
+<name v=".\BLE_Imp.cydsn\Generated_Source\PSoC4\WinchDownPin.c" />
+<name v=".\BLE_Imp.cydsn\Generated_Source\PSoC4\WinchOutPin.c" />
+<name v=".\BLE_Imp.cydsn\GPIO.c" />
+<name v=".\BLE_Imp.cydsn\GPIO.h" />
+<name v=".\BLE_Imp.cydsn\Buzzer.c" />
+<name v=".\BLE_Imp.cydsn\Buzzer.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -178,7 +301,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1918, 987" SelectedTabbedMdiWindow="d5a2c803-00fe-435f-abb3-a7ea039095d2"><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\main.c" Guid="9df296f7-1662-46a4-982e-7db5222b4efb" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\TopDesign\TopDesign.cysch" Guid="d5a2c803-00fe-435f-abb3-a7ea039095d2" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="2086, 1119" SelectedTabbedMdiWindow="5d49cfe2-e6cf-4104-a07d-457498476d93"><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\TopDesign\TopDesign.cysch" Guid="d5a2c803-00fe-435f-abb3-a7ea039095d2" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\BLE_Imp.cydwr" Guid="82a68b40-8eae-4d67-b41d-1a787492cbfb" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\main.c" Guid="80044102-2aa3-45b0-b9c2-1b5c3cac2759" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\Generated_Source\PSoC4\WinchDownPin.c" Guid="f4f8abb6-af89-466f-829c-4a9a03275348" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\Generated_Source\PSoC4\WinchOutPin.c" Guid="26809c95-7106-416f-87fc-ad767861299f" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\GPIO.c" Guid="1fd60d5a-9e8f-4621-80b7-58678b33aee7" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\GPIO.h" Guid="e9fb8f08-08ef-4760-b160-5fea280a63a6" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="91e44c92-89db-4247-bc1c-1298b1d69469" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\Buzzer.c" Guid="5d49cfe2-e6cf-4104-a07d-457498476d93" /><DocumentWindow Key="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\Buzzer.h" Guid="f0400861-ee74-4042-a333-30adab661ea7" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

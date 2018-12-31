@@ -46,6 +46,39 @@
   <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\SCB_1_SPI_UART_PVT.h" value="HEADER;;;;;SCB_1" />
   <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\SCB_1_PVT.h" value="HEADER;;;;;SCB_1" />
   <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\SCB_1_BOOT.h" value="HEADER;;;;;SCB_1" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\WinchUpPin.c" value="SOURCE_C;CortexM0;;;;WinchUpPin" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\WinchUpPin.h" value="HEADER;;;;;WinchUpPin" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\WinchUpPin_aliases.h" value="HEADER;;;;;WinchUpPin" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\WinchUpPin_PM.c" value="SOURCE_C;CortexM0;;;;WinchUpPin" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\WinchDownPin.c" value="SOURCE_C;CortexM0;;;;WinchDownPin" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\WinchDownPin.h" value="HEADER;;;;;WinchDownPin" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\WinchDownPin_aliases.h" value="HEADER;;;;;WinchDownPin" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\WinchDownPin_PM.c" value="SOURCE_C;CortexM0;;;;WinchDownPin" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\WinchInPin.c" value="SOURCE_C;CortexM0;;;;WinchInPin" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\WinchInPin.h" value="HEADER;;;;;WinchInPin" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\WinchInPin_aliases.h" value="HEADER;;;;;WinchInPin" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\WinchInPin_PM.c" value="SOURCE_C;CortexM0;;;;WinchInPin" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\WinchOutPin.c" value="SOURCE_C;CortexM0;;;;WinchOutPin" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\WinchOutPin.h" value="HEADER;;;;;WinchOutPin" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\WinchOutPin_aliases.h" value="HEADER;;;;;WinchOutPin" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\WinchOutPin_PM.c" value="SOURCE_C;CortexM0;;;;WinchOutPin" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\OutBeforeDown.c" value="SOURCE_C;CortexM0;;;;OutBeforeDown" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\OutBeforeDown.h" value="HEADER;;;;;OutBeforeDown" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\OutBeforeDown_aliases.h" value="HEADER;;;;;OutBeforeDown" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\OutBeforeDown_PM.c" value="SOURCE_C;CortexM0;;;;OutBeforeDown" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\UpBeforeIn.c" value="SOURCE_C;CortexM0;;;;UpBeforeIn" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\UpBeforeIn.h" value="HEADER;;;;;UpBeforeIn" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\UpBeforeIn_aliases.h" value="HEADER;;;;;UpBeforeIn" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\UpBeforeIn_PM.c" value="SOURCE_C;CortexM0;;;;UpBeforeIn" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\Buzzer.c" value="SOURCE_C;CortexM0;;;;Buzzer" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\Buzzer.h" value="HEADER;;;;;Buzzer" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\Buzzer_aliases.h" value="HEADER;;;;;Buzzer" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\Buzzer_PM.c" value="SOURCE_C;CortexM0;;;;Buzzer" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\BuzzerPWM.c" value="SOURCE_C;CortexM0;;;;BuzzerPWM" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\BuzzerPWM.h" value="HEADER;;;;;BuzzerPWM" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\BuzzerPWM_PM.c" value="SOURCE_C;CortexM0;;;;BuzzerPWM" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\PWM_CLK.c" value="SOURCE_C;CortexM0;;;;PWM_CLK" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\PWM_CLK.h" value="HEADER;;;;;PWM_CLK" />
   <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\BLE_bless_isr.c" value="SOURCE_C;CortexM0;;;;BLE_bless_isr" />
   <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\BLE_bless_isr.h" value="HEADER;;;;;BLE_bless_isr" />
   <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\SCB_1_SCBCLK.c" value="SOURCE_C;CortexM0;;;;SCB_1_SCBCLK" />

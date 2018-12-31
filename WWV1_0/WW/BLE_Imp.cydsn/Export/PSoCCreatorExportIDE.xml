@@ -39,9 +39,16 @@
           <File BuildType="BUILD" Toolchain="">main.c</File>
           <File BuildType="BUILD" Toolchain="">iprintf.c</File>
           <File BuildType="BUILD" Toolchain="">BLE_Applocations.c</File>
+          <File BuildType="BUILD" Toolchain="">common.c</File>
+          <File BuildType="BUILD" Toolchain="">GPIO.c</File>
+          <File BuildType="BUILD" Toolchain="">BuzzerImp.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">iprintf.h</File>
           <File BuildType="BUILD" Toolchain="">BLE_Applications.h</File>
+          <File BuildType="BUILD" Toolchain="">common.h</File>
+          <File BuildType="BUILD" Toolchain="">main.h</File>
+          <File BuildType="BUILD" Toolchain="">GPIO.h</File>
+          <File BuildType="BUILD" Toolchain="">BuzzerImp.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\Generated_Source\PSoC4">
@@ -134,6 +141,39 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SCB_1_rx.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SCB_1_rx_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\SCB_1_rx_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\WinchUpPin.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\WinchUpPin.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\WinchUpPin_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\WinchUpPin_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\WinchDownPin.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\WinchDownPin.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\WinchDownPin_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\WinchDownPin_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\WinchInPin.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\WinchInPin.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\WinchInPin_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\WinchInPin_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\WinchOutPin.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\WinchOutPin.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\WinchOutPin_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\WinchOutPin_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\OutBeforeDown.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\OutBeforeDown.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\OutBeforeDown_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\OutBeforeDown_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UpBeforeIn.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UpBeforeIn.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UpBeforeIn_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UpBeforeIn_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Buzzer.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Buzzer.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Buzzer_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Buzzer_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\BuzzerPWM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\BuzzerPWM.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\BuzzerPWM_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_CLK.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\PWM_CLK.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\Export\ARM_GCC_Generic\BLE_v3_52">
@@ -180,6 +220,12 @@
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM7">
         <Files Root="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn" />
+      </Folder>
+      <Folder BuildType="EXCLUDE" Path="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\SysTimers_v1_0\API">
+        <Files Root="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn">
+          <File BuildType="EXCLUDE" Toolchain="">SysTimers_v1_0\API\SysTimers.c</File>
+          <File BuildType="EXCLUDE" Toolchain="">SysTimers_v1_0\API\SysTimers.h</File>
+        </Files>
       </Folder>
     </Folders>
   </Project>

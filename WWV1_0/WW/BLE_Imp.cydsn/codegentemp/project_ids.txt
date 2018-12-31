@@ -1,6 +1,6 @@
-C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\BLE_Imp.cyprj|5455f816-0557-4213-88c9-eafd52e86c5a
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|d1c146a7-6f3b-4202-9fce-1c34b305ecaa
-C:\Users\Yehuda Ben Chaim\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|3b4fc35e-3b27-47cb-aaaa-6e5135be3385
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|69061a4d-476f-4f7b-99a0-d757d8ef3cee
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|2921d430-1dcb-4e2a-8375-a304bd4f91ca
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|7eb1057f-6310-4507-a6d0-1ead9db95b65
+C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\BLE_Imp.cyprj|e1990b14-9c86-4741-83cf-7bba4d044e93
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|0ac6cb5d-6b5c-400f-a07f-31457d08c96e
+C:\Users\Yehuda Ben Chaim\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|4fce4bf5-67ba-471c-b8ce-c23727d4d7cd
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|fc13f4ff-22df-4d59-9420-5b3505ecb355
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|59e9223a-fce8-463e-99d5-c6218f6c7638
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|3f0546c1-112f-4488-90c1-e294a0cf594f

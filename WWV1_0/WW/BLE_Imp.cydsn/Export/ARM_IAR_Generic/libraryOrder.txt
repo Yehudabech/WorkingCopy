@@ -1,0 +1,1 @@
+.\Export\ARM_IAR_Generic\BLE_v3_52\gccCyBLEStack_BLE_SOC_PERIPHERAL.a

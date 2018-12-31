@@ -37,6 +37,7 @@ const CYBLE_CUSTOMS_T cyBle_customs[0x01u] = {
                 /* Array of Descriptors handles */
                 {
                     0x0013u, /* Handle of the Characteristic User Description descriptor */ 
+                    CYBLE_GATT_INVALID_ATTR_HANDLE_VALUE, 
                 }, 
             },
 
@@ -47,6 +48,7 @@ const CYBLE_CUSTOMS_T cyBle_customs[0x01u] = {
                 /* Array of Descriptors handles */
                 {
                     0x0016u, /* Handle of the Characteristic User Description descriptor */ 
+                    0x0017u, /* Handle of the Client Characteristic Configuration descriptor */ 
                 }, 
             },
         }, 
