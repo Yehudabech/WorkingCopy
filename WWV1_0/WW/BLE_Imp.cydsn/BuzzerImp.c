@@ -109,5 +109,21 @@ void BuzzerBeepGetClockVal(uint32_t CurrenTime)
 }
 
 
+/**************************************************************
+* Name: BuzzerActive
+* Parameters[in]: uint32_t Interval
+* Return: None
+* Description: This function activate the buzzer for Interval
+* period of time, with blocking.
+
+************************************************************/
+void BuzzerActive(uint32_t Interval)
+{
+  BuzzerPWM_Start();
+  CyDelay(Interval);
+  BuzzerPWM_Stop();
+}
+
+
 
 /* [] END OF FILE */

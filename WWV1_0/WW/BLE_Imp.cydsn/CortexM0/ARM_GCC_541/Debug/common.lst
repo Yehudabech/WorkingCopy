@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cchWTm1N.s 			page 1
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccFmrx57.s 			page 1
 
 
    1              		.syntax unified
@@ -19,40 +19,478 @@ ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cchWTm1N.s 			page 1
   16              		.text
   17              	.Ltext0:
   18              		.cfi_sections	.debug_frame
-  19              	.Letext0:
-  20              		.section	.debug_line,"",%progbits
-  21              	.Ldebug_line0:
-  22              		.section	.debug_str,"MS",%progbits,1
-  23              	.LASF0:
-  24 0000 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
-  24      43313120 
-  24      352E342E 
-  24      31203230 
-  24      31363036 
-  25 0033 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
-  25      20726576 
-  25      6973696F 
-  25      6E203233 
-  25      37373135 
-  26 0066 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
-  26      66756E63 
-  26      74696F6E 
-  26      2D736563 
-  26      74696F6E 
-  27              	.LASF1:
-  28 008e 636F6D6D 		.ascii	"common.c\000"
-  28      6F6E2E63 
-  28      00
-  29              	.LASF2:
-  30 0097 433A5C55 		.ascii	"C:\\Users\\Yehuda Ben Chaim\\Google Drive\\My Proje"
-  30      73657273 
-  30      5C596568 
-  30      75646120 
-  30      42656E20 
-  31 00c6 6374735C 		.ascii	"cts\\WW\\FW\\WorkingCopy\\WWV1_0\\WW\\BLE_Imp.cydsn"
-  31      57575C46 
-  31      575C576F 
-  31      726B696E 
-  31      67436F70 
-  32 00f3 00       		.ascii	"\000"
-  33              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+  19              		.section	.text.TasksScheduler,"ax",%progbits
+  20              		.align	2
+  21              		.global	TasksScheduler
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	TasksScheduler, %function
+  25              	TasksScheduler:
+  26              	.LFB35:
+  27              		.file 1 "common.c"
+   1:common.c      **** /* ========================================
+   2:common.c      ****  *
+   3:common.c      ****  * Copyright Yehuda Ben Chaim, 2018
+   4:common.c      ****  * All Rights Reserved
+   5:common.c      ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:common.c      ****  *
+   7:common.c      ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:common.c      ****  * WHICH IS THE PROPERTY OF Yehuda Ben Chaim.
+   9:common.c      ****  *
+  10:common.c      ****  * ========================================
+  11:common.c      **** */
+  12:common.c      **** 
+  13:common.c      **** /**** Includes *****************************************/
+  14:common.c      **** #include "common.h"
+  15:common.c      **** #include "BuzzerImp.h"
+  16:common.c      **** 
+  17:common.c      **** /**** Private functions decleration *******************/
+  18:common.c      **** 
+  19:common.c      **** /**** Private functions *******************************/
+  20:common.c      **** 
+  21:common.c      **** 
+  22:common.c      **** /**************************************************************
+  23:common.c      **** * Name: TasksScheduler
+  24:common.c      **** * Parameters[in]: None
+  25:common.c      **** * Return: None
+  26:common.c      **** * Description: This function run the timing for all time based
+  27:common.c      **** * tasks in RT.
+  28:common.c      **** 
+  29:common.c      **** ************************************************************/
+  30:common.c      **** void TasksScheduler(void)
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccFmrx57.s 			page 2
+
+
+  31:common.c      **** {
+  28              		.loc 1 31 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 10B5     		push	{r4, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 4, -8
+  35              		.cfi_offset 14, -4
+  32:common.c      ****   BuzzerBeepGetClockVal(SysTickGet());
+  36              		.loc 1 32 0
+  37 0002 FFF7FEFF 		bl	SysTickGet
+  38              	.LVL0:
+  39 0006 FFF7FEFF 		bl	BuzzerBeepGetClockVal
+  40              	.LVL1:
+  33:common.c      ****   LED_BlinkpGetClockVal(SysTickGet());
+  41              		.loc 1 33 0
+  42 000a FFF7FEFF 		bl	SysTickGet
+  43              	.LVL2:
+  44 000e FFF7FEFF 		bl	LED_BlinkpGetClockVal
+  45              	.LVL3:
+  34:common.c      **** }
+  46              		.loc 1 34 0
+  47              		@ sp needed
+  48 0012 10BD     		pop	{r4, pc}
+  49              		.cfi_endproc
+  50              	.LFE35:
+  51              		.size	TasksScheduler, .-TasksScheduler
+  52              		.text
+  53              	.Letext0:
+  54              		.file 2 "main.h"
+  55              		.file 3 "BuzzerImp.h"
+  56              		.section	.debug_info,"",%progbits
+  57              	.Ldebug_info0:
+  58 0000 F7000000 		.4byte	0xf7
+  59 0004 0400     		.2byte	0x4
+  60 0006 00000000 		.4byte	.Ldebug_abbrev0
+  61 000a 04       		.byte	0x4
+  62 000b 01       		.uleb128 0x1
+  63 000c F4000000 		.4byte	.LASF17
+  64 0010 0C       		.byte	0xc
+  65 0011 AD010000 		.4byte	.LASF18
+  66 0015 90000000 		.4byte	.LASF19
+  67 0019 00000000 		.4byte	.Ldebug_ranges0+0
+  68 001d 00000000 		.4byte	0
+  69 0021 00000000 		.4byte	.Ldebug_line0
+  70 0025 02       		.uleb128 0x2
+  71 0026 01       		.byte	0x1
+  72 0027 06       		.byte	0x6
+  73 0028 95010000 		.4byte	.LASF0
+  74 002c 02       		.uleb128 0x2
+  75 002d 01       		.byte	0x1
+  76 002e 08       		.byte	0x8
+  77 002f 65000000 		.4byte	.LASF1
+  78 0033 02       		.uleb128 0x2
+  79 0034 02       		.byte	0x2
+  80 0035 05       		.byte	0x5
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccFmrx57.s 			page 3
+
+
+  81 0036 BC010000 		.4byte	.LASF2
+  82 003a 02       		.uleb128 0x2
+  83 003b 02       		.byte	0x2
+  84 003c 07       		.byte	0x7
+  85 003d 82010000 		.4byte	.LASF3
+  86 0041 02       		.uleb128 0x2
+  87 0042 04       		.byte	0x4
+  88 0043 05       		.byte	0x5
+  89 0044 78000000 		.4byte	.LASF4
+  90 0048 02       		.uleb128 0x2
+  91 0049 04       		.byte	0x4
+  92 004a 07       		.byte	0x7
+  93 004b 3C000000 		.4byte	.LASF5
+  94 004f 02       		.uleb128 0x2
+  95 0050 08       		.byte	0x8
+  96 0051 05       		.byte	0x5
+  97 0052 00000000 		.4byte	.LASF6
+  98 0056 02       		.uleb128 0x2
+  99 0057 08       		.byte	0x8
+ 100 0058 07       		.byte	0x7
+ 101 0059 4E000000 		.4byte	.LASF7
+ 102 005d 03       		.uleb128 0x3
+ 103 005e 04       		.byte	0x4
+ 104 005f 05       		.byte	0x5
+ 105 0060 696E7400 		.ascii	"int\000"
+ 106 0064 02       		.uleb128 0x2
+ 107 0065 04       		.byte	0x4
+ 108 0066 07       		.byte	0x7
+ 109 0067 0E000000 		.4byte	.LASF8
+ 110 006b 02       		.uleb128 0x2
+ 111 006c 04       		.byte	0x4
+ 112 006d 04       		.byte	0x4
+ 113 006e B6010000 		.4byte	.LASF9
+ 114 0072 02       		.uleb128 0x2
+ 115 0073 08       		.byte	0x8
+ 116 0074 04       		.byte	0x4
+ 117 0075 ED000000 		.4byte	.LASF10
+ 118 0079 02       		.uleb128 0x2
+ 119 007a 01       		.byte	0x1
+ 120 007b 08       		.byte	0x8
+ 121 007c 73000000 		.4byte	.LASF11
+ 122 0080 02       		.uleb128 0x2
+ 123 0081 08       		.byte	0x8
+ 124 0082 04       		.byte	0x4
+ 125 0083 A1010000 		.4byte	.LASF12
+ 126 0087 02       		.uleb128 0x2
+ 127 0088 04       		.byte	0x4
+ 128 0089 07       		.byte	0x7
+ 129 008a DC010000 		.4byte	.LASF13
+ 130 008e 04       		.uleb128 0x4
+ 131 008f 81000000 		.4byte	.LASF20
+ 132 0093 01       		.byte	0x1
+ 133 0094 1E       		.byte	0x1e
+ 134 0095 00000000 		.4byte	.LFB35
+ 135 0099 14000000 		.4byte	.LFE35-.LFB35
+ 136 009d 01       		.uleb128 0x1
+ 137 009e 9C       		.byte	0x9c
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccFmrx57.s 			page 4
+
+
+ 138 009f D9000000 		.4byte	0xd9
+ 139 00a3 05       		.uleb128 0x5
+ 140 00a4 C6010000 		.4byte	.LASF16
+ 141 00a8 01       		.byte	0x1
+ 142 00a9 21       		.byte	0x21
+ 143 00aa 5D000000 		.4byte	0x5d
+ 144 00ae B4000000 		.4byte	0xb4
+ 145 00b2 06       		.uleb128 0x6
+ 146 00b3 00       		.byte	0
+ 147 00b4 07       		.uleb128 0x7
+ 148 00b5 06000000 		.4byte	.LVL0
+ 149 00b9 D9000000 		.4byte	0xd9
+ 150 00bd 07       		.uleb128 0x7
+ 151 00be 0A000000 		.4byte	.LVL1
+ 152 00c2 E4000000 		.4byte	0xe4
+ 153 00c6 07       		.uleb128 0x7
+ 154 00c7 0E000000 		.4byte	.LVL2
+ 155 00cb D9000000 		.4byte	0xd9
+ 156 00cf 07       		.uleb128 0x7
+ 157 00d0 12000000 		.4byte	.LVL3
+ 158 00d4 EF000000 		.4byte	0xef
+ 159 00d8 00       		.byte	0
+ 160 00d9 08       		.uleb128 0x8
+ 161 00da 1B000000 		.4byte	.LASF14
+ 162 00de 1B000000 		.4byte	.LASF14
+ 163 00e2 02       		.byte	0x2
+ 164 00e3 1B       		.byte	0x1b
+ 165 00e4 08       		.uleb128 0x8
+ 166 00e5 26000000 		.4byte	.LASF15
+ 167 00e9 26000000 		.4byte	.LASF15
+ 168 00ed 03       		.byte	0x3
+ 169 00ee 43       		.byte	0x43
+ 170 00ef 08       		.uleb128 0x8
+ 171 00f0 C6010000 		.4byte	.LASF16
+ 172 00f4 C6010000 		.4byte	.LASF16
+ 173 00f8 01       		.byte	0x1
+ 174 00f9 21       		.byte	0x21
+ 175 00fa 00       		.byte	0
+ 176              		.section	.debug_abbrev,"",%progbits
+ 177              	.Ldebug_abbrev0:
+ 178 0000 01       		.uleb128 0x1
+ 179 0001 11       		.uleb128 0x11
+ 180 0002 01       		.byte	0x1
+ 181 0003 25       		.uleb128 0x25
+ 182 0004 0E       		.uleb128 0xe
+ 183 0005 13       		.uleb128 0x13
+ 184 0006 0B       		.uleb128 0xb
+ 185 0007 03       		.uleb128 0x3
+ 186 0008 0E       		.uleb128 0xe
+ 187 0009 1B       		.uleb128 0x1b
+ 188 000a 0E       		.uleb128 0xe
+ 189 000b 55       		.uleb128 0x55
+ 190 000c 17       		.uleb128 0x17
+ 191 000d 11       		.uleb128 0x11
+ 192 000e 01       		.uleb128 0x1
+ 193 000f 10       		.uleb128 0x10
+ 194 0010 17       		.uleb128 0x17
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccFmrx57.s 			page 5
+
+
+ 195 0011 00       		.byte	0
+ 196 0012 00       		.byte	0
+ 197 0013 02       		.uleb128 0x2
+ 198 0014 24       		.uleb128 0x24
+ 199 0015 00       		.byte	0
+ 200 0016 0B       		.uleb128 0xb
+ 201 0017 0B       		.uleb128 0xb
+ 202 0018 3E       		.uleb128 0x3e
+ 203 0019 0B       		.uleb128 0xb
+ 204 001a 03       		.uleb128 0x3
+ 205 001b 0E       		.uleb128 0xe
+ 206 001c 00       		.byte	0
+ 207 001d 00       		.byte	0
+ 208 001e 03       		.uleb128 0x3
+ 209 001f 24       		.uleb128 0x24
+ 210 0020 00       		.byte	0
+ 211 0021 0B       		.uleb128 0xb
+ 212 0022 0B       		.uleb128 0xb
+ 213 0023 3E       		.uleb128 0x3e
+ 214 0024 0B       		.uleb128 0xb
+ 215 0025 03       		.uleb128 0x3
+ 216 0026 08       		.uleb128 0x8
+ 217 0027 00       		.byte	0
+ 218 0028 00       		.byte	0
+ 219 0029 04       		.uleb128 0x4
+ 220 002a 2E       		.uleb128 0x2e
+ 221 002b 01       		.byte	0x1
+ 222 002c 3F       		.uleb128 0x3f
+ 223 002d 19       		.uleb128 0x19
+ 224 002e 03       		.uleb128 0x3
+ 225 002f 0E       		.uleb128 0xe
+ 226 0030 3A       		.uleb128 0x3a
+ 227 0031 0B       		.uleb128 0xb
+ 228 0032 3B       		.uleb128 0x3b
+ 229 0033 0B       		.uleb128 0xb
+ 230 0034 27       		.uleb128 0x27
+ 231 0035 19       		.uleb128 0x19
+ 232 0036 11       		.uleb128 0x11
+ 233 0037 01       		.uleb128 0x1
+ 234 0038 12       		.uleb128 0x12
+ 235 0039 06       		.uleb128 0x6
+ 236 003a 40       		.uleb128 0x40
+ 237 003b 18       		.uleb128 0x18
+ 238 003c 9742     		.uleb128 0x2117
+ 239 003e 19       		.uleb128 0x19
+ 240 003f 01       		.uleb128 0x1
+ 241 0040 13       		.uleb128 0x13
+ 242 0041 00       		.byte	0
+ 243 0042 00       		.byte	0
+ 244 0043 05       		.uleb128 0x5
+ 245 0044 2E       		.uleb128 0x2e
+ 246 0045 01       		.byte	0x1
+ 247 0046 3F       		.uleb128 0x3f
+ 248 0047 19       		.uleb128 0x19
+ 249 0048 03       		.uleb128 0x3
+ 250 0049 0E       		.uleb128 0xe
+ 251 004a 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccFmrx57.s 			page 6
+
+
+ 252 004b 0B       		.uleb128 0xb
+ 253 004c 3B       		.uleb128 0x3b
+ 254 004d 0B       		.uleb128 0xb
+ 255 004e 49       		.uleb128 0x49
+ 256 004f 13       		.uleb128 0x13
+ 257 0050 3C       		.uleb128 0x3c
+ 258 0051 19       		.uleb128 0x19
+ 259 0052 01       		.uleb128 0x1
+ 260 0053 13       		.uleb128 0x13
+ 261 0054 00       		.byte	0
+ 262 0055 00       		.byte	0
+ 263 0056 06       		.uleb128 0x6
+ 264 0057 18       		.uleb128 0x18
+ 265 0058 00       		.byte	0
+ 266 0059 00       		.byte	0
+ 267 005a 00       		.byte	0
+ 268 005b 07       		.uleb128 0x7
+ 269 005c 898201   		.uleb128 0x4109
+ 270 005f 00       		.byte	0
+ 271 0060 11       		.uleb128 0x11
+ 272 0061 01       		.uleb128 0x1
+ 273 0062 31       		.uleb128 0x31
+ 274 0063 13       		.uleb128 0x13
+ 275 0064 00       		.byte	0
+ 276 0065 00       		.byte	0
+ 277 0066 08       		.uleb128 0x8
+ 278 0067 2E       		.uleb128 0x2e
+ 279 0068 00       		.byte	0
+ 280 0069 3F       		.uleb128 0x3f
+ 281 006a 19       		.uleb128 0x19
+ 282 006b 3C       		.uleb128 0x3c
+ 283 006c 19       		.uleb128 0x19
+ 284 006d 6E       		.uleb128 0x6e
+ 285 006e 0E       		.uleb128 0xe
+ 286 006f 03       		.uleb128 0x3
+ 287 0070 0E       		.uleb128 0xe
+ 288 0071 3A       		.uleb128 0x3a
+ 289 0072 0B       		.uleb128 0xb
+ 290 0073 3B       		.uleb128 0x3b
+ 291 0074 0B       		.uleb128 0xb
+ 292 0075 00       		.byte	0
+ 293 0076 00       		.byte	0
+ 294 0077 00       		.byte	0
+ 295              		.section	.debug_aranges,"",%progbits
+ 296 0000 1C000000 		.4byte	0x1c
+ 297 0004 0200     		.2byte	0x2
+ 298 0006 00000000 		.4byte	.Ldebug_info0
+ 299 000a 04       		.byte	0x4
+ 300 000b 00       		.byte	0
+ 301 000c 0000     		.2byte	0
+ 302 000e 0000     		.2byte	0
+ 303 0010 00000000 		.4byte	.LFB35
+ 304 0014 14000000 		.4byte	.LFE35-.LFB35
+ 305 0018 00000000 		.4byte	0
+ 306 001c 00000000 		.4byte	0
+ 307              		.section	.debug_ranges,"",%progbits
+ 308              	.Ldebug_ranges0:
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccFmrx57.s 			page 7
+
+
+ 309 0000 00000000 		.4byte	.LFB35
+ 310 0004 14000000 		.4byte	.LFE35
+ 311 0008 00000000 		.4byte	0
+ 312 000c 00000000 		.4byte	0
+ 313              		.section	.debug_line,"",%progbits
+ 314              	.Ldebug_line0:
+ 315 0000 50000000 		.section	.debug_str,"MS",%progbits,1
+ 315      02003800 
+ 315      00000201 
+ 315      FB0E0D00 
+ 315      01010101 
+ 316              	.LASF6:
+ 317 0000 6C6F6E67 		.ascii	"long long int\000"
+ 317      206C6F6E 
+ 317      6720696E 
+ 317      7400
+ 318              	.LASF8:
+ 319 000e 756E7369 		.ascii	"unsigned int\000"
+ 319      676E6564 
+ 319      20696E74 
+ 319      00
+ 320              	.LASF14:
+ 321 001b 53797354 		.ascii	"SysTickGet\000"
+ 321      69636B47 
+ 321      657400
+ 322              	.LASF15:
+ 323 0026 42757A7A 		.ascii	"BuzzerBeepGetClockVal\000"
+ 323      65724265 
+ 323      65704765 
+ 323      74436C6F 
+ 323      636B5661 
+ 324              	.LASF5:
+ 325 003c 6C6F6E67 		.ascii	"long unsigned int\000"
+ 325      20756E73 
+ 325      69676E65 
+ 325      6420696E 
+ 325      7400
+ 326              	.LASF7:
+ 327 004e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 327      206C6F6E 
+ 327      6720756E 
+ 327      7369676E 
+ 327      65642069 
+ 328              	.LASF1:
+ 329 0065 756E7369 		.ascii	"unsigned char\000"
+ 329      676E6564 
+ 329      20636861 
+ 329      7200
+ 330              	.LASF11:
+ 331 0073 63686172 		.ascii	"char\000"
+ 331      00
+ 332              	.LASF4:
+ 333 0078 6C6F6E67 		.ascii	"long int\000"
+ 333      20696E74 
+ 333      00
+ 334              	.LASF20:
+ 335 0081 5461736B 		.ascii	"TasksScheduler\000"
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccFmrx57.s 			page 8
+
+
+ 335      73536368 
+ 335      6564756C 
+ 335      657200
+ 336              	.LASF19:
+ 337 0090 433A5C55 		.ascii	"C:\\Users\\Yehuda Ben Chaim\\Google Drive\\My Proje"
+ 337      73657273 
+ 337      5C596568 
+ 337      75646120 
+ 337      42656E20 
+ 338 00bf 6374735C 		.ascii	"cts\\WW\\FW\\WorkingCopy\\WWV1_0\\WW\\BLE_Imp.cydsn"
+ 338      57575C46 
+ 338      575C576F 
+ 338      726B696E 
+ 338      67436F70 
+ 339 00ec 00       		.ascii	"\000"
+ 340              	.LASF10:
+ 341 00ed 646F7562 		.ascii	"double\000"
+ 341      6C6500
+ 342              	.LASF17:
+ 343 00f4 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 343      43313120 
+ 343      352E342E 
+ 343      31203230 
+ 343      31363036 
+ 344 0127 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 344      20726576 
+ 344      6973696F 
+ 344      6E203233 
+ 344      37373135 
+ 345 015a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 345      66756E63 
+ 345      74696F6E 
+ 345      2D736563 
+ 345      74696F6E 
+ 346              	.LASF3:
+ 347 0182 73686F72 		.ascii	"short unsigned int\000"
+ 347      7420756E 
+ 347      7369676E 
+ 347      65642069 
+ 347      6E7400
+ 348              	.LASF0:
+ 349 0195 7369676E 		.ascii	"signed char\000"
+ 349      65642063 
+ 349      68617200 
+ 350              	.LASF12:
+ 351 01a1 6C6F6E67 		.ascii	"long double\000"
+ 351      20646F75 
+ 351      626C6500 
+ 352              	.LASF18:
+ 353 01ad 636F6D6D 		.ascii	"common.c\000"
+ 353      6F6E2E63 
+ 353      00
+ 354              	.LASF9:
+ 355 01b6 666C6F61 		.ascii	"float\000"
+ 355      7400
+ 356              	.LASF2:
+ 357 01bc 73686F72 		.ascii	"short int\000"
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\ccFmrx57.s 			page 9
+
+
+ 357      7420696E 
+ 357      7400
+ 358              	.LASF16:
+ 359 01c6 4C45445F 		.ascii	"LED_BlinkpGetClockVal\000"
+ 359      426C696E 
+ 359      6B704765 
+ 359      74436C6F 
+ 359      636B5661 
+ 360              	.LASF13:
+ 361 01dc 73697A65 		.ascii	"sizetype\000"
+ 361      74797065 
+ 361      00
+ 362              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

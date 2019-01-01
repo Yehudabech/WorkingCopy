@@ -80,6 +80,12 @@
       <path>$PROJ_DIR$\Generated_Source\PSoC4\BuzzerPWM.c</path>
       <path>$PROJ_DIR$\Generated_Source\PSoC4\BuzzerPWM_PM.c</path>
       <path>$PROJ_DIR$\Generated_Source\PSoC4\PWM_CLK.c</path>
+      <path>$PROJ_DIR$\Generated_Source\PSoC4\RedLED.c</path>
+      <path>$PROJ_DIR$\Generated_Source\PSoC4\RedLED_PM.c</path>
+      <path>$PROJ_DIR$\Generated_Source\PSoC4\GreenLED.c</path>
+      <path>$PROJ_DIR$\Generated_Source\PSoC4\GreenLED_PM.c</path>
+      <path>$PROJ_DIR$\Generated_Source\PSoC4\YellowLED.c</path>
+      <path>$PROJ_DIR$\Generated_Source\PSoC4\YellowLED_PM.c</path>
     </group>
     <group name="Generated_Header">
       <path>$PROJ_DIR$\Generated_Source\PSoC4\cyfitter_cfg.h</path>
@@ -149,6 +155,12 @@
       <path>$PROJ_DIR$\Generated_Source\PSoC4\Buzzer_aliases.h</path>
       <path>$PROJ_DIR$\Generated_Source\PSoC4\BuzzerPWM.h</path>
       <path>$PROJ_DIR$\Generated_Source\PSoC4\PWM_CLK.h</path>
+      <path>$PROJ_DIR$\Generated_Source\PSoC4\RedLED.h</path>
+      <path>$PROJ_DIR$\Generated_Source\PSoC4\RedLED_aliases.h</path>
+      <path>$PROJ_DIR$\Generated_Source\PSoC4\GreenLED.h</path>
+      <path>$PROJ_DIR$\Generated_Source\PSoC4\GreenLED_aliases.h</path>
+      <path>$PROJ_DIR$\Generated_Source\PSoC4\YellowLED.h</path>
+      <path>$PROJ_DIR$\Generated_Source\PSoC4\YellowLED_aliases.h</path>
     </group>
     <group name="Source">
       <path>$PROJ_DIR$\main.c</path>
@@ -157,6 +169,8 @@
       <path>$PROJ_DIR$\common.c</path>
       <path>$PROJ_DIR$\GPIO.c</path>
       <path>$PROJ_DIR$\BuzzerImp.c</path>
+      <path>$PROJ_DIR$\LEDs.c</path>
+      <path>$PROJ_DIR$\Tmaplets.c</path>
     </group>
     <group name="Header">
       <path>$PROJ_DIR$\cyapicallbacks.h</path>
@@ -166,6 +180,7 @@
       <path>$PROJ_DIR$\main.h</path>
       <path>$PROJ_DIR$\GPIO.h</path>
       <path>$PROJ_DIR$\BuzzerImp.h</path>
+      <path>$PROJ_DIR$\LEDs.h</path>
     </group>
   </files>
 </iarProjectConnection>

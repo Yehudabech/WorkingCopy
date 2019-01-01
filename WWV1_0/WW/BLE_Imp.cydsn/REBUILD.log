@@ -1,8 +1,12 @@
---------------- Rebuild Started: 12/24/2018 22:32:10 Project: BLE_Imp, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Rebuild Started: 01/01/2019 22:38:28 Project: BLE_Imp, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\main.o"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\iprintf.o"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\BLE_Applocations.o"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\common.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\GPIO.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\BuzzerImp.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\LEDs.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\Tmaplets.o"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\cymetadata.o"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\BLE.o"
@@ -40,6 +44,21 @@ Deleting file ".\CortexM0\ARM_GCC_541\Debug\WinchInPin.o"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\WinchInPin_PM.o"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\WinchOutPin.o"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\WinchOutPin_PM.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\OutBeforeDown.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\OutBeforeDown_PM.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\UpBeforeIn.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\UpBeforeIn_PM.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\Buzzer.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\Buzzer_PM.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\BuzzerPWM.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\BuzzerPWM_PM.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\PWM_CLK.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\RedLED.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\RedLED_PM.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\GreenLED.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\GreenLED_PM.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\YellowLED.o"
+Deleting file ".\CortexM0\ARM_GCC_541\Debug\YellowLED_PM.o"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\BLE_Imp.hex"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\BLE_Imp.elf"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\BLE_Imp.map"
@@ -54,6 +73,7 @@ Elaborating Design...
 HDL Generation...
 Synthesis...
 Tech Mapping...
+ADD: pft.M0040: information: The following 2 pin(s) will be assigned a location by the fitter: OutBeforeDown(0), UpBeforeIn(0)
 Analog Placement...
 Analog Routing...
 Analog Code Generation...
@@ -69,6 +89,14 @@ arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/iprintf.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c iprintf.c -o .\CortexM0\ARM_GCC_541\Debug\iprintf.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/BLE_Applocations.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c BLE_Applocations.c -o .\CortexM0\ARM_GCC_541\Debug\BLE_Applocations.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/common.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c common.c -o .\CortexM0\ARM_GCC_541\Debug\common.o
+common.c: In function 'TasksScheduler':
+common.c:33:3: warning: implicit declaration of function 'LED_BlinkpGetClockVal' [-Wimplicit-function-declaration]
+   LED_BlinkpGetClockVal(SysTickGet());
+   ^
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/GPIO.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c GPIO.c -o .\CortexM0\ARM_GCC_541\Debug\GPIO.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/BuzzerImp.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c BuzzerImp.c -o .\CortexM0\ARM_GCC_541\Debug\BuzzerImp.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/LEDs.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c LEDs.c -o .\CortexM0\ARM_GCC_541\Debug\LEDs.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/Tmaplets.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Tmaplets.c -o .\CortexM0\ARM_GCC_541\Debug\Tmaplets.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/cyfitter_cfg.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\cyfitter_cfg.c -o .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/cymetadata.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\cymetadata.c -o .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/BLE.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\BLE.c -o .\CortexM0\ARM_GCC_541\Debug\BLE.o
@@ -105,15 +133,30 @@ arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/WinchInPin_PM.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\WinchInPin_PM.c -o .\CortexM0\ARM_GCC_541\Debug\WinchInPin_PM.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/WinchOutPin.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\WinchOutPin.c -o .\CortexM0\ARM_GCC_541\Debug\WinchOutPin.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/WinchOutPin_PM.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\WinchOutPin_PM.c -o .\CortexM0\ARM_GCC_541\Debug\WinchOutPin_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/OutBeforeDown.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\OutBeforeDown.c -o .\CortexM0\ARM_GCC_541\Debug\OutBeforeDown.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/OutBeforeDown_PM.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\OutBeforeDown_PM.c -o .\CortexM0\ARM_GCC_541\Debug\OutBeforeDown_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/UpBeforeIn.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\UpBeforeIn.c -o .\CortexM0\ARM_GCC_541\Debug\UpBeforeIn.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/UpBeforeIn_PM.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\UpBeforeIn_PM.c -o .\CortexM0\ARM_GCC_541\Debug\UpBeforeIn_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/Buzzer.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\Buzzer.c -o .\CortexM0\ARM_GCC_541\Debug\Buzzer.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/Buzzer_PM.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\Buzzer_PM.c -o .\CortexM0\ARM_GCC_541\Debug\Buzzer_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/BuzzerPWM.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\BuzzerPWM.c -o .\CortexM0\ARM_GCC_541\Debug\BuzzerPWM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/BuzzerPWM_PM.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\BuzzerPWM_PM.c -o .\CortexM0\ARM_GCC_541\Debug\BuzzerPWM_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/PWM_CLK.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\PWM_CLK.c -o .\CortexM0\ARM_GCC_541\Debug\PWM_CLK.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/RedLED.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\RedLED.c -o .\CortexM0\ARM_GCC_541\Debug\RedLED.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/RedLED_PM.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\RedLED_PM.c -o .\CortexM0\ARM_GCC_541\Debug\RedLED_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/GreenLED.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\GreenLED.c -o .\CortexM0\ARM_GCC_541\Debug\GreenLED.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/GreenLED_PM.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\GreenLED_PM.c -o .\CortexM0\ARM_GCC_541\Debug\GreenLED_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/YellowLED.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\YellowLED.c -o .\CortexM0\ARM_GCC_541\Debug\YellowLED.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/YellowLED_PM.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\YellowLED_PM.c -o .\CortexM0\ARM_GCC_541\Debug\YellowLED_PM.o
 arm-none-eabi-as.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -alh=.\CortexM0\ARM_GCC_541\Debug/CyBootAsmGnu.lst -g -W -o .\CortexM0\ARM_GCC_541\Debug\CyBootAsmGnu.o Generated_Source\PSoC4\CyBootAsmGnu.s
-arm-none-eabi-ar.exe -rs .\CortexM0\ARM_GCC_541\Debug\BLE_Imp.a .\CortexM0\ARM_GCC_541\Debug\BLE.o .\CortexM0\ARM_GCC_541\Debug\BLE_gatt.o .\CortexM0\ARM_GCC_541\Debug\BLE_eventHandler.o .\CortexM0\ARM_GCC_541\Debug\BLE_HAL_INT.o .\CortexM0\ARM_GCC_541\Debug\BLE_HAL_PVT.o .\CortexM0\ARM_GCC_541\Debug\BLE_custom.o .\CortexM0\ARM_GCC_541\Debug\BLE_bless_isr.o .\CortexM0\ARM_GCC_541\Debug\CyFlash.o .\CortexM0\ARM_GCC_541\Debug\CyLib.o .\CortexM0\ARM_GCC_541\Debug\cyPm.o .\CortexM0\ARM_GCC_541\Debug\cyutils.o .\CortexM0\ARM_GCC_541\Debug\CyLFClk.o .\CortexM0\ARM_GCC_541\Debug\cy_em_eeprom.o .\CortexM0\ARM_GCC_541\Debug\SCB_1.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_SPI_UART.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_SPI_UART_INT.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_PM.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_UART.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_BOOT.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_UART_BOOT.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_SCBCLK.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_tx.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_tx_PM.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_rx.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_rx_PM.o .\CortexM0\ARM_GCC_541\Debug\WinchUpPin.o .\CortexM0\ARM_GCC_541\Debug\WinchUpPin_PM.o .\CortexM0\ARM_GCC_541\Debug\WinchDownPin.o .\CortexM0\ARM_GCC_541\Debug\WinchDownPin_PM.o .\CortexM0\ARM_GCC_541\Debug\WinchInPin.o .\CortexM0\ARM_GCC_541\Debug\WinchInPin_PM.o .\CortexM0\ARM_GCC_541\Debug\WinchOutPin.o .\CortexM0\ARM_GCC_541\Debug\WinchOutPin_PM.o .\CortexM0\ARM_GCC_541\Debug\CyBootAsmGnu.o
+arm-none-eabi-ar.exe -rs .\CortexM0\ARM_GCC_541\Debug\BLE_Imp.a .\CortexM0\ARM_GCC_541\Debug\BLE.o .\CortexM0\ARM_GCC_541\Debug\BLE_gatt.o .\CortexM0\ARM_GCC_541\Debug\BLE_eventHandler.o .\CortexM0\ARM_GCC_541\Debug\BLE_HAL_INT.o .\CortexM0\ARM_GCC_541\Debug\BLE_HAL_PVT.o .\CortexM0\ARM_GCC_541\Debug\BLE_custom.o .\CortexM0\ARM_GCC_541\Debug\BLE_bless_isr.o .\CortexM0\ARM_GCC_541\Debug\CyFlash.o .\CortexM0\ARM_GCC_541\Debug\CyLib.o .\CortexM0\ARM_GCC_541\Debug\cyPm.o .\CortexM0\ARM_GCC_541\Debug\cyutils.o .\CortexM0\ARM_GCC_541\Debug\CyLFClk.o .\CortexM0\ARM_GCC_541\Debug\cy_em_eeprom.o .\CortexM0\ARM_GCC_541\Debug\SCB_1.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_SPI_UART.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_SPI_UART_INT.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_PM.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_UART.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_BOOT.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_UART_BOOT.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_SCBCLK.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_tx.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_tx_PM.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_rx.o .\CortexM0\ARM_GCC_541\Debug\SCB_1_rx_PM.o .\CortexM0\ARM_GCC_541\Debug\WinchUpPin.o .\CortexM0\ARM_GCC_541\Debug\WinchUpPin_PM.o .\CortexM0\ARM_GCC_541\Debug\WinchDownPin.o .\CortexM0\ARM_GCC_541\Debug\WinchDownPin_PM.o .\CortexM0\ARM_GCC_541\Debug\WinchInPin.o .\CortexM0\ARM_GCC_541\Debug\WinchInPin_PM.o .\CortexM0\ARM_GCC_541\Debug\WinchOutPin.o .\CortexM0\ARM_GCC_541\Debug\WinchOutPin_PM.o .\CortexM0\ARM_GCC_541\Debug\OutBeforeDown.o .\CortexM0\ARM_GCC_541\Debug\OutBeforeDown_PM.o .\CortexM0\ARM_GCC_541\Debug\UpBeforeIn.o .\CortexM0\ARM_GCC_541\Debug\UpBeforeIn_PM.o .\CortexM0\ARM_GCC_541\Debug\Buzzer.o .\CortexM0\ARM_GCC_541\Debug\Buzzer_PM.o .\CortexM0\ARM_GCC_541\Debug\BuzzerPWM.o .\CortexM0\ARM_GCC_541\Debug\BuzzerPWM_PM.o .\CortexM0\ARM_GCC_541\Debug\PWM_CLK.o .\CortexM0\ARM_GCC_541\Debug\RedLED.o .\CortexM0\ARM_GCC_541\Debug\RedLED_PM.o .\CortexM0\ARM_GCC_541\Debug\GreenLED.o .\CortexM0\ARM_GCC_541\Debug\GreenLED_PM.o .\CortexM0\ARM_GCC_541\Debug\YellowLED.o .\CortexM0\ARM_GCC_541\Debug\YellowLED_PM.o .\CortexM0\ARM_GCC_541\Debug\CyBootAsmGnu.o
 arm-none-eabi-ar.exe: creating .\CortexM0\ARM_GCC_541\Debug\BLE_Imp.a
-arm-none-eabi-gcc.exe -Wl,--start-group -o "C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\CortexM0\ARM_GCC_541\Debug\BLE_Imp.elf" .\CortexM0\ARM_GCC_541\Debug\main.o .\CortexM0\ARM_GCC_541\Debug\iprintf.o .\CortexM0\ARM_GCC_541\Debug\BLE_Applocations.o .\CortexM0\ARM_GCC_541\Debug\common.o .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM0\ARM_GCC_541\Debug\cymetadata.o .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o .\CortexM0\ARM_GCC_541\Debug\BLE_Imp.a "..\..\..\..\..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_52\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a" -mcpu=cortex-m0 -mthumb -L Generated_Source\PSoC4 -Wl,-Map,.\CortexM0\ARM_GCC_541\Debug/BLE_Imp.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
+arm-none-eabi-gcc.exe -Wl,--start-group -o "C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\CortexM0\ARM_GCC_541\Debug\BLE_Imp.elf" .\CortexM0\ARM_GCC_541\Debug\main.o .\CortexM0\ARM_GCC_541\Debug\iprintf.o .\CortexM0\ARM_GCC_541\Debug\BLE_Applocations.o .\CortexM0\ARM_GCC_541\Debug\common.o .\CortexM0\ARM_GCC_541\Debug\GPIO.o .\CortexM0\ARM_GCC_541\Debug\BuzzerImp.o .\CortexM0\ARM_GCC_541\Debug\LEDs.o .\CortexM0\ARM_GCC_541\Debug\Tmaplets.o .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM0\ARM_GCC_541\Debug\cymetadata.o .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o .\CortexM0\ARM_GCC_541\Debug\BLE_Imp.a "..\..\..\..\..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_52\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a" -mcpu=cortex-m0 -mthumb -L Generated_Source\PSoC4 -Wl,-Map,.\CortexM0\ARM_GCC_541\Debug/BLE_Imp.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
 cyelftool.exe -C "C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\CortexM0\ARM_GCC_541\Debug\BLE_Imp.elf" --flash_row_size 256 --flash_size 262144 --flash_offset 0x00000000
 No ELF section .cychecksum found, creating one
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S "C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\CortexM0\ARM_GCC_541\Debug\BLE_Imp.elf"
-Flash used: 80914 of 262144 bytes (30.9%).
-SRAM used: 11160 of 32768 bytes (34.1%). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Rebuild Succeeded: 12/24/2018 22:32:28 ---------------
+Flash used: 82850 of 262144 bytes (31.6%).
+SRAM used: 11208 of 32768 bytes (34.2%). Stack: 2048 bytes. Heap: 128 bytes.
+--------------- Rebuild Succeeded: 01/01/2019 22:38:54 ---------------

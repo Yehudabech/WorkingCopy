@@ -2176,6 +2176,12 @@
                 <name>$PROJ_DIR$\Generated_Source\PSoC4\cytypes.h</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\Generated_Source\PSoC4\GreenLED.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Generated_Source\PSoC4\GreenLED_aliases.h</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\Generated_Source\PSoC4\OutBeforeDown.h</name>
             </file>
             <file>
@@ -2186,6 +2192,12 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\Generated_Source\PSoC4\PWM_CLK.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Generated_Source\PSoC4\RedLED.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Generated_Source\PSoC4\RedLED_aliases.h</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\Generated_Source\PSoC4\SCB_1.h</name>
@@ -2249,6 +2261,12 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\Generated_Source\PSoC4\WinchUpPin_aliases.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Generated_Source\PSoC4\YellowLED.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Generated_Source\PSoC4\YellowLED_aliases.h</name>
             </file>
         </group>
         <group>
@@ -2317,6 +2335,12 @@
                 <name>$PROJ_DIR$\Generated_Source\PSoC4\cyutils.c</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\Generated_Source\PSoC4\GreenLED.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Generated_Source\PSoC4\GreenLED_PM.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\Generated_Source\PSoC4\OutBeforeDown.c</name>
             </file>
             <file>
@@ -2324,6 +2348,12 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\Generated_Source\PSoC4\PWM_CLK.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Generated_Source\PSoC4\RedLED.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Generated_Source\PSoC4\RedLED_PM.c</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\Generated_Source\PSoC4\SCB_1.c</name>
@@ -2391,6 +2421,12 @@
             <file>
                 <name>$PROJ_DIR$\Generated_Source\PSoC4\WinchUpPin_PM.c</name>
             </file>
+            <file>
+                <name>$PROJ_DIR$\Generated_Source\PSoC4\YellowLED.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Generated_Source\PSoC4\YellowLED_PM.c</name>
+            </file>
         </group>
         <group>
             <name>Header</name>
@@ -2411,6 +2447,9 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\iprintf.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\LEDs.h</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\main.h</name>
@@ -2434,7 +2473,13 @@
                 <name>$PROJ_DIR$\iprintf.c</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\LEDs.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\main.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Tmaplets.c</name>
             </file>
         </group>
     </group>

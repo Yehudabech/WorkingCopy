@@ -13,7 +13,7 @@
 /**** Includes *****************************************/
 #include "common.h"
 #include "BuzzerImp.h"
-
+#include "LEDs.h"
 /**** Private functions decleration *******************/
 
 /**** Private functions *******************************/
@@ -30,6 +30,7 @@
 void TasksScheduler(void)
 {
   BuzzerBeepGetClockVal(SysTickGet());
+  LED_BlinkpGetClockVal(SysTickGet());
 }
 
 /* [] END OF FILE */

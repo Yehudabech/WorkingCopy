@@ -442,7 +442,7 @@ void cyfitter_cfg(void)
 		/* HSIOM Starting address: CYDEV_HSIOM_BASE */
 		CY_SET_REG32((void *)(CYDEV_HSIOM_BASE), 0xEE000090u);
 		CY_SET_REG32((void *)(CYREG_HSIOM_PORT_SEL2), 0x00030000u);
-		CY_SET_REG32((void *)(CYREG_HSIOM_PORT_SEL3), 0x00090000u);
+		CY_SET_REG32((void *)(CYREG_HSIOM_PORT_SEL5), 0x00000009u);
 
 		/* UDB_PA_0 Starting address: CYDEV_UDB_PA0_BASE */
 		CY_SET_REG32((void *)(CYDEV_UDB_PA0_BASE), 0x00990000u);
@@ -477,7 +477,10 @@ void cyfitter_cfg(void)
 	CY_SET_REG32((void *)(CYREG_GPIO_PRT2_PC), 0x00006000u);
 
 	/* IOPINS0_3 Starting address: CYDEV_GPIO_PRT3_BASE */
-	CY_SET_REG32((void *)(CYREG_GPIO_PRT3_PC), 0x00001000u);
+	CY_SET_REG32((void *)(CYREG_GPIO_PRT3_PC), 0x00030036u);
+
+	/* IOPINS0_5 Starting address: CYDEV_GPIO_PRT5_BASE */
+	CY_SET_REG32((void *)(CYREG_GPIO_PRT5_PC), 0x00000001u);
 
 
 	/* Setup clocks based on selections from Clock DWR */

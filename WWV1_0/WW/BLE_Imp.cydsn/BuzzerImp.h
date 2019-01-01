@@ -13,7 +13,7 @@
 /**** Includes *****************************************/
 #include "project.h"
 #include "common.h"
-#include "main.h"
+//#include "main.h"
 
 /**** Defines *****************************************/
 
@@ -65,4 +65,16 @@ void BuzzerBeepReload(void);
 
 ************************************************************/
 void BuzzerBeepGetClockVal(uint32_t CurrenTime);
+
+
+/**************************************************************
+* Name: BuzzerActive
+* Parameters[in]: uint32_t Interval
+* Return: None
+* Description: This function activate the buzzer for Interval
+* period of time, with blocking.
+
+************************************************************/
+void BuzzerActive(uint32_t Interval);
+
 /* [] END OF FILE */

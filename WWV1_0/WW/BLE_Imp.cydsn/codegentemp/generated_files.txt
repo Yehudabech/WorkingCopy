@@ -79,6 +79,18 @@
   <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\BuzzerPWM_PM.c" value="SOURCE_C;CortexM0;;;;BuzzerPWM" />
   <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\PWM_CLK.c" value="SOURCE_C;CortexM0;;;;PWM_CLK" />
   <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\PWM_CLK.h" value="HEADER;;;;;PWM_CLK" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\RedLED.c" value="SOURCE_C;CortexM0;;;;RedLED" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\RedLED.h" value="HEADER;;;;;RedLED" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\RedLED_aliases.h" value="HEADER;;;;;RedLED" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\RedLED_PM.c" value="SOURCE_C;CortexM0;;;;RedLED" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\GreenLED.c" value="SOURCE_C;CortexM0;;;;GreenLED" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\GreenLED.h" value="HEADER;;;;;GreenLED" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\GreenLED_aliases.h" value="HEADER;;;;;GreenLED" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\GreenLED_PM.c" value="SOURCE_C;CortexM0;;;;GreenLED" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\YellowLED.c" value="SOURCE_C;CortexM0;;;;YellowLED" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\YellowLED.h" value="HEADER;;;;;YellowLED" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\YellowLED_aliases.h" value="HEADER;;;;;YellowLED" />
+  <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\YellowLED_PM.c" value="SOURCE_C;CortexM0;;;;YellowLED" />
   <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\BLE_bless_isr.c" value="SOURCE_C;CortexM0;;;;BLE_bless_isr" />
   <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\BLE_bless_isr.h" value="HEADER;;;;;BLE_bless_isr" />
   <file name="C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\codegentemp\SCB_1_SCBCLK.c" value="SOURCE_C;CortexM0;;;;SCB_1_SCBCLK" />

@@ -14,8 +14,8 @@
 #include "main.h"
 
 /**** Defines *****************************************/
-#define FALSE 0
-#define TRUE 1
+#define FALSE   0
+#define TRUE    1
 
 #define ON      1
 #define OFF     0
