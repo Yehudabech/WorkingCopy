@@ -70,4 +70,29 @@ void LED_BlinkReload(uint8_t Color);
 
 ************************************************************/
 void LED_BlinkpGetClockVal(uint32_t CurrenTime);
+
+
+
+/**************************************************************
+* Name: TurnON_LED
+* Parameters[in]: uint8_t Color
+* Return: None
+* Description: This function turns ON Color led
+
+************************************************************/
+void TurnON_LED(uint8_t Color);
+
+
+
+/**************************************************************
+* Name: TurnOFF_LED
+* Parameters[in]: uint8_t Color
+* Return: None
+* Description: This function turns OFF Color led
+
+************************************************************/
+void TurnOFF_LED(uint8_t Color);
+
+
+
 /* [] END OF FILE */

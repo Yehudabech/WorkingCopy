@@ -1,6 +1,6 @@
 // ======================================================================
 // BLE_Imp.v generated from TopDesign.cysch
-// 01/01/2019 at 22:38
+// 01/02/2019 at 20:04
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -672,6 +672,7 @@ module top ;
           wire  Net_145;
           wire  Net_143;
           wire  Net_141;
+          wire  Net_171;
           wire  Net_24;
           wire  Net_23;
           wire  Net_22;
@@ -696,6 +697,8 @@ module top ;
           wire  Net_3;
           wire  Net_2;
           wire  Net_1;
+          wire  Net_169;
+          wire  Net_168;
           wire  Net_142;
           wire  Net_144;
 
@@ -1030,14 +1033,13 @@ module top ;
 	wire [0:0] tmpOE__OutBeforeDown_net;
 	wire [0:0] tmpFB_0__OutBeforeDown_net;
 	wire [0:0] tmpIO_0__OutBeforeDown_net;
-	wire [0:0] tmpINTERRUPT_0__OutBeforeDown_net;
 	electrical [0:0] tmpSIOVREF__OutBeforeDown_net;
 
 	cy_psoc3_pins_v1_10
 		#(.id("8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba"),
-		  .drive_mode(3'b001),
+		  .drive_mode(3'b010),
 		  .ibuf_enabled(1'b1),
-		  .init_dr_st(1'b0),
+		  .init_dr_st(1'b1),
 		  .input_clk_en(0),
 		  .input_sync(1'b0),
 		  .input_sync_mode(1'b0),
@@ -1092,7 +1094,7 @@ module top ;
 		  .fb({tmpFB_0__OutBeforeDown_net[0:0]}),
 		  .io({tmpIO_0__OutBeforeDown_net[0:0]}),
 		  .siovref(tmpSIOVREF__OutBeforeDown_net),
-		  .interrupt({tmpINTERRUPT_0__OutBeforeDown_net[0:0]}),
+		  .interrupt({Net_169}),
 		  .in_clock({1'b0}),
 		  .in_clock_en({1'b1}),
 		  .in_reset({1'b0}),
@@ -1103,16 +1105,14 @@ module top ;
 	assign tmpOE__OutBeforeDown_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
 	wire [0:0] tmpOE__UpBeforeIn_net;
-	wire [0:0] tmpFB_0__UpBeforeIn_net;
 	wire [0:0] tmpIO_0__UpBeforeIn_net;
-	wire [0:0] tmpINTERRUPT_0__UpBeforeIn_net;
 	electrical [0:0] tmpSIOVREF__UpBeforeIn_net;
 
 	cy_psoc3_pins_v1_10
 		#(.id("b080bca8-67ea-4e9e-ae6e-7dc48ac6dde9"),
-		  .drive_mode(3'b001),
+		  .drive_mode(3'b010),
 		  .ibuf_enabled(1'b1),
-		  .init_dr_st(1'b0),
+		  .init_dr_st(1'b1),
 		  .input_clk_en(0),
 		  .input_sync(1'b0),
 		  .input_sync_mode(1'b0),
@@ -1164,10 +1164,10 @@ module top ;
 		UpBeforeIn
 		 (.oe(tmpOE__UpBeforeIn_net),
 		  .y({1'b0}),
-		  .fb({tmpFB_0__UpBeforeIn_net[0:0]}),
+		  .fb({Net_171}),
 		  .io({tmpIO_0__UpBeforeIn_net[0:0]}),
 		  .siovref(tmpSIOVREF__UpBeforeIn_net),
-		  .interrupt({tmpINTERRUPT_0__UpBeforeIn_net[0:0]}),
+		  .interrupt({Net_168}),
 		  .in_clock({1'b0}),
 		  .in_clock_en({1'b1}),
 		  .in_reset({1'b0}),
@@ -1505,6 +1505,20 @@ module top ;
 		  .out_reset({1'b0}));
 
 	assign tmpOE__YellowLED_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+
+
+	cy_isr_v1_0
+		#(.int_type(2'b10))
+		UpBeforeIn_ISR
+		 (.int_signal(Net_168));
+
+
+
+	cy_isr_v1_0
+		#(.int_type(2'b10))
+		OutBeforeDown_ISR
+		 (.int_signal(Net_169));
+
 
 
 

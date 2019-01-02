@@ -92,5 +92,35 @@ uint8_t OperationsMain(uint8_t ReceivedByte)
   }
   return Val2Ret;
 }
+    
+
+
+/*************************************************************
+* Name: OutBeforeDown_CallbackFucntion
+* Parameters[in]: None
+* Return: None
+* Description: This fuction is the callback funciton of 
+* OutBeforeDown pin interrupt.
+
+************************************************************/
+void OutBeforeDown_CallbackFucntion(void)
+{
+  iprintf("OutBeforeDown pin interrupted\n\r");
+}
+
+
+
+/*************************************************************
+* Name: UpBeforeIn_CallbackFucntion
+* Parameters[in]: None
+* Return: None
+* Description: This fuction is the callback funciton of 
+* UpBeforeIn pin interrupt.
+
+************************************************************/
+void UpBeforeIn_CallbackFucntion(void)
+{
+  iprintf("UpBeforeIn pin interrupted\n\r");
+}
 
 /* [] END OF FILE */

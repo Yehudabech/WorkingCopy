@@ -60,6 +60,8 @@
 #include "GreenLED_aliases.h"
 #include "YellowLED.h"
 #include "YellowLED_aliases.h"
+#include "UpBeforeIn_ISR.h"
+#include "OutBeforeDown_ISR.h"
 #include "BLE_bless_isr.h"
 #include "SCB_1_SCBCLK.h"
 #include "SCB_1_tx.h"

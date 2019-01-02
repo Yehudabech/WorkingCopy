@@ -91,23 +91,23 @@ void Init(void)
     CyBle_Start(CustomEventHandler);                                            //BLE init
     CyIntSetSysVector(SYSTICK_INTERRUPT_VECTORE_NUMBER, SysTick_ISR);           //Init systick        
     (void)SysTick_Config(CLOCK_FREQ/INTERRUPT_FREQ);
+    OutBeforeDown_ISR_Start();
+    UpBeforeIn_ISR_Start();
     CyGlobalIntEnable;                                                          //Enable global interrupts. 
     GPIO_Init();
     
     
     iprintf("**********************\n\r");
-    iprintf("Application start from IAR!!!\n\rFW version V1.0.0\n\r");
+    iprintf("Application start from IAR!!!")
+    iprintf("\n\rFW version V1.0.0\n\r");
     iprintf("**********************\n\r");
 }
 
 
-//uint8_t Arr2Print[20] = {0x05, 0x07, 0x34, 0x05, 0x07, 0x34, 0x05, 0x07, 0x34,0x05, 0x07, 0x34, 0x05, 0x07, 0x34,0x05, 0x07, 0x34,0x07, 0x34};
-//uint8_t Arr2Print1[20] = {0x06, 0x0F, 0xDD, 0x03, 0x07, 0x34, 0x05, 0x07, 0x34,0x05, 0x07, 0x34, 0x05, 0x07, 0x34,0x05, 0x07, 0x34,0x07, 0x34};
-
 int main(void)
 {
     Init();
-    LED_BlinkStart(250, YELLOW_LED);
+    LED_BlinkStart(50, YELLOW_LED);
     LED_BlinkStart(1200, RED_LED);
     LED_BlinkStart(2000, GREEN_LED);
     //BuzzerBeepStart(100);
@@ -115,7 +115,7 @@ int main(void)
     {
         CyBle_ProcessEvents();
         TasksScheduler();
-        
+        //OutBeforeDown_ISR_Start();
         if(BLE_IsConnectedGet())
         {
            ;

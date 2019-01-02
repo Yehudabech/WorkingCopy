@@ -1,0 +1,2124 @@
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"OutBeforeDown_ISR.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.OutBeforeDown_ISR_SetVector,"ax",%progbits
+  20              		.align	2
+  21              		.global	OutBeforeDown_ISR_SetVector
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	OutBeforeDown_ISR_SetVector, %function
+  25              	OutBeforeDown_ISR_SetVector:
+  26              	.LFB39:
+  27              		.file 1 "Generated_Source\\PSoC4\\OutBeforeDown_ISR.c"
+   1:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** /*******************************************************************************
+   2:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * File Name: OutBeforeDown_ISR.c  
+   3:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Version 1.70
+   4:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+   5:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *  Description:
+   6:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   API for controlling the state of an interrupt.
+   7:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+   8:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+   9:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *  Note:
+  10:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+  11:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** ********************************************************************************
+  12:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  13:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  14:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  15:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * the software package with which this file was provided.
+  16:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *******************************************************************************/
+  17:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+  18:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+  19:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** #include <cydevice_trm.h>
+  20:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** #include <CyLib.h>
+  21:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** #include <OutBeforeDown_ISR.h>
+  22:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** #include "cyapicallbacks.h"
+  23:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+  24:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** #if !defined(OutBeforeDown_ISR__REMOVED) /* Check for removal by optimization */
+  25:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+  26:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** /*******************************************************************************
+  27:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *  Place your includes, defines and code here 
+  28:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** ********************************************************************************/
+  29:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** /* `#START OutBeforeDown_ISR_intc` */
+  30:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 2
+
+
+  31:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** /* `#END` */
+  32:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+  33:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** extern cyisraddress CyRamVectors[CYINT_IRQ_BASE + CY_NUM_INTERRUPTS];
+  34:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+  35:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** /* Declared in startup, used to set unused interrupts to. */
+  36:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** CY_ISR_PROTO(IntDefaultHandler);
+  37:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+  38:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+  39:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** /*******************************************************************************
+  40:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Function Name: OutBeforeDown_ISR_Start
+  41:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** ********************************************************************************
+  42:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+  43:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Summary:
+  44:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *  Set up the interrupt and enable it. This function disables the interrupt, 
+  45:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *  sets the default interrupt vector, sets the priority from the value in the
+  46:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *  Design Wide Resources Interrupt Editor, then enables the interrupt to the 
+  47:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *  interrupt controller.
+  48:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+  49:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Parameters:  
+  50:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   None
+  51:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+  52:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Return:
+  53:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   None
+  54:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+  55:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *******************************************************************************/
+  56:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** void OutBeforeDown_ISR_Start(void)
+  57:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** {
+  58:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     /* For all we know the interrupt is active. */
+  59:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     OutBeforeDown_ISR_Disable();
+  60:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+  61:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     /* Set the ISR to point to the OutBeforeDown_ISR Interrupt. */
+  62:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     OutBeforeDown_ISR_SetVector(&OutBeforeDown_ISR_Interrupt);
+  63:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+  64:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     /* Set the priority. */
+  65:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     OutBeforeDown_ISR_SetPriority((uint8)OutBeforeDown_ISR_INTC_PRIOR_NUMBER);
+  66:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+  67:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     /* Enable it. */
+  68:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     OutBeforeDown_ISR_Enable();
+  69:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** }
+  70:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+  71:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+  72:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** /*******************************************************************************
+  73:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Function Name: OutBeforeDown_ISR_StartEx
+  74:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** ********************************************************************************
+  75:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+  76:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Summary:
+  77:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *  Sets up the interrupt and enables it. This function disables the interrupt,
+  78:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *  sets the interrupt vector based on the address passed in, sets the priority 
+  79:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *  from the value in the Design Wide Resources Interrupt Editor, then enables 
+  80:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *  the interrupt to the interrupt controller.
+  81:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *  
+  82:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *  When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
+  83:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *  used to provide consistent definition across compilers:
+  84:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *  
+  85:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *  Function definition example:
+  86:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   CY_ISR(MyISR)
+  87:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   {
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 3
+
+
+  88:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   }
+  89:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Function prototype example:
+  90:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   CY_ISR_PROTO(MyISR);
+  91:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+  92:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Parameters:  
+  93:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   address: Address of the ISR to set in the interrupt vector table.
+  94:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+  95:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Return:
+  96:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   None
+  97:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+  98:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *******************************************************************************/
+  99:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** void OutBeforeDown_ISR_StartEx(cyisraddress address)
+ 100:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** {
+ 101:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     /* For all we know the interrupt is active. */
+ 102:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     OutBeforeDown_ISR_Disable();
+ 103:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 104:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     /* Set the ISR to point to the OutBeforeDown_ISR Interrupt. */
+ 105:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     OutBeforeDown_ISR_SetVector(address);
+ 106:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 107:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     /* Set the priority. */
+ 108:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     OutBeforeDown_ISR_SetPriority((uint8)OutBeforeDown_ISR_INTC_PRIOR_NUMBER);
+ 109:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 110:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     /* Enable it. */
+ 111:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     OutBeforeDown_ISR_Enable();
+ 112:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** }
+ 113:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 114:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 115:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** /*******************************************************************************
+ 116:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Function Name: OutBeforeDown_ISR_Stop
+ 117:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** ********************************************************************************
+ 118:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 119:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Summary:
+ 120:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Disables and removes the interrupt.
+ 121:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 122:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Parameters:  
+ 123:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   None
+ 124:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 125:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Return:
+ 126:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   None
+ 127:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 128:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *******************************************************************************/
+ 129:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** void OutBeforeDown_ISR_Stop(void)
+ 130:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** {
+ 131:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     /* Disable this interrupt. */
+ 132:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     OutBeforeDown_ISR_Disable();
+ 133:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 134:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     /* Set the ISR to point to the passive one. */
+ 135:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     OutBeforeDown_ISR_SetVector(&IntDefaultHandler);
+ 136:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** }
+ 137:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 138:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 139:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** /*******************************************************************************
+ 140:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Function Name: OutBeforeDown_ISR_Interrupt
+ 141:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** ********************************************************************************
+ 142:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 143:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Summary:
+ 144:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   The default Interrupt Service Routine for OutBeforeDown_ISR.
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 4
+
+
+ 145:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 146:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Add custom code between the START and END comments to keep the next version
+ 147:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   of this file from over-writing your code.
+ 148:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 149:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Note You may use either the default ISR by using this API, or you may define
+ 150:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   your own separate ISR through ISR_StartEx().
+ 151:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 152:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Parameters:  
+ 153:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   None
+ 154:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 155:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Return:
+ 156:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   None
+ 157:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 158:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *******************************************************************************/
+ 159:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** CY_ISR(OutBeforeDown_ISR_Interrupt)
+ 160:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** {
+ 161:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     #ifdef OutBeforeDown_ISR_INTERRUPT_INTERRUPT_CALLBACK
+ 162:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****         OutBeforeDown_ISR_Interrupt_InterruptCallback();
+ 163:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     #endif /* OutBeforeDown_ISR_INTERRUPT_INTERRUPT_CALLBACK */ 
+ 164:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 165:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     /*  Place your Interrupt code here. */
+ 166:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     /* `#START OutBeforeDown_ISR_Interrupt` */
+ 167:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****         iprintf("Interrupt!!!!!!\n\r");
+ 168:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****       OutBeforeDown_ISR_ClearPending();
+ 169:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****       OutBeforeDown_ClearInterrupt();
+ 170:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****         CyDelay(1000);
+ 171:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****         
+ 172:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     /* `#END` */
+ 173:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** }
+ 174:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 175:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 176:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** /*******************************************************************************
+ 177:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Function Name: OutBeforeDown_ISR_SetVector
+ 178:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** ********************************************************************************
+ 179:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 180:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Summary:
+ 181:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Change the ISR vector for the Interrupt. Note calling OutBeforeDown_ISR_Start
+ 182:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   will override any effect this method would have had. To set the vector 
+ 183:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   before the component has been started use OutBeforeDown_ISR_StartEx instead.
+ 184:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * 
+ 185:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
+ 186:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   used to provide consistent definition across compilers:
+ 187:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 188:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Function definition example:
+ 189:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   CY_ISR(MyISR)
+ 190:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   {
+ 191:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   }
+ 192:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 193:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Function prototype example:
+ 194:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *     CY_ISR_PROTO(MyISR);
+ 195:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 196:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Parameters:
+ 197:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   address: Address of the ISR to set in the interrupt vector table.
+ 198:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 199:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Return:
+ 200:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   None
+ 201:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 5
+
+
+ 202:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *******************************************************************************/
+ 203:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** void OutBeforeDown_ISR_SetVector(cyisraddress address)
+ 204:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** {
+  28              		.loc 1 204 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  33              	.LVL0:
+ 205:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     CyRamVectors[CYINT_IRQ_BASE + OutBeforeDown_ISR__INTC_NUMBER] = address;
+  34              		.loc 1 205 0
+  35 0000 014B     		ldr	r3, .L2
+  36 0002 9864     		str	r0, [r3, #72]
+ 206:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** }
+  37              		.loc 1 206 0
+  38              		@ sp needed
+  39 0004 7047     		bx	lr
+  40              	.L3:
+  41 0006 C046     		.align	2
+  42              	.L2:
+  43 0008 00000000 		.word	CyRamVectors
+  44              		.cfi_endproc
+  45              	.LFE39:
+  46              		.size	OutBeforeDown_ISR_SetVector, .-OutBeforeDown_ISR_SetVector
+  47              		.section	.text.OutBeforeDown_ISR_GetVector,"ax",%progbits
+  48              		.align	2
+  49              		.global	OutBeforeDown_ISR_GetVector
+  50              		.code	16
+  51              		.thumb_func
+  52              		.type	OutBeforeDown_ISR_GetVector, %function
+  53              	OutBeforeDown_ISR_GetVector:
+  54              	.LFB40:
+ 207:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 208:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 209:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** /*******************************************************************************
+ 210:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Function Name: OutBeforeDown_ISR_GetVector
+ 211:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** ********************************************************************************
+ 212:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 213:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Summary:
+ 214:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Gets the "address" of the current ISR vector for the Interrupt.
+ 215:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 216:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Parameters:
+ 217:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   None
+ 218:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 219:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Return:
+ 220:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Address of the ISR in the interrupt vector table.
+ 221:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 222:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *******************************************************************************/
+ 223:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** cyisraddress OutBeforeDown_ISR_GetVector(void)
+ 224:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** {
+  55              		.loc 1 224 0
+  56              		.cfi_startproc
+  57              		@ args = 0, pretend = 0, frame = 0
+  58              		@ frame_needed = 0, uses_anonymous_args = 0
+  59              		@ link register save eliminated.
+ 225:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     return CyRamVectors[CYINT_IRQ_BASE + OutBeforeDown_ISR__INTC_NUMBER];
+  60              		.loc 1 225 0
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 6
+
+
+  61 0000 014B     		ldr	r3, .L5
+  62 0002 986C     		ldr	r0, [r3, #72]
+ 226:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** }
+  63              		.loc 1 226 0
+  64              		@ sp needed
+  65 0004 7047     		bx	lr
+  66              	.L6:
+  67 0006 C046     		.align	2
+  68              	.L5:
+  69 0008 00000000 		.word	CyRamVectors
+  70              		.cfi_endproc
+  71              	.LFE40:
+  72              		.size	OutBeforeDown_ISR_GetVector, .-OutBeforeDown_ISR_GetVector
+  73              		.section	.text.OutBeforeDown_ISR_SetPriority,"ax",%progbits
+  74              		.align	2
+  75              		.global	OutBeforeDown_ISR_SetPriority
+  76              		.code	16
+  77              		.thumb_func
+  78              		.type	OutBeforeDown_ISR_SetPriority, %function
+  79              	OutBeforeDown_ISR_SetPriority:
+  80              	.LFB41:
+ 227:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 228:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 229:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** /*******************************************************************************
+ 230:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Function Name: OutBeforeDown_ISR_SetPriority
+ 231:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** ********************************************************************************
+ 232:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 233:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Summary:
+ 234:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Sets the Priority of the Interrupt. 
+ 235:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 236:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Note calling OutBeforeDown_ISR_Start or OutBeforeDown_ISR_StartEx will 
+ 237:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   override any effect this API would have had. This API should only be called
+ 238:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   after OutBeforeDown_ISR_Start or OutBeforeDown_ISR_StartEx has been called. 
+ 239:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   To set the initial priority for the component, use the Design-Wide Resources
+ 240:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Interrupt Editor.
+ 241:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 242:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Note This API has no effect on Non-maskable interrupt NMI).
+ 243:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 244:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Parameters:
+ 245:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   priority: Priority of the interrupt, 0 being the highest priority
+ 246:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *             PSoC 3 and PSoC 5LP: Priority is from 0 to 7.
+ 247:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *             PSoC 4: Priority is from 0 to 3.
+ 248:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 249:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Return:
+ 250:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   None
+ 251:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 252:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *******************************************************************************/
+ 253:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** void OutBeforeDown_ISR_SetPriority(uint8 priority)
+ 254:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** {
+  81              		.loc 1 254 0
+  82              		.cfi_startproc
+  83              		@ args = 0, pretend = 0, frame = 0
+  84              		@ frame_needed = 0, uses_anonymous_args = 0
+  85              	.LVL1:
+  86 0000 10B5     		push	{r4, lr}
+  87              		.cfi_def_cfa_offset 8
+  88              		.cfi_offset 4, -8
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 7
+
+
+  89              		.cfi_offset 14, -4
+  90 0002 0400     		movs	r4, r0
+  91              	.LVL2:
+ 255:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 	uint8 interruptState;
+ 256:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     uint32 priorityOffset = ((OutBeforeDown_ISR__INTC_NUMBER % 4u) * 8u) + 6u;
+ 257:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     
+ 258:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 	interruptState = CyEnterCriticalSection();
+  92              		.loc 1 258 0
+  93 0004 FFF7FEFF 		bl	CyEnterCriticalSection
+  94              	.LVL3:
+ 259:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     *OutBeforeDown_ISR_INTC_PRIOR = (*OutBeforeDown_ISR_INTC_PRIOR & (uint32)(~OutBeforeDown_ISR__I
+  95              		.loc 1 259 0
+  96 0008 044A     		ldr	r2, .L8
+  97 000a 1168     		ldr	r1, [r2]
+  98 000c 044B     		ldr	r3, .L8+4
+  99 000e 0B40     		ands	r3, r1
+ 260:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****                                     ((uint32)priority << priorityOffset);
+ 100              		.loc 1 260 0
+ 101 0010 A405     		lsls	r4, r4, #22
+ 259:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     *OutBeforeDown_ISR_INTC_PRIOR = (*OutBeforeDown_ISR_INTC_PRIOR & (uint32)(~OutBeforeDown_ISR__I
+ 102              		.loc 1 259 0
+ 103 0012 1C43     		orrs	r4, r3
+ 104 0014 1460     		str	r4, [r2]
+ 261:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 	CyExitCriticalSection(interruptState);
+ 105              		.loc 1 261 0
+ 106 0016 FFF7FEFF 		bl	CyExitCriticalSection
+ 107              	.LVL4:
+ 262:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** }
+ 108              		.loc 1 262 0
+ 109              		@ sp needed
+ 110 001a 10BD     		pop	{r4, pc}
+ 111              	.L9:
+ 112              		.align	2
+ 113              	.L8:
+ 114 001c 00E400E0 		.word	-536812544
+ 115 0020 FFFF3FFF 		.word	-12582913
+ 116              		.cfi_endproc
+ 117              	.LFE41:
+ 118              		.size	OutBeforeDown_ISR_SetPriority, .-OutBeforeDown_ISR_SetPriority
+ 119              		.section	.text.OutBeforeDown_ISR_GetPriority,"ax",%progbits
+ 120              		.align	2
+ 121              		.global	OutBeforeDown_ISR_GetPriority
+ 122              		.code	16
+ 123              		.thumb_func
+ 124              		.type	OutBeforeDown_ISR_GetPriority, %function
+ 125              	OutBeforeDown_ISR_GetPriority:
+ 126              	.LFB42:
+ 263:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 264:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 265:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** /*******************************************************************************
+ 266:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Function Name: OutBeforeDown_ISR_GetPriority
+ 267:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** ********************************************************************************
+ 268:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 269:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Summary:
+ 270:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Gets the Priority of the Interrupt.
+ 271:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 272:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Parameters:
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 8
+
+
+ 273:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   None
+ 274:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 275:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Return:
+ 276:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Priority of the interrupt, 0 being the highest priority
+ 277:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *    PSoC 3 and PSoC 5LP: Priority is from 0 to 7.
+ 278:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *    PSoC 4: Priority is from 0 to 3.
+ 279:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 280:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *******************************************************************************/
+ 281:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** uint8 OutBeforeDown_ISR_GetPriority(void)
+ 282:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** {
+ 127              		.loc 1 282 0
+ 128              		.cfi_startproc
+ 129              		@ args = 0, pretend = 0, frame = 0
+ 130              		@ frame_needed = 0, uses_anonymous_args = 0
+ 131              		@ link register save eliminated.
+ 132              	.LVL5:
+ 283:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     uint32 priority;
+ 284:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 	uint32 priorityOffset = ((OutBeforeDown_ISR__INTC_NUMBER % 4u) * 8u) + 6u;
+ 285:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 286:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     priority = (*OutBeforeDown_ISR_INTC_PRIOR & OutBeforeDown_ISR__INTC_PRIOR_MASK) >> priorityOffs
+ 133              		.loc 1 286 0
+ 134 0000 024B     		ldr	r3, .L11
+ 135 0002 1868     		ldr	r0, [r3]
+ 136 0004 800D     		lsrs	r0, r0, #22
+ 137              	.LVL6:
+ 287:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 288:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     return (uint8)priority;
+ 138              		.loc 1 288 0
+ 139 0006 0323     		movs	r3, #3
+ 140 0008 1840     		ands	r0, r3
+ 141              	.LVL7:
+ 289:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** }
+ 142              		.loc 1 289 0
+ 143              		@ sp needed
+ 144 000a 7047     		bx	lr
+ 145              	.L12:
+ 146              		.align	2
+ 147              	.L11:
+ 148 000c 00E400E0 		.word	-536812544
+ 149              		.cfi_endproc
+ 150              	.LFE42:
+ 151              		.size	OutBeforeDown_ISR_GetPriority, .-OutBeforeDown_ISR_GetPriority
+ 152              		.section	.text.OutBeforeDown_ISR_Enable,"ax",%progbits
+ 153              		.align	2
+ 154              		.global	OutBeforeDown_ISR_Enable
+ 155              		.code	16
+ 156              		.thumb_func
+ 157              		.type	OutBeforeDown_ISR_Enable, %function
+ 158              	OutBeforeDown_ISR_Enable:
+ 159              	.LFB43:
+ 290:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 291:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 292:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** /*******************************************************************************
+ 293:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Function Name: OutBeforeDown_ISR_Enable
+ 294:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** ********************************************************************************
+ 295:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 296:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Summary:
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 9
+
+
+ 297:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Enables the interrupt to the interrupt controller. Do not call this function
+ 298:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   unless ISR_Start() has been called or the functionality of the ISR_Start() 
+ 299:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   function, which sets the vector and the priority, has been called.
+ 300:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 301:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Parameters:
+ 302:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   None
+ 303:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 304:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Return:
+ 305:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   None
+ 306:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 307:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *******************************************************************************/
+ 308:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** void OutBeforeDown_ISR_Enable(void)
+ 309:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** {
+ 160              		.loc 1 309 0
+ 161              		.cfi_startproc
+ 162              		@ args = 0, pretend = 0, frame = 0
+ 163              		@ frame_needed = 0, uses_anonymous_args = 0
+ 164              		@ link register save eliminated.
+ 310:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     /* Enable the general interrupt. */
+ 311:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     *OutBeforeDown_ISR_INTC_SET_EN = OutBeforeDown_ISR__INTC_MASK;
+ 165              		.loc 1 311 0
+ 166 0000 0422     		movs	r2, #4
+ 167 0002 014B     		ldr	r3, .L14
+ 168 0004 1A60     		str	r2, [r3]
+ 312:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** }
+ 169              		.loc 1 312 0
+ 170              		@ sp needed
+ 171 0006 7047     		bx	lr
+ 172              	.L15:
+ 173              		.align	2
+ 174              	.L14:
+ 175 0008 00E100E0 		.word	-536813312
+ 176              		.cfi_endproc
+ 177              	.LFE43:
+ 178              		.size	OutBeforeDown_ISR_Enable, .-OutBeforeDown_ISR_Enable
+ 179              		.section	.text.OutBeforeDown_ISR_GetState,"ax",%progbits
+ 180              		.align	2
+ 181              		.global	OutBeforeDown_ISR_GetState
+ 182              		.code	16
+ 183              		.thumb_func
+ 184              		.type	OutBeforeDown_ISR_GetState, %function
+ 185              	OutBeforeDown_ISR_GetState:
+ 186              	.LFB44:
+ 313:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 314:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 315:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** /*******************************************************************************
+ 316:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Function Name: OutBeforeDown_ISR_GetState
+ 317:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** ********************************************************************************
+ 318:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 319:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Summary:
+ 320:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Gets the state (enabled, disabled) of the Interrupt.
+ 321:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 322:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Parameters:
+ 323:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   None
+ 324:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 325:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Return:
+ 326:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   1 if enabled, 0 if disabled.
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 10
+
+
+ 327:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 328:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *******************************************************************************/
+ 329:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** uint8 OutBeforeDown_ISR_GetState(void)
+ 330:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** {
+ 187              		.loc 1 330 0
+ 188              		.cfi_startproc
+ 189              		@ args = 0, pretend = 0, frame = 0
+ 190              		@ frame_needed = 0, uses_anonymous_args = 0
+ 191              		@ link register save eliminated.
+ 331:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     /* Get the state of the general interrupt. */
+ 332:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     return ((*OutBeforeDown_ISR_INTC_SET_EN & (uint32)OutBeforeDown_ISR__INTC_MASK) != 0u) ? 1u:0u;
+ 192              		.loc 1 332 0
+ 193 0000 034B     		ldr	r3, .L19
+ 194 0002 1B68     		ldr	r3, [r3]
+ 195 0004 5B07     		lsls	r3, r3, #29
+ 196 0006 01D5     		bpl	.L18
+ 197 0008 0120     		movs	r0, #1
+ 198 000a 00E0     		b	.L17
+ 199              	.L18:
+ 200 000c 0020     		movs	r0, #0
+ 201              	.L17:
+ 333:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** }
+ 202              		.loc 1 333 0 discriminator 4
+ 203              		@ sp needed
+ 204 000e 7047     		bx	lr
+ 205              	.L20:
+ 206              		.align	2
+ 207              	.L19:
+ 208 0010 00E100E0 		.word	-536813312
+ 209              		.cfi_endproc
+ 210              	.LFE44:
+ 211              		.size	OutBeforeDown_ISR_GetState, .-OutBeforeDown_ISR_GetState
+ 212              		.section	.text.OutBeforeDown_ISR_Disable,"ax",%progbits
+ 213              		.align	2
+ 214              		.global	OutBeforeDown_ISR_Disable
+ 215              		.code	16
+ 216              		.thumb_func
+ 217              		.type	OutBeforeDown_ISR_Disable, %function
+ 218              	OutBeforeDown_ISR_Disable:
+ 219              	.LFB45:
+ 334:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 335:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 336:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** /*******************************************************************************
+ 337:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Function Name: OutBeforeDown_ISR_Disable
+ 338:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** ********************************************************************************
+ 339:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 340:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Summary:
+ 341:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Disables the Interrupt in the interrupt controller.
+ 342:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 343:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Parameters:
+ 344:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   None
+ 345:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 346:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Return:
+ 347:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   None
+ 348:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 349:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *******************************************************************************/
+ 350:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** void OutBeforeDown_ISR_Disable(void)
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 11
+
+
+ 351:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** {
+ 220              		.loc 1 351 0
+ 221              		.cfi_startproc
+ 222              		@ args = 0, pretend = 0, frame = 0
+ 223              		@ frame_needed = 0, uses_anonymous_args = 0
+ 224              		@ link register save eliminated.
+ 352:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     /* Disable the general interrupt. */
+ 353:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     *OutBeforeDown_ISR_INTC_CLR_EN = OutBeforeDown_ISR__INTC_MASK;
+ 225              		.loc 1 353 0
+ 226 0000 0422     		movs	r2, #4
+ 227 0002 014B     		ldr	r3, .L22
+ 228 0004 1A60     		str	r2, [r3]
+ 354:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** }
+ 229              		.loc 1 354 0
+ 230              		@ sp needed
+ 231 0006 7047     		bx	lr
+ 232              	.L23:
+ 233              		.align	2
+ 234              	.L22:
+ 235 0008 80E100E0 		.word	-536813184
+ 236              		.cfi_endproc
+ 237              	.LFE45:
+ 238              		.size	OutBeforeDown_ISR_Disable, .-OutBeforeDown_ISR_Disable
+ 239              		.section	.text.OutBeforeDown_ISR_Start,"ax",%progbits
+ 240              		.align	2
+ 241              		.global	OutBeforeDown_ISR_Start
+ 242              		.code	16
+ 243              		.thumb_func
+ 244              		.type	OutBeforeDown_ISR_Start, %function
+ 245              	OutBeforeDown_ISR_Start:
+ 246              	.LFB35:
+  57:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     /* For all we know the interrupt is active. */
+ 247              		.loc 1 57 0
+ 248              		.cfi_startproc
+ 249              		@ args = 0, pretend = 0, frame = 0
+ 250              		@ frame_needed = 0, uses_anonymous_args = 0
+ 251 0000 10B5     		push	{r4, lr}
+ 252              		.cfi_def_cfa_offset 8
+ 253              		.cfi_offset 4, -8
+ 254              		.cfi_offset 14, -4
+  59:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 255              		.loc 1 59 0
+ 256 0002 FFF7FEFF 		bl	OutBeforeDown_ISR_Disable
+ 257              	.LVL8:
+  62:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 258              		.loc 1 62 0
+ 259 0006 0448     		ldr	r0, .L25
+ 260 0008 FFF7FEFF 		bl	OutBeforeDown_ISR_SetVector
+ 261              	.LVL9:
+  65:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 262              		.loc 1 65 0
+ 263 000c 0320     		movs	r0, #3
+ 264 000e FFF7FEFF 		bl	OutBeforeDown_ISR_SetPriority
+ 265              	.LVL10:
+  68:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** }
+ 266              		.loc 1 68 0
+ 267 0012 FFF7FEFF 		bl	OutBeforeDown_ISR_Enable
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 12
+
+
+ 268              	.LVL11:
+  69:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 269              		.loc 1 69 0
+ 270              		@ sp needed
+ 271 0016 10BD     		pop	{r4, pc}
+ 272              	.L26:
+ 273              		.align	2
+ 274              	.L25:
+ 275 0018 00000000 		.word	OutBeforeDown_ISR_Interrupt
+ 276              		.cfi_endproc
+ 277              	.LFE35:
+ 278              		.size	OutBeforeDown_ISR_Start, .-OutBeforeDown_ISR_Start
+ 279              		.section	.text.OutBeforeDown_ISR_StartEx,"ax",%progbits
+ 280              		.align	2
+ 281              		.global	OutBeforeDown_ISR_StartEx
+ 282              		.code	16
+ 283              		.thumb_func
+ 284              		.type	OutBeforeDown_ISR_StartEx, %function
+ 285              	OutBeforeDown_ISR_StartEx:
+ 286              	.LFB36:
+ 100:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     /* For all we know the interrupt is active. */
+ 287              		.loc 1 100 0
+ 288              		.cfi_startproc
+ 289              		@ args = 0, pretend = 0, frame = 0
+ 290              		@ frame_needed = 0, uses_anonymous_args = 0
+ 291              	.LVL12:
+ 292 0000 10B5     		push	{r4, lr}
+ 293              		.cfi_def_cfa_offset 8
+ 294              		.cfi_offset 4, -8
+ 295              		.cfi_offset 14, -4
+ 296 0002 0400     		movs	r4, r0
+ 102:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 297              		.loc 1 102 0
+ 298 0004 FFF7FEFF 		bl	OutBeforeDown_ISR_Disable
+ 299              	.LVL13:
+ 105:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 300              		.loc 1 105 0
+ 301 0008 2000     		movs	r0, r4
+ 302 000a FFF7FEFF 		bl	OutBeforeDown_ISR_SetVector
+ 303              	.LVL14:
+ 108:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 304              		.loc 1 108 0
+ 305 000e 0320     		movs	r0, #3
+ 306 0010 FFF7FEFF 		bl	OutBeforeDown_ISR_SetPriority
+ 307              	.LVL15:
+ 111:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** }
+ 308              		.loc 1 111 0
+ 309 0014 FFF7FEFF 		bl	OutBeforeDown_ISR_Enable
+ 310              	.LVL16:
+ 112:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 311              		.loc 1 112 0
+ 312              		@ sp needed
+ 313              	.LVL17:
+ 314 0018 10BD     		pop	{r4, pc}
+ 315              		.cfi_endproc
+ 316              	.LFE36:
+ 317              		.size	OutBeforeDown_ISR_StartEx, .-OutBeforeDown_ISR_StartEx
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 13
+
+
+ 318 001a C046     		.section	.text.OutBeforeDown_ISR_Stop,"ax",%progbits
+ 319              		.align	2
+ 320              		.global	OutBeforeDown_ISR_Stop
+ 321              		.code	16
+ 322              		.thumb_func
+ 323              		.type	OutBeforeDown_ISR_Stop, %function
+ 324              	OutBeforeDown_ISR_Stop:
+ 325              	.LFB37:
+ 130:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     /* Disable this interrupt. */
+ 326              		.loc 1 130 0
+ 327              		.cfi_startproc
+ 328              		@ args = 0, pretend = 0, frame = 0
+ 329              		@ frame_needed = 0, uses_anonymous_args = 0
+ 330 0000 10B5     		push	{r4, lr}
+ 331              		.cfi_def_cfa_offset 8
+ 332              		.cfi_offset 4, -8
+ 333              		.cfi_offset 14, -4
+ 132:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 334              		.loc 1 132 0
+ 335 0002 FFF7FEFF 		bl	OutBeforeDown_ISR_Disable
+ 336              	.LVL18:
+ 135:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** }
+ 337              		.loc 1 135 0
+ 338 0006 0248     		ldr	r0, .L29
+ 339 0008 FFF7FEFF 		bl	OutBeforeDown_ISR_SetVector
+ 340              	.LVL19:
+ 136:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 341              		.loc 1 136 0
+ 342              		@ sp needed
+ 343 000c 10BD     		pop	{r4, pc}
+ 344              	.L30:
+ 345 000e C046     		.align	2
+ 346              	.L29:
+ 347 0010 00000000 		.word	IntDefaultHandler
+ 348              		.cfi_endproc
+ 349              	.LFE37:
+ 350              		.size	OutBeforeDown_ISR_Stop, .-OutBeforeDown_ISR_Stop
+ 351              		.section	.text.OutBeforeDown_ISR_SetPending,"ax",%progbits
+ 352              		.align	2
+ 353              		.global	OutBeforeDown_ISR_SetPending
+ 354              		.code	16
+ 355              		.thumb_func
+ 356              		.type	OutBeforeDown_ISR_SetPending, %function
+ 357              	OutBeforeDown_ISR_SetPending:
+ 358              	.LFB46:
+ 355:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 356:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 357:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** /*******************************************************************************
+ 358:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Function Name: OutBeforeDown_ISR_SetPending
+ 359:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** ********************************************************************************
+ 360:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 361:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Summary:
+ 362:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Causes the Interrupt to enter the pending state, a software method of
+ 363:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   generating the interrupt.
+ 364:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 365:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Parameters:
+ 366:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   None
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 14
+
+
+ 367:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 368:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Return:
+ 369:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   None
+ 370:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 371:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Side Effects:
+ 372:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   If interrupts are enabled and the interrupt is set up properly, the ISR is
+ 373:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   entered (depending on the priority of this interrupt and other pending 
+ 374:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   interrupts).
+ 375:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 376:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *******************************************************************************/
+ 377:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** void OutBeforeDown_ISR_SetPending(void)
+ 378:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** {
+ 359              		.loc 1 378 0
+ 360              		.cfi_startproc
+ 361              		@ args = 0, pretend = 0, frame = 0
+ 362              		@ frame_needed = 0, uses_anonymous_args = 0
+ 363              		@ link register save eliminated.
+ 379:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     *OutBeforeDown_ISR_INTC_SET_PD = OutBeforeDown_ISR__INTC_MASK;
+ 364              		.loc 1 379 0
+ 365 0000 0422     		movs	r2, #4
+ 366 0002 014B     		ldr	r3, .L32
+ 367 0004 1A60     		str	r2, [r3]
+ 380:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** }
+ 368              		.loc 1 380 0
+ 369              		@ sp needed
+ 370 0006 7047     		bx	lr
+ 371              	.L33:
+ 372              		.align	2
+ 373              	.L32:
+ 374 0008 00E200E0 		.word	-536813056
+ 375              		.cfi_endproc
+ 376              	.LFE46:
+ 377              		.size	OutBeforeDown_ISR_SetPending, .-OutBeforeDown_ISR_SetPending
+ 378              		.section	.text.OutBeforeDown_ISR_ClearPending,"ax",%progbits
+ 379              		.align	2
+ 380              		.global	OutBeforeDown_ISR_ClearPending
+ 381              		.code	16
+ 382              		.thumb_func
+ 383              		.type	OutBeforeDown_ISR_ClearPending, %function
+ 384              	OutBeforeDown_ISR_ClearPending:
+ 385              	.LFB47:
+ 381:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 382:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 383:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** /*******************************************************************************
+ 384:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Function Name: OutBeforeDown_ISR_ClearPending
+ 385:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** ********************************************************************************
+ 386:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 387:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Summary:
+ 388:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Clears a pending interrupt in the interrupt controller.
+ 389:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 390:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   Note Some interrupt sources are clear-on-read and require the block 
+ 391:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   interrupt/status register to be read/cleared with the appropriate block API 
+ 392:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   (GPIO, UART, and so on). Otherwise the ISR will continue to remain in 
+ 393:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   pending state even though the interrupt itself is cleared using this API.
+ 394:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 395:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Parameters:
+ 396:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   None
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 15
+
+
+ 397:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 398:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** * Return:
+ 399:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *   None
+ 400:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *
+ 401:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** *******************************************************************************/
+ 402:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** void OutBeforeDown_ISR_ClearPending(void)
+ 403:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** {
+ 386              		.loc 1 403 0
+ 387              		.cfi_startproc
+ 388              		@ args = 0, pretend = 0, frame = 0
+ 389              		@ frame_needed = 0, uses_anonymous_args = 0
+ 390              		@ link register save eliminated.
+ 404:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     *OutBeforeDown_ISR_INTC_CLR_PD = OutBeforeDown_ISR__INTC_MASK;
+ 391              		.loc 1 404 0
+ 392 0000 0422     		movs	r2, #4
+ 393 0002 014B     		ldr	r3, .L35
+ 394 0004 1A60     		str	r2, [r3]
+ 405:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** }
+ 395              		.loc 1 405 0
+ 396              		@ sp needed
+ 397 0006 7047     		bx	lr
+ 398              	.L36:
+ 399              		.align	2
+ 400              	.L35:
+ 401 0008 80E200E0 		.word	-536812928
+ 402              		.cfi_endproc
+ 403              	.LFE47:
+ 404              		.size	OutBeforeDown_ISR_ClearPending, .-OutBeforeDown_ISR_ClearPending
+ 405              		.section	.text.OutBeforeDown_ISR_Interrupt,"ax",%progbits
+ 406              		.align	2
+ 407              		.global	OutBeforeDown_ISR_Interrupt
+ 408              		.code	16
+ 409              		.thumb_func
+ 410              		.type	OutBeforeDown_ISR_Interrupt, %function
+ 411              	OutBeforeDown_ISR_Interrupt:
+ 412              	.LFB38:
+ 160:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****     #ifdef OutBeforeDown_ISR_INTERRUPT_INTERRUPT_CALLBACK
+ 413              		.loc 1 160 0
+ 414              		.cfi_startproc
+ 415              		@ args = 0, pretend = 0, frame = 0
+ 416              		@ frame_needed = 0, uses_anonymous_args = 0
+ 417 0000 10B5     		push	{r4, lr}
+ 418              		.cfi_def_cfa_offset 8
+ 419              		.cfi_offset 4, -8
+ 420              		.cfi_offset 14, -4
+ 167:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****       OutBeforeDown_ISR_ClearPending();
+ 421              		.loc 1 167 0
+ 422 0002 0648     		ldr	r0, .L38
+ 423 0004 FFF7FEFF 		bl	iprintf
+ 424              	.LVL20:
+ 168:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****       OutBeforeDown_ClearInterrupt();
+ 425              		.loc 1 168 0
+ 426 0008 FFF7FEFF 		bl	OutBeforeDown_ISR_ClearPending
+ 427              	.LVL21:
+ 169:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****         CyDelay(1000);
+ 428              		.loc 1 169 0
+ 429 000c FFF7FEFF 		bl	OutBeforeDown_ClearInterrupt
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 16
+
+
+ 430              	.LVL22:
+ 170:Generated_Source\PSoC4/OutBeforeDown_ISR.c ****         
+ 431              		.loc 1 170 0
+ 432 0010 FA20     		movs	r0, #250
+ 433 0012 8000     		lsls	r0, r0, #2
+ 434 0014 FFF7FEFF 		bl	CyDelay
+ 435              	.LVL23:
+ 173:Generated_Source\PSoC4/OutBeforeDown_ISR.c **** 
+ 436              		.loc 1 173 0
+ 437              		@ sp needed
+ 438 0018 10BD     		pop	{r4, pc}
+ 439              	.L39:
+ 440 001a C046     		.align	2
+ 441              	.L38:
+ 442 001c 00000000 		.word	.LC4
+ 443              		.cfi_endproc
+ 444              	.LFE38:
+ 445              		.size	OutBeforeDown_ISR_Interrupt, .-OutBeforeDown_ISR_Interrupt
+ 446              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 447              		.align	2
+ 448              	.LC4:
+ 449 0000 496E7465 		.ascii	"Interrupt!!!!!!\012\015\000"
+ 449      72727570 
+ 449      74212121 
+ 449      2121210A 
+ 449      0D00
+ 450              		.text
+ 451              	.Letext0:
+ 452              		.file 2 "Generated_Source\\PSoC4/cytypes.h"
+ 453              		.file 3 "Generated_Source\\PSoC4/CyLib.h"
+ 454              		.file 4 "./iprintf.h"
+ 455              		.file 5 "Generated_Source\\PSoC4/OutBeforeDown.h"
+ 456              		.section	.debug_info,"",%progbits
+ 457              	.Ldebug_info0:
+ 458 0000 62030000 		.4byte	0x362
+ 459 0004 0400     		.2byte	0x4
+ 460 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 461 000a 04       		.byte	0x4
+ 462 000b 01       		.uleb128 0x1
+ 463 000c 2D020000 		.4byte	.LASF39
+ 464 0010 0C       		.byte	0xc
+ 465 0011 20010000 		.4byte	.LASF40
+ 466 0015 32000000 		.4byte	.LASF41
+ 467 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 468 001d 00000000 		.4byte	0
+ 469 0021 00000000 		.4byte	.Ldebug_line0
+ 470 0025 02       		.uleb128 0x2
+ 471 0026 01       		.byte	0x1
+ 472 0027 06       		.byte	0x6
+ 473 0028 67030000 		.4byte	.LASF0
+ 474 002c 02       		.uleb128 0x2
+ 475 002d 01       		.byte	0x1
+ 476 002e 08       		.byte	0x8
+ 477 002f 99010000 		.4byte	.LASF1
+ 478 0033 02       		.uleb128 0x2
+ 479 0034 02       		.byte	0x2
+ 480 0035 05       		.byte	0x5
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 17
+
+
+ 481 0036 1D030000 		.4byte	.LASF2
+ 482 003a 02       		.uleb128 0x2
+ 483 003b 02       		.byte	0x2
+ 484 003c 07       		.byte	0x7
+ 485 003d C4020000 		.4byte	.LASF3
+ 486 0041 02       		.uleb128 0x2
+ 487 0042 04       		.byte	0x4
+ 488 0043 05       		.byte	0x5
+ 489 0044 4C030000 		.4byte	.LASF4
+ 490 0048 02       		.uleb128 0x2
+ 491 0049 04       		.byte	0x4
+ 492 004a 07       		.byte	0x7
+ 493 004b 5A010000 		.4byte	.LASF5
+ 494 004f 02       		.uleb128 0x2
+ 495 0050 08       		.byte	0x8
+ 496 0051 05       		.byte	0x5
+ 497 0052 D7020000 		.4byte	.LASF6
+ 498 0056 02       		.uleb128 0x2
+ 499 0057 08       		.byte	0x8
+ 500 0058 07       		.byte	0x7
+ 501 0059 F1000000 		.4byte	.LASF7
+ 502 005d 03       		.uleb128 0x3
+ 503 005e 04       		.byte	0x4
+ 504 005f 05       		.byte	0x5
+ 505 0060 696E7400 		.ascii	"int\000"
+ 506 0064 02       		.uleb128 0x2
+ 507 0065 04       		.byte	0x4
+ 508 0066 07       		.byte	0x7
+ 509 0067 06020000 		.4byte	.LASF8
+ 510 006b 04       		.uleb128 0x4
+ 511 006c 8A010000 		.4byte	.LASF9
+ 512 0070 02       		.byte	0x2
+ 513 0071 E401     		.2byte	0x1e4
+ 514 0073 2C000000 		.4byte	0x2c
+ 515 0077 04       		.uleb128 0x4
+ 516 0078 E8010000 		.4byte	.LASF10
+ 517 007c 02       		.byte	0x2
+ 518 007d E601     		.2byte	0x1e6
+ 519 007f 48000000 		.4byte	0x48
+ 520 0083 02       		.uleb128 0x2
+ 521 0084 04       		.byte	0x4
+ 522 0085 04       		.byte	0x4
+ 523 0086 EB000000 		.4byte	.LASF11
+ 524 008a 02       		.uleb128 0x2
+ 525 008b 08       		.byte	0x8
+ 526 008c 04       		.byte	0x4
+ 527 008d A7010000 		.4byte	.LASF12
+ 528 0091 02       		.uleb128 0x2
+ 529 0092 01       		.byte	0x1
+ 530 0093 08       		.byte	0x8
+ 531 0094 1B020000 		.4byte	.LASF13
+ 532 0098 04       		.uleb128 0x4
+ 533 0099 55030000 		.4byte	.LASF14
+ 534 009d 02       		.byte	0x2
+ 535 009e 9002     		.2byte	0x290
+ 536 00a0 A4000000 		.4byte	0xa4
+ 537 00a4 05       		.uleb128 0x5
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 18
+
+
+ 538 00a5 77000000 		.4byte	0x77
+ 539 00a9 04       		.uleb128 0x4
+ 540 00aa 20020000 		.4byte	.LASF15
+ 541 00ae 02       		.byte	0x2
+ 542 00af A002     		.2byte	0x2a0
+ 543 00b1 B5000000 		.4byte	0xb5
+ 544 00b5 06       		.uleb128 0x6
+ 545 00b6 04       		.byte	0x4
+ 546 00b7 BB000000 		.4byte	0xbb
+ 547 00bb 07       		.uleb128 0x7
+ 548 00bc 02       		.uleb128 0x2
+ 549 00bd 08       		.byte	0x8
+ 550 00be 04       		.byte	0x4
+ 551 00bf 5B030000 		.4byte	.LASF16
+ 552 00c3 02       		.uleb128 0x2
+ 553 00c4 04       		.byte	0x4
+ 554 00c5 07       		.byte	0x7
+ 555 00c6 BB020000 		.4byte	.LASF17
+ 556 00ca 08       		.uleb128 0x8
+ 557 00cb C7000000 		.4byte	.LASF18
+ 558 00cf 01       		.byte	0x1
+ 559 00d0 CB       		.byte	0xcb
+ 560 00d1 00000000 		.4byte	.LFB39
+ 561 00d5 0C000000 		.4byte	.LFE39-.LFB39
+ 562 00d9 01       		.uleb128 0x1
+ 563 00da 9C       		.byte	0x9c
+ 564 00db ED000000 		.4byte	0xed
+ 565 00df 09       		.uleb128 0x9
+ 566 00e0 13020000 		.4byte	.LASF20
+ 567 00e4 01       		.byte	0x1
+ 568 00e5 CB       		.byte	0xcb
+ 569 00e6 A9000000 		.4byte	0xa9
+ 570 00ea 01       		.uleb128 0x1
+ 571 00eb 50       		.byte	0x50
+ 572 00ec 00       		.byte	0
+ 573 00ed 0A       		.uleb128 0xa
+ 574 00ee AB000000 		.4byte	.LASF24
+ 575 00f2 01       		.byte	0x1
+ 576 00f3 DF       		.byte	0xdf
+ 577 00f4 A9000000 		.4byte	0xa9
+ 578 00f8 00000000 		.4byte	.LFB40
+ 579 00fc 0C000000 		.4byte	.LFE40-.LFB40
+ 580 0100 01       		.uleb128 0x1
+ 581 0101 9C       		.byte	0x9c
+ 582 0102 08       		.uleb128 0x8
+ 583 0103 E5020000 		.4byte	.LASF19
+ 584 0107 01       		.byte	0x1
+ 585 0108 FD       		.byte	0xfd
+ 586 0109 00000000 		.4byte	.LFB41
+ 587 010d 24000000 		.4byte	.LFE41-.LFB41
+ 588 0111 01       		.uleb128 0x1
+ 589 0112 9C       		.byte	0x9c
+ 590 0113 55010000 		.4byte	0x155
+ 591 0117 0B       		.uleb128 0xb
+ 592 0118 90010000 		.4byte	.LASF21
+ 593 011c 01       		.byte	0x1
+ 594 011d FD       		.byte	0xfd
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 19
+
+
+ 595 011e 6B000000 		.4byte	0x6b
+ 596 0122 00000000 		.4byte	.LLST0
+ 597 0126 0C       		.uleb128 0xc
+ 598 0127 4B010000 		.4byte	.LASF22
+ 599 012b 01       		.byte	0x1
+ 600 012c FF       		.byte	0xff
+ 601 012d 6B000000 		.4byte	0x6b
+ 602 0131 21000000 		.4byte	.LLST1
+ 603 0135 0D       		.uleb128 0xd
+ 604 0136 3D030000 		.4byte	.LASF23
+ 605 013a 01       		.byte	0x1
+ 606 013b 0001     		.2byte	0x100
+ 607 013d 77000000 		.4byte	0x77
+ 608 0141 16       		.byte	0x16
+ 609 0142 0E       		.uleb128 0xe
+ 610 0143 08000000 		.4byte	.LVL3
+ 611 0147 2E030000 		.4byte	0x32e
+ 612 014b 0E       		.uleb128 0xe
+ 613 014c 1A000000 		.4byte	.LVL4
+ 614 0150 39030000 		.4byte	0x339
+ 615 0154 00       		.byte	0
+ 616 0155 0F       		.uleb128 0xf
+ 617 0156 6C010000 		.4byte	.LASF42
+ 618 015a 01       		.byte	0x1
+ 619 015b 1901     		.2byte	0x119
+ 620 015d 6B000000 		.4byte	0x6b
+ 621 0161 00000000 		.4byte	.LFB42
+ 622 0165 10000000 		.4byte	.LFE42-.LFB42
+ 623 0169 01       		.uleb128 0x1
+ 624 016a 9C       		.byte	0x9c
+ 625 016b 8D010000 		.4byte	0x18d
+ 626 016f 10       		.uleb128 0x10
+ 627 0170 90010000 		.4byte	.LASF21
+ 628 0174 01       		.byte	0x1
+ 629 0175 1B01     		.2byte	0x11b
+ 630 0177 77000000 		.4byte	0x77
+ 631 017b 34000000 		.4byte	.LLST2
+ 632 017f 0D       		.uleb128 0xd
+ 633 0180 3D030000 		.4byte	.LASF23
+ 634 0184 01       		.byte	0x1
+ 635 0185 1C01     		.2byte	0x11c
+ 636 0187 77000000 		.4byte	0x77
+ 637 018b 16       		.byte	0x16
+ 638 018c 00       		.byte	0
+ 639 018d 11       		.uleb128 0x11
+ 640 018e 73030000 		.4byte	.LASF26
+ 641 0192 01       		.byte	0x1
+ 642 0193 3401     		.2byte	0x134
+ 643 0195 00000000 		.4byte	.LFB43
+ 644 0199 0C000000 		.4byte	.LFE43-.LFB43
+ 645 019d 01       		.uleb128 0x1
+ 646 019e 9C       		.byte	0x9c
+ 647 019f 12       		.uleb128 0x12
+ 648 01a0 CD010000 		.4byte	.LASF25
+ 649 01a4 01       		.byte	0x1
+ 650 01a5 4901     		.2byte	0x149
+ 651 01a7 6B000000 		.4byte	0x6b
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 20
+
+
+ 652 01ab 00000000 		.4byte	.LFB44
+ 653 01af 14000000 		.4byte	.LFE44-.LFB44
+ 654 01b3 01       		.uleb128 0x1
+ 655 01b4 9C       		.byte	0x9c
+ 656 01b5 11       		.uleb128 0x11
+ 657 01b6 8C030000 		.4byte	.LASF27
+ 658 01ba 01       		.byte	0x1
+ 659 01bb 5E01     		.2byte	0x15e
+ 660 01bd 00000000 		.4byte	.LFB45
+ 661 01c1 0C000000 		.4byte	.LFE45-.LFB45
+ 662 01c5 01       		.uleb128 0x1
+ 663 01c6 9C       		.byte	0x9c
+ 664 01c7 08       		.uleb128 0x8
+ 665 01c8 08010000 		.4byte	.LASF28
+ 666 01cc 01       		.byte	0x1
+ 667 01cd 38       		.byte	0x38
+ 668 01ce 00000000 		.4byte	.LFB35
+ 669 01d2 1C000000 		.4byte	.LFE35-.LFB35
+ 670 01d6 01       		.uleb128 0x1
+ 671 01d7 9C       		.byte	0x9c
+ 672 01d8 19020000 		.4byte	0x219
+ 673 01dc 0E       		.uleb128 0xe
+ 674 01dd 06000000 		.4byte	.LVL8
+ 675 01e1 B5010000 		.4byte	0x1b5
+ 676 01e5 13       		.uleb128 0x13
+ 677 01e6 0C000000 		.4byte	.LVL9
+ 678 01ea CA000000 		.4byte	0xca
+ 679 01ee FC010000 		.4byte	0x1fc
+ 680 01f2 14       		.uleb128 0x14
+ 681 01f3 01       		.uleb128 0x1
+ 682 01f4 50       		.byte	0x50
+ 683 01f5 05       		.uleb128 0x5
+ 684 01f6 03       		.byte	0x3
+ 685 01f7 00000000 		.4byte	OutBeforeDown_ISR_Interrupt
+ 686 01fb 00       		.byte	0
+ 687 01fc 13       		.uleb128 0x13
+ 688 01fd 12000000 		.4byte	.LVL10
+ 689 0201 02010000 		.4byte	0x102
+ 690 0205 0F020000 		.4byte	0x20f
+ 691 0209 14       		.uleb128 0x14
+ 692 020a 01       		.uleb128 0x1
+ 693 020b 50       		.byte	0x50
+ 694 020c 01       		.uleb128 0x1
+ 695 020d 33       		.byte	0x33
+ 696 020e 00       		.byte	0
+ 697 020f 0E       		.uleb128 0xe
+ 698 0210 16000000 		.4byte	.LVL11
+ 699 0214 8D010000 		.4byte	0x18d
+ 700 0218 00       		.byte	0
+ 701 0219 08       		.uleb128 0x8
+ 702 021a 03030000 		.4byte	.LASF29
+ 703 021e 01       		.byte	0x1
+ 704 021f 63       		.byte	0x63
+ 705 0220 00000000 		.4byte	.LFB36
+ 706 0224 1A000000 		.4byte	.LFE36-.LFB36
+ 707 0228 01       		.uleb128 0x1
+ 708 0229 9C       		.byte	0x9c
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 21
+
+
+ 709 022a 77020000 		.4byte	0x277
+ 710 022e 0B       		.uleb128 0xb
+ 711 022f 13020000 		.4byte	.LASF20
+ 712 0233 01       		.byte	0x1
+ 713 0234 63       		.byte	0x63
+ 714 0235 A9000000 		.4byte	0xa9
+ 715 0239 56000000 		.4byte	.LLST3
+ 716 023d 0E       		.uleb128 0xe
+ 717 023e 08000000 		.4byte	.LVL13
+ 718 0242 B5010000 		.4byte	0x1b5
+ 719 0246 13       		.uleb128 0x13
+ 720 0247 0E000000 		.4byte	.LVL14
+ 721 024b CA000000 		.4byte	0xca
+ 722 024f 5A020000 		.4byte	0x25a
+ 723 0253 14       		.uleb128 0x14
+ 724 0254 01       		.uleb128 0x1
+ 725 0255 50       		.byte	0x50
+ 726 0256 02       		.uleb128 0x2
+ 727 0257 74       		.byte	0x74
+ 728 0258 00       		.sleb128 0
+ 729 0259 00       		.byte	0
+ 730 025a 13       		.uleb128 0x13
+ 731 025b 14000000 		.4byte	.LVL15
+ 732 025f 02010000 		.4byte	0x102
+ 733 0263 6D020000 		.4byte	0x26d
+ 734 0267 14       		.uleb128 0x14
+ 735 0268 01       		.uleb128 0x1
+ 736 0269 50       		.byte	0x50
+ 737 026a 01       		.uleb128 0x1
+ 738 026b 33       		.byte	0x33
+ 739 026c 00       		.byte	0
+ 740 026d 0E       		.uleb128 0xe
+ 741 026e 18000000 		.4byte	.LVL16
+ 742 0272 8D010000 		.4byte	0x18d
+ 743 0276 00       		.byte	0
+ 744 0277 08       		.uleb128 0x8
+ 745 0278 C3030000 		.4byte	.LASF30
+ 746 027c 01       		.byte	0x1
+ 747 027d 81       		.byte	0x81
+ 748 027e 00000000 		.4byte	.LFB37
+ 749 0282 14000000 		.4byte	.LFE37-.LFB37
+ 750 0286 01       		.uleb128 0x1
+ 751 0287 9C       		.byte	0x9c
+ 752 0288 9F020000 		.4byte	0x29f
+ 753 028c 0E       		.uleb128 0xe
+ 754 028d 06000000 		.4byte	.LVL18
+ 755 0291 B5010000 		.4byte	0x1b5
+ 756 0295 0E       		.uleb128 0xe
+ 757 0296 0C000000 		.4byte	.LVL19
+ 758 029a CA000000 		.4byte	0xca
+ 759 029e 00       		.byte	0
+ 760 029f 11       		.uleb128 0x11
+ 761 02a0 08000000 		.4byte	.LASF31
+ 762 02a4 01       		.byte	0x1
+ 763 02a5 7901     		.2byte	0x179
+ 764 02a7 00000000 		.4byte	.LFB46
+ 765 02ab 0C000000 		.4byte	.LFE46-.LFB46
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 22
+
+
+ 766 02af 01       		.uleb128 0x1
+ 767 02b0 9C       		.byte	0x9c
+ 768 02b1 11       		.uleb128 0x11
+ 769 02b2 AE010000 		.4byte	.LASF32
+ 770 02b6 01       		.byte	0x1
+ 771 02b7 9201     		.2byte	0x192
+ 772 02b9 00000000 		.4byte	.LFB47
+ 773 02bd 0C000000 		.4byte	.LFE47-.LFB47
+ 774 02c1 01       		.uleb128 0x1
+ 775 02c2 9C       		.byte	0x9c
+ 776 02c3 08       		.uleb128 0x8
+ 777 02c4 8F000000 		.4byte	.LASF33
+ 778 02c8 01       		.byte	0x1
+ 779 02c9 9F       		.byte	0x9f
+ 780 02ca 00000000 		.4byte	.LFB38
+ 781 02ce 20000000 		.4byte	.LFE38-.LFB38
+ 782 02d2 01       		.uleb128 0x1
+ 783 02d3 9C       		.byte	0x9c
+ 784 02d4 13030000 		.4byte	0x313
+ 785 02d8 13       		.uleb128 0x13
+ 786 02d9 08000000 		.4byte	.LVL20
+ 787 02dd 44030000 		.4byte	0x344
+ 788 02e1 EF020000 		.4byte	0x2ef
+ 789 02e5 14       		.uleb128 0x14
+ 790 02e6 01       		.uleb128 0x1
+ 791 02e7 50       		.byte	0x50
+ 792 02e8 05       		.uleb128 0x5
+ 793 02e9 03       		.byte	0x3
+ 794 02ea 00000000 		.4byte	.LC4
+ 795 02ee 00       		.byte	0
+ 796 02ef 0E       		.uleb128 0xe
+ 797 02f0 0C000000 		.4byte	.LVL21
+ 798 02f4 B1020000 		.4byte	0x2b1
+ 799 02f8 0E       		.uleb128 0xe
+ 800 02f9 10000000 		.4byte	.LVL22
+ 801 02fd 4F030000 		.4byte	0x34f
+ 802 0301 15       		.uleb128 0x15
+ 803 0302 18000000 		.4byte	.LVL23
+ 804 0306 5A030000 		.4byte	0x35a
+ 805 030a 14       		.uleb128 0x14
+ 806 030b 01       		.uleb128 0x1
+ 807 030c 50       		.byte	0x50
+ 808 030d 03       		.uleb128 0x3
+ 809 030e 0A       		.byte	0xa
+ 810 030f E803     		.2byte	0x3e8
+ 811 0311 00       		.byte	0
+ 812 0312 00       		.byte	0
+ 813 0313 16       		.uleb128 0x16
+ 814 0314 A9000000 		.4byte	0xa9
+ 815 0318 23030000 		.4byte	0x323
+ 816 031c 17       		.uleb128 0x17
+ 817 031d C3000000 		.4byte	0xc3
+ 818 0321 2F       		.byte	0x2f
+ 819 0322 00       		.byte	0
+ 820 0323 18       		.uleb128 0x18
+ 821 0324 25000000 		.4byte	.LASF43
+ 822 0328 01       		.byte	0x1
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 23
+
+
+ 823 0329 21       		.byte	0x21
+ 824 032a 13030000 		.4byte	0x313
+ 825 032e 19       		.uleb128 0x19
+ 826 032f EF010000 		.4byte	.LASF34
+ 827 0333 EF010000 		.4byte	.LASF34
+ 828 0337 03       		.byte	0x3
+ 829 0338 E5       		.byte	0xe5
+ 830 0339 19       		.uleb128 0x19
+ 831 033a 27030000 		.4byte	.LASF35
+ 832 033e 27030000 		.4byte	.LASF35
+ 833 0342 03       		.byte	0x3
+ 834 0343 E6       		.byte	0xe6
+ 835 0344 19       		.uleb128 0x19
+ 836 0345 00000000 		.4byte	.LASF36
+ 837 0349 00000000 		.4byte	.LASF36
+ 838 034d 04       		.byte	0x4
+ 839 034e 08       		.byte	0x8
+ 840 034f 19       		.uleb128 0x19
+ 841 0350 A6030000 		.4byte	.LASF37
+ 842 0354 A6030000 		.4byte	.LASF37
+ 843 0358 05       		.byte	0x5
+ 844 0359 39       		.byte	0x39
+ 845 035a 19       		.uleb128 0x19
+ 846 035b E3000000 		.4byte	.LASF38
+ 847 035f E3000000 		.4byte	.LASF38
+ 848 0363 03       		.byte	0x3
+ 849 0364 D9       		.byte	0xd9
+ 850 0365 00       		.byte	0
+ 851              		.section	.debug_abbrev,"",%progbits
+ 852              	.Ldebug_abbrev0:
+ 853 0000 01       		.uleb128 0x1
+ 854 0001 11       		.uleb128 0x11
+ 855 0002 01       		.byte	0x1
+ 856 0003 25       		.uleb128 0x25
+ 857 0004 0E       		.uleb128 0xe
+ 858 0005 13       		.uleb128 0x13
+ 859 0006 0B       		.uleb128 0xb
+ 860 0007 03       		.uleb128 0x3
+ 861 0008 0E       		.uleb128 0xe
+ 862 0009 1B       		.uleb128 0x1b
+ 863 000a 0E       		.uleb128 0xe
+ 864 000b 55       		.uleb128 0x55
+ 865 000c 17       		.uleb128 0x17
+ 866 000d 11       		.uleb128 0x11
+ 867 000e 01       		.uleb128 0x1
+ 868 000f 10       		.uleb128 0x10
+ 869 0010 17       		.uleb128 0x17
+ 870 0011 00       		.byte	0
+ 871 0012 00       		.byte	0
+ 872 0013 02       		.uleb128 0x2
+ 873 0014 24       		.uleb128 0x24
+ 874 0015 00       		.byte	0
+ 875 0016 0B       		.uleb128 0xb
+ 876 0017 0B       		.uleb128 0xb
+ 877 0018 3E       		.uleb128 0x3e
+ 878 0019 0B       		.uleb128 0xb
+ 879 001a 03       		.uleb128 0x3
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 24
+
+
+ 880 001b 0E       		.uleb128 0xe
+ 881 001c 00       		.byte	0
+ 882 001d 00       		.byte	0
+ 883 001e 03       		.uleb128 0x3
+ 884 001f 24       		.uleb128 0x24
+ 885 0020 00       		.byte	0
+ 886 0021 0B       		.uleb128 0xb
+ 887 0022 0B       		.uleb128 0xb
+ 888 0023 3E       		.uleb128 0x3e
+ 889 0024 0B       		.uleb128 0xb
+ 890 0025 03       		.uleb128 0x3
+ 891 0026 08       		.uleb128 0x8
+ 892 0027 00       		.byte	0
+ 893 0028 00       		.byte	0
+ 894 0029 04       		.uleb128 0x4
+ 895 002a 16       		.uleb128 0x16
+ 896 002b 00       		.byte	0
+ 897 002c 03       		.uleb128 0x3
+ 898 002d 0E       		.uleb128 0xe
+ 899 002e 3A       		.uleb128 0x3a
+ 900 002f 0B       		.uleb128 0xb
+ 901 0030 3B       		.uleb128 0x3b
+ 902 0031 05       		.uleb128 0x5
+ 903 0032 49       		.uleb128 0x49
+ 904 0033 13       		.uleb128 0x13
+ 905 0034 00       		.byte	0
+ 906 0035 00       		.byte	0
+ 907 0036 05       		.uleb128 0x5
+ 908 0037 35       		.uleb128 0x35
+ 909 0038 00       		.byte	0
+ 910 0039 49       		.uleb128 0x49
+ 911 003a 13       		.uleb128 0x13
+ 912 003b 00       		.byte	0
+ 913 003c 00       		.byte	0
+ 914 003d 06       		.uleb128 0x6
+ 915 003e 0F       		.uleb128 0xf
+ 916 003f 00       		.byte	0
+ 917 0040 0B       		.uleb128 0xb
+ 918 0041 0B       		.uleb128 0xb
+ 919 0042 49       		.uleb128 0x49
+ 920 0043 13       		.uleb128 0x13
+ 921 0044 00       		.byte	0
+ 922 0045 00       		.byte	0
+ 923 0046 07       		.uleb128 0x7
+ 924 0047 15       		.uleb128 0x15
+ 925 0048 00       		.byte	0
+ 926 0049 27       		.uleb128 0x27
+ 927 004a 19       		.uleb128 0x19
+ 928 004b 00       		.byte	0
+ 929 004c 00       		.byte	0
+ 930 004d 08       		.uleb128 0x8
+ 931 004e 2E       		.uleb128 0x2e
+ 932 004f 01       		.byte	0x1
+ 933 0050 3F       		.uleb128 0x3f
+ 934 0051 19       		.uleb128 0x19
+ 935 0052 03       		.uleb128 0x3
+ 936 0053 0E       		.uleb128 0xe
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 25
+
+
+ 937 0054 3A       		.uleb128 0x3a
+ 938 0055 0B       		.uleb128 0xb
+ 939 0056 3B       		.uleb128 0x3b
+ 940 0057 0B       		.uleb128 0xb
+ 941 0058 27       		.uleb128 0x27
+ 942 0059 19       		.uleb128 0x19
+ 943 005a 11       		.uleb128 0x11
+ 944 005b 01       		.uleb128 0x1
+ 945 005c 12       		.uleb128 0x12
+ 946 005d 06       		.uleb128 0x6
+ 947 005e 40       		.uleb128 0x40
+ 948 005f 18       		.uleb128 0x18
+ 949 0060 9742     		.uleb128 0x2117
+ 950 0062 19       		.uleb128 0x19
+ 951 0063 01       		.uleb128 0x1
+ 952 0064 13       		.uleb128 0x13
+ 953 0065 00       		.byte	0
+ 954 0066 00       		.byte	0
+ 955 0067 09       		.uleb128 0x9
+ 956 0068 05       		.uleb128 0x5
+ 957 0069 00       		.byte	0
+ 958 006a 03       		.uleb128 0x3
+ 959 006b 0E       		.uleb128 0xe
+ 960 006c 3A       		.uleb128 0x3a
+ 961 006d 0B       		.uleb128 0xb
+ 962 006e 3B       		.uleb128 0x3b
+ 963 006f 0B       		.uleb128 0xb
+ 964 0070 49       		.uleb128 0x49
+ 965 0071 13       		.uleb128 0x13
+ 966 0072 02       		.uleb128 0x2
+ 967 0073 18       		.uleb128 0x18
+ 968 0074 00       		.byte	0
+ 969 0075 00       		.byte	0
+ 970 0076 0A       		.uleb128 0xa
+ 971 0077 2E       		.uleb128 0x2e
+ 972 0078 00       		.byte	0
+ 973 0079 3F       		.uleb128 0x3f
+ 974 007a 19       		.uleb128 0x19
+ 975 007b 03       		.uleb128 0x3
+ 976 007c 0E       		.uleb128 0xe
+ 977 007d 3A       		.uleb128 0x3a
+ 978 007e 0B       		.uleb128 0xb
+ 979 007f 3B       		.uleb128 0x3b
+ 980 0080 0B       		.uleb128 0xb
+ 981 0081 27       		.uleb128 0x27
+ 982 0082 19       		.uleb128 0x19
+ 983 0083 49       		.uleb128 0x49
+ 984 0084 13       		.uleb128 0x13
+ 985 0085 11       		.uleb128 0x11
+ 986 0086 01       		.uleb128 0x1
+ 987 0087 12       		.uleb128 0x12
+ 988 0088 06       		.uleb128 0x6
+ 989 0089 40       		.uleb128 0x40
+ 990 008a 18       		.uleb128 0x18
+ 991 008b 9742     		.uleb128 0x2117
+ 992 008d 19       		.uleb128 0x19
+ 993 008e 00       		.byte	0
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 26
+
+
+ 994 008f 00       		.byte	0
+ 995 0090 0B       		.uleb128 0xb
+ 996 0091 05       		.uleb128 0x5
+ 997 0092 00       		.byte	0
+ 998 0093 03       		.uleb128 0x3
+ 999 0094 0E       		.uleb128 0xe
+ 1000 0095 3A       		.uleb128 0x3a
+ 1001 0096 0B       		.uleb128 0xb
+ 1002 0097 3B       		.uleb128 0x3b
+ 1003 0098 0B       		.uleb128 0xb
+ 1004 0099 49       		.uleb128 0x49
+ 1005 009a 13       		.uleb128 0x13
+ 1006 009b 02       		.uleb128 0x2
+ 1007 009c 17       		.uleb128 0x17
+ 1008 009d 00       		.byte	0
+ 1009 009e 00       		.byte	0
+ 1010 009f 0C       		.uleb128 0xc
+ 1011 00a0 34       		.uleb128 0x34
+ 1012 00a1 00       		.byte	0
+ 1013 00a2 03       		.uleb128 0x3
+ 1014 00a3 0E       		.uleb128 0xe
+ 1015 00a4 3A       		.uleb128 0x3a
+ 1016 00a5 0B       		.uleb128 0xb
+ 1017 00a6 3B       		.uleb128 0x3b
+ 1018 00a7 0B       		.uleb128 0xb
+ 1019 00a8 49       		.uleb128 0x49
+ 1020 00a9 13       		.uleb128 0x13
+ 1021 00aa 02       		.uleb128 0x2
+ 1022 00ab 17       		.uleb128 0x17
+ 1023 00ac 00       		.byte	0
+ 1024 00ad 00       		.byte	0
+ 1025 00ae 0D       		.uleb128 0xd
+ 1026 00af 34       		.uleb128 0x34
+ 1027 00b0 00       		.byte	0
+ 1028 00b1 03       		.uleb128 0x3
+ 1029 00b2 0E       		.uleb128 0xe
+ 1030 00b3 3A       		.uleb128 0x3a
+ 1031 00b4 0B       		.uleb128 0xb
+ 1032 00b5 3B       		.uleb128 0x3b
+ 1033 00b6 05       		.uleb128 0x5
+ 1034 00b7 49       		.uleb128 0x49
+ 1035 00b8 13       		.uleb128 0x13
+ 1036 00b9 1C       		.uleb128 0x1c
+ 1037 00ba 0B       		.uleb128 0xb
+ 1038 00bb 00       		.byte	0
+ 1039 00bc 00       		.byte	0
+ 1040 00bd 0E       		.uleb128 0xe
+ 1041 00be 898201   		.uleb128 0x4109
+ 1042 00c1 00       		.byte	0
+ 1043 00c2 11       		.uleb128 0x11
+ 1044 00c3 01       		.uleb128 0x1
+ 1045 00c4 31       		.uleb128 0x31
+ 1046 00c5 13       		.uleb128 0x13
+ 1047 00c6 00       		.byte	0
+ 1048 00c7 00       		.byte	0
+ 1049 00c8 0F       		.uleb128 0xf
+ 1050 00c9 2E       		.uleb128 0x2e
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 27
+
+
+ 1051 00ca 01       		.byte	0x1
+ 1052 00cb 3F       		.uleb128 0x3f
+ 1053 00cc 19       		.uleb128 0x19
+ 1054 00cd 03       		.uleb128 0x3
+ 1055 00ce 0E       		.uleb128 0xe
+ 1056 00cf 3A       		.uleb128 0x3a
+ 1057 00d0 0B       		.uleb128 0xb
+ 1058 00d1 3B       		.uleb128 0x3b
+ 1059 00d2 05       		.uleb128 0x5
+ 1060 00d3 27       		.uleb128 0x27
+ 1061 00d4 19       		.uleb128 0x19
+ 1062 00d5 49       		.uleb128 0x49
+ 1063 00d6 13       		.uleb128 0x13
+ 1064 00d7 11       		.uleb128 0x11
+ 1065 00d8 01       		.uleb128 0x1
+ 1066 00d9 12       		.uleb128 0x12
+ 1067 00da 06       		.uleb128 0x6
+ 1068 00db 40       		.uleb128 0x40
+ 1069 00dc 18       		.uleb128 0x18
+ 1070 00dd 9742     		.uleb128 0x2117
+ 1071 00df 19       		.uleb128 0x19
+ 1072 00e0 01       		.uleb128 0x1
+ 1073 00e1 13       		.uleb128 0x13
+ 1074 00e2 00       		.byte	0
+ 1075 00e3 00       		.byte	0
+ 1076 00e4 10       		.uleb128 0x10
+ 1077 00e5 34       		.uleb128 0x34
+ 1078 00e6 00       		.byte	0
+ 1079 00e7 03       		.uleb128 0x3
+ 1080 00e8 0E       		.uleb128 0xe
+ 1081 00e9 3A       		.uleb128 0x3a
+ 1082 00ea 0B       		.uleb128 0xb
+ 1083 00eb 3B       		.uleb128 0x3b
+ 1084 00ec 05       		.uleb128 0x5
+ 1085 00ed 49       		.uleb128 0x49
+ 1086 00ee 13       		.uleb128 0x13
+ 1087 00ef 02       		.uleb128 0x2
+ 1088 00f0 17       		.uleb128 0x17
+ 1089 00f1 00       		.byte	0
+ 1090 00f2 00       		.byte	0
+ 1091 00f3 11       		.uleb128 0x11
+ 1092 00f4 2E       		.uleb128 0x2e
+ 1093 00f5 00       		.byte	0
+ 1094 00f6 3F       		.uleb128 0x3f
+ 1095 00f7 19       		.uleb128 0x19
+ 1096 00f8 03       		.uleb128 0x3
+ 1097 00f9 0E       		.uleb128 0xe
+ 1098 00fa 3A       		.uleb128 0x3a
+ 1099 00fb 0B       		.uleb128 0xb
+ 1100 00fc 3B       		.uleb128 0x3b
+ 1101 00fd 05       		.uleb128 0x5
+ 1102 00fe 27       		.uleb128 0x27
+ 1103 00ff 19       		.uleb128 0x19
+ 1104 0100 11       		.uleb128 0x11
+ 1105 0101 01       		.uleb128 0x1
+ 1106 0102 12       		.uleb128 0x12
+ 1107 0103 06       		.uleb128 0x6
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 28
+
+
+ 1108 0104 40       		.uleb128 0x40
+ 1109 0105 18       		.uleb128 0x18
+ 1110 0106 9742     		.uleb128 0x2117
+ 1111 0108 19       		.uleb128 0x19
+ 1112 0109 00       		.byte	0
+ 1113 010a 00       		.byte	0
+ 1114 010b 12       		.uleb128 0x12
+ 1115 010c 2E       		.uleb128 0x2e
+ 1116 010d 00       		.byte	0
+ 1117 010e 3F       		.uleb128 0x3f
+ 1118 010f 19       		.uleb128 0x19
+ 1119 0110 03       		.uleb128 0x3
+ 1120 0111 0E       		.uleb128 0xe
+ 1121 0112 3A       		.uleb128 0x3a
+ 1122 0113 0B       		.uleb128 0xb
+ 1123 0114 3B       		.uleb128 0x3b
+ 1124 0115 05       		.uleb128 0x5
+ 1125 0116 27       		.uleb128 0x27
+ 1126 0117 19       		.uleb128 0x19
+ 1127 0118 49       		.uleb128 0x49
+ 1128 0119 13       		.uleb128 0x13
+ 1129 011a 11       		.uleb128 0x11
+ 1130 011b 01       		.uleb128 0x1
+ 1131 011c 12       		.uleb128 0x12
+ 1132 011d 06       		.uleb128 0x6
+ 1133 011e 40       		.uleb128 0x40
+ 1134 011f 18       		.uleb128 0x18
+ 1135 0120 9742     		.uleb128 0x2117
+ 1136 0122 19       		.uleb128 0x19
+ 1137 0123 00       		.byte	0
+ 1138 0124 00       		.byte	0
+ 1139 0125 13       		.uleb128 0x13
+ 1140 0126 898201   		.uleb128 0x4109
+ 1141 0129 01       		.byte	0x1
+ 1142 012a 11       		.uleb128 0x11
+ 1143 012b 01       		.uleb128 0x1
+ 1144 012c 31       		.uleb128 0x31
+ 1145 012d 13       		.uleb128 0x13
+ 1146 012e 01       		.uleb128 0x1
+ 1147 012f 13       		.uleb128 0x13
+ 1148 0130 00       		.byte	0
+ 1149 0131 00       		.byte	0
+ 1150 0132 14       		.uleb128 0x14
+ 1151 0133 8A8201   		.uleb128 0x410a
+ 1152 0136 00       		.byte	0
+ 1153 0137 02       		.uleb128 0x2
+ 1154 0138 18       		.uleb128 0x18
+ 1155 0139 9142     		.uleb128 0x2111
+ 1156 013b 18       		.uleb128 0x18
+ 1157 013c 00       		.byte	0
+ 1158 013d 00       		.byte	0
+ 1159 013e 15       		.uleb128 0x15
+ 1160 013f 898201   		.uleb128 0x4109
+ 1161 0142 01       		.byte	0x1
+ 1162 0143 11       		.uleb128 0x11
+ 1163 0144 01       		.uleb128 0x1
+ 1164 0145 31       		.uleb128 0x31
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 29
+
+
+ 1165 0146 13       		.uleb128 0x13
+ 1166 0147 00       		.byte	0
+ 1167 0148 00       		.byte	0
+ 1168 0149 16       		.uleb128 0x16
+ 1169 014a 01       		.uleb128 0x1
+ 1170 014b 01       		.byte	0x1
+ 1171 014c 49       		.uleb128 0x49
+ 1172 014d 13       		.uleb128 0x13
+ 1173 014e 01       		.uleb128 0x1
+ 1174 014f 13       		.uleb128 0x13
+ 1175 0150 00       		.byte	0
+ 1176 0151 00       		.byte	0
+ 1177 0152 17       		.uleb128 0x17
+ 1178 0153 21       		.uleb128 0x21
+ 1179 0154 00       		.byte	0
+ 1180 0155 49       		.uleb128 0x49
+ 1181 0156 13       		.uleb128 0x13
+ 1182 0157 2F       		.uleb128 0x2f
+ 1183 0158 0B       		.uleb128 0xb
+ 1184 0159 00       		.byte	0
+ 1185 015a 00       		.byte	0
+ 1186 015b 18       		.uleb128 0x18
+ 1187 015c 34       		.uleb128 0x34
+ 1188 015d 00       		.byte	0
+ 1189 015e 03       		.uleb128 0x3
+ 1190 015f 0E       		.uleb128 0xe
+ 1191 0160 3A       		.uleb128 0x3a
+ 1192 0161 0B       		.uleb128 0xb
+ 1193 0162 3B       		.uleb128 0x3b
+ 1194 0163 0B       		.uleb128 0xb
+ 1195 0164 49       		.uleb128 0x49
+ 1196 0165 13       		.uleb128 0x13
+ 1197 0166 3F       		.uleb128 0x3f
+ 1198 0167 19       		.uleb128 0x19
+ 1199 0168 3C       		.uleb128 0x3c
+ 1200 0169 19       		.uleb128 0x19
+ 1201 016a 00       		.byte	0
+ 1202 016b 00       		.byte	0
+ 1203 016c 19       		.uleb128 0x19
+ 1204 016d 2E       		.uleb128 0x2e
+ 1205 016e 00       		.byte	0
+ 1206 016f 3F       		.uleb128 0x3f
+ 1207 0170 19       		.uleb128 0x19
+ 1208 0171 3C       		.uleb128 0x3c
+ 1209 0172 19       		.uleb128 0x19
+ 1210 0173 6E       		.uleb128 0x6e
+ 1211 0174 0E       		.uleb128 0xe
+ 1212 0175 03       		.uleb128 0x3
+ 1213 0176 0E       		.uleb128 0xe
+ 1214 0177 3A       		.uleb128 0x3a
+ 1215 0178 0B       		.uleb128 0xb
+ 1216 0179 3B       		.uleb128 0x3b
+ 1217 017a 0B       		.uleb128 0xb
+ 1218 017b 00       		.byte	0
+ 1219 017c 00       		.byte	0
+ 1220 017d 00       		.byte	0
+ 1221              		.section	.debug_loc,"",%progbits
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 30
+
+
+ 1222              	.Ldebug_loc0:
+ 1223              	.LLST0:
+ 1224 0000 00000000 		.4byte	.LVL1
+ 1225 0004 07000000 		.4byte	.LVL3-1
+ 1226 0008 0100     		.2byte	0x1
+ 1227 000a 50       		.byte	0x50
+ 1228 000b 07000000 		.4byte	.LVL3-1
+ 1229 000f 24000000 		.4byte	.LFE41
+ 1230 0013 0400     		.2byte	0x4
+ 1231 0015 F3       		.byte	0xf3
+ 1232 0016 01       		.uleb128 0x1
+ 1233 0017 50       		.byte	0x50
+ 1234 0018 9F       		.byte	0x9f
+ 1235 0019 00000000 		.4byte	0
+ 1236 001d 00000000 		.4byte	0
+ 1237              	.LLST1:
+ 1238 0021 08000000 		.4byte	.LVL3
+ 1239 0025 19000000 		.4byte	.LVL4-1
+ 1240 0029 0100     		.2byte	0x1
+ 1241 002b 50       		.byte	0x50
+ 1242 002c 00000000 		.4byte	0
+ 1243 0030 00000000 		.4byte	0
+ 1244              	.LLST2:
+ 1245 0034 06000000 		.4byte	.LVL6
+ 1246 0038 0A000000 		.4byte	.LVL7
+ 1247 003c 0500     		.2byte	0x5
+ 1248 003e 70       		.byte	0x70
+ 1249 003f 00       		.sleb128 0
+ 1250 0040 33       		.byte	0x33
+ 1251 0041 1A       		.byte	0x1a
+ 1252 0042 9F       		.byte	0x9f
+ 1253 0043 0A000000 		.4byte	.LVL7
+ 1254 0047 10000000 		.4byte	.LFE42
+ 1255 004b 0100     		.2byte	0x1
+ 1256 004d 50       		.byte	0x50
+ 1257 004e 00000000 		.4byte	0
+ 1258 0052 00000000 		.4byte	0
+ 1259              	.LLST3:
+ 1260 0056 00000000 		.4byte	.LVL12
+ 1261 005a 07000000 		.4byte	.LVL13-1
+ 1262 005e 0100     		.2byte	0x1
+ 1263 0060 50       		.byte	0x50
+ 1264 0061 07000000 		.4byte	.LVL13-1
+ 1265 0065 18000000 		.4byte	.LVL17
+ 1266 0069 0100     		.2byte	0x1
+ 1267 006b 54       		.byte	0x54
+ 1268 006c 18000000 		.4byte	.LVL17
+ 1269 0070 1A000000 		.4byte	.LFE36
+ 1270 0074 0400     		.2byte	0x4
+ 1271 0076 F3       		.byte	0xf3
+ 1272 0077 01       		.uleb128 0x1
+ 1273 0078 50       		.byte	0x50
+ 1274 0079 9F       		.byte	0x9f
+ 1275 007a 00000000 		.4byte	0
+ 1276 007e 00000000 		.4byte	0
+ 1277              		.section	.debug_aranges,"",%progbits
+ 1278 0000 7C000000 		.4byte	0x7c
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 31
+
+
+ 1279 0004 0200     		.2byte	0x2
+ 1280 0006 00000000 		.4byte	.Ldebug_info0
+ 1281 000a 04       		.byte	0x4
+ 1282 000b 00       		.byte	0
+ 1283 000c 0000     		.2byte	0
+ 1284 000e 0000     		.2byte	0
+ 1285 0010 00000000 		.4byte	.LFB39
+ 1286 0014 0C000000 		.4byte	.LFE39-.LFB39
+ 1287 0018 00000000 		.4byte	.LFB40
+ 1288 001c 0C000000 		.4byte	.LFE40-.LFB40
+ 1289 0020 00000000 		.4byte	.LFB41
+ 1290 0024 24000000 		.4byte	.LFE41-.LFB41
+ 1291 0028 00000000 		.4byte	.LFB42
+ 1292 002c 10000000 		.4byte	.LFE42-.LFB42
+ 1293 0030 00000000 		.4byte	.LFB43
+ 1294 0034 0C000000 		.4byte	.LFE43-.LFB43
+ 1295 0038 00000000 		.4byte	.LFB44
+ 1296 003c 14000000 		.4byte	.LFE44-.LFB44
+ 1297 0040 00000000 		.4byte	.LFB45
+ 1298 0044 0C000000 		.4byte	.LFE45-.LFB45
+ 1299 0048 00000000 		.4byte	.LFB35
+ 1300 004c 1C000000 		.4byte	.LFE35-.LFB35
+ 1301 0050 00000000 		.4byte	.LFB36
+ 1302 0054 1A000000 		.4byte	.LFE36-.LFB36
+ 1303 0058 00000000 		.4byte	.LFB37
+ 1304 005c 14000000 		.4byte	.LFE37-.LFB37
+ 1305 0060 00000000 		.4byte	.LFB46
+ 1306 0064 0C000000 		.4byte	.LFE46-.LFB46
+ 1307 0068 00000000 		.4byte	.LFB47
+ 1308 006c 0C000000 		.4byte	.LFE47-.LFB47
+ 1309 0070 00000000 		.4byte	.LFB38
+ 1310 0074 20000000 		.4byte	.LFE38-.LFB38
+ 1311 0078 00000000 		.4byte	0
+ 1312 007c 00000000 		.4byte	0
+ 1313              		.section	.debug_ranges,"",%progbits
+ 1314              	.Ldebug_ranges0:
+ 1315 0000 00000000 		.4byte	.LFB39
+ 1316 0004 0C000000 		.4byte	.LFE39
+ 1317 0008 00000000 		.4byte	.LFB40
+ 1318 000c 0C000000 		.4byte	.LFE40
+ 1319 0010 00000000 		.4byte	.LFB41
+ 1320 0014 24000000 		.4byte	.LFE41
+ 1321 0018 00000000 		.4byte	.LFB42
+ 1322 001c 10000000 		.4byte	.LFE42
+ 1323 0020 00000000 		.4byte	.LFB43
+ 1324 0024 0C000000 		.4byte	.LFE43
+ 1325 0028 00000000 		.4byte	.LFB44
+ 1326 002c 14000000 		.4byte	.LFE44
+ 1327 0030 00000000 		.4byte	.LFB45
+ 1328 0034 0C000000 		.4byte	.LFE45
+ 1329 0038 00000000 		.4byte	.LFB35
+ 1330 003c 1C000000 		.4byte	.LFE35
+ 1331 0040 00000000 		.4byte	.LFB36
+ 1332 0044 1A000000 		.4byte	.LFE36
+ 1333 0048 00000000 		.4byte	.LFB37
+ 1334 004c 14000000 		.4byte	.LFE37
+ 1335 0050 00000000 		.4byte	.LFB46
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 32
+
+
+ 1336 0054 0C000000 		.4byte	.LFE46
+ 1337 0058 00000000 		.4byte	.LFB47
+ 1338 005c 0C000000 		.4byte	.LFE47
+ 1339 0060 00000000 		.4byte	.LFB38
+ 1340 0064 20000000 		.4byte	.LFE38
+ 1341 0068 00000000 		.4byte	0
+ 1342 006c 00000000 		.4byte	0
+ 1343              		.section	.debug_line,"",%progbits
+ 1344              	.Ldebug_line0:
+ 1345 0000 7D010000 		.section	.debug_str,"MS",%progbits,1
+ 1345      02007B00 
+ 1345      00000201 
+ 1345      FB0E0D00 
+ 1345      01010101 
+ 1346              	.LASF36:
+ 1347 0000 69707269 		.ascii	"iprintf\000"
+ 1347      6E746600 
+ 1348              	.LASF31:
+ 1349 0008 4F757442 		.ascii	"OutBeforeDown_ISR_SetPending\000"
+ 1349      65666F72 
+ 1349      65446F77 
+ 1349      6E5F4953 
+ 1349      525F5365 
+ 1350              	.LASF43:
+ 1351 0025 43795261 		.ascii	"CyRamVectors\000"
+ 1351      6D566563 
+ 1351      746F7273 
+ 1351      00
+ 1352              	.LASF41:
+ 1353 0032 433A5C55 		.ascii	"C:\\Users\\Yehuda Ben Chaim\\Google Drive\\My Proje"
+ 1353      73657273 
+ 1353      5C596568 
+ 1353      75646120 
+ 1353      42656E20 
+ 1354 0061 6374735C 		.ascii	"cts\\WW\\FW\\WorkingCopy\\WWV1_0\\WW\\BLE_Imp.cydsn"
+ 1354      57575C46 
+ 1354      575C576F 
+ 1354      726B696E 
+ 1354      67436F70 
+ 1355 008e 00       		.ascii	"\000"
+ 1356              	.LASF33:
+ 1357 008f 4F757442 		.ascii	"OutBeforeDown_ISR_Interrupt\000"
+ 1357      65666F72 
+ 1357      65446F77 
+ 1357      6E5F4953 
+ 1357      525F496E 
+ 1358              	.LASF24:
+ 1359 00ab 4F757442 		.ascii	"OutBeforeDown_ISR_GetVector\000"
+ 1359      65666F72 
+ 1359      65446F77 
+ 1359      6E5F4953 
+ 1359      525F4765 
+ 1360              	.LASF18:
+ 1361 00c7 4F757442 		.ascii	"OutBeforeDown_ISR_SetVector\000"
+ 1361      65666F72 
+ 1361      65446F77 
+ 1361      6E5F4953 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 33
+
+
+ 1361      525F5365 
+ 1362              	.LASF38:
+ 1363 00e3 43794465 		.ascii	"CyDelay\000"
+ 1363      6C617900 
+ 1364              	.LASF11:
+ 1365 00eb 666C6F61 		.ascii	"float\000"
+ 1365      7400
+ 1366              	.LASF7:
+ 1367 00f1 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1367      206C6F6E 
+ 1367      6720756E 
+ 1367      7369676E 
+ 1367      65642069 
+ 1368              	.LASF28:
+ 1369 0108 4F757442 		.ascii	"OutBeforeDown_ISR_Start\000"
+ 1369      65666F72 
+ 1369      65446F77 
+ 1369      6E5F4953 
+ 1369      525F5374 
+ 1370              	.LASF40:
+ 1371 0120 47656E65 		.ascii	"Generated_Source\\PSoC4\\OutBeforeDown_ISR.c\000"
+ 1371      72617465 
+ 1371      645F536F 
+ 1371      75726365 
+ 1371      5C50536F 
+ 1372              	.LASF22:
+ 1373 014b 696E7465 		.ascii	"interruptState\000"
+ 1373      72727570 
+ 1373      74537461 
+ 1373      746500
+ 1374              	.LASF5:
+ 1375 015a 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1375      20756E73 
+ 1375      69676E65 
+ 1375      6420696E 
+ 1375      7400
+ 1376              	.LASF42:
+ 1377 016c 4F757442 		.ascii	"OutBeforeDown_ISR_GetPriority\000"
+ 1377      65666F72 
+ 1377      65446F77 
+ 1377      6E5F4953 
+ 1377      525F4765 
+ 1378              	.LASF9:
+ 1379 018a 75696E74 		.ascii	"uint8\000"
+ 1379      3800
+ 1380              	.LASF21:
+ 1381 0190 7072696F 		.ascii	"priority\000"
+ 1381      72697479 
+ 1381      00
+ 1382              	.LASF1:
+ 1383 0199 756E7369 		.ascii	"unsigned char\000"
+ 1383      676E6564 
+ 1383      20636861 
+ 1383      7200
+ 1384              	.LASF12:
+ 1385 01a7 646F7562 		.ascii	"double\000"
+ 1385      6C6500
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 34
+
+
+ 1386              	.LASF32:
+ 1387 01ae 4F757442 		.ascii	"OutBeforeDown_ISR_ClearPending\000"
+ 1387      65666F72 
+ 1387      65446F77 
+ 1387      6E5F4953 
+ 1387      525F436C 
+ 1388              	.LASF25:
+ 1389 01cd 4F757442 		.ascii	"OutBeforeDown_ISR_GetState\000"
+ 1389      65666F72 
+ 1389      65446F77 
+ 1389      6E5F4953 
+ 1389      525F4765 
+ 1390              	.LASF10:
+ 1391 01e8 75696E74 		.ascii	"uint32\000"
+ 1391      333200
+ 1392              	.LASF34:
+ 1393 01ef 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 1393      74657243 
+ 1393      72697469 
+ 1393      63616C53 
+ 1393      65637469 
+ 1394              	.LASF8:
+ 1395 0206 756E7369 		.ascii	"unsigned int\000"
+ 1395      676E6564 
+ 1395      20696E74 
+ 1395      00
+ 1396              	.LASF20:
+ 1397 0213 61646472 		.ascii	"address\000"
+ 1397      65737300 
+ 1398              	.LASF13:
+ 1399 021b 63686172 		.ascii	"char\000"
+ 1399      00
+ 1400              	.LASF15:
+ 1401 0220 63796973 		.ascii	"cyisraddress\000"
+ 1401      72616464 
+ 1401      72657373 
+ 1401      00
+ 1402              	.LASF39:
+ 1403 022d 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1403      43313120 
+ 1403      352E342E 
+ 1403      31203230 
+ 1403      31363036 
+ 1404 0260 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 1404      20726576 
+ 1404      6973696F 
+ 1404      6E203233 
+ 1404      37373135 
+ 1405 0293 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1405      66756E63 
+ 1405      74696F6E 
+ 1405      2D736563 
+ 1405      74696F6E 
+ 1406              	.LASF17:
+ 1407 02bb 73697A65 		.ascii	"sizetype\000"
+ 1407      74797065 
+ 1407      00
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 35
+
+
+ 1408              	.LASF3:
+ 1409 02c4 73686F72 		.ascii	"short unsigned int\000"
+ 1409      7420756E 
+ 1409      7369676E 
+ 1409      65642069 
+ 1409      6E7400
+ 1410              	.LASF6:
+ 1411 02d7 6C6F6E67 		.ascii	"long long int\000"
+ 1411      206C6F6E 
+ 1411      6720696E 
+ 1411      7400
+ 1412              	.LASF19:
+ 1413 02e5 4F757442 		.ascii	"OutBeforeDown_ISR_SetPriority\000"
+ 1413      65666F72 
+ 1413      65446F77 
+ 1413      6E5F4953 
+ 1413      525F5365 
+ 1414              	.LASF29:
+ 1415 0303 4F757442 		.ascii	"OutBeforeDown_ISR_StartEx\000"
+ 1415      65666F72 
+ 1415      65446F77 
+ 1415      6E5F4953 
+ 1415      525F5374 
+ 1416              	.LASF2:
+ 1417 031d 73686F72 		.ascii	"short int\000"
+ 1417      7420696E 
+ 1417      7400
+ 1418              	.LASF35:
+ 1419 0327 43794578 		.ascii	"CyExitCriticalSection\000"
+ 1419      69744372 
+ 1419      69746963 
+ 1419      616C5365 
+ 1419      6374696F 
+ 1420              	.LASF23:
+ 1421 033d 7072696F 		.ascii	"priorityOffset\000"
+ 1421      72697479 
+ 1421      4F666673 
+ 1421      657400
+ 1422              	.LASF4:
+ 1423 034c 6C6F6E67 		.ascii	"long int\000"
+ 1423      20696E74 
+ 1423      00
+ 1424              	.LASF14:
+ 1425 0355 72656733 		.ascii	"reg32\000"
+ 1425      3200
+ 1426              	.LASF16:
+ 1427 035b 6C6F6E67 		.ascii	"long double\000"
+ 1427      20646F75 
+ 1427      626C6500 
+ 1428              	.LASF0:
+ 1429 0367 7369676E 		.ascii	"signed char\000"
+ 1429      65642063 
+ 1429      68617200 
+ 1430              	.LASF26:
+ 1431 0373 4F757442 		.ascii	"OutBeforeDown_ISR_Enable\000"
+ 1431      65666F72 
+ 1431      65446F77 
+ARM GAS  C:\Users\YEHUDA~1\AppData\Local\Temp\cccPtSxq.s 			page 36
+
+
+ 1431      6E5F4953 
+ 1431      525F456E 
+ 1432              	.LASF27:
+ 1433 038c 4F757442 		.ascii	"OutBeforeDown_ISR_Disable\000"
+ 1433      65666F72 
+ 1433      65446F77 
+ 1433      6E5F4953 
+ 1433      525F4469 
+ 1434              	.LASF37:
+ 1435 03a6 4F757442 		.ascii	"OutBeforeDown_ClearInterrupt\000"
+ 1435      65666F72 
+ 1435      65446F77 
+ 1435      6E5F436C 
+ 1435      65617249 
+ 1436              	.LASF30:
+ 1437 03c3 4F757442 		.ascii	"OutBeforeDown_ISR_Stop\000"
+ 1437      65666F72 
+ 1437      65446F77 
+ 1437      6E5F4953 
+ 1437      525F5374 
+ 1438              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

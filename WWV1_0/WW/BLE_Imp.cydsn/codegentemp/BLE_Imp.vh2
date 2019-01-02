@@ -2,7 +2,7 @@
 --	Conversion of BLE_Imp.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Tue Jan 01 22:38:33 2019
+--	Wed Jan 02 20:04:19 2019
 --
 
 USE cypress.cypress.all;
@@ -90,12 +90,12 @@ SIGNAL tmpOE__OutBeforeDown_net_0 : bit;
 SIGNAL tmpFB_0__OutBeforeDown_net_0 : bit;
 SIGNAL tmpIO_0__OutBeforeDown_net_0 : bit;
 TERMINAL tmpSIOVREF__OutBeforeDown_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__OutBeforeDown_net_0 : bit;
+SIGNAL Net_169 : bit;
 SIGNAL tmpOE__UpBeforeIn_net_0 : bit;
-SIGNAL tmpFB_0__UpBeforeIn_net_0 : bit;
+SIGNAL Net_171 : bit;
 SIGNAL tmpIO_0__UpBeforeIn_net_0 : bit;
 TERMINAL tmpSIOVREF__UpBeforeIn_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__UpBeforeIn_net_0 : bit;
+SIGNAL Net_168 : bit;
 SIGNAL tmpOE__Buzzer_net_0 : bit;
 SIGNAL Net_144 : bit;
 SIGNAL tmpFB_0__Buzzer_net_0 : bit;
@@ -985,9 +985,9 @@ WinchOutPin:cy_psoc3_pins_v1_10
 		interrupt=>tmpINTERRUPT_0__WinchOutPin_net_0);
 OutBeforeDown:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba",
-		drive_mode=>"001",
+		drive_mode=>"010",
 		ibuf_enabled=>"1",
-		init_dr_st=>"0",
+		init_dr_st=>"1",
 		input_sync=>"0",
 		input_clk_en=>'0',
 		input_sync_mode=>"0",
@@ -1052,12 +1052,12 @@ OutBeforeDown:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>one,
 		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__OutBeforeDown_net_0);
+		interrupt=>Net_169);
 UpBeforeIn:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"b080bca8-67ea-4e9e-ae6e-7dc48ac6dde9",
-		drive_mode=>"001",
+		drive_mode=>"010",
 		ibuf_enabled=>"1",
-		init_dr_st=>"0",
+		init_dr_st=>"1",
 		input_sync=>"0",
 		input_clk_en=>'0',
 		input_sync_mode=>"0",
@@ -1111,7 +1111,7 @@ UpBeforeIn:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
 		y=>(zero),
-		fb=>(tmpFB_0__UpBeforeIn_net_0),
+		fb=>Net_171,
 		analog=>(open),
 		io=>(tmpIO_0__UpBeforeIn_net_0),
 		siovref=>(tmpSIOVREF__UpBeforeIn_net_0),
@@ -1122,7 +1122,7 @@ UpBeforeIn:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>one,
 		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__UpBeforeIn_net_0);
+		interrupt=>Net_168);
 Buzzer:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"5daf8b12-6057-4a7a-9b31-a8fae2f906e8",
 		drive_mode=>"110",
@@ -1532,6 +1532,14 @@ YellowLED:cy_psoc3_pins_v1_10
 		out_clock_en=>one,
 		out_reset=>zero,
 		interrupt=>tmpINTERRUPT_0__YellowLED_net_0);
+UpBeforeIn_ISR:cy_isr_v1_0
+	GENERIC MAP(int_type=>"10",
+		is_nmi=>'0')
+	PORT MAP(int_signal=>Net_168);
+OutBeforeDown_ISR:cy_isr_v1_0
+	GENERIC MAP(int_type=>"10",
+		is_nmi=>'0')
+	PORT MAP(int_signal=>Net_169);
 \BuzzerPWM:PWMUDB:min_kill_reg\:cy_dsrff
 	PORT MAP(d=>one,
 		s=>zero,

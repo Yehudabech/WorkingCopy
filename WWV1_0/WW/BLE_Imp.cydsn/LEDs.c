@@ -200,4 +200,42 @@ void LED_BlinkpGetClockVal(uint32_t CurrenTime)
   }
 }
 
+
+
+/**************************************************************
+* Name: TurnON_LED
+* Parameters[in]: uint8_t Color
+* Return: None
+* Description: This function turns ON Color led
+
+************************************************************/
+void TurnON_LED(uint8_t Color)
+{
+  if(Color == GREEN_LED)
+    GreenLED_Write(ON);
+  else if(Color == YELLOW_LED)
+    YellowLED_Write(ON);
+  else if(Color == RED_LED)
+    RedLED_Write(ON);
+}
+
+
+
+/**************************************************************
+* Name: TurnOFF_LED
+* Parameters[in]: uint8_t Color
+* Return: None
+* Description: This function turns OFF Color led
+
+************************************************************/
+void TurnOFF_LED(uint8_t Color)
+{
+  if(Color == GREEN_LED)
+    GreenLED_Write(OFF);
+  else if(Color == YELLOW_LED)
+    YellowLED_Write(OFF);
+  else if(Color == RED_LED)
+    RedLED_Write(OFF);
+}
+
 /* [] END OF FILE */

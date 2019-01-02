@@ -2512,6 +2512,9 @@
                 <name>$PROJ_DIR$\Generated_Source\PSoC4\OutBeforeDown_aliases.h</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\Generated_Source\PSoC4\OutBeforeDown_ISR.h</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\Generated_Source\PSoC4\project.h</name>
             </file>
             <file>
@@ -2561,6 +2564,9 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\Generated_Source\PSoC4\UpBeforeIn_aliases.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Generated_Source\PSoC4\UpBeforeIn_ISR.h</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\Generated_Source\PSoC4\WinchDownPin.h</name>
@@ -2668,6 +2674,9 @@
                 <name>$PROJ_DIR$\Generated_Source\PSoC4\OutBeforeDown.c</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\Generated_Source\PSoC4\OutBeforeDown_ISR.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\Generated_Source\PSoC4\OutBeforeDown_PM.c</name>
             </file>
             <file>
@@ -2717,6 +2726,9 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\Generated_Source\PSoC4\UpBeforeIn.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Generated_Source\PSoC4\UpBeforeIn_ISR.c</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\Generated_Source\PSoC4\UpBeforeIn_PM.c</name>

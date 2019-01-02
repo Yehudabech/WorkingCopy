@@ -86,6 +86,8 @@
       <path>$PROJ_DIR$\Generated_Source\PSoC4\GreenLED_PM.c</path>
       <path>$PROJ_DIR$\Generated_Source\PSoC4\YellowLED.c</path>
       <path>$PROJ_DIR$\Generated_Source\PSoC4\YellowLED_PM.c</path>
+      <path>$PROJ_DIR$\Generated_Source\PSoC4\UpBeforeIn_ISR.c</path>
+      <path>$PROJ_DIR$\Generated_Source\PSoC4\OutBeforeDown_ISR.c</path>
     </group>
     <group name="Generated_Header">
       <path>$PROJ_DIR$\Generated_Source\PSoC4\cyfitter_cfg.h</path>
@@ -161,6 +163,8 @@
       <path>$PROJ_DIR$\Generated_Source\PSoC4\GreenLED_aliases.h</path>
       <path>$PROJ_DIR$\Generated_Source\PSoC4\YellowLED.h</path>
       <path>$PROJ_DIR$\Generated_Source\PSoC4\YellowLED_aliases.h</path>
+      <path>$PROJ_DIR$\Generated_Source\PSoC4\UpBeforeIn_ISR.h</path>
+      <path>$PROJ_DIR$\Generated_Source\PSoC4\OutBeforeDown_ISR.h</path>
     </group>
     <group name="Source">
       <path>$PROJ_DIR$\main.c</path>

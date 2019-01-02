@@ -1,5 +1,5 @@
 -- Project:   C:\Users\Yehuda Ben Chaim\Google Drive\My Projects\WW\FW\WorkingCopy\WWV1_0\WW\BLE_Imp.cydsn\BLE_Imp.cyprj
--- Generated: 01/01/2019 22:38:35
+-- Generated: 01/02/2019 20:04:22
 -- PSoC Creator  4.2
 
 ENTITY BLE_Imp IS
@@ -47,6 +47,8 @@ ARCHITECTURE __DEFAULT__ OF BLE_Imp IS
     ATTRIBUTE global_signal OF Net_142_digital : SIGNAL IS true;
     SIGNAL Net_144 : bit;
     ATTRIBUTE placement_force OF Net_144 : SIGNAL IS "U(0,1,A)2";
+    SIGNAL Net_168 : bit;
+    SIGNAL Net_169 : bit;
     SIGNAL Net_2 : bit;
     SIGNAL Net_5 : bit;
     SIGNAL Net_7 : bit;
@@ -71,17 +73,17 @@ ARCHITECTURE __DEFAULT__ OF BLE_Imp IS
     SIGNAL \BuzzerPWM:PWMUDB:control_6\ : bit;
     SIGNAL \BuzzerPWM:PWMUDB:control_7\ : bit;
     SIGNAL \BuzzerPWM:PWMUDB:prevCompare1\ : bit;
-    ATTRIBUTE placement_force OF \BuzzerPWM:PWMUDB:prevCompare1\ : SIGNAL IS "U(0,1,A)3";
+    ATTRIBUTE placement_force OF \BuzzerPWM:PWMUDB:prevCompare1\ : SIGNAL IS "U(0,1,A)1";
     SIGNAL \BuzzerPWM:PWMUDB:prevCompare2\ : bit;
     ATTRIBUTE placement_force OF \BuzzerPWM:PWMUDB:prevCompare2\ : SIGNAL IS "U(1,1,A)1";
     SIGNAL \BuzzerPWM:PWMUDB:runmode_enable\ : bit;
-    ATTRIBUTE placement_force OF \BuzzerPWM:PWMUDB:runmode_enable\ : SIGNAL IS "U(0,1,A)1";
+    ATTRIBUTE placement_force OF \BuzzerPWM:PWMUDB:runmode_enable\ : SIGNAL IS "U(0,1,A)3";
     SIGNAL \BuzzerPWM:PWMUDB:status_0\ : bit;
-    ATTRIBUTE placement_force OF \BuzzerPWM:PWMUDB:status_0\ : SIGNAL IS "U(0,1,B)0";
+    ATTRIBUTE placement_force OF \BuzzerPWM:PWMUDB:status_0\ : SIGNAL IS "U(0,1,A)0";
     SIGNAL \BuzzerPWM:PWMUDB:status_1\ : bit;
-    ATTRIBUTE placement_force OF \BuzzerPWM:PWMUDB:status_1\ : SIGNAL IS "U(0,1,B)2";
+    ATTRIBUTE placement_force OF \BuzzerPWM:PWMUDB:status_1\ : SIGNAL IS "U(1,1,A)0";
     SIGNAL \BuzzerPWM:PWMUDB:status_2\ : bit;
-    ATTRIBUTE placement_force OF \BuzzerPWM:PWMUDB:status_2\ : SIGNAL IS "U(0,1,A)0";
+    ATTRIBUTE placement_force OF \BuzzerPWM:PWMUDB:status_2\ : SIGNAL IS "U(0,1,B)0";
     SIGNAL \BuzzerPWM:PWMUDB:status_3\ : bit;
     SIGNAL \BuzzerPWM:PWMUDB:tc_i\ : bit;
     SIGNAL \SCB_1:Net_847_ff1\ : bit;
@@ -110,9 +112,9 @@ ARCHITECTURE __DEFAULT__ OF BLE_Imp IS
     ATTRIBUTE Location OF ClockGenBlock : LABEL IS "F(CLK_GEN,0)";
     ATTRIBUTE Location OF ClockBlock : LABEL IS "F(Clock,0)";
     ATTRIBUTE lib_model OF \SCB_1:tx(0)\ : LABEL IS "iocell1";
-    ATTRIBUTE Location OF \SCB_1:tx(0)\ : LABEL IS "P0[1]";
+    ATTRIBUTE Location OF \SCB_1:tx(0)\ : LABEL IS "P0[5]";
     ATTRIBUTE lib_model OF \SCB_1:rx(0)\ : LABEL IS "iocell2";
-    ATTRIBUTE Location OF \SCB_1:rx(0)\ : LABEL IS "P5[0]";
+    ATTRIBUTE Location OF \SCB_1:rx(0)\ : LABEL IS "P0[4]";
     ATTRIBUTE lib_model OF WinchUpPin(0) : LABEL IS "iocell3";
     ATTRIBUTE Location OF WinchUpPin(0) : LABEL IS "P1[3]";
     ATTRIBUTE lib_model OF WinchDownPin(0) : LABEL IS "iocell4";
@@ -121,10 +123,12 @@ ARCHITECTURE __DEFAULT__ OF BLE_Imp IS
     ATTRIBUTE Location OF WinchInPin(0) : LABEL IS "P1[1]";
     ATTRIBUTE lib_model OF WinchOutPin(0) : LABEL IS "iocell6";
     ATTRIBUTE Location OF WinchOutPin(0) : LABEL IS "P1[2]";
+    ATTRIBUTE Location OF OutBeforeDown : LABEL IS "F(PICU,2)";
     ATTRIBUTE lib_model OF OutBeforeDown(0) : LABEL IS "iocell7";
-    ATTRIBUTE Location OF OutBeforeDown(0) : LABEL IS "P0[3]";
+    ATTRIBUTE Location OF OutBeforeDown(0) : LABEL IS "P2[1]";
+    ATTRIBUTE Location OF UpBeforeIn : LABEL IS "F(PICU,3)";
     ATTRIBUTE lib_model OF UpBeforeIn(0) : LABEL IS "iocell8";
-    ATTRIBUTE Location OF UpBeforeIn(0) : LABEL IS "P0[2]";
+    ATTRIBUTE Location OF UpBeforeIn(0) : LABEL IS "P3[4]";
     ATTRIBUTE lib_model OF Buzzer(0) : LABEL IS "iocell9";
     ATTRIBUTE Location OF Buzzer(0) : LABEL IS "P2[4]";
     ATTRIBUTE lib_model OF RedLED(0) : LABEL IS "iocell10";
@@ -137,13 +141,15 @@ ARCHITECTURE __DEFAULT__ OF BLE_Imp IS
     ATTRIBUTE Location OF \BuzzerPWM:PWMUDB:status_2\ : LABEL IS "U(0,1)";
     ATTRIBUTE Location OF \BLE:cy_m0s8_ble\ : LABEL IS "F(BLE,0)";
     ATTRIBUTE Location OF \BLE:bless_isr\ : LABEL IS "[IntrContainer=(0)][IntrId=(12)]";
-    ATTRIBUTE Location OF \SCB_1:SCB\ : LABEL IS "F(SCB,1)";
+    ATTRIBUTE Location OF \SCB_1:SCB\ : LABEL IS "F(SCB,0)";
     ATTRIBUTE lib_model OF \BuzzerPWM:PWMUDB:genblk1:ctrlreg\ : LABEL IS "controlcell1";
     ATTRIBUTE Location OF \BuzzerPWM:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \BuzzerPWM:PWMUDB:genblk8:stsreg\ : LABEL IS "statusicell1";
     ATTRIBUTE Location OF \BuzzerPWM:PWMUDB:genblk8:stsreg\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \BuzzerPWM:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "datapathcell1";
     ATTRIBUTE Location OF \BuzzerPWM:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "U(0,1)";
+    ATTRIBUTE Location OF UpBeforeIn_ISR : LABEL IS "[IntrContainer=(0)][IntrId=(3)]";
+    ATTRIBUTE Location OF OutBeforeDown_ISR : LABEL IS "[IntrContainer=(0)][IntrId=(2)]";
     ATTRIBUTE lib_model OF \BuzzerPWM:PWMUDB:runmode_enable\ : LABEL IS "macrocell2";
     ATTRIBUTE Location OF \BuzzerPWM:PWMUDB:runmode_enable\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \BuzzerPWM:PWMUDB:prevCompare1\ : LABEL IS "macrocell3";
@@ -153,7 +159,7 @@ ARCHITECTURE __DEFAULT__ OF BLE_Imp IS
     ATTRIBUTE lib_model OF \BuzzerPWM:PWMUDB:status_0\ : LABEL IS "macrocell5";
     ATTRIBUTE Location OF \BuzzerPWM:PWMUDB:status_0\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \BuzzerPWM:PWMUDB:status_1\ : LABEL IS "macrocell6";
-    ATTRIBUTE Location OF \BuzzerPWM:PWMUDB:status_1\ : LABEL IS "U(0,1)";
+    ATTRIBUTE Location OF \BuzzerPWM:PWMUDB:status_1\ : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF Net_144 : LABEL IS "macrocell7";
     ATTRIBUTE Location OF Net_144 : LABEL IS "U(0,1)";
     COMPONENT controlcell
@@ -551,9 +557,8 @@ BEGIN
             lfclk => ClockBlock_LFClk,
             wco => ClockBlock_WCO,
             dsi_in_0 => ClockBlock_Routed1,
-            ff_div_1 => open,
-            udb_div_0 => dclk_to_genclk,
-            ff_div_2 => \SCB_1:Net_847_ff1\);
+            ff_div_1 => \SCB_1:Net_847_ff1\,
+            udb_div_0 => dclk_to_genclk);
 
     \SCB_1:tx\:logicalport
         GENERIC MAP(
@@ -1100,10 +1105,10 @@ BEGIN
 
     OutBeforeDown:logicalport
         GENERIC MAP(
-            drive_mode => "001",
+            drive_mode => "010",
             ibuf_enabled => "1",
             id => "8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba",
-            init_dr_st => "0",
+            init_dr_st => "1",
             input_buffer_sel => "00",
             input_clk_en => 0,
             input_sync => "0",
@@ -1167,7 +1172,8 @@ BEGIN
             in_clock_en => open,
             in_reset => open,
             out_clock_en => open,
-            out_reset => open);
+            out_reset => open,
+            interrupt => Net_169);
 
     OutBeforeDown(0):iocell
         GENERIC MAP(
@@ -1176,7 +1182,7 @@ BEGIN
             oe_sync_mode => 0,
             logicalport => "OutBeforeDown",
             logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+            io_capabilities => "0000000000000000000000000001000000000000000000000000000000000001")
         PORT MAP(
             pa_out => OutBeforeDown(0)__PA,
             oe => open,
@@ -1190,10 +1196,10 @@ BEGIN
 
     UpBeforeIn:logicalport
         GENERIC MAP(
-            drive_mode => "001",
+            drive_mode => "010",
             ibuf_enabled => "1",
             id => "b080bca8-67ea-4e9e-ae6e-7dc48ac6dde9",
-            init_dr_st => "0",
+            init_dr_st => "1",
             input_buffer_sel => "00",
             input_clk_en => 0,
             input_sync => "0",
@@ -1257,7 +1263,8 @@ BEGIN
             in_clock_en => open,
             in_reset => open,
             out_clock_en => open,
-            out_reset => open);
+            out_reset => open,
+            interrupt => Net_168);
 
     UpBeforeIn(0):iocell
         GENERIC MAP(
@@ -1266,7 +1273,7 @@ BEGIN
             oe_sync_mode => 0,
             logicalport => "UpBeforeIn",
             logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+            io_capabilities => "0000000000000000000000000001000000000000000000000000000000000001")
         PORT MAP(
             pa_out => UpBeforeIn(0)__PA,
             oe => open,
@@ -1764,6 +1771,22 @@ BEGIN
             cl1_comb => \BuzzerPWM:PWMUDB:cmp2_less\,
             f1_blk_stat_comb => \BuzzerPWM:PWMUDB:status_3\,
             busclk => ClockBlock_HFClk);
+
+    UpBeforeIn_ISR:interrupt
+        GENERIC MAP(
+            int_type => "10",
+            is_nmi => 0)
+        PORT MAP(
+            interrupt => Net_168,
+            clock => ClockBlock_HFClk);
+
+    OutBeforeDown_ISR:interrupt
+        GENERIC MAP(
+            int_type => "10",
+            is_nmi => 0)
+        PORT MAP(
+            interrupt => Net_169,
+            clock => ClockBlock_HFClk);
 
     \BuzzerPWM:PWMUDB:runmode_enable\:macrocell
         GENERIC MAP(
